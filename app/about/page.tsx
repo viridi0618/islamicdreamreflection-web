@@ -3,9 +3,9 @@ import Link from "next/link";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: { absolute: "About Islamic Dream Reflection" },
   description:
-    "About Islamic Dream Reflection - an educational platform for exploring dreams through Islamic traditions and classical scholarship, for reflection and learning.",
+    "Learn about Islamic Dream Reflection, an educational reflection platform grounded in Islamic traditions and classical scholarship. Educational use only.",
   alternates: { canonical: `${SITE_URL}/about` },
   robots: { index: true, follow: true }
 };

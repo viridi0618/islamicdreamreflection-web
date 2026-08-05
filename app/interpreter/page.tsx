@@ -125,6 +125,21 @@ export default async function InterpreterPage({
           Last updated: August 5, 2026
         </p>
       </section>
+
+      <section className="section" aria-labelledby="interp-faq-heading">
+        <div className="section__head">
+          <h2 id="interp-faq-heading">Frequently asked questions</h2>
+          <span className="rule" />
+        </div>
+        <div className="faq">
+          {faqs.map((faq) => (
+            <details key={faq.question} className="faq__item">
+              <summary>{faq.question}</summary>
+              <div className="faq__body">{faq.answer}</div>
+            </details>
+          ))}
+        </div>
+      </section>
     </article>
   );
 }
