@@ -36,10 +36,12 @@ export async function generateMetadata({
   const page = PAGE_BY_SLUG.get(slug);
   if (!page) return {};
   const entity = loadDreamEntity(page.entityId);
-  const description = [
-    entity.interpretation.general?.[0] ?? page.title,
-    "Traditional interpretations, not predictions."
-  ].join(" ");
+  const description =
+    page.metaDescription ??
+    [
+      entity.interpretation.general?.[0] ?? page.title,
+      "Traditional interpretations, not predictions."
+    ].join(" ");
 
   return {
     title: page.title,

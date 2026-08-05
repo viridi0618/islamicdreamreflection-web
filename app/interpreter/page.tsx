@@ -3,23 +3,23 @@ import { RitualFlow } from "@/components/RitualFlow";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Begin Your Dream Reflection",
+  title: "Islamic Dream Interpreter — AI Dream Meaning Analysis",
   description:
-    "Explore your dream through symbols, emotions and Islamic traditions. A guided reflection experience grounded in the knowledge base, not predictions.",
+    "Explore your dream's symbols, emotions and Islamic traditions with a guided reflection. Grounded in the knowledge base, not predictions.",
   alternates: { canonical: `${SITE_URL}/interpreter` },
   openGraph: {
-    title: "Begin Your Dream Reflection",
+    title: "Islamic Dream Interpreter — AI Dream Meaning Analysis",
     description:
-      "Explore your dream through symbols, emotions and Islamic traditions. A guided reflection experience grounded in the knowledge base, not predictions.",
+      "Explore your dream's symbols, emotions and Islamic traditions with a guided reflection. Grounded in the knowledge base, not predictions.",
     url: `${SITE_URL}/interpreter`,
     siteName: "Islamic Dream Knowledge Base",
     type: "website"
   },
   twitter: {
     card: "summary",
-    title: "Begin Your Dream Reflection",
+    title: "Islamic Dream Interpreter — AI Dream Meaning Analysis",
     description:
-      "Explore your dream through symbols, emotions and Islamic traditions. A guided reflection experience grounded in the knowledge base, not predictions."
+      "Explore your dream's symbols, emotions and Islamic traditions with a guided reflection. Grounded in the knowledge base, not predictions."
   }
 };
 
@@ -54,7 +54,7 @@ export default async function InterpreterPage({
       />
 
       <section className="interp-hero ritual-hero">
-        <h1>Begin Your Dream Reflection</h1>
+        <h1>Begin Your Islamic Dream Reflection</h1>
         <p className="interp-hero__sub">
           Describe your dream, explore its symbols through Islamic traditions,
           and receive a gentle personal reflection.
