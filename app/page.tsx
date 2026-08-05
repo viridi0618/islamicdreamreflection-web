@@ -6,12 +6,12 @@ import { dreamUrl, SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Islamic Dream Interpretation — Traditional Meanings & Sources",
   description:
-    "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, from verified classical sources. Not predictions.",
+    "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, drawing from classical dream traditions. Not predictions.",
   alternates: { canonical: SITE_URL },
   openGraph: {
     title: "Islamic Dream Interpretation — Traditional Meanings & Sources",
     description:
-      "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, from verified classical sources. Not predictions.",
+      "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, drawing from classical dream traditions. Not predictions.",
     url: SITE_URL,
     siteName: "Islamic Dream Knowledge Base",
     type: "website"
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Islamic Dream Interpretation — Traditional Meanings & Sources",
     description:
-      "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, from verified classical sources. Not predictions."
+      "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, drawing from classical dream traditions. Not predictions."
   }
 };
 

@@ -5,12 +5,9 @@ import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: `${SITE_NAME} — Traditional Islamic Dream Interpretation`,
-    template: `%s | ${SITE_NAME}`
-  },
+  title: `${SITE_NAME} — Traditional Islamic Dream Interpretation`,
   description:
-    "Recorded interpretations of dream symbols in the Islamic tradition, organized from verified classical sources. Traditional interpretations, not predictions.",
+    "Recorded interpretations of dream symbols in the Islamic tradition, organized from classical Islamic dream sources. Traditional interpretations, not predictions.",
   robots: {
     index: true,
     follow: true

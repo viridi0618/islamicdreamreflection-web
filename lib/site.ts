@@ -32,7 +32,7 @@ export const ENABLED_PAGES: PageConfig[] = [
     slug: "snake-dream-islam",
     title: "Snake Dream Meaning in Islam",
     metaDescription:
-      "Snake dreams are among the most common; Islamic readings differ by color, action and location. Traditional meanings from verified classical sources. Not predictions."
+      "Snake dreams are among the most common; Islamic readings differ by color, action and location. Explore meanings through classical dream traditions. Not predictions."
   },
   {
     entityId: "dead-person",
@@ -46,21 +46,21 @@ export const ENABLED_PAGES: PageConfig[] = [
     slug: "teeth-falling-out-islam",
     title: "Teeth Falling Out Dream Meaning in Islam",
     metaDescription:
-      "Teeth dreams are among the most searched topics. Islamic readings vary by which teeth and what happens. Traditional meanings from verified sources. Not predictions."
+      "Teeth dreams are among the most searched topics. Islamic readings vary by which teeth and what happens. Explore meanings through classical dream traditions. Not predictions."
   },
   {
     entityId: "water",
     slug: "water-dream-islam",
     title: "Water Dream Meaning in Islam",
     metaDescription:
-      "Water appears in dreams more than almost any element. Islamic readings change with its state and action. Traditional meanings from verified sources. Not predictions."
+      "Water appears in dreams more than almost any element. Islamic readings change with its state and action. Explore meanings through classical dream traditions. Not predictions."
   },
   {
     entityId: "pregnancy",
     slug: "pregnancy-dream-islam",
     title: "Pregnancy Dream Meaning in Islam",
     metaDescription:
-      "Pregnancy dreams often symbolize creation, anticipation or a developing stage of life. Islamic interpretations from verified classical sources. Not predictions."
+      "Pregnancy dreams often symbolize creation, anticipation or a developing stage of life. Explore meanings through classical dream traditions. Not predictions."
   }
 ];
 
