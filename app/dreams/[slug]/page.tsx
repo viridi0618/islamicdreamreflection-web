@@ -19,7 +19,7 @@ import {
   breadcrumbSchema,
   faqSchema
 } from "@/lib/schema";
-import { PAGE_BY_SLUG, SITE_URL, LAST_UPDATED } from "@/lib/site";
+import { PAGE_BY_SLUG, SITE_NAME, SITE_URL, LAST_UPDATED } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -51,7 +51,7 @@ export async function generateMetadata({
       title: page.title,
       description,
       url: `${SITE_URL}/dreams/${slug}`,
-      siteName: "Islamic Dream Knowledge Base",
+      siteName: SITE_NAME,
       type: "article"
     },
     robots: { index: true, follow: true }
@@ -92,12 +92,11 @@ export default async function DreamPage({
           <div className="quick-answer" style={{ marginTop: 18 }}>
             <p>
               {entity.interpretation.general?.[0] ??
-                "Traditional scholars have discussed this dream symbol; specific meanings are currently pending verification."}
+                "Traditional scholars have discussed this dream symbol; interpretations vary by context and tradition."}
             </p>
             <span className="disclaimer">
               Islamic dream interpretation is a collection of traditional
-              readings — not a prediction. Classical references on this page
-              are marked pending verification.
+              readings — not a prediction.
             </span>
           </div>
           <p

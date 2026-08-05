@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: `${SITE_NAME} — Traditional Islamic Dream Interpretation`,
   description:
     "Recorded interpretations of dream symbols in the Islamic tradition, organized from classical Islamic dream sources. Traditional interpretations, not predictions.",
+  openGraph: {
+    siteName: SITE_NAME,
+    type: "website"
+  },
   robots: {
     index: true,
     follow: true
@@ -33,7 +37,7 @@ export default function RootLayout({
               <span className="brand__mark" aria-hidden="true">
                 ٩
               </span>
-              <span>Islamic Dream Knowledge</span>
+              <span>{SITE_NAME}</span>
             </Link>
             <nav className="site-nav" aria-label="Main">
               <Link href="/">Home</Link>
@@ -46,19 +50,16 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="site-footer">
           <div className="shell site-footer__inner">
-            <span>
-              {SITE_NAME} · Traditional interpretations, not predictions.
-            </span>
+            <span>{SITE_NAME}</span>
             <nav className="site-footer__nav" aria-label="Footer">
               <Link href="/about">About</Link>
+              <Link href="/about#interpretation-guidance">
+                About our interpretations
+              </Link>
               <Link href="/contact">Contact</Link>
               <Link href="/privacy">Privacy</Link>
               <Link href="/terms">Terms</Link>
             </nav>
-            <span>
-              Classical references are marked{" "}
-              <em>pending verification</em> until reviewed.
-            </span>
           </div>
         </footer>
       </body>

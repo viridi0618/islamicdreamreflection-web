@@ -19,6 +19,22 @@ export default function AboutPage() {
       </div>
 
       <div className="prose">
+        <h2 id="interpretation-guidance">About Our Interpretations</h2>
+        <p>
+          Islamic Dream Reflection presents educational perspectives inspired
+          by traditional Islamic dream literature.
+        </p>
+        <p>
+          Dream reflections are not predictions of future events, religious
+          rulings, or substitutes for guidance from a qualified scholar.
+        </p>
+        <p>
+          Symbols may carry different meanings depending on personal
+          circumstances, emotions, and context. The reflections provided here
+          are intended to support thoughtful personal reflection rather than
+          provide certain conclusions.
+        </p>
+
         <p>
           Islamic Dream Reflection is an educational platform that explores
           dreams through the lens of Islamic traditions and classical writings.
@@ -48,14 +64,8 @@ export default function AboutPage() {
         <p>
           The reflection tool uses AI to help structure your own thinking
           about a dream. It assists in identifying symbols, summarizing
-          traditional perspectives, and offering reflective prompts. AI output
-          is grounded in the site&apos;s knowledge base, and every classical
-          reference remains marked{" "}
-          <em>
-            pending verification
-          </em>{" "}
-          until reviewed by a human editor. AI here is a study aid, not a
-          religious authority.
+          traditional perspectives, and offering reflective prompts. AI here
+          is a study aid, not a religious authority.
         </p>
 
         <h2>What this site does not do</h2>
@@ -71,16 +81,14 @@ export default function AboutPage() {
           The knowledge base draws on classical Islamic dream interpretation
           traditions, including those associated with Ibn Sirin and Al-Nabulsi,
           as well as broader classical dream literature. Because many ancient
-          sources are disputed or survive only in later compilations, every
-          reference is shown with a clear source status rather than presented
-          as an exact quotation.
+          sources are disputed or survive only in later compilations, these
+          perspectives are presented as historical traditions rather than
+          exact quotations.
         </p>
 
         <p>
-          Editorial review follows a simple rule: nothing is asserted as
-          verified fact until a human editor has checked the source. Pages are
-          updated as the knowledge base expands and as corrections are
-          received.
+          Pages are updated as the knowledge base expands and as corrections
+          are received.
         </p>
 
         <h2>Corrections and feedback</h2>

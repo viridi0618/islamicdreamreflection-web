@@ -10,7 +10,7 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
 
-export const SITE_NAME = "Islamic Dream Knowledge Base";
+export const SITE_NAME = "Islamic Dream Reflection";
 
 export const SITE_DESCRIPTION =
   "An educational dream reflection platform inspired by Islamic traditions and classical scholarship.";

@@ -210,8 +210,8 @@ export function RitualResult({ response, dreamContext, dreamText, dreamTitle, on
             <div className="rr-symbol__block">
               <span className="rr-symbol__block-label">Traditional context</span>
               <p className="rr-symbol__pending">
-                Pending verification — sources are reviewed by a human editor before
-                any traditional view is presented as doctrine.
+                Classical traditions offer varied readings of this symbol.
+                Perspectives differ by scholar and context.
               </p>
             </div>
             <div className="rr-symbol__block">

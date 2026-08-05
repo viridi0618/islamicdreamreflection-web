@@ -6,12 +6,12 @@ export function buildFaqs(entity: DreamEntity): Array<{ question: string; answer
     {
       question: `Is ${symbol} in a dream good or bad in Islam?`,
       answer:
-        "Traditional scholars have recorded both positive and negative readings for this symbol depending on the context of the dream. Specific readings are pending verification in this knowledge base."
+        "Traditional scholars have recorded both positive and negative readings for this symbol depending on the context of the dream. Interpretations vary by personal circumstances and tradition."
     },
     {
       question: `What do classical scholars say about ${symbol} dreams?`,
       answer:
-        `Classical references for "${entity.name}" are listed on this page and are marked pending verification until a human editor confirms the source citation.`
+        `Classical references for "${entity.name}" are listed on this page. They represent historical perspectives from Islamic dream interpretation traditions.`
     },
     {
       question: "Are dreams predictions of the future in Islam?",
@@ -21,7 +21,7 @@ export function buildFaqs(entity: DreamEntity): Array<{ question: string; answer
     {
       question: "What should I do after a disturbing dream?",
       answer:
-        "Common advice in the tradition includes seeking refuge in Allah from a disturbing dream, avoiding dwelling on it, and consulting a trustworthy scholar for serious recurring dreams. Specific guidance is pending verification."
+        "Common advice in the tradition includes seeking refuge in Allah from a disturbing dream, avoiding dwelling on it, and consulting a trustworthy scholar for serious recurring dreams."
     }
   ];
 }

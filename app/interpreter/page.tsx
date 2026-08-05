@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { RitualFlow } from "@/components/RitualFlow";
-import { SITE_URL } from "@/lib/site";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Islamic Dream Interpreter — AI Dream Meaning Analysis",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Explore your dream's symbols, emotions and Islamic traditions with a guided reflection. Grounded in the knowledge base, not predictions.",
     url: `${SITE_URL}/interpreter`,
-    siteName: "Islamic Dream Knowledge Base",
+    siteName: SITE_NAME,
     type: "website"
   },
   twitter: {
@@ -37,19 +37,9 @@ export default async function InterpreterPage({
 
   const faqs = [
     {
-      question: "Is Islamic dream reflection the same as fortune telling?",
+      question: "Is Islamic dream reflection a prediction or religious ruling?",
       answer:
-        "No. This experience is educational. It reflects on dream symbols through Islamic traditions and classical sources, and does not predict the future or issue religious rulings."
-    },
-    {
-      question: "Do you provide a fatwa or religious ruling about dreams?",
-      answer:
-        "No. Dream interpretations on this site are presented as traditional perspectives for reflection and learning. We do not issue fatwas or claim religious authority."
-    },
-    {
-      question: "Where do the interpretations come from?",
-      answer:
-        "The knowledge base draws on classical Islamic dream interpretation traditions (such as those associated with Ibn Sirin and Al-Nabulsi) and clearly marks which references still await human verification."
+        "No. The reflections are educational perspectives intended to support personal reflection. They do not predict future events or provide fatwas."
     }
   ];
 
@@ -88,10 +78,6 @@ export default async function InterpreterPage({
           Describe your dream, explore its symbols through Islamic traditions,
           and receive a gentle personal reflection.
         </p>
-        <p className="interp-hero__disclaimer">
-          Dream interpretations are not predictions or religious rulings. They
-          are reflections based on available traditions and symbolic patterns.
-        </p>
       </section>
 
       <RitualFlow initialSymbol={initialSymbol} />
@@ -117,10 +103,6 @@ export default async function InterpreterPage({
             share a reflection card that never reveals your dream text.
           </li>
         </ol>
-        <p className="interp-how__note">
-          Every reference shown is marked <em>pending verification</em> until a
-          human editor confirms the source. Nothing here is generated free-form.
-        </p>
         <p style={{ fontSize: 13, color: "var(--ink-faint)" }}>
           Last updated: August 5, 2026
         </p>

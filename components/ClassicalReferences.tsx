@@ -5,8 +5,9 @@ export function ClassicalReferences({ entity }: { entity: DreamEntity }) {
   return (
     <div className="prose">
       <p>
-        Each classical reference below must be reviewed and confirmed by a
-        human editor before any interpretation is presented as doctrine.
+        Classical sources associated with this dream symbol in Islamic dream
+        interpretation traditions. These are historical perspectives, not
+        religious rulings.
       </p>
       <table className="ref-table">
         <thead>
@@ -21,7 +22,7 @@ export function ClassicalReferences({ entity }: { entity: DreamEntity }) {
             <tr key={s.name}>
               <td>{s.name}</td>
               <td>{s.reference}</td>
-              <td className="status">pending verification</td>
+              <td className="status">historical perspective</td>
             </tr>
           ))}
           {sources.length === 0 && (

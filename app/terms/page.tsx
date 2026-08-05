@@ -32,8 +32,7 @@ export default function TermsPage() {
         <p>
           Dream symbol explanations on this site represent historical and
           traditional perspectives. They are not presented as definitive
-          meanings for any individual dream. References are marked with a
-          source status, and pending verification until reviewed.
+          meanings for any individual dream.
         </p>
 
         <h2>No accounts, no warranties</h2>

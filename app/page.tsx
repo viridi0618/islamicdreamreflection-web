@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { loadCategories, loadEnabledPages } from "@/lib/data";
-import { dreamUrl, SITE_URL } from "@/lib/site";
+import { RitualFlow } from "@/components/RitualFlow";
+import { dreamUrl, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Islamic Dream Interpretation — Traditional Meanings & Sources",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, drawing from classical dream traditions. Not predictions.",
     url: SITE_URL,
-    siteName: "Islamic Dream Knowledge Base",
+    siteName: SITE_NAME,
     type: "website"
   },
   twitter: {
@@ -33,30 +34,21 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="hero">
+      <section className="hero hero--home">
         <div className="shell">
-          <span className="hero__eyebrow">Knowledge base · Phase 2</span>
-          <h1>Islamic Dream Interpretation</h1>
+          <h1>Islamic Dream Interpretation &amp; Reflection</h1>
           <p className="hero__lead">
-            A growing reference of dream symbols as recorded in the Islamic
-            tradition — organized from the knowledge base, not invented.
+            Reflect on your dream through Islamic traditions.
           </p>
-          <div className="hero__note">
-            What you read here is a collection of traditional interpretations,
-            not a prediction of your future. Classical references are shown as{" "}
-            <em>pending verification</em> until a human editor reviews the
-            source.
+          <p className="hero__sub">
+            Describe what you remember and receive a gentle, personal
+            reflection.
+          </p>
+          <div className="hero__ritual">
+            <RitualFlow />
           </div>
-          <div className="hero__cta">
-            <Link href="/interpreter" className="hero__cta-btn">
-              Try the AI Dream Interpreter
-            </Link>
-            <Link href="/#dreams" className="hero__cta-secondary">
-              Browse dream pages
-            </Link>
-          </div>
-          <p style={{ marginTop: 22, fontSize: 13, color: "var(--ink-faint)" }}>
-            Last updated: August 5, 2026
+          <p className="hero__browse">
+            <Link href="/#dreams">Browse dream pages</Link>
           </p>
         </div>
       </section>
@@ -66,7 +58,7 @@ export default function HomePage() {
           <div className="section__head">
             <h2>Dream pages</h2>
             <span className="rule" />
-            <span className="section__sub">{pages.length} validation pages</span>
+            <span className="section__sub">{pages.length} pages</span>
           </div>
           <div className="dream-grid">
             {pages.map(({ page, entity }, i) => (

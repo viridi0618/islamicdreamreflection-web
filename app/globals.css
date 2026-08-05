@@ -169,6 +169,38 @@ a:hover {
   font-size: 18px;
 }
 
+.hero__sub {
+  max-width: 640px;
+  margin: 10px auto 0;
+  color: var(--ink-faint);
+  font-size: 15px;
+}
+
+.hero--home {
+  padding: 60px 0 16px;
+}
+
+.hero--home .hero__ritual {
+  margin-top: 34px;
+}
+
+.hero--home .hero__browse {
+  margin: 26px 0 0;
+}
+
+.hero--home .hero__browse a {
+  color: var(--ink-faint);
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero--home .hero__browse a:hover {
+  color: var(--green-700);
+  border-color: var(--green-700);
+}
+
 .hero__note {
   max-width: 620px;
   margin: 22px auto 0;

@@ -1,7 +1,7 @@
 import type { DreamEntity } from "@/lib/data";
 
 const VERIFICATION_NOTE =
-  "Traditional readings for this scenario are pending verification. Nothing on this page is asserted as Islamic doctrine until a human editor reviews the cited source.";
+  "Dream readings vary by context, personal circumstances and tradition. These variations are presented as traditional perspectives, not certain conclusions.";
 
 export function Scenarios({ entity }: { entity: DreamEntity }) {
   const scenarios = entity.related.slice(0, 5);
@@ -19,7 +19,6 @@ export function Scenarios({ entity }: { entity: DreamEntity }) {
             A common dream variation. How the symbol appears, what happens in
             the dream, and how you feel afterwards all shape the reading.
           </p>
-          <span className="pending-tag">▲ needs verification</span>
         </article>
       ))}
       <div className="notice" style={{ marginTop: 22 }}>
