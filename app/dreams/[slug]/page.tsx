@@ -107,8 +107,14 @@ export default async function DreamPage({
               color: "var(--ink-faint)"
             }}
           >
-            Last updated: August 5, 2026 · Reviewed by the Islamic Dream
-            Reflection Editorial Team
+            {entity.review_status !== "draft" && entity.last_reviewed ? (
+              <>
+                Last reviewed: {entity.last_reviewed} · Reviewed by the Islamic
+                Dream Reflection Editorial Team
+              </>
+            ) : (
+              <>Last updated: {LAST_UPDATED}</>
+            )}
           </p>
         </section>
 

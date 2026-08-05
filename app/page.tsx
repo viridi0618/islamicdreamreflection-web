@@ -73,7 +73,11 @@ export default function HomePage() {
                 </div>
                 <h3>{page.title}</h3>
                 <p>
-                  {(entity.interpretation.general?.[0] ?? "").slice(0, 120)}…
+                  {(
+                    entity.traditional_notes?.[1] ??
+                    entity.interpretation.general?.[0] ??
+                    ""
+                  ).slice(0, 120)}…
                 </p>
                 <span className="dream-card__link">Read interpretation →</span>
               </Link>

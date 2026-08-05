@@ -206,6 +206,11 @@ a:hover {
   font-size: 14px;
   font-weight: 600;
   user-select: none;
+  list-style: none;
+}
+
+.ritual-optional__summary::-webkit-details-marker {
+  display: none;
 }
 
 .ritual-optional__summary:hover {

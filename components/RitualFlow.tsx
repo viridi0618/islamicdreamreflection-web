@@ -203,7 +203,7 @@ export function RitualFlow({ initialSymbol, entryPoint = "interpreter" }: Ritual
             className="interp-form__textarea ritual__textarea"
           />
 
-          <details className="ritual-optional" open={false}>
+          <details className="ritual-optional">
             <summary className="ritual-optional__summary">
               Add optional context <span aria-hidden="true">▾</span>
             </summary>
