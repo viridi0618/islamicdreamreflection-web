@@ -1,16 +1,28 @@
 /**
  * Data access layer. Reads the knowledge base JSON artifacts at build time.
  *
- * The web app lives at <repo>/web while the data layer lives at <repo>/data,
- * so all readers resolve ../data from process.cwd() (the web project root
- * during `next build`).
+ * The web app can be deployed two ways:
+ *  - monorepo layout:  <repo>/web (app) + <repo>/data (knowledge base)
+ *  - standalone layout: <root>/ (app) + <root>/data (knowledge base)
+ * Resolve the data directory against the first layout that exists, so the
+ * same code builds in both.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { ENABLED_PAGES, type PageConfig } from "./site";
 export { categoryLabel } from "./labels";
 
-export const DATA_DIR = path.resolve(process.cwd(), "../data");
+function resolveDataDir(): string {
+  const cwd = process.cwd();
+  const candidates = [path.join(cwd, "data"), path.join(cwd, "../data")];
+  for (const dir of candidates) {
+    if (fs.existsSync(path.join(dir, "dreams"))) return dir;
+  }
+  // Fall back to the monorepo default; callers surface a clear error later.
+  return candidates[1];
+}
+
+export const DATA_DIR = resolveDataDir();
 const DREAMS_DIR = path.join(DATA_DIR, "dreams");
 
 export interface ClassicalSourceRef {
