@@ -151,27 +151,6 @@ export default async function DreamPage({
           <ClassicalReferences entity={entity} />
         </section>
 
-        <section className="section" id="sources">
-          <div className="section__head">
-            <h2>Sources &amp; Traditional References</h2>
-            <span className="rule" />
-          </div>
-          <div className="prose">
-            <p>Traditional sources referenced:</p>
-            <ul>
-              <li>
-                Classical Islamic dream interpretation traditions associated
-                with Ibn Sirin
-              </li>
-              <li>Al-Nabulsi&apos;s works on dream symbolism</li>
-            </ul>
-            <p>
-              These references represent historical perspectives and are not
-              religious rulings.
-            </p>
-          </div>
-        </section>
-
         <section className="section" id="reflection-questions">
           <div className="section__head">
             <h2>Reflection questions</h2>

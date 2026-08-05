@@ -45,7 +45,7 @@ export default function HomePage() {
             reflection.
           </p>
           <div className="hero__ritual">
-            <RitualFlow />
+            <RitualFlow entryPoint="home" />
           </div>
           <p className="hero__browse">
             <Link href="/#dreams">Browse dream pages</Link>
@@ -58,7 +58,7 @@ export default function HomePage() {
           <div className="section__head">
             <h2>Dream pages</h2>
             <span className="rule" />
-            <span className="section__sub">{pages.length} pages</span>
+            <span className="section__sub">{pages.length} symbols</span>
           </div>
           <div className="dream-grid">
             {pages.map(({ page, entity }, i) => (
@@ -70,9 +70,6 @@ export default function HomePage() {
               >
                 <div className="dream-card__top">
                   <span className="dream-card__cat">{entity.category}</span>
-                  <span className="dream-card__vol">
-                    {entity.volumeClass === "high" ? "High demand" : "Search demand"}
-                  </span>
                 </div>
                 <h3>{page.title}</h3>
                 <p>
@@ -91,7 +88,7 @@ export default function HomePage() {
             <h2>Browse by category</h2>
             <span className="rule" />
             <span className="section__sub">
-              {categoryEntries.length} categories · themes from the taxonomy
+              {categoryEntries.length} categories · common dream themes
             </span>
           </div>
           <div className="cat-strip">
@@ -102,9 +99,6 @@ export default function HomePage() {
               </span>
             ))}
           </div>
-          <p style={{ textAlign: "center", color: "var(--ink-faint)", fontSize: 14 }}>
-            Category landing pages ship after validation of the first dream pages.
-          </p>
         </div>
       </section>
     </>

@@ -1,4 +1,5 @@
 import type { DreamEntity } from "@/lib/data";
+import { sourceStatusLabel } from "@/lib/source-status";
 
 export function ClassicalReferences({ entity }: { entity: DreamEntity }) {
   const sources = entity.classical_sources ?? [];
@@ -18,13 +19,21 @@ export function ClassicalReferences({ entity }: { entity: DreamEntity }) {
           </tr>
         </thead>
         <tbody>
-          {sources.map((s) => (
-            <tr key={s.name}>
-              <td>{s.name}</td>
-              <td>{s.reference}</td>
-              <td className="status">historical perspective</td>
-            </tr>
-          ))}
+          {sources.map((s) => {
+            const reference =
+              !s.reference ||
+              s.reference.toLowerCase() === "pending verification"
+                ? "—"
+                : s.reference;
+            const status = sourceStatusLabel(s.status ?? "pending");
+            return (
+              <tr key={s.name}>
+                <td>{s.name}</td>
+                <td>{reference}</td>
+                <td className="status">{status}</td>
+              </tr>
+            );
+          })}
           {sources.length === 0 && (
             <tr>
               <td colSpan={3}>No classical source recorded yet.</td>

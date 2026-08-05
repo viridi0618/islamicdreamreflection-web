@@ -38,9 +38,11 @@ const PROCESSING_MESSAGES = [
 export interface RitualFlowProps {
   /** Pre-selected symbol from an SEO page link (/interpreter?symbol=snake). */
   initialSymbol?: string;
+  /** Entry point for analytics (e.g. "home" or "interpreter"). */
+  entryPoint?: string;
 }
 
-export function RitualFlow({ initialSymbol }: RitualFlowProps) {
+export function RitualFlow({ initialSymbol, entryPoint = "interpreter" }: RitualFlowProps) {
   const [step, setStep] = useState<Step>("dream");
   const [context, setContext] = useState<DreamContext>(EMPTY_CONTEXT);
   const [dreamTitle, setDreamTitle] = useState("");
@@ -56,8 +58,8 @@ export function RitualFlow({ initialSymbol }: RitualFlowProps) {
 
   // Funnel start.
   useEffect(() => {
-    track("interpreter_open");
-  }, []);
+    track("interpreter_open", { source: entryPoint });
+  }, [entryPoint]);
 
   // Seed the dream input when arriving from an SEO page.
   useEffect(() => {
@@ -188,19 +190,6 @@ export function RitualFlow({ initialSymbol }: RitualFlowProps) {
             }
           }}
         >
-          <label className="interp-form__label" htmlFor="ritual-title">
-            Give your dream a name (optional)
-          </label>
-          <input
-            id="ritual-title"
-            type="text"
-            value={dreamTitle}
-            onChange={(e) => handleTitleChange(e.target.value)}
-            placeholder="My dream"
-            maxLength={60}
-            className="ritual-title__input"
-          />
-
           <label className="interp-form__label" htmlFor="ritual-dream">
             Describe your dream
           </label>
@@ -214,45 +203,66 @@ export function RitualFlow({ initialSymbol }: RitualFlowProps) {
             className="interp-form__textarea ritual__textarea"
           />
 
-          <fieldset className="ritual-group ritual-group--optional">
-            <legend>What part of life feels connected? <em>(optional)</em></legend>
-            <div className="option-row">
-              {FOCUS_OPTIONS.map((opt) => {
-                const selected = context.focus.includes(opt.id);
-                return (
-                  <button
-                    key={opt.id}
-                    type="button"
-                    className={`option-chip${selected ? " option-chip--selected" : ""}`}
-                    onClick={() => toggleFocus(opt.id)}
-                    aria-pressed={selected}
-                  >
-                    <span aria-hidden="true">{opt.icon}</span> {opt.title}
-                  </button>
-                );
-              })}
-            </div>
-          </fieldset>
+          <details className="ritual-optional" open={false}>
+            <summary className="ritual-optional__summary">
+              Add optional context <span aria-hidden="true">▾</span>
+            </summary>
 
-          <fieldset className="ritual-group ritual-group--optional">
-            <legend>How did the dream feel? <em>(optional)</em></legend>
-            <div className="option-row">
-              {EMOTION_OPTIONS.map((opt) => {
-                const selected = context.emotion.includes(opt.value);
-                return (
-                  <button
-                    key={opt.value}
-                    type="button"
-                    className={`option-chip${selected ? " option-chip--selected" : ""}`}
-                    onClick={() => toggleEmotion(opt.value)}
-                    aria-pressed={selected}
-                  >
-                    <span aria-hidden="true">{opt.icon}</span> {opt.label}
-                  </button>
-                );
-              })}
+            <div className="ritual-optional__body">
+              <label className="interp-form__label" htmlFor="ritual-title">
+                Give your dream a name (optional)
+              </label>
+              <input
+                id="ritual-title"
+                type="text"
+                value={dreamTitle}
+                onChange={(e) => handleTitleChange(e.target.value)}
+                placeholder="My dream"
+                maxLength={60}
+                className="ritual-title__input"
+              />
+
+              <fieldset className="ritual-group ritual-group--optional">
+                <legend>What part of life feels connected? <em>(optional)</em></legend>
+                <div className="option-row">
+                  {FOCUS_OPTIONS.map((opt) => {
+                    const selected = context.focus.includes(opt.id);
+                    return (
+                      <button
+                        key={opt.id}
+                        type="button"
+                        className={`option-chip${selected ? " option-chip--selected" : ""}`}
+                        onClick={() => toggleFocus(opt.id)}
+                        aria-pressed={selected}
+                      >
+                        <span aria-hidden="true">{opt.icon}</span> {opt.title}
+                      </button>
+                    );
+                  })}
+                </div>
+              </fieldset>
+
+              <fieldset className="ritual-group ritual-group--optional">
+                <legend>How did the dream feel? <em>(optional)</em></legend>
+                <div className="option-row">
+                  {EMOTION_OPTIONS.map((opt) => {
+                    const selected = context.emotion.includes(opt.value);
+                    return (
+                      <button
+                        key={opt.value}
+                        type="button"
+                        className={`option-chip${selected ? " option-chip--selected" : ""}`}
+                        onClick={() => toggleEmotion(opt.value)}
+                        aria-pressed={selected}
+                      >
+                        <span aria-hidden="true">{opt.icon}</span> {opt.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </fieldset>
             </div>
-          </fieldset>
+          </details>
 
           {error && <div className="chat__error" role="alert">{error}</div>}
 

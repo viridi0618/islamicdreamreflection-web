@@ -184,6 +184,47 @@ a:hover {
   margin-top: 34px;
 }
 
+.hero--home .ritual {
+  text-align: left;
+}
+
+.hero--home .ritual__head,
+.hero--home .ritual--processing {
+  text-align: center;
+}
+
+.hero--home .ritual-optional {
+  margin: 18px 0;
+}
+
+.ritual-optional__summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: var(--green-700);
+  font-size: 14px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.ritual-optional__summary:hover {
+  color: var(--green-900);
+}
+
+.ritual-optional__body {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 12px;
+  background: rgba(250, 246, 236, 0.5);
+}
+
+.ritual-optional[open] .ritual-optional__summary span {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
 .hero--home .hero__browse {
   margin: 26px 0 0;
 }
