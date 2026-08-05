@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",
+    "validate:content": "node scripts/validate-content.mjs",
     "verify:dream-ai": "node scripts/verify-dream-ai.mjs"
   },
   "dependencies": {

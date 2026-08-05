@@ -40,6 +40,55 @@ export interface ClassicalSourceRef {
 
 export type ReviewStatus = "draft" | "reviewed" | "verified";
 
+/** Evidence type for a themed interpretation block (Phase B content model). */
+export type EvidenceType =
+  | "quran"
+  | "hadith"
+  | "classical-tradition"
+  | "editorial-reflection";
+
+export interface DreamArticleTheme {
+  id: string;
+  title: string;
+  summary: string;
+  body: string[];
+  evidenceType: EvidenceType;
+  sourceIds?: string[];
+}
+
+export interface DreamArticleScenario {
+  id: string;
+  title: string;
+  summary: string;
+  body: string[];
+  positiveReading?: string;
+  cautionaryReading?: string;
+  doesNotProve?: string[];
+  sourceIds?: string[];
+  relatedGuide?: {
+    href: string;
+    label: string;
+  };
+}
+
+export interface DreamArticleContent {
+  quickAnswer: string;
+  introduction: string[];
+  beforeInterpreting: Array<{ title: string; body: string }>;
+  themes: DreamArticleTheme[];
+  contextQuestions: string[];
+  scenarios: DreamArticleScenario[];
+  doesNotProve: string[];
+  actionsAfterDream: Array<{ title: string; body: string; sourceIds?: string[] }>;
+  classicalNotes?: Array<{ title: string; body: string[]; sourceIds: string[] }>;
+  contextualLinks: Array<{
+    placement: string;
+    href: string;
+    anchor: string;
+    reason: string;
+  }>;
+}
+
 export interface DreamEntity {
   id: string;
   name: string;
@@ -61,6 +110,8 @@ export interface DreamEntity {
   review_status?: ReviewStatus;
   last_reviewed?: string | null;
   review_notes?: string;
+  /** Full article content (Phase B pillar-page model). */
+  article?: DreamArticleContent;
 }
 
 export interface CategoryCatalog {

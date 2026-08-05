@@ -26,6 +26,24 @@ export function webSiteSchema(): Record<string, unknown> {
   };
 }
 
+/** Rough word count of the visible article body for schema wordCount. */
+function articleWordCount(entity: DreamEntity): number {
+  let text = entity.interpretation.general.join(" ") + " " +
+    entity.interpretation.positive.join(" ") + " " +
+    entity.interpretation.negative.join(" ") + " " +
+    (entity.traditional_notes ?? []).join(" ");
+  if (entity.article) {
+    const a = entity.article;
+    text += " " + a.quickAnswer + " " + a.introduction.join(" ") + " " +
+      a.beforeInterpreting.map((b) => b.title + " " + b.body).join(" ") + " " +
+      a.themes.map((t) => t.title + " " + t.summary + " " + t.body.join(" ")).join(" ") + " " +
+      a.scenarios.map((s) => s.title + " " + s.summary + " " + s.body.join(" ")).join(" ") + " " +
+      a.doesNotProve.join(" ") + " " +
+      a.actionsAfterDream.map((x) => x.title + " " + x.body).join(" ");
+  }
+  return text.split(/\s+/).filter(Boolean).length;
+}
+
 export function articleSchema(params: {
   title: string;
   slug: string;
@@ -41,14 +59,21 @@ export function articleSchema(params: {
     url: `${SITE_URL}/dreams/${params.slug}`,
     datePublished: params.datePublished,
     dateModified: params.dateModified,
+    mainEntityOfPage: `${SITE_URL}/dreams/${params.slug}`,
     about: params.entity.name,
     articleSection: params.entity.category,
     keywords: params.entity.keywords.join(", "),
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: `${SITE_URL}/about`
+    },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL
     },
+    wordCount: articleWordCount(params.entity),
     inLanguage: "en"
   };
 }

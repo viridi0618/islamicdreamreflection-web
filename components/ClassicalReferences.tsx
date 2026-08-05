@@ -1,8 +1,38 @@
+import Link from "next/link";
 import type { DreamEntity } from "@/lib/data";
-import { sourceStatusLabel } from "@/lib/source-status";
 
+const PUBLIC_STATUSES = new Set(["reviewed", "verified"]);
+
+/**
+ * Public classical sources table.
+ *
+ * Only sources whose status is "reviewed" or "verified" are shown. Pending
+ * or draft sources stay internal (editorial tooling) and are never surfaced
+ * on the public page. When no public source exists, a brief methodology note
+ * is shown instead of an empty table.
+ */
 export function ClassicalReferences({ entity }: { entity: DreamEntity }) {
-  const sources = entity.classical_sources ?? [];
+  const sources = (entity.classical_sources ?? []).filter((s) =>
+    PUBLIC_STATUSES.has(s.status ?? "")
+  );
+
+  if (sources.length === 0) {
+    return (
+      <div className="prose">
+        <p>
+          <strong>About the sources</strong>
+        </p>
+        <p>
+          This page separates directly referenced Qur’an and Hadith material
+          from later interpretive traditions and personal reflection.{" "}
+          <Link href="/sources-methodology">
+            Learn how sources are reviewed.
+          </Link>
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="prose">
       <p>
@@ -19,26 +49,15 @@ export function ClassicalReferences({ entity }: { entity: DreamEntity }) {
           </tr>
         </thead>
         <tbody>
-          {sources.map((s) => {
-            const reference =
-              !s.reference ||
-              s.reference.toLowerCase() === "pending verification"
-                ? "—"
-                : s.reference;
-            const status = sourceStatusLabel(s.status ?? "pending");
-            return (
-              <tr key={s.name}>
-                <td>{s.name}</td>
-                <td>{reference}</td>
-                <td className="status">{status}</td>
-              </tr>
-            );
-          })}
-          {sources.length === 0 && (
-            <tr>
-              <td colSpan={3}>No classical source recorded yet.</td>
+          {sources.map((s) => (
+            <tr key={s.name}>
+              <td>{s.name}</td>
+              <td>{s.reference}</td>
+              <td className="status">
+                {s.status === "verified" ? "Verified reference" : "Reviewed reference"}
+              </td>
             </tr>
-          )}
+          ))}
         </tbody>
       </table>
     </div>

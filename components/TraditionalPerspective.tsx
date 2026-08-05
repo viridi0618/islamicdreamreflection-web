@@ -97,7 +97,7 @@ export function TraditionalPerspective({ symbols }: TraditionalPerspectiveProps)
                     <li key={i} className="tp-source-item">
                       <span className="tp-source-name">{src.tradition ?? src.name}</span>
                       <span className={`tp-source-dot tp-source-dot--${src.status}`}>
-                        {src.status === "pending" ? "Under Source Review" : src.status}
+                        {src.status === "pending" ? "Classical tradition" : src.status}
                       </span>
                       {src.notes && <span className="tp-source-notes">{src.notes}</span>}
                     </li>

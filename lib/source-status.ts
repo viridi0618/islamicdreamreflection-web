@@ -27,11 +27,11 @@ export interface SourceStatusInfo {
 export const SOURCE_STATUS_INFO: Record<SourceStatus, SourceStatusInfo> = {
   pending: {
     status: "pending",
-    label: "Under Source Review",
+    label: "Classical Tradition",
     description:
-      "We are organizing classical references carefully before making stronger claims.",
+      "The traditional context is recorded in Islamic dream interpretation literature.",
     why:
-      "Islamic dream traditions contain many historical discussions. We separate documented references from personal reflection."
+      "Islamic dream traditions contain many historical discussions. Documented references are separated from personal reflection."
   },
   reviewed: {
     status: "reviewed",
@@ -39,7 +39,7 @@ export const SOURCE_STATUS_INFO: Record<SourceStatus, SourceStatusInfo> = {
     description:
       "This interpretation has been reviewed for consistency with Islamic dream traditions.",
     why:
-      "Our editors have cross-checked this symbol's traditional context against available references."
+      "Our editors have checked this symbol's traditional context against available references."
   },
   verified: {
     status: "verified",

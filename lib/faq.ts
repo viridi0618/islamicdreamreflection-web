@@ -102,9 +102,9 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         id: "what-does-under-source-review-mean",
-        question: "What does \u201cUnder Source Review\u201d mean?",
+        question: "How are the traditional sources on this site reviewed?",
         answer:
-          "It means the source tradition is recorded in the knowledge base, but the specific citation is still being organized or cross-checked. It does not mean the symbol has a verified, exact quotation from an original text."
+          "Traditional perspectives come from Islamic dream interpretation literature. A tradition name is shown only when the data supports it, and exact quotations are included only after they have been checked against a source. We do not claim that every reference has been directly verified against original manuscripts."
       },
       {
         id: "all-interpretations-attributed-to-ibn-sirin",

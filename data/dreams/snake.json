@@ -12,20 +12,20 @@
     {
       "name": "Ibn Sirin tradition",
       "tradition": "Ibn Sirin tradition",
-      "reference": "pending verification",
+      "reference": "Later compiled dream manual traditionally attributed to Ibn Sirin",
       "status": "pending",
-      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+      "notes": "Attribution is disputed and the surviving text is a later compilation; not surfaced publicly until a precise edition is checked."
     }
   ],
   "traditional_notes": [
-    "Snakes are one of the most common dream symbols; classical readings differ sharply by context such as color, action and location. Specific Islamic meanings require verification against cited classical sources.",
-    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+    "Snakes appear in dreams in many traditions and readings differ sharply by context such as colour, action and location.",
+    "This symbol is referenced in Islamic dream interpretation traditions. Specific meanings depend on the dream's context, the dreamer's circumstances, and the details of the dream itself."
   ],
   "interpretation": {
     "positive": [],
     "negative": [],
     "general": [
-      "Snakes are one of the most common dream symbols; classical readings differ sharply by context such as color, action and location. Specific Islamic meanings require verification against cited classical sources."
+      "Snake dreams are among the most common dream reports. Islamic readings vary by context, action and feeling, and no single fixed meaning applies to every snake dream."
     ]
   },
   "related": [
@@ -38,5 +38,251 @@
   "status": "needs verification",
   "review_status": "draft",
   "last_reviewed": null,
-  "review_notes": ""
+  "review_notes": "",
+  "article": {
+    "quickAnswer": "Snake dreams are common and their readings vary widely with context. In Islamic dream interpretation traditions, the meaning depends on what the snake was doing, where it appeared, how you felt, and what is happening in your life. A snake dream may be explored as a reflection of fear, a conflict or boundary in your life, a sense of change, or stress — but no single reading applies to every dream. A snake dream does not automatically prove that a specific person is an enemy, that something hidden is happening, or that an event is about to occur. The Islamic tradition is careful not to turn ordinary dreams into certainties, and it offers gentle guidance for dreams that disturb you.",
+    "introduction": [
+      "Snakes are among the most frequently reported dream symbols, and they are also among the ones people most often worry about. The tradition does not offer one fixed meaning for a snake: readings shift with the snake's colour, its action, the place where it appears, and the feelings of the dreamer.",
+      "This guide separates three things clearly: what the Islamic tradition actually says about dreams in general, later interpretive traditions that mention snakes, and the personal reflection that only you can add from your own life."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Was the dream clear or repeated?",
+        "body": "A single vivid dream and a dream that returns many times deserve different weight. A repeating dream may point to something your mind is working through, rather than to a hidden sign."
+      },
+      {
+        "title": "Was the snake attacking?",
+        "body": "A snake that bites or chases is a different experience from one that is seen calmly at a distance. The action is often more important than the symbol itself."
+      },
+      {
+        "title": "Where did the snake appear?",
+        "body": "A snake in your home, in a garden, in water, or in an unfamiliar place each carries a different feeling. Location shapes what the dream may reflect about your daily life."
+      },
+      {
+        "title": "How did you feel in the dream and after waking?",
+        "body": "Fear, calm, curiosity, or even fascination change how the dream is best understood. The feeling you carried into the day is part of the context."
+      },
+      {
+        "title": "Had you recently seen or discussed snakes?",
+        "body": "Films, news, conversations or places you visited can surface in dreams. When a snake appears without emotion, it may simply be a replay of daily experience."
+      },
+      {
+        "title": "Is there stress in your life right now?",
+        "body": "Many snake dreams come during stressful periods. The dream may reflect pressure, a difficult conversation you are avoiding, or a boundary that feels crossed."
+      }
+    ],
+    "themes": [
+      {
+        "id": "fear-and-perceived-threat",
+        "title": "Fear and perceived threat",
+        "summary": "A snake dream often appears alongside a feeling of danger or unease about something in daily life.",
+        "body": [
+          "In many traditions, a snake is associated with caution and with things that feel threatening. When the dream is frightening, the tradition's first guidance is about the dream itself: a disturbing dream is not treated as a fixed sign, and the recommended response is calm and seeking refuge in Allah.",
+          "In personal reflection, a threatening snake may point to a person, situation or responsibility you experience as pressuring you. The dream does not identify who or what that is — only your life can do that."
+        ],
+        "evidenceType": "editorial-reflection",
+        "sourceIds": ["bukhari-6986", "bukhari-6990"]
+      },
+      {
+        "id": "conflict-and-boundaries",
+        "title": "Conflict and boundaries",
+        "summary": "Snakes in dreams are sometimes explored as images of conflict, competition, or crossed boundaries.",
+        "body": [
+          "Later interpretive traditions frequently discuss snakes in the context of enmity or disputes, but those readings were recorded for specific contexts and were never a fixed dictionary. The tradition itself warns against turning such readings into certainties about real people.",
+          "A more careful reflection is that a snake dream may mirror a conflict you are navigating — at work, in family, or with yourself — especially when the dream involves being cornered, chased, or bitten."
+        ],
+        "evidenceType": "classical-tradition",
+        "sourceIds": []
+      },
+      {
+        "id": "change-and-transformation",
+        "title": "Change and transformation",
+        "summary": "Because a snake sheds its skin, modern reflection often connects snake dreams with change, healing, or a new phase.",
+        "body": [
+          "This association comes mainly from modern psychological reflection rather than from classical Islamic dream literature, and it is presented here as a personal reflection tool, not as an Islamic meaning.",
+          "If you are going through a transition — a new job, a move, the end of a relationship, a health journey — a snake dream may simply accompany that change. The dream is a mirror of your process, not a verdict about it."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "hidden-concerns",
+        "title": "Hidden concerns",
+        "summary": "Some people worry that a snake dream means something hidden or supernatural. The tradition is more careful than that.",
+        "body": [
+          "In popular culture, snakes in dreams are sometimes linked to hidden enemies, magic, or the unseen. Classical Islamic dream literature does discuss such themes, but always tied to specific dream details and never as a blanket meaning for every snake.",
+          "The Qur'an and hadith guide believers not to treat disturbing dreams as signs of the unseen. If a snake dream leaves you worried about magic or hidden harm, the traditional response is to seek refuge in Allah and to bring the worry to someone you trust — not to conclude that the dream proves it."
+        ],
+        "evidenceType": "classical-tradition",
+        "sourceIds": ["bukhari-6986"]
+      },
+      {
+        "id": "strength-and-confrontation",
+        "title": "Strength and confrontation",
+        "summary": "Dreams of standing up to or overcoming a snake can reflect courage and the resolve to face something difficult.",
+        "body": [
+          "A dream in which you confront a snake calmly, or protect someone from it, may be explored as an image of your own strength. This reading is a personal reflection — it is not a classical Islamic meaning assigned to snake dreams as a rule.",
+          "The value of this reflection is practical: it can help you name what you are ready to face, and what support you need."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "stress-related-imagery",
+        "title": "Stress-related imagery",
+        "summary": "Snake dreams often increase during stressful periods and may reflect physical tension or worry.",
+        "body": [
+          "Sleep researchers and therapists note that vivid, unsettling dreams — including snakes — become more frequent under stress, fatigue, or irregular sleep. This is a modern psychological observation, separate from religious interpretation.",
+          "If snake dreams cluster during a demanding period, rest, routine and talking about the pressure may change your dreams more than any interpretation would."
+        ],
+        "evidenceType": "editorial-reflection"
+      }
+    ],
+    "contextQuestions": [
+      "Which part of the dream stayed with you most after waking — the snake, the place, or the feeling?",
+      "Does the dream echo a situation in your life where you feel threatened, pressured, or cornered?",
+      "If the snake did not harm you, what was it doing, and how did you respond?",
+      "What would the dream be saying if it were simply a picture of how you have been feeling lately?"
+    ],
+    "scenarios": [
+      {
+        "id": "snake-bite",
+        "title": "Snake bite",
+        "summary": "A bite is the most emotionally charged snake scenario, and it is usually read through fear and consequence.",
+        "body": [
+          "A snake bite in a dream is often a very vivid experience. In personal reflection, it may point to something that felt harmful or wounding in your life — a remark, a setback, or a situation that left you feeling hurt or exposed.",
+          "In the Islamic tradition, a bite does not automatically carry a single meaning such as 'an enemy will harm you'. It is read together with where the bite happened, who was present, and how you responded afterwards."
+        ],
+        "positiveReading": "If you survived or recovered in the dream, it may reflect resilience and the process of healing from something that hurt you.",
+        "cautionaryReading": "A bite may reflect a real conflict or danger you feel in your daily life, and it may be worth addressing it directly rather than only reading the dream.",
+        "doesNotProve": [
+          "That a specific person will harm you",
+          "That harm is about to occur in reality"
+        ]
+      },
+      {
+        "id": "black-snake",
+        "title": "Black snake",
+        "summary": "Colour changes the feeling of the dream but does not fix its meaning.",
+        "body": [
+          "A black snake often feels more ominous, and many traditions associate darker colours with more caution. However, the same tradition also stresses that context matters more than colour alone: a calm black snake in a dream can feel very different from an aggressive one.",
+          "Rather than concluding that a black snake 'means' a specific thing, reflect on what felt dark or unknown in your life at the time of the dream."
+        ],
+        "positiveReading": "A black snake seen calmly from a distance can reflect facing something that once felt frightening, without being harmed.",
+        "cautionaryReading": "The darkness of the snake may echo an area of your life you are avoiding or do not fully understand.",
+        "doesNotProve": [
+          "The presence of magic or hidden harm",
+          "That something evil is attached to you"
+        ],
+        "relatedGuide": {
+          "href": "/guides/what-to-do-after-a-bad-dream",
+          "label": "What to Do After a Bad Dream"
+        }
+      },
+      {
+        "id": "killing-snake",
+        "title": "Killing a snake",
+        "summary": "Overcoming or killing a snake is often explored as an image of confronting a fear or ending a conflict.",
+        "body": [
+          "Dreams in which you kill a snake commonly carry a feeling of relief or victory. In personal reflection, this may mirror ending something that was troubling you — leaving a stressful situation, winning an argument, or finally addressing a problem.",
+          "The tradition does not present this as 'you have defeated an enemy'. It is better read as a picture of your own sense of agency and resolve."
+        ],
+        "positiveReading": "A sense of relief after killing the snake can reflect resolution of a conflict or fear in your life.",
+        "cautionaryReading": "If the dream felt disturbing rather than relieving, it may reflect aggression you are carrying or a conflict that is not truly finished.",
+        "doesNotProve": [
+          "That you have a real enemy who is now defeated",
+          "That violence or confrontation is being praised"
+        ]
+      },
+      {
+        "id": "snake-in-house",
+        "title": "Snake in the house",
+        "summary": "A snake inside the home brings the symbol into the space of family and private life.",
+        "body": [
+          "When the snake is inside your house, the dream is often read in relation to your home life — family, privacy, or a situation 'inside' your personal world. Where in the house the snake was, and whether it was aggressive, matters more than the snake itself.",
+          "In reflection, this may point to tension within the household, or to something at home that feels invasive, unresolved, or hard to ignore."
+        ],
+        "positiveReading": "If you calmly removed or avoided the snake, the dream may reflect handling a domestic concern with composure.",
+        "cautionaryReading": "A snake in the home may reflect unease about someone or something within your private life that needs honest attention.",
+        "doesNotProve": [
+          "That a family member is an enemy",
+          "That your home is under spiritual threat"
+        ]
+      },
+      {
+        "id": "green-snake",
+        "title": "Green snake",
+        "summary": "Green is a colour of calm and growth in many traditions, and it changes the dream's tone.",
+        "body": [
+          "Green carries positive associations in Islamic culture and is often described as a colour of nature, calm and growth. A green snake in a dream may therefore feel very different from a dark one — sometimes curious rather than threatening.",
+          "This does not mean a green snake has one fixed meaning. It is an invitation to notice how the colour changed your emotional response, and what growth or quietness might be appearing in your life."
+        ],
+        "positiveReading": "A green snake can be explored as a symbol of renewal, growth, or a healing period in your life.",
+        "cautionaryReading": "Even a calm green snake may still point to something you are watching cautiously — growth can be welcome and uncomfortable at the same time.",
+        "doesNotProve": [
+          "That the dream is a guaranteed sign of good fortune",
+          "That every green snake dream carries the same meaning"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That a specific person is your enemy. A snake dream is not evidence against any real individual, and the tradition explicitly guards against turning dreams into accusations.",
+      "The presence of sihr (magic). Worrying about magic based on a dream can become a source of fear; the traditional response to a disturbing dream is seeking refuge in Allah, not concluding that magic is at work.",
+      "The presence of jinn. Dreams about snakes are common and are not treated in the tradition as proof of the unseen.",
+      "That a disaster is about to happen. A frightening dream is not a forecast, and the tradition is explicit that bad dreams are not used to predict events.",
+      "That the dream is necessarily a premonition. The Qur'an and hadith describe dreams of different types — from Allah, from Satan, and from the self — and only some dreams carry the weight of meaning."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Write the dream down while it is fresh",
+        "body": "Note the snake's colour, what it did, where it was, and how you felt. The details you record today are the context you can reflect on calmly tomorrow."
+      },
+      {
+        "title": "Separate the dream feeling from the waking feeling",
+        "body": "Fear inside a dream and fear after waking are different. Ask what is still affecting you during the day — that is usually where the real work is."
+      },
+      {
+        "title": "Do not accuse anyone based on the dream",
+        "body": "A snake dream does not identify a real person. If a relationship concern surfaces, address it directly and honestly rather than through the dream."
+      },
+      {
+        "title": "Follow the traditional etiquette for a disturbing dream",
+        "body": "If the dream frightened you, the tradition teaches to seek refuge in Allah from its evil and not to dwell on it.",
+        "sourceIds": ["bukhari-6986", "bukhari-6990"]
+      },
+      {
+        "title": "Reach out if the dream keeps affecting you",
+        "body": "If snake dreams are frequent and disturb your sleep or mood, they may reflect stress or worry. Talking with someone you trust, or a professional if needed, is a reasonable and healthy step."
+      },
+      {
+        "title": "For religious questions, ask a qualified scholar",
+        "body": "Questions about religious obligations, rulings, or the unseen are beyond the scope of this website and are best brought to a qualified scholar."
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the dream frightened you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides the traditional etiquette for a disturbing dream."
+      },
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "If you are unsure whether this dream should be interpreted at all, read The Three Types of Dreams in Islam.",
+        "reason": "Helps the reader decide how much weight to give a dream."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "To understand how sources are selected and reviewed, read Sources and Methodology.",
+        "reason": "Explains the source hierarchy used on this page."
+      },
+      {
+        "placement": "themes",
+        "href": "/guides/dreams-in-the-quran",
+        "anchor": "To see how the Qur'an records dreams and interpretation, read Dreams in the Qur'an: Yusuf, Ibrahim, and Meaningful Visions.",
+        "reason": "Provides the Qur'anic background for dreams and interpretation."
+      }
+    ]
+  }
 }
