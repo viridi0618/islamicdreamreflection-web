@@ -2884,6 +2884,16 @@ a:hover {
   text-decoration: none;
 }
 
+.site-footer__nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.site-footer__nav a:hover {
+  text-decoration: underline;
+}
+
 /* ---------- Motion ---------- */
 
 @keyframes rise {

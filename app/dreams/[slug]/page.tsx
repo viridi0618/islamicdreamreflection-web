@@ -19,7 +19,7 @@ import {
   breadcrumbSchema,
   faqSchema
 } from "@/lib/schema";
-import { PAGE_BY_SLUG, SITE_URL } from "@/lib/site";
+import { PAGE_BY_SLUG, SITE_URL, LAST_UPDATED } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -72,7 +72,7 @@ export default async function DreamPage({
   const faqs = buildFaqs(entity);
 
   const jsonLd = [
-    articleSchema({ title: page.title, slug, entity }),
+    articleSchema({ title: page.title, slug, entity, datePublished: LAST_UPDATED, dateModified: LAST_UPDATED }),
     breadcrumbSchema({ title: page.title, slug }),
     faqSchema(faqs)
   ];
@@ -100,6 +100,17 @@ export default async function DreamPage({
               are marked pending verification.
             </span>
           </div>
+          <p
+            className="page-meta"
+            style={{
+              marginTop: 14,
+              fontSize: 13,
+              color: "var(--ink-faint)"
+            }}
+          >
+            Last updated: August 5, 2026 · Reviewed by the Islamic Dream
+            Reflection Editorial Team
+          </p>
         </section>
 
         <section className="section" aria-label="Dream symbol overview">
@@ -139,6 +150,27 @@ export default async function DreamPage({
             <span className="rule" />
           </div>
           <ClassicalReferences entity={entity} />
+        </section>
+
+        <section className="section" id="sources">
+          <div className="section__head">
+            <h2>Sources &amp; Traditional References</h2>
+            <span className="rule" />
+          </div>
+          <div className="prose">
+            <p>Traditional sources referenced:</p>
+            <ul>
+              <li>
+                Classical Islamic dream interpretation traditions associated
+                with Ibn Sirin
+              </li>
+              <li>Al-Nabulsi&apos;s works on dream symbolism</li>
+            </ul>
+            <p>
+              These references represent historical perspectives and are not
+              religious rulings.
+            </p>
+          </div>
         </section>
 
         <section className="section" id="reflection-questions">

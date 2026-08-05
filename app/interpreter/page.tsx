@@ -35,16 +35,45 @@ export default async function InterpreterPage({
   const knownSymbols = ["snake", "dead-person", "teeth", "water", "pregnancy"];
   const initialSymbol = symbol && knownSymbols.includes(symbol) ? symbol : undefined;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: "Islamic Dream Interpretation AI",
-    url: `${SITE_URL}/interpreter`,
-    applicationCategory: "LifestyleApplication",
-    description:
-      "Describe a dream and receive a structured reflection grounded in an Islamic dream knowledge base.",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }
-  };
+  const faqs = [
+    {
+      question: "Is Islamic dream reflection the same as fortune telling?",
+      answer:
+        "No. This experience is educational. It reflects on dream symbols through Islamic traditions and classical sources, and does not predict the future or issue religious rulings."
+    },
+    {
+      question: "Do you provide a fatwa or religious ruling about dreams?",
+      answer:
+        "No. Dream interpretations on this site are presented as traditional perspectives for reflection and learning. We do not issue fatwas or claim religious authority."
+    },
+    {
+      question: "Where do the interpretations come from?",
+      answer:
+        "The knowledge base draws on classical Islamic dream interpretation traditions (such as those associated with Ibn Sirin and Al-Nabulsi) and clearly marks which references still await human verification."
+    }
+  ];
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Islamic Dream Interpretation AI",
+      url: `${SITE_URL}/interpreter`,
+      applicationCategory: "LifestyleApplication",
+      description:
+        "Describe a dream and receive a structured reflection grounded in an Islamic dream knowledge base.",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: f.answer }
+      }))
+    }
+  ];
 
   return (
     <article className="shell interp-page">
@@ -91,6 +120,9 @@ export default async function InterpreterPage({
         <p className="interp-how__note">
           Every reference shown is marked <em>pending verification</em> until a
           human editor confirms the source. Nothing here is generated free-form.
+        </p>
+        <p style={{ fontSize: 13, color: "var(--ink-faint)" }}>
+          Last updated: August 5, 2026
         </p>
       </section>
     </article>

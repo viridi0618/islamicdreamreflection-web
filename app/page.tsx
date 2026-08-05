@@ -55,6 +55,9 @@ export default function HomePage() {
               Browse dream pages
             </Link>
           </div>
+          <p style={{ marginTop: 22, fontSize: 13, color: "var(--ink-faint)" }}>
+            Last updated: August 5, 2026
+          </p>
         </div>
       </section>
 

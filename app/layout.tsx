@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { organizationSchema, webSiteSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -14,12 +15,18 @@ export const metadata: Metadata = {
   }
 };
 
+const jsonLd = [organizationSchema(), webSiteSchema()];
+
 export default function RootLayout({
   children
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <header className="site-header">
           <div className="shell site-header__inner">
             <Link href="/" className="brand">
@@ -42,6 +49,12 @@ export default function RootLayout({
             <span>
               {SITE_NAME} · Traditional interpretations, not predictions.
             </span>
+            <nav className="site-footer__nav" aria-label="Footer">
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/privacy">Privacy</Link>
+              <Link href="/terms">Terms</Link>
+            </nav>
             <span>
               Classical references are marked{" "}
               <em>pending verification</em> until reviewed.

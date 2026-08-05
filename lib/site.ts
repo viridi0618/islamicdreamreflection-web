@@ -12,6 +12,12 @@ export const SITE_URL =
 
 export const SITE_NAME = "Islamic Dream Knowledge Base";
 
+export const SITE_DESCRIPTION =
+  "An educational dream reflection platform inspired by Islamic traditions and classical scholarship.";
+
+/** ISO date used for datePublished/dateModified across static pages. */
+export const LAST_UPDATED = "2026-08-05";
+
 /**
  * The 5 validation pages for Phase 2. Each entry maps a knowledge-base
  * entity to its public URL slug and H1 title. When validation succeeds this
