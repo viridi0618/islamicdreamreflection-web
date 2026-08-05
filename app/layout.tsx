@@ -33,7 +33,7 @@ export default function RootLayout({
         />
         <header className="site-header">
           <div className="shell site-header__inner">
-            <Link href="/" className="brand">
+            <Link href="/" className="brand" aria-label={`${SITE_NAME} home`}>
               <span className="brand__mark" aria-hidden="true">
                 ٩
               </span>
