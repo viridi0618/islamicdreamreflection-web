@@ -1,0 +1,40 @@
+{
+  "id": "heat",
+  "name": "Heat Dream",
+  "category": "weather",
+  "volumeClass": "low",
+  "image": null,
+  "keywords": [
+    "heat dream meaning islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Heat often relates to pressure, intensity or discomfort in dream literature. Specific Islamic meanings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Heat often relates to pressure, intensity or discomfort in dream literature. Specific Islamic meanings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "hot weather dream",
+    "extreme heat",
+    "sun heat",
+    "burning heat"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

@@ -1,0 +1,40 @@
+{
+  "id": "dog",
+  "name": "Dog Dream",
+  "category": "animals",
+  "volumeClass": "medium",
+  "image": null,
+  "keywords": [
+    "dog dream meaning islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Dogs carry strong cultural and legal connotations in Islamic tradition; dream readings are context-sensitive. Specific meanings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Dogs carry strong cultural and legal connotations in Islamic tradition; dream readings are context-sensitive. Specific meanings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "dog bite",
+    "black dog",
+    "barking dog",
+    "puppy"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

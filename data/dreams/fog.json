@@ -1,0 +1,40 @@
+{
+  "id": "fog",
+  "name": "Fog Dream",
+  "category": "weather",
+  "volumeClass": "low",
+  "image": null,
+  "keywords": [
+    "fog dream meaning islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Fog often symbolizes confusion, uncertainty or unclear vision in dream symbolism. Specific Islamic readings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Fog often symbolizes confusion, uncertainty or unclear vision in dream symbolism. Specific Islamic readings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "dense fog",
+    "walking in fog",
+    "fog in dream",
+    "mist dream"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

@@ -1,0 +1,40 @@
+{
+  "id": "night",
+  "name": "Night Dream",
+  "category": "time",
+  "volumeClass": "low",
+  "image": null,
+  "keywords": [
+    "night dream meaning islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Night often relates to the unknown, rest or hidden matters in dream literature. Specific Islamic meanings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Night often relates to the unknown, rest or hidden matters in dream literature. Specific Islamic meanings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "dark night",
+    "night sky",
+    "night in dream",
+    "staying up at night"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

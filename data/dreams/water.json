@@ -1,0 +1,42 @@
+{
+  "id": "water",
+  "name": "Water Dream",
+  "category": "nature",
+  "volumeClass": "high",
+  "image": "/images/dreams/water.svg",
+  "keywords": [
+    "water dream meaning islam",
+    "clean water dream islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Water is a highly frequent dream element with a wide range of symbolic readings depending on its state and action. Specific Islamic meanings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Water is a highly frequent dream element with a wide range of symbolic readings depending on its state and action. Specific Islamic meanings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "drinking water",
+    "drowning",
+    "flood",
+    "clear water",
+    "dirty water"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

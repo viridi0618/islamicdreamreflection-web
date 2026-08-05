@@ -1,0 +1,25 @@
+{
+  "_comment": "Phase 5.2 P2-2 — Core trust symbols. These 20 entities receive human review priority before the 1000-entity SEO expansion. review_status of these entities should be upgraded from 'draft' to 'reviewed'/'verified' first.",
+  "core_symbols": [
+    "snake",
+    "water",
+    "death",
+    "pregnancy",
+    "marriage",
+    "baby",
+    "teeth",
+    "fire",
+    "money",
+    "gold",
+    "rain",
+    "horse",
+    "cat",
+    "dog",
+    "jinn",
+    "angel",
+    "quran",
+    "mosque",
+    "flying",
+    "falling"
+  ]
+}

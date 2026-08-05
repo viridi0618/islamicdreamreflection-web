@@ -1,0 +1,40 @@
+{
+  "id": "rain",
+  "name": "Rain Dream",
+  "category": "nature",
+  "volumeClass": "medium",
+  "image": null,
+  "keywords": [
+    "rain dream meaning islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Rain is commonly associated with mercy or blessing themes in Islamic discourse; readings vary with intensity. Specific meanings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Rain is commonly associated with mercy or blessing themes in Islamic discourse; readings vary with intensity. Specific meanings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "heavy rain",
+    "rain in house",
+    "walking in rain",
+    "light rain"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

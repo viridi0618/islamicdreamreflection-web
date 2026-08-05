@@ -1,0 +1,41 @@
+{
+  "id": "money",
+  "name": "Money Dream",
+  "category": "objects",
+  "volumeClass": "high",
+  "image": null,
+  "keywords": [
+    "money dream meaning islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Money dreams commonly relate to provision, self-worth or anxiety about resources. Specific Islamic readings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Money dreams commonly relate to provision, self-worth or anxiety about resources. Specific Islamic readings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "finding money",
+    "giving money",
+    "losing money",
+    "counting money",
+    "paper money"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

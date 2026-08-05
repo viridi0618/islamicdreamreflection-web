@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "description": "Dream theme taxonomy grouped by how users search, not by article type.",
+    "themeCount": 130,
+    "categoryCount": 24,
+    "version": "0.1.0"
+  },
+  "animals": [
+    "snake", "cat", "dog", "fish", "lion", "horse", "camel", "wolf", "eagle", "cow"
+  ],
+  "nature": [
+    "water", "rain", "fire", "sun", "moon", "stars", "wind", "earth"
+  ],
+  "landscapes": [
+    "mountain", "river", "sea", "desert", "forest", "garden"
+  ],
+  "plants": [
+    "tree", "date palm", "rose", "olive", "wheat", "fruit"
+  ],
+  "celestial": [
+    "sky", "cloud", "thunder", "rainbow", "eclipse"
+  ],
+  "people": [
+    "dead person", "father", "mother", "brother", "sister", "child", "prophet", "stranger"
+  ],
+  "family": [
+    "marriage", "pregnancy", "divorce", "baby", "wedding"
+  ],
+  "events": [
+    "death", "funeral", "pilgrimage", "war", "travel", "exam"
+  ],
+  "objects": [
+    "gold", "money", "house", "key", "book", "sword", "mirror", "ring"
+  ],
+  "food": [
+    "bread", "milk", "honey", "dates", "watermelon", "feast"
+  ],
+  "clothing": [
+    "white clothes", "black clothes", "new clothes", "torn clothes", "shoes"
+  ],
+  "body": [
+    "hair", "teeth", "hand", "eye", "beard"
+  ],
+  "health": [
+    "illness", "healing", "blindness", "fever"
+  ],
+  "transportation": [
+    "car", "plane", "ship", "bicycle"
+  ],
+  "buildings": [
+    "mosque", "market", "palace", "hospital", "school"
+  ],
+  "wealth": [
+    "treasure", "coins", "inheritance", "business"
+  ],
+  "emotions": [
+    "fear", "happiness", "crying", "anger"
+  ],
+  "actions": [
+    "flying", "swimming", "running", "falling", "eating", "praying"
+  ],
+  "spiritual": [
+    "angel", "jinn", "quran", "seeing god", "heaven", "hell"
+  ],
+  "colors": [
+    "black", "white", "green", "red", "yellow"
+  ],
+  "numbers": [
+    "seven", "forty", "three"
+  ],
+  "professions": [
+    "teacher", "doctor", "king", "farmer"
+  ],
+  "weather": [
+    "snow", "storm", "fog", "heat"
+  ],
+  "time": [
+    "morning", "night", "spring"
+  ]
+}

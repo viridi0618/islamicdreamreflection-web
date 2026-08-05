@@ -1,0 +1,41 @@
+{
+  "id": "praying",
+  "name": "Praying Dream",
+  "category": "actions",
+  "volumeClass": "medium",
+  "image": null,
+  "keywords": [
+    "praying dream meaning islam",
+    "salah dream islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Prayer and worship dreams carry religious significance; content must be produced only from verified Islamic sources and traditions.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Prayer and worship dreams carry religious significance; content must be produced only from verified Islamic sources and traditions."
+    ]
+  },
+  "related": [
+    "prayer in dream",
+    "praying in mosque",
+    "salah in dream",
+    "wudu dream"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

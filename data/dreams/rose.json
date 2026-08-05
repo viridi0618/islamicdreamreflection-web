@@ -1,0 +1,40 @@
+{
+  "id": "rose",
+  "name": "Rose Dream",
+  "category": "plants",
+  "volumeClass": "low",
+  "image": null,
+  "keywords": [
+    "rose dream meaning islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Roses are often read as symbols of beauty, affection or impermanence. Specific Islamic readings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Roses are often read as symbols of beauty, affection or impermanence. Specific Islamic readings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "red rose",
+    "white rose",
+    "rose garden",
+    "picking roses"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

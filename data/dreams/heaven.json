@@ -1,0 +1,40 @@
+{
+  "id": "heaven",
+  "name": "Heaven Dream",
+  "category": "spiritual",
+  "volumeClass": "medium",
+  "image": null,
+  "keywords": [
+    "heaven dream meaning islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Paradise (Jannah) dreams carry strong religious meaning; content must be produced only from verified Islamic sources and traditions.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Paradise (Jannah) dreams carry strong religious meaning; content must be produced only from verified Islamic sources and traditions."
+    ]
+  },
+  "related": [
+    "paradise dream",
+    "jannah dream",
+    "seeing paradise",
+    "gates of heaven"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}

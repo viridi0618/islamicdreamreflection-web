@@ -1,0 +1,41 @@
+{
+  "id": "gold",
+  "name": "Gold Dream",
+  "category": "objects",
+  "volumeClass": "high",
+  "image": null,
+  "keywords": [
+    "gold dream meaning islam",
+    "gold in dream islam"
+  ],
+  "classical_sources": [
+    {
+      "name": "Ibn Sirin tradition",
+      "tradition": "Ibn Sirin tradition",
+      "reference": "pending verification",
+      "status": "pending",
+      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+    }
+  ],
+  "traditional_notes": [
+    "Gold is a prominent symbol with strong cultural resonance; readings differ between finding, wearing or losing it. Specific Islamic meanings require verification of cited sources.",
+    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+  ],
+  "interpretation": {
+    "positive": [],
+    "negative": [],
+    "general": [
+      "Gold is a prominent symbol with strong cultural resonance; readings differ between finding, wearing or losing it. Specific Islamic meanings require verification of cited sources."
+    ]
+  },
+  "related": [
+    "gold jewelry",
+    "finding gold",
+    "gold ring",
+    "wearing gold"
+  ],
+  "status": "needs verification",
+  "review_status": "draft",
+  "last_reviewed": null,
+  "review_notes": ""
+}
