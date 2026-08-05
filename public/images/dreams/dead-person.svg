@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Remembrance and the departed dream symbol illustration">
+  <rect width="600" height="600" fill="#faf6ec"/>
+  <g fill="none" stroke="#b8923f" stroke-width="2" opacity="0.55">
+    <rect x="28" y="28" width="544" height="544" rx="18"/>
+    <rect x="44" y="44" width="512" height="512" rx="12" stroke-width="1" opacity="0.7"/>
+  </g>
+  <!-- rays -->
+  <g stroke="#b8923f" stroke-width="2" opacity="0.5" stroke-linecap="round">
+    <path d="M300 108 L300 148"/>
+    <path d="M300 452 L300 492"/>
+    <path d="M108 300 L148 300"/>
+    <path d="M452 300 L492 300"/>
+    <path d="M164 164 L192 192"/>
+    <path d="M408 408 L436 436"/>
+    <path d="M436 164 L408 192"/>
+    <path d="M192 408 L164 436"/>
+  </g>
+  <!-- crescent + star (departed, at peace) -->
+  <g transform="translate(300 250)">
+    <path d="M-52 0 a52 52 0 1 0 52 52 a40 40 0 1 1 -52 -52 Z" fill="#16543f"/>
+    <path d="M60 -8 l14 30 32 4 -23 22 6 32 -29 -15 -29 15 6 -32 -23 -22 32 -4 Z" fill="#b8923f"/>
+  </g>
+  <!-- falling leaves / quiet motion -->
+  <g fill="#2a7a5c" opacity="0.85">
+    <path d="M180 392 q4 -22 20 -30 q4 20 -8 34 Z"/>
+    <path d="M420 388 q-6 -20 -22 -26 q-2 20 10 32 Z"/>
+  </g>
+  <g fill="#b8923f" opacity="0.9">
+    <path d="M300 372 q4 -18 16 -24 q3 16 -7 27 Z"/>
+    <path d="M232 400 q-5 -16 -18 -20 q-1 15 8 24 Z"/>
+    <path d="M368 404 q5 -15 17 -18 q0 14 -9 22 Z"/>
+  </g>
+  <!-- gentle arc of remembrance -->
+  <path d="M150 470 q150 -40 300 0" fill="none" stroke="#0d3b2e" stroke-width="2" stroke-dasharray="3 10" stroke-linecap="round" opacity="0.5"/>
+  <ellipse cx="300" cy="516" rx="170" ry="12" fill="#0d3b2e" opacity="0.07"/>
+</svg>

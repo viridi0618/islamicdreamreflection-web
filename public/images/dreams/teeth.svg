@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Teeth dream symbol illustration">
+  <rect width="600" height="600" fill="#faf6ec"/>
+  <g fill="none" stroke="#b8923f" stroke-width="2" opacity="0.55">
+    <rect x="28" y="28" width="544" height="544" rx="18"/>
+    <rect x="44" y="44" width="512" height="512" rx="12" stroke-width="1" opacity="0.7"/>
+  </g>
+  <!-- sparkle / drifting particle -->
+  <g fill="#b8923f">
+    <path d="M150 170 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 Z"/>
+    <path d="M452 420 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 Z" opacity="0.8"/>
+  </g>
+  <circle cx="460" cy="170" r="5" fill="#16543f" opacity="0.5"/>
+  <!-- falling tooth -->
+  <g transform="translate(300 238) rotate(18)">
+    <path d="M-22 -46 C -34 -22 -34 8 -22 30 C -16 44 -8 52 -2 52 C 8 52 16 44 22 30 C 34 8 34 -22 22 -46 C 10 -60 -10 -60 -22 -46 Z"
+          fill="#fffdf6" stroke="#0d3b2e" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M0 -40 L0 46" stroke="#d3ac5e" stroke-width="2.5" opacity="0.7"/>
+    <path d="M-14 -18 q14 10 28 0 M-16 10 q16 10 32 0" stroke="#16543f" stroke-width="2" opacity="0.35" fill="none"/>
+  </g>
+  <!-- motion lines -->
+  <g stroke="#b8923f" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <path d="M268 318 l-16 8"/>
+    <path d="M268 336 l-16 8"/>
+    <path d="M332 318 l16 8"/>
+    <path d="M332 336 l16 8"/>
+  </g>
+  <!-- remaining smile arc -->
+  <path d="M190 400 q110 70 220 0" fill="none" stroke="#16543f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M210 400 q90 56 180 0" fill="none" stroke="#fffdf6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M190 400 q110 70 220 0" fill="none" stroke="#b8923f" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <ellipse cx="300" cy="506" rx="170" ry="13" fill="#0d3b2e" opacity="0.09"/>
+</svg>

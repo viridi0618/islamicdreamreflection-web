@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Water dream symbol illustration">
+  <rect width="600" height="600" fill="#faf6ec"/>
+  <g fill="none" stroke="#b8923f" stroke-width="2" opacity="0.55">
+    <rect x="28" y="28" width="544" height="544" rx="18"/>
+    <rect x="44" y="44" width="512" height="512" rx="12" stroke-width="1" opacity="0.7"/>
+  </g>
+  <!-- crescent moon (water's calm counterpart) -->
+  <g transform="translate(300 150)">
+    <path d="M-36 0 a36 36 0 1 0 36 36 a28 28 0 1 1 -36 -36 Z" fill="#b8923f"/>
+  </g>
+  <!-- wave one -->
+  <path d="M120 330 q40 -34 80 0 q40 34 80 0 q40 -34 80 0 q40 34 80 0"
+        fill="none" stroke="#16543f" stroke-width="16" stroke-linecap="round"/>
+  <path d="M160 330 q40 -34 80 0" fill="none" stroke="#d3ac5e" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <!-- wave two -->
+  <path d="M160 400 q40 -30 80 0 q40 30 80 0 q40 -30 80 0"
+        fill="none" stroke="#2a7a5c" stroke-width="12" stroke-linecap="round"/>
+  <!-- wave three -->
+  <path d="M200 456 q40 -24 80 0 q40 24 80 0"
+        fill="none" stroke="#0d3b2e" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <!-- droplets -->
+  <g fill="#16543f">
+    <path d="M150 262 q0 -18 12 -30 q12 12 12 30 a12 12 0 1 1 -24 0 Z"/>
+    <path d="M438 262 q0 -18 12 -30 q12 12 12 30 a12 12 0 1 1 -24 0 Z" opacity="0.8"/>
+  </g>
+  <g fill="#b8923f">
+    <path d="M294 216 q0 -14 10 -24 q10 10 10 24 a10 10 0 1 1 -20 0 Z"/>
+    <path d="M362 252 q0 -12 8 -20 q8 8 8 20 a8 8 0 1 1 -16 0 Z" opacity="0.85"/>
+  </g>
+  <ellipse cx="300" cy="510" rx="180" ry="14" fill="#0d3b2e" opacity="0.08"/>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Pregnancy dream symbol illustration">
+  <rect width="600" height="600" fill="#faf6ec"/>
+  <g fill="none" stroke="#b8923f" stroke-width="2" opacity="0.55">
+    <rect x="28" y="28" width="544" height="544" rx="18"/>
+    <rect x="44" y="44" width="512" height="512" rx="12" stroke-width="1" opacity="0.7"/>
+  </g>
+  <!-- soft rays -->
+  <g stroke="#d3ac5e" stroke-width="2" opacity="0.5" stroke-linecap="round">
+    <path d="M300 120 L300 156"/>
+    <path d="M180 156 L204 182"/>
+    <path d="M420 156 L396 182"/>
+  </g>
+  <!-- new moon (new beginnings) -->
+  <g transform="translate(300 178)">
+    <path d="M-40 0 a40 40 0 1 0 40 40 a31 31 0 1 1 -40 -40 Z" fill="#b8923f"/>
+  </g>
+  <!-- cradle arc -->
+  <path d="M150 344 q150 96 300 0" fill="none" stroke="#16543f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M160 344 q140 86 280 0" fill="none" stroke="#2a7a5c" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M204 332 q96 54 192 0" fill="none" stroke="#d3ac5e" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <!-- stars inside the cradle -->
+  <g fill="#b8923f">
+    <path d="M244 300 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 Z"/>
+    <path d="M356 300 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 Z" opacity="0.85"/>
+    <path d="M300 268 l3.4 10 10 3.4 -10 3.4 -3.4 10 -3.4 -10 -10 -3.4 10 -3.4 Z" opacity="0.7"/>
+  </g>
+  <!-- growing sprout -->
+  <g transform="translate(300 380)">
+    <path d="M0 34 C 0 14 10 2 22 -8" fill="none" stroke="#0d3b2e" stroke-width="4" stroke-linecap="round"/>
+    <path d="M22 -8 q-16 -10 -18 -26 q18 -2 26 14 Z" fill="#2a7a5c"/>
+    <path d="M22 -8 q10 -16 26 -18 q4 18 -10 26 Z" fill="#16543f"/>
+  </g>
+  <ellipse cx="300" cy="512" rx="175" ry="13" fill="#0d3b2e" opacity="0.08"/>
+</svg>
