@@ -4,6 +4,10 @@
  * Each guide is data-driven and references the unified source registry
  * (data/sources.ts). Only public sources (reviewed/verified) are resolved
  * for display.
+ *
+ * Accuracy: source IDs below have been checked against sunnah.com (hadith)
+ * and the text of the Qur'an. A citation supports only what it actually
+ * states; interpretive paraphrase is avoided in "supports" claims.
  */
 
 export interface GuideSection {
@@ -36,7 +40,7 @@ export const GUIDES: Record<string, GuideEntry> = {
           "Good dreams — those that are truthful, comforting, or carry clear meaning — are described as coming from Allah. In the tradition this is the type of dream a person may share and take encouragement from.",
           "This does not mean every pleasant dream is a prophecy. It means the dream is a positive experience to receive with gratitude."
         ],
-        sourceIds: ["bukhari-6986"]
+        sourceIds: ["muslim-2263a", "bukhari-6984"]
       },
       {
         heading: "Disturbing dreams from Satan",
@@ -44,7 +48,7 @@ export const GUIDES: Record<string, GuideEntry> = {
           "Frightening or disturbing dreams are described as coming from Satan. The recommended response is not to interpret them into certainty, but to seek refuge in Allah from their evil.",
           "The hadith give a practical etiquette: do not let a bad dream control the day, and do not go looking for a fixed meaning in it."
         ],
-        sourceIds: ["bukhari-6986", "bukhari-6990"]
+        sourceIds: ["muslim-2263a", "bukhari-6985", "bukhari-7044"]
       },
       {
         heading: "Dreams from the self",
@@ -52,7 +56,7 @@ export const GUIDES: Record<string, GuideEntry> = {
           "Many dreams simply reflect the dreamer’s own thoughts, worries, or what they were thinking about during the day. A hadith describes dreams that come from the self as one of the three categories.",
           "These dreams are best understood as personal reflections rather than as events with hidden meanings."
         ],
-        sourceIds: ["bukhari-7018", "muslim-2261"]
+        sourceIds: ["muslim-2263a"]
       },
       {
         heading: "Why the categories matter",
@@ -60,7 +64,7 @@ export const GUIDES: Record<string, GuideEntry> = {
           "The categories matter because they set expectations. Not every dream is a sign, and the tradition is careful not to turn ordinary dreams into certainties.",
           "When a dream is disturbing, the first response is protection and calm, not interpretation."
         ],
-        sourceIds: ["bukhari-7018"]
+        sourceIds: ["muslim-2263a", "bukhari-6986"]
       }
     ]
   },
@@ -80,21 +84,21 @@ export const GUIDES: Record<string, GuideEntry> = {
           "The hadith teach that a disturbing dream comes from Satan, and the response is to seek refuge in Allah from its evil. Some narrations add spitting lightly to the left three times as part of the etiquette.",
           "This redirects the mind from fear to protection."
         ],
-        sourceIds: ["bukhari-6986"]
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
       },
       {
         heading: "Do not dwell on it",
         body: [
           "The tradition advises not telling others about the bad dream and not letting it influence the day. Dwell less, and the dream loses its grip."
         ],
-        sourceIds: ["bukhari-6990"]
+        sourceIds: ["bukhari-6985", "bukhari-7045"]
       },
       {
         heading: "Do not interpret it into certainty",
         body: [
           "A disturbing dream is not evidence of an enemy, a spell, or a coming disaster. Treating it as a certainty is exactly what the etiquette is meant to prevent."
         ],
-        sourceIds: ["bukhari-6986"]
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
       },
       {
         heading: "Seek support when needed",
@@ -110,15 +114,15 @@ export const GUIDES: Record<string, GuideEntry> = {
     slug: "dreams-in-the-quran",
     title: "Dreams in the Qur’an: Yusuf, Ibrahim, and Meaningful Visions",
     description:
-      "What the Qur’an records about dreams and interpretation, from the story of Yusuf to the king’s dream of the seven cows.",
+      "What the Qur’an records about dreams and interpretation, from the story of Yusuf to the vision of Ibrahim.",
     intro: [
-      "The Qur’an records several dreams and their interpretations, most notably in the story of Yusuf. These passages show that dreams can carry meaning and that interpretation was approached with care."
+      "The Qur’an records several dreams and their interpretations, most notably in the story of Yusuf and in the vision of Ibrahim. These passages show that dreams can carry meaning and that interpretation was approached with care."
     ],
     sections: [
       {
         heading: "The dream of Yusuf",
         body: [
-          "Yusuf tells his father that he saw eleven stars, the sun and the moon prostrating to him. His father responds by interpreting it as a sign of rank and honour, and counsels secrecy.",
+          "Yusuf tells his father that he saw eleven stars, the sun and the moon prostrating to him. His father counsels him not to tell his brothers, and says that Allah will choose him and teach him the interpretation of dreams.",
           "The passage places dreams within a careful, guided process of interpretation."
         ],
         sourceIds: ["quran-yusuf-12-4-6"]
@@ -129,7 +133,7 @@ export const GUIDES: Record<string, GuideEntry> = {
           "Two prisoners ask Yusuf to interpret their dreams — one of pressing wine, one of carrying bread. Yusuf responds by teaching about interpretation before giving the meaning.",
           "The episode shows interpretation as a serious discipline, not a guessing game."
         ],
-        sourceIds: ["quran-yusuf-12-36"]
+        sourceIds: ["quran-yusuf-12-36-41"]
       },
       {
         heading: "The king’s dream of the seven cows",
@@ -138,6 +142,14 @@ export const GUIDES: Record<string, GuideEntry> = {
           "This is a dream with context and consequence — it does not provide a fixed meaning for cows or grain in ordinary dreams."
         ],
         sourceIds: ["quran-yusuf-12-43"]
+      },
+      {
+        heading: "The vision of Ibrahim",
+        body: [
+          "Ibrahim tells his son of a dream in which he saw himself sacrificing him, and his son responds with patience and submission. Both submit, and the vision is fulfilled.",
+          "This is a prophetic vision with a clear command, not an example of ordinary dream symbolism — it is recorded to show how a prophet’s dream was honoured."
+        ],
+        sourceIds: ["quran-saffat-37-102-105"]
       },
       {
         heading: "What this means for ordinary dreams",

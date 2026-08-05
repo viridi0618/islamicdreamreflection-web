@@ -4,6 +4,7 @@ import type { PageConfig } from "@/lib/site";
 import { resolvePublicSources, type SourceType } from "@/data/sources";
 import { categoryLabel } from "@/lib/data";
 import { LAST_UPDATED } from "@/lib/site";
+import { readingMinutes } from "@/lib/article-text";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { AiEntryBanner } from "@/components/AiEntryBanner";
 import { DreamReflectionCta } from "@/components/DreamReflectionCta";
@@ -24,16 +25,6 @@ const SOURCE_TYPE_LABEL: Record<SourceType, string> = {
   "modern-reference": "Modern reference",
   methodology: "Methodology"
 };
-
-function readingMinutes(article: DreamArticleContent): number {
-  const text = article.quickAnswer + " " + article.introduction.join(" ") + " " +
-    article.beforeInterpreting.map((b) => b.title + " " + b.body).join(" ") + " " +
-    article.themes.map((t) => t.title + " " + t.summary + " " + t.body.join(" ")).join(" ") + " " +
-    article.scenarios.map((s) => s.title + " " + s.summary + " " + s.body.join(" ")).join(" ") + " " +
-    article.doesNotProve.join(" ") + " " +
-    article.actionsAfterDream.map((x) => x.title + " " + x.body).join(" ");
-  return Math.max(1, Math.round(text.split(/\s+/).filter(Boolean).length / 200));
-}
 
 function collectSourceIds(article: DreamArticleContent): string[] {
   const ids: string[] = [];
@@ -92,7 +83,7 @@ export function DreamArticle({
           style={{ marginTop: 14, fontSize: 13, color: "var(--ink-faint)" }}
         >
           Prepared by <Link href="/about#methodology">Islamic Dream Reflection</Link> ·{" "}
-          Updated: {LAST_UPDATED} · {readingMinutes(article)} min read
+          Updated: {LAST_UPDATED} · {readingMinutes(entity)} min read
         </p>
       </section>
 
@@ -106,7 +97,7 @@ export function DreamArticle({
             <a href="#themes">Main interpretive themes</a>
           </li>
           <li>
-            <a href="#scenarios">Common snake dream scenarios</a>
+            <a href="#scenarios">Common dream scenarios</a>
           </li>
           <li>
             <a href="#does-not-prove">What the dream does not prove</a>
@@ -180,7 +171,7 @@ export function DreamArticle({
 
       <section className="section" id="scenarios">
         <div className="section__head">
-          <h2>Common Snake Dream Scenarios</h2>
+          <h2>Common Dream Scenarios</h2>
           <span className="rule" />
         </div>
         {article.scenarios.map((scenario) => (

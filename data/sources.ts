@@ -8,6 +8,11 @@
  * Rule: relevant references only, no decorative scripture. A Qur'an or
  * Hadith citation must support the claim next to which it is shown — it is
  * never used to manufacture a fixed symbol dictionary.
+ *
+ * Accuracy: every hadith number and citation below has been checked against
+ * sunnah.com; every Qur'an range against the text of the Qur'an. If a claim
+ * cannot be supported by a verified reference it is written as editorial
+ * reflection, never padded with an unchecked citation.
  */
 
 export type SourceType =
@@ -48,17 +53,17 @@ export const SOURCES: Record<string, SourceRecord> = {
     url: "https://quran.com/12/4-6",
     status: "verified",
     supports:
-      "The Qur’an records Yusuf’s dream of eleven stars, the sun and the moon prostrating to him, and his father’s interpretation. It shows that dreams can carry meaning and that interpreting them is a recognized concern."
+      "The Qur’an records Yusuf’s dream of eleven stars, the sun and the moon prostrating to him, and his father Ya‘qub counselling him not to tell his brothers. Ya‘qub says Allah will teach Yusuf the interpretation of dreams. The passage shows that dreams can carry meaning and that interpretation is a recognized concern."
   },
-  "quran-yusuf-12-36": {
-    id: "quran-yusuf-12-36",
+  "quran-yusuf-12-36-41": {
+    id: "quran-yusuf-12-36-41",
     type: "quran",
     title: "Surah Yusuf",
-    reference: "Qur’an 12:36",
-    url: "https://quran.com/12/36",
+    reference: "Qur’an 12:36–41",
+    url: "https://quran.com/12/36-41",
     status: "verified",
     supports:
-      "Two companions of Yusuf in prison ask him to interpret their dreams. The passage shows that dream interpretation in the tradition is approached with care and seeks meaning rather than guesswork."
+      "Two companions of Yusuf in prison describe their dreams — one pressing wine, one carrying bread — and ask for interpretation. Yusuf teaches them about interpretation before explaining their dreams. The passage shows that dream interpretation in the tradition is approached with care and seeks meaning rather than guesswork."
   },
   "quran-yusuf-12-43": {
     id: "quran-yusuf-12-43",
@@ -70,55 +75,99 @@ export const SOURCES: Record<string, SourceRecord> = {
     supports:
       "The king’s dream of seven fat cows, seven lean cows and seven green and dry ears of grain is presented as a dream with real significance, interpreted only after careful consideration. It does not provide fixed meanings for everyday symbols."
   },
+  "quran-saffat-37-102-105": {
+    id: "quran-saffat-37-102-105",
+    type: "quran",
+    title: "Surah As-Saffat",
+    reference: "Qur’an 37:102–105",
+    url: "https://quran.com/37/102-105",
+    status: "verified",
+    supports:
+      "Ibrahim tells his son of a dream in which he saw himself sacrificing him; his son responds with patience and submission. The passage presents a dream as a serious command experienced by a prophet, fulfilled through both of them submitting. It concerns a prophetic vision, not ordinary dream symbolism."
+  },
 
   /* ----------------------------------------------------------------
-   * Hadith — Sahih al-Bukhari / Sahih Muslim, widely documented.
+   * Hadith — Sahih al-Bukhari / Sahih Muslim, checked against sunnah.com.
    * -------------------------------------------------------------- */
+  "bukhari-6984": {
+    id: "bukhari-6984",
+    type: "hadith",
+    collection: "Sahih al-Bukhari",
+    title: "A true good dream is from Allah, a bad dream is from Satan",
+    reference: "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6984",
+    url: "https://sunnah.com/bukhari/6984",
+    status: "verified",
+    supports:
+      "The hadith states that a true good dream is from Allah and a bad dream is from Satan, distinguishing two kinds of dream experience without assigning fixed meanings to symbols."
+  },
+  "bukhari-6985": {
+    id: "bukhari-6985",
+    type: "hadith",
+    collection: "Sahih al-Bukhari",
+    title: "Good dreams: thank Allah and share; bad dreams: seek refuge and stay quiet",
+    reference: "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6985",
+    url: "https://sunnah.com/bukhari/6985",
+    status: "verified",
+    supports:
+      "The hadith gives the traditional response to a good dream (thank Allah and tell others about it) and to a bad dream (seek refuge in Allah from its evil and do not mention it to anyone)."
+  },
   "bukhari-6986": {
     id: "bukhari-6986",
     type: "hadith",
     collection: "Sahih al-Bukhari",
-    title: "Good dreams from Allah, bad dreams from Satan",
+    title: "A good dream that comes true is from Allah, a bad dream is from Satan",
     reference: "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6986",
     url: "https://sunnah.com/bukhari/6986",
     status: "verified",
     supports:
-      "A good dream is from Allah and a disturbing dream is from Satan. It gives guidance on what to do with a bad dream (seeking refuge in Allah) rather than assigning fixed meanings to symbols."
+      "The hadith teaches that a bad dream will not harm the one who seeks refuge in Allah from Satan, and includes the etiquette of spitting lightly to the left."
   },
-  "bukhari-7018": {
-    id: "bukhari-7018",
+  "bukhari-7044": {
+    id: "bukhari-7044",
     type: "hadith",
     collection: "Sahih al-Bukhari",
-    title: "The three types of dreams",
+    title: "Etiquette for a disliked dream",
     reference:
-      "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 7018",
-    url: "https://sunnah.com/bukhari/7018",
+      "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 7044",
+    url: "https://sunnah.com/bukhari/7044",
     status: "verified",
     supports:
-      "Dreams are described as coming from Allah (good dreams), from Satan (disturbing dreams), or from the self (thoughts and daily concerns). This supports the point that not every dream should be interpreted."
+      "The hadith teaches that a disliked dream should be met by seeking refuge in Allah from its evil and from the evil of Satan, spitting lightly to the left three times, and not telling anyone about it."
   },
-  "muslim-2261": {
-    id: "muslim-2261",
+  "bukhari-7045": {
+    id: "bukhari-7045",
     type: "hadith",
-    collection: "Sahih Muslim",
-    title: "Dreams are of three types",
-    reference: "Sahih Muslim, hadith 2261",
-    url: "https://sunnah.com/muslim/2261",
+    collection: "Sahih al-Bukhari",
+    title: "A bad dream should not be told to anybody",
+    reference:
+      "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 7045",
+    url: "https://sunnah.com/bukhari/7045",
     status: "verified",
     supports:
-      "A parallel narration of the three types of dreams, reinforcing that dreams may be from Allah, from Satan, or from the dreamer’s own thoughts and concerns."
+      "The hadith repeats the guidance that a bad dream comes from Satan, the dreamer should seek refuge in Allah from it, and should not tell it to anybody, for it will not harm him."
   },
   "bukhari-6990": {
     id: "bukhari-6990",
     type: "hadith",
     collection: "Sahih al-Bukhari",
-    title: "Etiquette for a disturbing dream",
+    title: "Al-Mubashshirat: true good dreams remain as glad tidings",
     reference:
       "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6990",
     url: "https://sunnah.com/bukhari/6990",
     status: "verified",
     supports:
-      "Guidance for someone who sees a disturbing dream: seek refuge in Allah from its evil, do not speak about it to others, and do not let it control one’s day."
+      "The hadith describes the true good dream (ru'ya saliha) as al-Mubashshirat — glad tidings — and as what remains of prophecy. It supports the place of good dreams in the tradition, not the meaning of any particular symbol."
+  },
+  "muslim-2263a": {
+    id: "muslim-2263a",
+    type: "hadith",
+    collection: "Sahih Muslim",
+    title: "Dreams are of three types",
+    reference: "Sahih Muslim, Book of Dreams (Kitab al-Ru’ya), hadith 2263a",
+    url: "https://sunnah.com/muslim/2263a",
+    status: "verified",
+    supports:
+      "The hadith explicitly describes three types of dreams: a good dream which is good tidings from Allah, an evil dream which causes pain and is from the satan, and a dream which is a suggestion of one's own mind. It also teaches that a disliked dream should not be related to people and one may pray instead."
   },
 
   /* ----------------------------------------------------------------
@@ -136,23 +185,10 @@ export const SOURCES: Record<string, SourceRecord> = {
       "A widely circulated medieval dream manual. Its attribution to Ibn Sirin is disputed and the text survives in later compilations, so it is not quoted directly on public pages.",
     attributionNote:
       "Attribution to Ibn Sirin is traditional but historically disputed; the surviving text is a later compilation."
-  },
-
-  /* ----------------------------------------------------------------
-   * Methodology — internal reference for the methodology page.
-   * -------------------------------------------------------------- */
-  "methodology-page": {
-    id: "methodology-page",
-    type: "methodology",
-    title: "Sources and Methodology",
-    reference: "/sources-methodology",
-    status: "reviewed",
-    supports:
-      "Explains how Qur’an and Hadith are used, how classical attribution is handled, how AI participates, and what content is editorial reflection."
   }
 };
 
-/** Only sources eligible for public display. */
+/** Only sources eligible for public display (methodology never self-lists). */
 export function publicSources(): SourceRecord[] {
   return Object.values(SOURCES).filter(
     (s) => s.status === "reviewed" || s.status === "verified"

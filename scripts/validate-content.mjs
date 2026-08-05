@@ -34,15 +34,17 @@ const FORBIDDEN = [
 ];
 
 /* ------------------------------------------------------------------ */
-/* Source registry: extract {id, status} from data/sources.ts          */
+/* Source registry: extract {id, status, type} from data/sources.ts    */
 /* ------------------------------------------------------------------ */
 const sourceIds = new Set();
 const sourceStatus = new Map();
-const sourceBlockRe = /id:\s*"([^"]+)"[\s\S]*?status:\s*"([^"]+)"/g;
+const sourceType = new Map();
+const sourceBlockRe = /id:\s*"([^"]+)"[\s\S]*?type:\s*"([^"]+)"[\s\S]*?status:\s*"([^"]+)"/g;
 let m;
 while ((m = sourceBlockRe.exec(SOURCES_TS)) !== null) {
   sourceIds.add(m[1]);
-  sourceStatus.set(m[1], m[2]);
+  sourceStatus.set(m[1], m[3]);
+  sourceType.set(m[1], m[2]);
 }
 
 /* ------------------------------------------------------------------ */
@@ -157,6 +159,28 @@ for (const file of files) {
     }
   }
 
+  /* 11. evidenceType must be backed by a matching public source type.
+        quran -> quran sourceId; hadith -> hadith sourceId;
+        classical-tradition -> classical-work sourceId (public);
+        editorial-reflection may omit sources but must not claim classical ones. */
+  if (entity.article) {
+    entity.article.themes.forEach((t) => {
+      const srcs = (t.sourceIds || []).map((id) => ({ id, type: sourceType.get(id) }));
+      if (t.evidenceType === "quran" && !srcs.some((s) => s.type === "quran")) {
+        errors.push(`[${label}] theme "${t.id}" is quran but has no quran sourceId`);
+      }
+      if (t.evidenceType === "hadith" && !srcs.some((s) => s.type === "hadith")) {
+        errors.push(`[${label}] theme "${t.id}" is hadith but has no hadith sourceId`);
+      }
+      if (t.evidenceType === "classical-tradition" && !srcs.some((s) => s.type === "classical-work")) {
+        errors.push(`[${label}] theme "${t.id}" is classical-tradition but has no classical-work sourceId (a hadith about dreams in general cannot support a snake-specific classical claim)`);
+      }
+      if (t.evidenceType === "editorial-reflection" && srcs.some((s) => s.type === "classical-work")) {
+        errors.push(`[${label}] theme "${t.id}" is editorial-reflection but references a classical-work source`);
+      }
+    });
+  }
+
   /* 5. direct attribution to a named scholar requires a source */
   const attributionPatterns = [
     /Ibn Sirin said/i,
@@ -245,6 +269,37 @@ for (const file of files) {
    scans above and by editorial review. */
 
 /* 9. handled per-entity above (duplicate sourceIds) */
+
+/* ------------------------------------------------------------------ */
+/* Guides: validate sourceIds and internal links in lib/guides.ts      */
+/* ------------------------------------------------------------------ */
+const GUIDES_TS = fs.readFileSync(path.join(ROOT, "lib", "guides.ts"), "utf8");
+const guideEntries = [...GUIDES_TS.matchAll(/slug:\s*"([^"]+)"/g)].map((x) => x[1]);
+const guideSourceIds = [...GUIDES_TS.matchAll(/sourceIds:\s*\[([^\]]*)\]/g)]
+  .flatMap((x) => [...x[1].matchAll(/"([^"]+)"/g)].map((y) => y[1]));
+
+for (const id of guideSourceIds) {
+  if (!sourceIds.has(id)) {
+    errors.push(`[lib/guides.ts] unknown sourceId "${id}" (not in data/sources.ts)`);
+    continue;
+  }
+  const status = sourceStatus.get(id);
+  if (status !== "reviewed" && status !== "verified") {
+    errors.push(`[lib/guides.ts] sourceId "${id}" has status "${status}" — pending sources must not be referenced in guides`);
+  }
+}
+
+for (const slug of guideEntries) {
+  const route = `/guides/${slug}`;
+  if (!KNOWN_ROUTES.has(route)) {
+    // guides referenced from dream contextual links must be real routes;
+    // register any guide slug as a valid route.
+    KNOWN_ROUTES.add(route);
+  }
+}
+
+/* 12. every internal link target in dream content must resolve to a known
+       route (guides auto-registered above; dream routes in KNOWN_ROUTES). */
 
 /* ------------------------------------------------------------------ */
 if (errors.length > 0) {

@@ -21,6 +21,7 @@ import {
   breadcrumbSchema,
   faqSchema
 } from "@/lib/schema";
+import { readingMinutes } from "@/lib/article-text";
 import { PAGE_BY_SLUG, SITE_NAME, SITE_URL, LAST_UPDATED } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -58,25 +59,6 @@ export async function generateMetadata({
     },
     robots: { index: true, follow: true }
   };
-}
-
-/** Rough reading time in minutes based on the visible body text. */
-function readingTime(entity: ReturnType<typeof loadDreamEntity>): number {
-  let text = entity.interpretation.general.join(" ") + " " +
-    entity.interpretation.positive.join(" ") + " " +
-    entity.interpretation.negative.join(" ") + " " +
-    (entity.traditional_notes ?? []).join(" ");
-  if (entity.article) {
-    const a = entity.article;
-    text += " " + a.quickAnswer + " " + a.introduction.join(" ") + " " +
-      a.beforeInterpreting.map((b) => b.title + " " + b.body).join(" ") + " " +
-      a.themes.map((t) => t.title + " " + t.summary + " " + t.body.join(" ")).join(" ") + " " +
-      a.scenarios.map((s) => s.title + " " + s.summary + " " + s.body.join(" ")).join(" ") + " " +
-      a.doesNotProve.join(" ") + " " +
-      a.actionsAfterDream.map((x) => x.title + " " + x.body).join(" ");
-  }
-  const words = text.split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 200));
 }
 
 export default async function DreamPage({
@@ -144,7 +126,7 @@ export default async function DreamPage({
           >
             Prepared by{" "}
             <Link href="/about#methodology">Islamic Dream Reflection</Link> ·{" "}
-            Updated: {LAST_UPDATED} · {readingTime(entity)} min read
+            Updated: {LAST_UPDATED} · {readingMinutes(entity)} min read
           </p>
         </section>
 

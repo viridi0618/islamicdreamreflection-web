@@ -3,6 +3,7 @@
 
 # next.js
 /.next/
+/.next-trust/
 /out/
 
 # production
@@ -30,3 +31,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/.next-build2/

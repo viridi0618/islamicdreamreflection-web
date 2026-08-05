@@ -4,6 +4,7 @@
  */
 import type { DreamEntity } from "./data";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./site";
+import { visibleWordCount } from "./article-text";
 
 export function organizationSchema(): Record<string, unknown> {
   return {
@@ -24,24 +25,6 @@ export function webSiteSchema(): Record<string, unknown> {
     inLanguage: "en",
     description: SITE_DESCRIPTION
   };
-}
-
-/** Rough word count of the visible article body for schema wordCount. */
-function articleWordCount(entity: DreamEntity): number {
-  let text = entity.interpretation.general.join(" ") + " " +
-    entity.interpretation.positive.join(" ") + " " +
-    entity.interpretation.negative.join(" ") + " " +
-    (entity.traditional_notes ?? []).join(" ");
-  if (entity.article) {
-    const a = entity.article;
-    text += " " + a.quickAnswer + " " + a.introduction.join(" ") + " " +
-      a.beforeInterpreting.map((b) => b.title + " " + b.body).join(" ") + " " +
-      a.themes.map((t) => t.title + " " + t.summary + " " + t.body.join(" ")).join(" ") + " " +
-      a.scenarios.map((s) => s.title + " " + s.summary + " " + s.body.join(" ")).join(" ") + " " +
-      a.doesNotProve.join(" ") + " " +
-      a.actionsAfterDream.map((x) => x.title + " " + x.body).join(" ");
-  }
-  return text.split(/\s+/).filter(Boolean).length;
 }
 
 export function articleSchema(params: {
@@ -73,7 +56,7 @@ export function articleSchema(params: {
       name: SITE_NAME,
       url: SITE_URL
     },
-    wordCount: articleWordCount(params.entity),
+    wordCount: visibleWordCount(params.entity),
     inLanguage: "en"
   };
 }

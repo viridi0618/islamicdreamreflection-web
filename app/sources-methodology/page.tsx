@@ -12,7 +12,9 @@ export const metadata: Metadata = {
 };
 
 export default function SourcesMethodologyPage() {
-  const sources = publicSources();
+  // Public registry listing; the methodology page itself is never listed as
+  // one of its own sources (type "methodology" is excluded).
+  const sources = publicSources().filter((s) => s.type !== "methodology");
 
   return (
     <article className="shell section">
