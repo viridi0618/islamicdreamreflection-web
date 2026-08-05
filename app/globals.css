@@ -123,6 +123,21 @@ a:hover {
   align-items: center;
 }
 
+@media (max-width: 720px) {
+  .brand > span:last-child {
+    display: none;
+  }
+
+  .site-nav__home,
+  .site-nav__cta {
+    display: none;
+  }
+
+  .site-nav {
+    gap: 14px;
+  }
+}
+
 .site-nav a {
   font-size: 15px;
   color: var(--ink-soft);
@@ -773,6 +788,17 @@ a:hover {
 }
 
 /* ---------- AI CTA ---------- */
+
+#reflection,
+.faq-category {
+  scroll-margin-top: 80px;
+}
+
+.faq__item summary:focus-visible,
+.faq-anchors a:focus-visible {
+  outline: 3px solid rgba(184, 146, 63, 0.45);
+  outline-offset: 2px;
+}
 
 .ai-cta {
   position: relative;
@@ -3114,6 +3140,16 @@ a:hover {
   }
   .ref-table {
     font-size: 14px;
+  }
+  .option-row {
+    gap: 8px;
+  }
+  .option-chip {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+  .ritual__head {
+    margin-bottom: 20px;
   }
 }
 

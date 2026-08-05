@@ -40,9 +40,15 @@ export interface RitualFlowProps {
   initialSymbol?: string;
   /** Entry point for analytics (e.g. "home" or "interpreter"). */
   entryPoint?: string;
+  /** Hide the inner step heading (title + subtitle) — used on home, which already has its own H1. */
+  compactHeader?: boolean;
 }
 
-export function RitualFlow({ initialSymbol, entryPoint = "interpreter" }: RitualFlowProps) {
+export function RitualFlow({
+  initialSymbol,
+  entryPoint = "interpreter",
+  compactHeader = false
+}: RitualFlowProps) {
   const [step, setStep] = useState<Step>("dream");
   const [context, setContext] = useState<DreamContext>(EMPTY_CONTEXT);
   const [dreamTitle, setDreamTitle] = useState("");
@@ -180,6 +186,7 @@ export function RitualFlow({ initialSymbol, entryPoint = "interpreter" }: Ritual
           current="dream"
           title="Reflect on Your Dream"
           subtitle="Every dream is personal. Explore its symbols through Islamic traditions and personal reflection."
+          compact={compactHeader}
         />
         <form
           onSubmit={(e) => {
@@ -326,7 +333,17 @@ export function RitualFlow({ initialSymbol, entryPoint = "interpreter" }: Ritual
 /* Shared step chrome                                                  */
 /* ------------------------------------------------------------------ */
 
-function StepHeader({ current, title, subtitle }: { current: Step; title: string; subtitle: string }) {
+function StepHeader({
+  current,
+  title,
+  subtitle,
+  compact = false
+}: {
+  current: Step;
+  title: string;
+  subtitle: string;
+  compact?: boolean;
+}) {
   return (
     <div className="ritual__head">
       <div className="ritual-progress" aria-label="Progress">
@@ -339,8 +356,12 @@ function StepHeader({ current, title, subtitle }: { current: Step; title: string
           </span>
         ))}
       </div>
-      <h2>{title}</h2>
-      <p>{subtitle}</p>
+      {!compact && (
+        <>
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
+        </>
+      )}
     </div>
   );
 }

@@ -40,7 +40,9 @@ export default function RootLayout({
               <span>{SITE_NAME}</span>
             </Link>
             <nav className="site-nav" aria-label="Main">
-              <Link href="/">Home</Link>
+              <Link href="/" className="site-nav__home">
+                Home
+              </Link>
               <Link href="/#dreams">Dreams</Link>
               <Link href="/faq">FAQ</Link>
               <Link href="/my-dreams">My Dreams</Link>

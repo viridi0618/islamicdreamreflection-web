@@ -61,7 +61,7 @@ export default function HomePage() {
             context that feels meaningful.
           </p>
           <div className="hero__ritual">
-            <RitualFlow entryPoint="home" />
+            <RitualFlow entryPoint="home" compactHeader />
           </div>
         </div>
       </section>
