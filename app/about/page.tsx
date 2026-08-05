@@ -60,7 +60,7 @@ export default function AboutPage() {
           source status.
         </p>
 
-        <h2>How AI is used</h2>
+        <h2 id="ai-use">How AI is used</h2>
         <p>
           The reflection tool uses AI to help structure your own thinking
           about a dream. It assists in identifying symbols, summarizing
@@ -76,7 +76,7 @@ export default function AboutPage() {
           context and personal circumstances, and we present it that way.
         </p>
 
-        <h2>Methodology</h2>
+        <h2 id="methodology">Methodology</h2>
         <p>
           The knowledge base draws on classical Islamic dream interpretation
           traditions, including those associated with Ibn Sirin and Al-Nabulsi,

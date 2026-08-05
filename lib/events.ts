@@ -34,7 +34,15 @@ export type EventName =
   | "share_completed"
   /* FAQ page (Phase 2 IA) */
   | "faq_opened"
-  | "faq_question_expanded";
+  | "faq_question_expanded"
+  /* Homepage trust experience */
+  | "home_privacy_clicked"
+  | "home_methodology_clicked"
+  | "home_dream_type_clicked"
+  | "home_guide_clicked"
+  | "home_quote_source_clicked"
+  | "home_my_dreams_clicked"
+  | "home_faq_expanded";
 
 interface StoredEvent {
   name: EventName;

@@ -102,9 +102,9 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         id: "what-does-under-source-review-mean",
-        question: "What does \u201cUnder Source Review\u201d mean?",
+        question: "How are the traditional sources on this site reviewed?",
         answer:
-          "It means the source tradition is recorded in the knowledge base, but the specific citation is still being organized or cross-checked. It does not mean the symbol has a verified, exact quotation from an original text."
+          "Traditional perspectives come from Islamic dream interpretation literature. A tradition name is shown only when the data supports it, and exact quotations are included only after they have been checked against a source. We do not claim that every reference has been directly verified against original manuscripts."
       },
       {
         id: "all-interpretations-attributed-to-ibn-sirin",
@@ -143,9 +143,14 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
 /** Flat list of all FAQ entries, used by the homepage preview. */
 export const ALL_FAQS: FaqEntry[] = FAQ_CATEGORIES.flatMap((c) => c.faqs);
 
-/** Homepage preview: exactly the three questions shown on the homepage. */
+/** Homepage preview: eight trust-focused questions (kept in sync with /faq). */
 export const HOME_FAQ_PREVIEW: FaqEntry[] = [
+  ALL_FAQS.find((f) => f.id === "what-is-islamic-dream-reflection")!,
   ALL_FAQS.find((f) => f.id === "is-it-fortune-telling")!,
+  ALL_FAQS.find((f) => f.id === "fatwas-or-religious-rulings")!,
+  ALL_FAQS.find((f) => f.id === "can-a-dream-predict-the-future")!,
   ALL_FAQS.find((f) => f.id === "where-do-traditions-come-from")!,
-  ALL_FAQS.find((f) => f.id === "is-my-dream-text-public")!
+  ALL_FAQS.find((f) => f.id === "how-is-ai-used")!,
+  ALL_FAQS.find((f) => f.id === "is-my-dream-text-public")!,
+  ALL_FAQS.find((f) => f.id === "where-are-saved-dreams-stored")!
 ];

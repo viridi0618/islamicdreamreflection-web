@@ -1,45 +1,42 @@
 {
-  "meta": {
-    "description": "Registry of data sources feeding the keyword database. Seed entries are honest about being estimates; production data must come from the CSV/API sources listed below.",
-    "version": "0.1.0"
+  "bukhari-6984": {
+    "id": "bukhari-6984",
+    "type": "hadith",
+    "title": "A true good dream is from Allah, and a bad dream is from Satan",
+    "collection": "Sahih al-Bukhari",
+    "reference": "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6984",
+    "url": "https://sunnah.com/bukhari/6984",
+    "status": "verified",
+    "supports": "The hadith distinguishes a true good dream (from Allah) from a bad dream (from Satan), establishing that dreams are not all the same kind of experience."
   },
-  "sources": [
-    {
-      "id": "seed-manual",
-      "name": "Seed: manual curation",
-      "type": "seed",
-      "description": "Hand-curated core keywords defined per dream entity in scripts/entities/. Used to bootstrap the database.",
-      "status": "active"
-    },
-    {
-      "id": "seed-pattern",
-      "name": "Seed: pattern generation",
-      "type": "seed",
-      "description": "Keywords derived from entity names and related terms using documented query patterns. Volume bands are estimates.",
-      "status": "active"
-    },
-    {
-      "id": "gkp-csv",
-      "name": "Google Keyword Planner CSV",
-      "type": "csv-import",
-      "description": "Real search volume / competition data. Import into the database via data/raw/keyword-planner.csv (schema: keyword, avg_monthly_searches, competition, cpc_usd).",
-      "status": "planned",
-      "importPath": "data/raw/keyword-planner.csv"
-    },
-    {
-      "id": "google-suggest",
-      "name": "Google Suggest API",
-      "type": "api",
-      "description": "Autocomplete suggestions reserved for a future integration pass (interface stubbed).",
-      "status": "planned"
-    },
-    {
-      "id": "competitor-csv",
-      "name": "Competitor keyword CSV",
-      "type": "csv-import",
-      "description": "Keywords observed on competitor sites (URL slugs, page titles). See data/raw/competitor-keywords.csv.",
-      "status": "planned",
-      "importPath": "data/raw/competitor-keywords.csv"
-    }
-  ]
+  "bukhari-6985": {
+    "id": "bukhari-6985",
+    "type": "hadith",
+    "title": "Good dreams: thank Allah and share; bad dreams: seek refuge and stay quiet",
+    "collection": "Sahih al-Bukhari",
+    "reference": "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6985",
+    "url": "https://sunnah.com/bukhari/6985",
+    "status": "verified",
+    "supports": "The hadith gives the traditional response to a good dream (thank Allah, narrate it) and to a bad dream (seek refuge in Allah from its evil, do not dwell on it)."
+  },
+  "bukhari-6986": {
+    "id": "bukhari-6986",
+    "type": "hadith",
+    "title": "A good dream that comes true is from Allah, a bad dream is from Satan",
+    "collection": "Sahih al-Bukhari",
+    "reference": "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6986",
+    "url": "https://sunnah.com/bukhari/6986",
+    "status": "verified",
+    "supports": "The hadith teaches that a bad dream will not harm the one who seeks refuge in Allah from Satan, and includes the etiquette of spitting lightly to the left."
+  },
+  "muslim-2263a": {
+    "id": "muslim-2263a",
+    "type": "hadith",
+    "title": "Dreams are of three types",
+    "collection": "Sahih Muslim",
+    "reference": "Sahih Muslim, Book of Dreams (Kitab al-Ru'ya), hadith 2263a",
+    "url": "https://sunnah.com/muslim:2263a",
+    "status": "verified",
+    "supports": "The hadith explicitly describes three types of dreams: a good dream which is good tidings from Allah, an evil dream which causes pain and is from the satan, and a dream which is a suggestion of one's own mind. It also teaches that a disliked dream should not be related to people."
+  }
 }
