@@ -41,9 +41,12 @@ export default function RootLayout({
             </Link>
             <nav className="site-nav" aria-label="Main">
               <Link href="/">Home</Link>
-              <Link href="/interpreter">Interpreter</Link>
               <Link href="/#dreams">Dreams</Link>
+              <Link href="/faq">FAQ</Link>
               <Link href="/my-dreams">My Dreams</Link>
+              <Link href="/#reflection" className="site-nav__cta">
+                Start a Reflection
+              </Link>
             </nav>
           </div>
         </header>
@@ -56,6 +59,7 @@ export default function RootLayout({
               <Link href="/about#interpretation-guidance">
                 About our interpretations
               </Link>
+              <Link href="/faq">FAQ</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/privacy">Privacy</Link>
               <Link href="/terms">Terms</Link>

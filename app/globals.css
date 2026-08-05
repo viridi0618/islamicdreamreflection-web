@@ -133,6 +133,21 @@ a:hover {
   color: var(--green-700);
 }
 
+.site-nav__cta {
+  padding: 6px 14px;
+  border: 1px solid var(--green-700);
+  border-radius: 999px;
+  color: var(--green-700);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-nav__cta:hover {
+  background: var(--green-700);
+  color: var(--gold-pale);
+}
+
 /* ---------- Hero (home) ---------- */
 
 .hero {
@@ -191,43 +206,6 @@ a:hover {
 .hero--home .ritual__head,
 .hero--home .ritual--processing {
   text-align: center;
-}
-
-.hero--home .ritual-optional {
-  margin: 18px 0;
-}
-
-.ritual-optional__summary {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  color: var(--green-700);
-  font-size: 14px;
-  font-weight: 600;
-  user-select: none;
-  list-style: none;
-}
-
-.ritual-optional__summary::-webkit-details-marker {
-  display: none;
-}
-
-.ritual-optional__summary:hover {
-  color: var(--green-900);
-}
-
-.ritual-optional__body {
-  margin-top: 16px;
-  padding: 16px;
-  border: 1px dashed var(--line-strong);
-  border-radius: 12px;
-  background: rgba(250, 246, 236, 0.5);
-}
-
-.ritual-optional[open] .ritual-optional__summary span {
-  transform: rotate(180deg);
-  display: inline-block;
 }
 
 .hero--home .hero__browse {
@@ -686,6 +664,112 @@ a:hover {
   padding: 0 20px 16px;
   color: var(--ink-soft);
   font-size: 15px;
+}
+
+/* ---------- How It Works (home) ---------- */
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.how-card {
+  padding: 26px 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.how-card__num {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(140deg, var(--green-900), var(--green-700));
+  color: var(--gold-pale);
+  font-family: var(--serif);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.how-card h3 {
+  font-size: 19px;
+  margin: 0 0 8px;
+  color: var(--green-950);
+}
+
+.how-card p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  margin: 0;
+}
+
+/* ---------- FAQ page ---------- */
+
+.faq-intro {
+  max-width: 760px;
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+.faq-anchors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 30px;
+}
+
+.faq-anchors a {
+  padding: 7px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--green-700);
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.faq-anchors a:hover {
+  background: var(--green-700);
+  color: var(--gold-pale);
+}
+
+.faq-category {
+  margin-bottom: 36px;
+}
+
+.faq-category h2 {
+  font-size: clamp(21px, 3vw, 26px);
+  margin-bottom: 16px;
+}
+
+/* ---------- FAQ preview (home) ---------- */
+
+.faq-view-all {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.faq-view-all a {
+  color: var(--green-700);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--green-700);
+}
+
+.faq-view-all a:hover {
+  color: var(--green-900);
+}
+
+@media (max-width: 640px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- AI CTA ---------- */
@@ -1594,11 +1678,10 @@ a:hover {
 
 /* context option groups */
 .ritual-group {
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: var(--card);
-  padding: 18px 20px 20px;
-  margin: 0 0 16px;
+  border: none;
+  background: transparent;
+  padding: 4px 0 14px;
+  margin: 0 0 14px;
 }
 
 .ritual-group legend {
@@ -1606,7 +1689,8 @@ a:hover {
   font-size: 16px;
   font-weight: 600;
   color: var(--green-950);
-  padding: 0 8px;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 /* Phase 5.2: optional modifier groups on the first screen */
@@ -3005,7 +3089,13 @@ a:hover {
     height: 56px;
   }
   .site-nav {
-    gap: 14px;
+    gap: 10px;
+  }
+  .site-nav a {
+    font-size: 14px;
+  }
+  .site-nav__cta {
+    padding: 5px 10px;
   }
   .hero {
     padding: 46px 0 34px;

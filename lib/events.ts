@@ -31,7 +31,10 @@ export type EventName =
   | "reflection_completed"
   | "symbol_viewed"
   | "traditional_viewed"
-  | "share_completed";
+  | "share_completed"
+  /* FAQ page (Phase 2 IA) */
+  | "faq_opened"
+  | "faq_question_expanded";
 
 interface StoredEvent {
   name: EventName;

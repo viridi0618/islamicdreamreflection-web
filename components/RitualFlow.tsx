@@ -190,6 +190,19 @@ export function RitualFlow({ initialSymbol, entryPoint = "interpreter" }: Ritual
             }
           }}
         >
+          <label className="interp-form__label" htmlFor="ritual-title">
+            Give your dream a name <em>(optional)</em>
+          </label>
+          <input
+            id="ritual-title"
+            type="text"
+            value={dreamTitle}
+            onChange={(e) => handleTitleChange(e.target.value)}
+            placeholder="My dream about the ocean"
+            maxLength={60}
+            className="ritual-title__input"
+          />
+
           <label className="interp-form__label" htmlFor="ritual-dream">
             Describe your dream
           </label>
@@ -203,66 +216,47 @@ export function RitualFlow({ initialSymbol, entryPoint = "interpreter" }: Ritual
             className="interp-form__textarea ritual__textarea"
           />
 
-          <details className="ritual-optional">
-            <summary className="ritual-optional__summary">
-              Add optional context <span aria-hidden="true">▾</span>
-            </summary>
-
-            <div className="ritual-optional__body">
-              <label className="interp-form__label" htmlFor="ritual-title">
-                Give your dream a name (optional)
-              </label>
-              <input
-                id="ritual-title"
-                type="text"
-                value={dreamTitle}
-                onChange={(e) => handleTitleChange(e.target.value)}
-                placeholder="My dream"
-                maxLength={60}
-                className="ritual-title__input"
-              />
-
-              <fieldset className="ritual-group ritual-group--optional">
-                <legend>What part of life feels connected? <em>(optional)</em></legend>
-                <div className="option-row">
-                  {FOCUS_OPTIONS.map((opt) => {
-                    const selected = context.focus.includes(opt.id);
-                    return (
-                      <button
-                        key={opt.id}
-                        type="button"
-                        className={`option-chip${selected ? " option-chip--selected" : ""}`}
-                        onClick={() => toggleFocus(opt.id)}
-                        aria-pressed={selected}
-                      >
-                        <span aria-hidden="true">{opt.icon}</span> {opt.title}
-                      </button>
-                    );
-                  })}
-                </div>
-              </fieldset>
-
-              <fieldset className="ritual-group ritual-group--optional">
-                <legend>How did the dream feel? <em>(optional)</em></legend>
-                <div className="option-row">
-                  {EMOTION_OPTIONS.map((opt) => {
-                    const selected = context.emotion.includes(opt.value);
-                    return (
-                      <button
-                        key={opt.value}
-                        type="button"
-                        className={`option-chip${selected ? " option-chip--selected" : ""}`}
-                        onClick={() => toggleEmotion(opt.value)}
-                        aria-pressed={selected}
-                      >
-                        <span aria-hidden="true">{opt.icon}</span> {opt.label}
-                      </button>
-                    );
-                  })}
-                </div>
-              </fieldset>
+          <fieldset className="ritual-group ritual-group--optional">
+            <legend>
+              What part of life feels connected? <em>(optional)</em>
+            </legend>
+            <div className="option-row">
+              {FOCUS_OPTIONS.map((opt) => {
+                const selected = context.focus.includes(opt.id);
+                return (
+                  <button
+                    key={opt.id}
+                    type="button"
+                    className={`option-chip${selected ? " option-chip--selected" : ""}`}
+                    onClick={() => toggleFocus(opt.id)}
+                    aria-pressed={selected}
+                  >
+                    <span aria-hidden="true">{opt.icon}</span> {opt.title}
+                  </button>
+                );
+              })}
             </div>
-          </details>
+          </fieldset>
+
+          <fieldset className="ritual-group ritual-group--optional">
+            <legend>How did the dream feel? <em>(optional)</em></legend>
+            <div className="option-row">
+              {EMOTION_OPTIONS.map((opt) => {
+                const selected = context.emotion.includes(opt.value);
+                return (
+                  <button
+                    key={opt.value}
+                    type="button"
+                    className={`option-chip${selected ? " option-chip--selected" : ""}`}
+                    onClick={() => toggleEmotion(opt.value)}
+                    aria-pressed={selected}
+                  >
+                    <span aria-hidden="true">{opt.icon}</span> {opt.label}
+                  </button>
+                );
+              })}
+            </div>
+          </fieldset>
 
           {error && <div className="chat__error" role="alert">{error}</div>}
 
