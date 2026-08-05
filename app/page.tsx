@@ -1,85 +1,199 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { loadCategories, loadEnabledPages } from "@/lib/data";
+import { loadEnabledPages } from "@/lib/data";
 import { RitualFlow } from "@/components/RitualFlow";
 import { HOME_FAQ_PREVIEW } from "@/lib/faq";
 import { dreamUrl, SITE_NAME, SITE_URL } from "@/lib/site";
+import { dreamCardSummary } from "@/lib/dream-summaries";
+import { SOURCES, resolvePublicSources } from "@/data/sources";
+import {
+  PrivacyLink,
+  MyDreamsCta,
+  MethodologyLink,
+  DreamTypesLink,
+  GuideCardLink,
+  QuoteSourceLink,
+  DreamTypeSourceLink,
+  HomeFaq
+} from "@/components/HomeTracking";
+import {
+  HERO_TRUST_POINTS,
+  HERO_COPY,
+  SAVE_CONTROL,
+  ISLAMIC_APPROACH,
+  DREAM_TYPES,
+  HOME_QUOTE,
+  QUOTE_SOURCE_ID,
+  HOW_IT_WORKS,
+  DREAM_GUIDES
+} from "@/lib/home";
 
 export const metadata: Metadata = {
-  title: "Islamic Dream Interpretation — Traditional Meanings & Sources",
+  title: "Islamic Dream Interpretation & Reflection",
   description:
-    "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, drawing from classical dream traditions. Not predictions.",
+    "Explore your dream through Islamic traditions, personal context, and source-transparent reflection. Begin without an account and save only if useful.",
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "Islamic Dream Interpretation — Traditional Meanings & Sources",
+    title: "Islamic Dream Interpretation & Reflection",
     description:
-      "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, drawing from classical dream traditions. Not predictions.",
+      "Explore your dream through Islamic traditions, personal context, and source-transparent reflection. Begin without an account and save only if useful.",
     url: SITE_URL,
     siteName: SITE_NAME,
     type: "website"
   },
   twitter: {
     card: "summary",
-    title: "Islamic Dream Interpretation — Traditional Meanings & Sources",
+    title: "Islamic Dream Interpretation & Reflection",
     description:
-      "Snake, water, teeth, dead person and pregnancy dreams explained the traditional Islamic way, drawing from classical dream traditions. Not predictions."
+      "Explore your dream through Islamic traditions, personal context, and source-transparent reflection. Begin without an account and save only if useful."
   }
 };
 
-const HOW_IT_WORKS = [
-  {
-    title: "Describe your dream",
-    body: "Give your dream a name, write what you remember, and add any optional context that feels meaningful."
-  },
-  {
-    title: "Explore traditional perspectives",
-    body: "We identify key symbols and present related perspectives from Islamic dream traditions."
-  },
-  {
-    title: "Reflect, save, or share",
-    body: "Receive a personal reflection and gentle guidance, then choose whether to save or share the moment."
-  }
-];
-
 export default function HomePage() {
   const pages = loadEnabledPages();
-  const categories = loadCategories();
-  const categoryEntries = Object.entries(categories).filter(
-    ([key]) => key !== "meta" && !key.startsWith("$")
-  ) as Array<[string, string[]]>;
+  // Unified source registry: the homepage reads the SAME sources as dream
+  // pages, guides and the methodology page (data/sources.ts).
+  const quoteSource = SOURCES[QUOTE_SOURCE_ID];
+  const dreamTypeSources = resolvePublicSources(DREAM_TYPES.sourceIds);
 
   return (
     <>
       <section className="hero hero--home" id="reflection">
         <div className="shell">
-          <h1>Islamic Dream Interpretation &amp; Reflection</h1>
-          <p className="hero__lead">
-            Reflect on your dream through Islamic traditions.
-          </p>
-          <p className="hero__sub">
-            Give your dream a name, describe what you remember, and add any
-            context that feels meaningful.
-          </p>
+          <span className="hero__eyebrow">{HERO_COPY.eyebrow}</span>
+          <h1>
+            {HERO_COPY.h1Top} <em>{HERO_COPY.h1Em}</em>
+          </h1>
+          <p className="hero__lead">{HERO_COPY.lead}</p>
+
+          <ul className="hero-trust" aria-label="Why you can trust this reflection">
+            {HERO_TRUST_POINTS.map((point) => (
+              <li key={point}>
+                <span className="hero-trust__mark" aria-hidden="true">
+                  ✓
+                </span>
+                {point}
+              </li>
+            ))}
+          </ul>
+
           <div className="hero__ritual">
             <RitualFlow entryPoint="home" compactHeader />
+            <p className="hero-privacy">
+              {HERO_COPY.privacyNote}{" "}
+              <PrivacyLink
+                href={HERO_COPY.privacyHref}
+                label={HERO_COPY.privacyLinkLabel}
+              />
+            </p>
           </div>
+        </div>
+      </section>
+
+      <section className="section" id="save-and-privacy">
+        <div className="shell">
+          <div className="section__head">
+            <h2>{SAVE_CONTROL.title}</h2>
+            <span className="rule" />
+          </div>
+          <p className="save-control__body">{SAVE_CONTROL.body}</p>
+          <div className="save-control__grid">
+            {SAVE_CONTROL.steps.map((step) => (
+              <div key={step.title} className="save-control__item">
+                <h3>{step.title}</h3>
+                <p>{step.body}</p>
+              </div>
+            ))}
+          </div>
+          <MyDreamsCta
+            ctaHref={SAVE_CONTROL.ctaHref}
+            ctaLabel={SAVE_CONTROL.ctaLabel}
+            secondaryHref={SAVE_CONTROL.secondaryHref}
+            secondaryLabel={SAVE_CONTROL.secondaryLabel}
+          />
+        </div>
+      </section>
+
+      <section className="section" id="islamic-approach">
+        <div className="shell">
+          <div className="section__head">
+            <h2>{ISLAMIC_APPROACH.title}</h2>
+            <span className="rule" />
+          </div>
+          <div className="approach-grid">
+            {ISLAMIC_APPROACH.points.map((point) => (
+              <div key={point.title} className="approach-card">
+                <h3>{point.title}</h3>
+                <p>{point.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="approach-link">
+            <MethodologyLink
+              href={ISLAMIC_APPROACH.linkHref}
+              label={ISLAMIC_APPROACH.linkLabel}
+            />
+          </p>
+        </div>
+      </section>
+
+      <section className="section" id="dream-types">
+        <div className="shell">
+          <div className="section__head">
+            <h2>{DREAM_TYPES.title}</h2>
+            <span className="rule" />
+          </div>
+          <p className="dream-types__intro">{DREAM_TYPES.intro}</p>
+          <div className="dream-types__grid">
+            {DREAM_TYPES.cards.map((card) => (
+              <div key={card.title} className="dream-type-card">
+                <h3>{card.title}</h3>
+                <p>{card.body}</p>
+              </div>
+            ))}
+          </div>
+          {dreamTypeSources.length > 0 && (
+            <p className="dream-types__source">
+              {DREAM_TYPES.sourcePrefix}{" "}
+              {dreamTypeSources.map((s, i) => (
+                <span key={s.id}>
+                  {i > 0 && " · "}
+                  <b>{s.reference}</b>{" "}
+                  {s.url && (
+                    <DreamTypeSourceLink
+                      href={s.url}
+                      label="View source"
+                    />
+                  )}
+                </span>
+              ))}
+            </p>
+          )}
+          <p className="dream-types__link">
+            <DreamTypesLink
+              href={DREAM_TYPES.linkHref}
+              label={DREAM_TYPES.linkLabel}
+            />
+          </p>
         </div>
       </section>
 
       <section className="section" id="how-it-works">
         <div className="shell">
           <div className="section__head">
-            <h2>How It Works</h2>
+            <h2>How the Reflection Works</h2>
             <span className="rule" />
           </div>
-          <div className="how-grid">
+          <div className="how-editorial">
             {HOW_IT_WORKS.map((step, i) => (
-              <div key={step.title} className="how-card">
-                <span className="how-card__num" aria-hidden="true">
+              <div key={step.title} className="how-editorial__step">
+                <span className="how-editorial__num" aria-hidden="true">
                   {i + 1}
                 </span>
-                <h3>{step.title}</h3>
-                <p>{step.body}</p>
+                <div>
+                  <h3>{step.title}</h3>
+                  <p>{step.body}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -89,55 +203,70 @@ export default function HomePage() {
       <section className="section" id="dreams">
         <div className="shell">
           <div className="section__head">
-            <h2>Popular Dream Symbols</h2>
+            <h2>{DREAM_GUIDES.title}</h2>
             <span className="rule" />
-            <span className="section__sub">{pages.length} symbols</span>
           </div>
+          <p className="section__sub">{DREAM_GUIDES.subtitle}</p>
           <div className="dream-grid">
-            {pages.map(({ page, entity }, i) => (
-              <Link
-                key={page.slug}
-                href={dreamUrl(page.slug)}
-                className="dream-card"
-                style={{ animationDelay: `${i * 70}ms` }}
-              >
-                <div className="dream-card__top">
-                  <span className="dream-card__cat">{entity.category}</span>
+            {pages.map(({ page, entity }, i) => {
+              const summary =
+                dreamCardSummary(entity.id) ??
+                (entity.traditional_notes?.[1] ??
+                  entity.interpretation.general?.[0] ??
+                  "");
+              return (
+                <div
+                  key={page.slug}
+                  className="dream-card"
+                  style={{ animationDelay: `${i * 70}ms` }}
+                >
+                  <GuideCardLink href={dreamUrl(page.slug)}>
+                    <div className="dream-card__top">
+                      <span className="dream-card__cat">{entity.category}</span>
+                    </div>
+                    <h3>{page.title}</h3>
+                    <p>{summary}</p>
+                    <span className="dream-card__link">
+                      {DREAM_GUIDES.cardLinkLabel} →
+                    </span>
+                  </GuideCardLink>
                 </div>
-                <h3>{page.title}</h3>
-                <p>
-                  {(
-                    entity.traditional_notes?.[1] ??
-                    entity.interpretation.general?.[0] ??
-                    ""
-                  ).slice(0, 120)}…
-                </p>
-                <span className="dream-card__link">Read interpretation →</span>
-              </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
 
-      <section className="section" id="categories">
-        <div className="shell">
-          <div className="section__head">
-            <h2>Browse by Category</h2>
-            <span className="rule" />
-            <span className="section__sub">
-              {categoryEntries.length} categories · common dream themes
-            </span>
+      {quoteSource && quoteSource.status === "verified" && (
+        <section className="section" id="quote">
+          <div className="shell">
+            <div className="quote-block">
+              <p
+                className="quote-block__arabic"
+                lang={HOME_QUOTE.arabicLang}
+                dir="rtl"
+              >
+                {HOME_QUOTE.arabic}
+              </p>
+              <p className="quote-block__translation">
+                {HOME_QUOTE.translation}
+              </p>
+              <p className="quote-block__attribution">
+                {HOME_QUOTE.attributionNote} · {quoteSource.reference}{" "}
+                {quoteSource.url && (
+                  <QuoteSourceLink
+                    href={quoteSource.url}
+                    label={HOME_QUOTE.sourceLabel}
+                  />
+                )}
+              </p>
+              <p className="quote-block__supports">
+                <b>{HOME_QUOTE.supportsLabel}:</b> {quoteSource.supports}
+              </p>
+            </div>
           </div>
-          <div className="cat-strip">
-            {categoryEntries.map(([category, themes]) => (
-              <span key={category} className="cat-chip">
-                <b>{category}</b>
-                <span>{themes.length} themes</span>
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section className="section" id="common-questions">
         <div className="shell">
@@ -145,16 +274,9 @@ export default function HomePage() {
             <h2>Common Questions</h2>
             <span className="rule" />
           </div>
-          <div className="faq">
-            {HOME_FAQ_PREVIEW.map((faq) => (
-              <details key={faq.id} className="faq__item">
-                <summary>{faq.question}</summary>
-                <div className="faq__body">{faq.answer}</div>
-              </details>
-            ))}
-          </div>
+          <HomeFaq faqs={HOME_FAQ_PREVIEW} />
           <p className="faq-view-all">
-            <Link href="/faq">View all FAQs</Link>
+            <Link href="/faq">View all questions →</Link>
           </p>
         </div>
       </section>

@@ -22,12 +22,6 @@ export function SymbolOverview({ entity }: { entity: DreamEntity }) {
           ))}
         </div>
       </div>
-      <div className="symbol-card__cell" role="listitem">
-        <div className="symbol-card__label">Status</div>
-        <div className="symbol-card__value" style={{ fontSize: 15, color: "var(--gold)" }}>
-          {entity.status}
-        </div>
-      </div>
     </div>
   );
 }

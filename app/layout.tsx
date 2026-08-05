@@ -54,18 +54,44 @@ export default function RootLayout({
         </header>
         <main>{children}</main>
         <footer className="site-footer">
-          <div className="shell site-footer__inner">
-            <span>{SITE_NAME}</span>
-            <nav className="site-footer__nav" aria-label="Footer">
-              <Link href="/about">About</Link>
-              <Link href="/about#interpretation-guidance">
-                About our interpretations
-              </Link>
-              <Link href="/faq">FAQ</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/privacy">Privacy</Link>
-              <Link href="/terms">Terms</Link>
-            </nav>
+          <div className="shell">
+            <div className="site-footer__grid">
+              <nav className="site-footer__group" aria-label="Explore">
+                <h3>Explore</h3>
+                <Link href="/">Home</Link>
+                <Link href="/#dreams">Dreams</Link>
+                <Link href="/faq">FAQ</Link>
+                <Link href="/my-dreams">My Dreams</Link>
+              </nav>
+              <nav className="site-footer__group" aria-label="Sources and guides">
+                <h3>Sources and guides</h3>
+                <Link href="/sources-methodology">Sources &amp; Methodology</Link>
+                <Link href="/guides/three-types-of-dreams-in-islam">
+                  Three Types of Dreams
+                </Link>
+                <Link href="/guides/what-to-do-after-a-bad-dream">
+                  After a Bad Dream
+                </Link>
+                <Link href="/guides/dreams-in-the-quran">
+                  Dreams in the Qur’an
+                </Link>
+              </nav>
+              <nav className="site-footer__group" aria-label="Privacy and terms">
+                <h3>Privacy and terms</h3>
+                <Link href="/privacy">Privacy</Link>
+                <Link href="/terms">Terms</Link>
+                <Link href="/contact">Contact</Link>
+              </nav>
+              <div className="site-footer__brand">
+                <span className="site-footer__brand-name">{SITE_NAME}</span>
+                <p>
+                  Islamic Dream Reflection offers private, source-transparent
+                  reflection through Islamic traditions and personal context.
+                  It does not provide predictions, fatwas, or knowledge of the
+                  unseen.
+                </p>
+              </div>
+            </div>
           </div>
         </footer>
       </body>

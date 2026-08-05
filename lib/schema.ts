@@ -4,6 +4,7 @@
  */
 import type { DreamEntity } from "./data";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./site";
+import { visibleWordCount } from "./article-text";
 
 export function organizationSchema(): Record<string, unknown> {
   return {
@@ -41,14 +42,21 @@ export function articleSchema(params: {
     url: `${SITE_URL}/dreams/${params.slug}`,
     datePublished: params.datePublished,
     dateModified: params.dateModified,
+    mainEntityOfPage: `${SITE_URL}/dreams/${params.slug}`,
     about: params.entity.name,
     articleSection: params.entity.category,
     keywords: params.entity.keywords.join(", "),
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: `${SITE_URL}/about`
+    },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL
     },
+    wordCount: visibleWordCount(params.entity),
     inLanguage: "en"
   };
 }

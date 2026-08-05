@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AiEntryBanner } from "@/components/AiEntryBanner";
-import { AiCta } from "@/components/AiCta";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ClassicalReferences } from "@/components/ClassicalReferences";
+import { DreamArticle } from "@/components/DreamArticle";
+import { DreamReflectionCta } from "@/components/DreamReflectionCta";
 import { FaqSection, buildFaqs } from "@/components/FaqSection";
 import { ReflectionQuestions } from "@/components/ReflectionQuestions";
 import { RelatedDreams } from "@/components/RelatedDreams";
@@ -19,6 +21,7 @@ import {
   breadcrumbSchema,
   faqSchema
 } from "@/lib/schema";
+import { readingMinutes } from "@/lib/article-text";
 import { PAGE_BY_SLUG, SITE_NAME, SITE_URL, LAST_UPDATED } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -40,7 +43,7 @@ export async function generateMetadata({
     page.metaDescription ??
     [
       entity.interpretation.general?.[0] ?? page.title,
-      "Traditional interpretations, not predictions."
+      "Traditional perspectives, not predictions."
     ].join(" ");
 
   return {
@@ -77,6 +80,20 @@ export default async function DreamPage({
     faqSchema(faqs)
   ];
 
+  // Pillar pages with full article content use the new template; pages not
+  // yet rewritten keep the legacy section layout.
+  if (entity.article) {
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <DreamArticle entity={entity} pageTitle={page.title} slug={slug} pages={pages} />
+      </>
+    );
+  }
+
   return (
     <>
       <script
@@ -95,8 +112,8 @@ export default async function DreamPage({
                 "Traditional scholars have discussed this dream symbol; interpretations vary by context and tradition."}
             </p>
             <span className="disclaimer">
-              Islamic dream interpretation is a collection of traditional
-              readings — not a prediction.
+              Traditional perspectives vary by context and are not predictions
+              or religious rulings.
             </span>
           </div>
           <p
@@ -107,14 +124,9 @@ export default async function DreamPage({
               color: "var(--ink-faint)"
             }}
           >
-            {entity.review_status !== "draft" && entity.last_reviewed ? (
-              <>
-                Last reviewed: {entity.last_reviewed} · Reviewed by the Islamic
-                Dream Reflection Editorial Team
-              </>
-            ) : (
-              <>Last updated: {LAST_UPDATED}</>
-            )}
+            Prepared by{" "}
+            <Link href="/about#methodology">Islamic Dream Reflection</Link> ·{" "}
+            Updated: {LAST_UPDATED} · {readingMinutes(entity)} min read
           </p>
         </section>
 
@@ -174,7 +186,7 @@ export default async function DreamPage({
         </section>
 
         <section className="section">
-          <AiCta />
+          <DreamReflectionCta entityId={entity.id} />
         </section>
 
         <section className="section" id="related-dreams">
@@ -184,8 +196,8 @@ export default async function DreamPage({
           </div>
           <RelatedDreams pages={pages} currentSlug={slug} />
           <p style={{ color: "var(--ink-faint)", fontSize: 13.5, marginTop: 14 }}>
-            More {categoryLabel(entity.category)} dream pages will appear here as
-            the knowledge base expands beyond validation.
+            More {categoryLabel(entity.category)} dream pages are added as
+            interpretations are reviewed and prepared.
           </p>
         </section>
       </article>
