@@ -1,12 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { loadCategories, loadEnabledPages } from "@/lib/data";
-import { dreamUrl } from "@/lib/site";
+import { dreamUrl, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Traditional Islamic Dream Interpretation",
   description:
-    "A knowledge base of dream symbols as recorded in the Islamic tradition: snake, dead person, teeth, water, pregnancy and more. Traditional interpretations, not predictions."
+    "A knowledge base of dream symbols as recorded in the Islamic tradition: snake, dead person, teeth, water, pregnancy and more. Traditional interpretations, not predictions.",
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    title: "Traditional Islamic Dream Interpretation",
+    description:
+      "A knowledge base of dream symbols as recorded in the Islamic tradition: snake, dead person, teeth, water, pregnancy and more. Traditional interpretations, not predictions.",
+    url: SITE_URL,
+    siteName: "Islamic Dream Knowledge Base",
+    type: "website"
+  },
+  twitter: {
+    card: "summary",
+    title: "Traditional Islamic Dream Interpretation",
+    description:
+      "A knowledge base of dream symbols as recorded in the Islamic tradition: snake, dead person, teeth, water, pregnancy and more. Traditional interpretations, not predictions."
+  }
 };
 
 export default function HomePage() {

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: `${SITE_NAME} — Traditional Islamic Dream Interpretation`,
     template: `%s | ${SITE_NAME}`
