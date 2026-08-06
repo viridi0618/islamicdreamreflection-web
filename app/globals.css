@@ -38,6 +38,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background-color: var(--paper);
   background-image:
     radial-gradient(circle at 12% 8%, rgba(211, 172, 94, 0.10), transparent 34%),
@@ -291,8 +292,6 @@ a:hover {
   align-items: baseline;
   gap: 14px;
   margin-bottom: 26px;
-  max-width: 980px;
-  margin-inline: auto;
 }
 
 .section__head h2 {
@@ -425,7 +424,6 @@ a:hover {
   font-size: 13.5px;
   color: var(--ink-faint);
   margin-bottom: 18px;
-  max-width: 760px;
 }
 
 .crumbs a {
@@ -442,8 +440,6 @@ a:hover {
 
 .quick-answer {
   position: relative;
-  max-width: 760px;
-  margin: 0 auto;
   padding: 20px 24px 20px 28px;
   border-radius: var(--radius);
   background: linear-gradient(135deg, rgba(13, 59, 46, 0.06), rgba(211, 172, 94, 0.10));
@@ -527,8 +523,6 @@ a:hover {
 /* ---------- Prose blocks ---------- */
 
 .prose {
-  max-width: 760px;
-  margin: 0 auto;
 }
 
 .prose p {
@@ -604,7 +598,6 @@ a:hover {
 
 .ref-table {
   width: 100%;
-  max-width: 760px;
   border-collapse: collapse;
   font-size: 15px;
 }
@@ -639,7 +632,6 @@ a:hover {
   padding: 0;
   display: grid;
   gap: 14px;
-  max-width: 760px;
 }
 
 .reflect-list li {
@@ -668,7 +660,6 @@ a:hover {
 /* ---------- FAQ ---------- */
 
 .faq {
-  max-width: 760px;
 }
 
 .faq__item {
@@ -721,8 +712,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  max-width: 980px;
-  margin: 0 auto;
 }
 
 .how-card {
@@ -761,7 +750,6 @@ a:hover {
 /* ---------- FAQ page ---------- */
 
 .faq-intro {
-  max-width: 760px;
   color: var(--ink-soft);
   font-size: 16px;
 }
@@ -929,7 +917,6 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  max-width: 760px;
   margin: 0 auto 18px;
   padding: 16px 20px;
   border: 1px solid var(--gold);
@@ -1011,8 +998,7 @@ a:hover {
 
 /* form */
 .interp-form {
-  max-width: 760px;
-  margin: 0 auto 40px;
+  margin-bottom: 40px;
   padding: 26px;
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -1087,8 +1073,6 @@ a:hover {
 
 /* result blocks */
 .interp-result {
-  max-width: 760px;
-  margin: 0 auto;
 }
 
 .interp-block {
@@ -3071,13 +3055,6 @@ a:hover {
 
 @media (max-width: 720px) {
   .site-footer__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .site-footer__grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -3143,7 +3120,10 @@ a:hover {
     text-align: center;
     justify-content: center;
   }
-  .cta-group,
+  .cta-group {
+    flex-direction: column;
+    gap: 10px;
+  }
   .hero__cta,
   .save-control__cta {
     gap: 10px;
@@ -3442,8 +3422,7 @@ a:hover {
 /* ---------- Article template (Phase B pillar pages) ---------- */
 
 .article-toc {
-  max-width: 760px;
-  margin: 26px auto 0;
+  margin: 26px 0 0;
   padding: 18px 22px;
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -3480,8 +3459,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  max-width: 980px;
-  margin: 0 auto;
 }
 
 .article-grid__item {
@@ -3518,8 +3495,7 @@ a:hover {
 }
 
 .theme-block {
-  max-width: 760px;
-  margin: 0 auto 26px;
+  margin-bottom: 26px;
   padding: 22px 26px;
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -3585,8 +3561,7 @@ a:hover {
 }
 
 .scenario-block {
-  max-width: 760px;
-  margin: 0 auto 24px;
+  margin-bottom: 24px;
   padding: 22px 26px;
   border-left: 3px solid var(--gold);
   background: var(--card);
@@ -3632,8 +3607,6 @@ a:hover {
 }
 
 .not-prove-list {
-  max-width: 760px;
-  margin: 0 auto;
   display: grid;
   gap: 12px;
   padding: 0;
@@ -3650,8 +3623,7 @@ a:hover {
 }
 
 .inline-link {
-  max-width: 760px;
-  margin: 14px auto 0;
+  margin-top: 14px;
   font-size: 15px;
 }
 
@@ -3669,8 +3641,6 @@ a:hover {
 /* ---------- Sources list (article + methodology page) ---------- */
 
 .source-list {
-  max-width: 760px;
-  margin: 0 auto;
   display: grid;
   gap: 14px;
 }
@@ -3863,8 +3833,7 @@ a:hover {
 
 /* Save & control */
 .save-control__body {
-  max-width: 760px;
-  margin: 0 auto 26px;
+  margin-bottom: 26px;
   color: var(--ink-soft);
   font-size: 16px;
   text-align: center;
@@ -3874,8 +3843,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  max-width: 980px;
-  margin: 0 auto;
 }
 
 .save-control__item {
@@ -3919,6 +3886,12 @@ a:hover {
   justify-content: center;
 }
 
+.cta-group a,
+.cta-group button {
+  white-space: nowrap;
+  max-width: 100%;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -3945,8 +3918,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  max-width: 980px;
-  margin: 0 auto;
 }
 
 .approach-card {
@@ -3989,8 +3960,7 @@ a:hover {
 
 /* Three types of dreams */
 .dream-types__intro {
-  max-width: 760px;
-  margin: 0 auto 26px;
+  margin-bottom: 26px;
   color: var(--ink-soft);
   font-size: 16px;
   text-align: center;
@@ -4000,8 +3970,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  max-width: 980px;
-  margin: 0 auto;
 }
 
 .dream-type-card {
@@ -4026,7 +3994,6 @@ a:hover {
 /* Grounding line under the three dream types */
 .dream-types__source {
   margin: 20px auto 0;
-  max-width: 760px;
   text-align: center;
   color: var(--ink-faint);
   font-size: 13.5px;
@@ -4045,8 +4012,6 @@ a:hover {
 
 /* How the Reflection Works (editorial style) */
 .how-editorial {
-  max-width: 760px;
-  margin: 0 auto;
   display: grid;
   gap: 18px;
 }
@@ -4090,16 +4055,13 @@ a:hover {
 
 /* Questions for reflection (article template) */
 .context-questions__intro {
-  max-width: 760px;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
   color: var(--ink-soft);
   font-size: 15.5px;
   text-align: center;
 }
 
 .context-questions {
-  max-width: 760px;
-  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: grid;
@@ -4119,8 +4081,6 @@ a:hover {
 
 /* Quote block */
 .quote-block {
-  max-width: 980px;
-  margin: 0 auto;
   padding: 34px 36px;
   border: 1px solid var(--line);
   border-radius: 16px;

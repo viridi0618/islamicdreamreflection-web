@@ -13,12 +13,13 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <article className="shell section">
-      <div className="section__head">
-        <h1>About Islamic Dream Reflection</h1>
-        <span className="rule" />
-      </div>
+      <div className="reading-container">
+        <div className="section__head">
+          <h1>About Islamic Dream Reflection</h1>
+          <span className="rule" />
+        </div>
 
-      <div className="prose">
+        <div className="prose">
         <h2 id="interpretation-guidance">About Our Interpretations</h2>
         <p>
           Islamic Dream Reflection presents educational perspectives inspired
@@ -98,6 +99,7 @@ export default function AboutPage() {
           <Link href="/contact">contact us</Link>. We welcome corrections and
           review them as part of our editorial process.
         </p>
+        </div>
       </div>
     </article>
   );

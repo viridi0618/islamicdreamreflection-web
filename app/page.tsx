@@ -51,13 +51,12 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const pages = loadEnabledPages();
-  // Unified source registry: the homepage reads the SAME sources as dream
-  // pages, guides and the methodology page (data/sources.ts).
   const quoteSource = SOURCES[QUOTE_SOURCE_ID];
   const dreamTypeSources = resolvePublicSources(DREAM_TYPES.sourceIds);
 
   return (
     <>
+      {/* Hero: centered text with typographic constraints */}
       <section className="hero hero--home" id="reflection">
         <div className="shell">
           <span className="hero__eyebrow">{HERO_COPY.eyebrow}</span>
@@ -90,194 +89,223 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Save & Privacy: wide grid section */}
       <section className="section" id="save-and-privacy">
         <div className="shell">
-          <div className="section__head">
-            <h2>{SAVE_CONTROL.title}</h2>
-            <span className="rule" />
+          <div className="wide-container">
+            <div className="section__head">
+              <h2>{SAVE_CONTROL.title}</h2>
+              <span className="rule" />
+            </div>
           </div>
-          <p className="save-control__body">{SAVE_CONTROL.body}</p>
-          <div className="save-control__grid">
-            {SAVE_CONTROL.steps.map((step) => (
-              <div key={step.title} className="save-control__item">
-                <h3>{step.title}</h3>
-                <p>{step.body}</p>
-              </div>
-            ))}
+          <div className="reading-container">
+            <p className="save-control__body">{SAVE_CONTROL.body}</p>
           </div>
-          <MyDreamsCta
-            ctaHref={SAVE_CONTROL.ctaHref}
-            ctaLabel={SAVE_CONTROL.ctaLabel}
-            secondaryHref={SAVE_CONTROL.secondaryHref}
-            secondaryLabel={SAVE_CONTROL.secondaryLabel}
-          />
-        </div>
-      </section>
-
-      <section className="section" id="islamic-approach">
-        <div className="shell">
-          <div className="section__head">
-            <h2>{ISLAMIC_APPROACH.title}</h2>
-            <span className="rule" />
-          </div>
-          <div className="approach-grid">
-            {ISLAMIC_APPROACH.points.map((point) => (
-              <div key={point.title} className="approach-card">
-                <h3>{point.title}</h3>
-                <p>{point.body}</p>
-              </div>
-            ))}
-          </div>
-          <p className="approach-link">
-            <MethodologyLink
-              href={ISLAMIC_APPROACH.linkHref}
-              label={ISLAMIC_APPROACH.linkLabel}
-            />
-          </p>
-        </div>
-      </section>
-
-      <section className="section" id="dream-types">
-        <div className="shell">
-          <div className="section__head">
-            <h2>{DREAM_TYPES.title}</h2>
-            <span className="rule" />
-          </div>
-          <p className="dream-types__intro">{DREAM_TYPES.intro}</p>
-          <div className="dream-types__grid">
-            {DREAM_TYPES.cards.map((card) => (
-              <div key={card.title} className="dream-type-card">
-                <h3>{card.title}</h3>
-                <p>{card.body}</p>
-              </div>
-            ))}
-          </div>
-          {dreamTypeSources.length > 0 && (
-            <p className="dream-types__source">
-              {DREAM_TYPES.sourcePrefix}{" "}
-              {dreamTypeSources.map((s, i) => (
-                <span key={s.id}>
-                  {i > 0 && " · "}
-                  <b>{s.reference}</b>{" "}
-                  {s.url && (
-                    <DreamTypeSourceLink
-                      href={s.url}
-                      label="View source"
-                    />
-                  )}
-                </span>
-              ))}
-            </p>
-          )}
-          <p className="dream-types__link">
-            <DreamTypesLink
-              href={DREAM_TYPES.linkHref}
-              label={DREAM_TYPES.linkLabel}
-            />
-          </p>
-        </div>
-      </section>
-
-      <section className="section" id="how-it-works">
-        <div className="shell">
-          <div className="section__head">
-            <h2>How the Reflection Works</h2>
-            <span className="rule" />
-          </div>
-          <div className="how-editorial">
-            {HOW_IT_WORKS.map((step, i) => (
-              <div key={step.title} className="how-editorial__step">
-                <span className="how-editorial__num" aria-hidden="true">
-                  {i + 1}
-                </span>
-                <div>
+          <div className="wide-container">
+            <div className="save-control__grid">
+              {SAVE_CONTROL.steps.map((step) => (
+                <div key={step.title} className="save-control__item">
                   <h3>{step.title}</h3>
                   <p>{step.body}</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <MyDreamsCta
+              ctaHref={SAVE_CONTROL.ctaHref}
+              ctaLabel={SAVE_CONTROL.ctaLabel}
+              secondaryHref={SAVE_CONTROL.secondaryHref}
+              secondaryLabel={SAVE_CONTROL.secondaryLabel}
+            />
           </div>
         </div>
       </section>
 
+      {/* Islamic Approach: wide card grid */}
+      <section className="section" id="islamic-approach">
+        <div className="shell">
+          <div className="wide-container">
+            <div className="section__head">
+              <h2>{ISLAMIC_APPROACH.title}</h2>
+              <span className="rule" />
+            </div>
+            <div className="approach-grid">
+              {ISLAMIC_APPROACH.points.map((point) => (
+                <div key={point.title} className="approach-card">
+                  <h3>{point.title}</h3>
+                  <p>{point.body}</p>
+                </div>
+              ))}
+            </div>
+            <p className="approach-link">
+              <MethodologyLink
+                href={ISLAMIC_APPROACH.linkHref}
+                label={ISLAMIC_APPROACH.linkLabel}
+              />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Dream Types: wide card grid */}
+      <section className="section" id="dream-types">
+        <div className="shell">
+          <div className="wide-container">
+            <div className="section__head">
+              <h2>{DREAM_TYPES.title}</h2>
+              <span className="rule" />
+            </div>
+          </div>
+          <div className="reading-container">
+            <p className="dream-types__intro">{DREAM_TYPES.intro}</p>
+          </div>
+          <div className="wide-container">
+            <div className="dream-types__grid">
+              {DREAM_TYPES.cards.map((card) => (
+                <div key={card.title} className="dream-type-card">
+                  <h3>{card.title}</h3>
+                  <p>{card.body}</p>
+                </div>
+              ))}
+            </div>
+            {dreamTypeSources.length > 0 && (
+              <p className="dream-types__source">
+                {DREAM_TYPES.sourcePrefix}{" "}
+                {dreamTypeSources.map((s, i) => (
+                  <span key={s.id}>
+                    {i > 0 && " · "}
+                    <b>{s.reference}</b>{" "}
+                    {s.url && (
+                      <DreamTypeSourceLink
+                        href={s.url}
+                        label="View source"
+                      />
+                    )}
+                  </span>
+                ))}
+              </p>
+            )}
+            <p className="dream-types__link">
+              <DreamTypesLink
+                href={DREAM_TYPES.linkHref}
+                label={DREAM_TYPES.linkLabel}
+              />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works: reading / editorial list */}
+      <section className="section" id="how-it-works">
+        <div className="shell">
+          <div className="reading-container">
+            <div className="section__head">
+              <h2>How the Reflection Works</h2>
+              <span className="rule" />
+            </div>
+            <div className="how-editorial">
+              {HOW_IT_WORKS.map((step, i) => (
+                <div key={step.title} className="how-editorial__step">
+                  <span className="how-editorial__num" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3>{step.title}</h3>
+                    <p>{step.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dream Guides: wide card grid */}
       <section className="section" id="dreams">
         <div className="shell">
-          <div className="section__head">
-            <h2>{DREAM_GUIDES.title}</h2>
-            <span className="rule" />
-          </div>
-          <p className="section__sub">{DREAM_GUIDES.subtitle}</p>
-          <div className="dream-grid">
-            {pages.map(({ page, entity }, i) => {
-              const summary =
-                dreamCardSummary(entity.id) ??
-                (entity.traditional_notes?.[1] ??
-                  entity.interpretation.general?.[0] ??
-                  "");
-              return (
-                <div
-                  key={page.slug}
-                  className="dream-card"
-                  style={{ animationDelay: `${i * 70}ms` }}
-                >
-                  <GuideCardLink href={dreamUrl(page.slug)}>
-                    <div className="dream-card__top">
-                      <span className="dream-card__cat">{entity.category}</span>
-                    </div>
-                    <h3>{page.title}</h3>
-                    <p>{summary}</p>
-                    <span className="dream-card__link">
-                      {DREAM_GUIDES.cardLinkLabel} →
-                    </span>
-                  </GuideCardLink>
-                </div>
-              );
-            })}
+          <div className="wide-container">
+            <div className="section__head">
+              <h2>{DREAM_GUIDES.title}</h2>
+              <span className="rule" />
+            </div>
+            <p className="section__sub">{DREAM_GUIDES.subtitle}</p>
+            <div className="dream-grid">
+              {pages.map(({ page, entity }, i) => {
+                const summary =
+                  dreamCardSummary(entity.id) ??
+                  (entity.traditional_notes?.[1] ??
+                    entity.interpretation.general?.[0] ??
+                    "");
+                return (
+                  <div
+                    key={page.slug}
+                    className="dream-card"
+                    style={{ animationDelay: `${i * 70}ms` }}
+                  >
+                    <GuideCardLink href={dreamUrl(page.slug)}>
+                      <div className="dream-card__top">
+                        <span className="dream-card__cat">{entity.category}</span>
+                      </div>
+                      <h3>{page.title}</h3>
+                      <p>{summary}</p>
+                      <span className="dream-card__link">
+                        {DREAM_GUIDES.cardLinkLabel} →
+                      </span>
+                    </GuideCardLink>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
+      {/* Quote: wide block */}
       {quoteSource && quoteSource.status === "verified" && (
         <section className="section" id="quote">
           <div className="shell">
-            <div className="quote-block">
-              <p
-                className="quote-block__arabic"
-                lang={HOME_QUOTE.arabicLang}
-                dir="rtl"
-              >
-                {HOME_QUOTE.arabic}
-              </p>
-              <p className="quote-block__translation">
-                {HOME_QUOTE.translation}
-              </p>
-              <p className="quote-block__attribution">
-                {HOME_QUOTE.attributionNote} · {quoteSource.reference}{" "}
-                {quoteSource.url && (
-                  <QuoteSourceLink
-                    href={quoteSource.url}
-                    label={HOME_QUOTE.sourceLabel}
-                  />
-                )}
-              </p>
-              <p className="quote-block__supports">
-                <b>{HOME_QUOTE.supportsLabel}:</b> {quoteSource.supports}
-              </p>
+            <div className="wide-container">
+              <div className="quote-block">
+                <p
+                  className="quote-block__arabic"
+                  lang={HOME_QUOTE.arabicLang}
+                  dir="rtl"
+                >
+                  {HOME_QUOTE.arabic}
+                </p>
+                <p className="quote-block__translation">
+                  {HOME_QUOTE.translation}
+                </p>
+                <p className="quote-block__attribution">
+                  {HOME_QUOTE.attributionNote} · {quoteSource.reference}{" "}
+                  {quoteSource.url && (
+                    <QuoteSourceLink
+                      href={quoteSource.url}
+                      label={HOME_QUOTE.sourceLabel}
+                    />
+                  )}
+                </p>
+                <p className="quote-block__supports">
+                  <b>{HOME_QUOTE.supportsLabel}:</b> {quoteSource.supports}
+                </p>
+              </div>
             </div>
           </div>
         </section>
       )}
 
+      {/* Common Questions: reading */}
       <section className="section" id="common-questions">
         <div className="shell">
-          <div className="section__head">
-            <h2>Common Questions</h2>
-            <span className="rule" />
+          <div className="reading-container">
+            <div className="section__head">
+              <h2>Common Questions</h2>
+              <span className="rule" />
+            </div>
+            <HomeFaq faqs={HOME_FAQ_PREVIEW} />
+            <p className="faq-view-all">
+              <Link href="/faq">View all questions →</Link>
+            </p>
           </div>
-          <HomeFaq faqs={HOME_FAQ_PREVIEW} />
-          <p className="faq-view-all">
-            <Link href="/faq">View all questions →</Link>
-          </p>
         </div>
       </section>
     </>

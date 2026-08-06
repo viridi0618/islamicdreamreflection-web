@@ -59,30 +59,32 @@ export default async function GuidePage({
 
   return (
     <article className="shell section">
-      <div className="section__head">
-        <h1>{guide.title}</h1>
-        <span className="rule" />
-      </div>
+      <div className="reading-container">
+        <div className="section__head">
+          <h1>{guide.title}</h1>
+          <span className="rule" />
+        </div>
 
-      <div className="prose">
-        {guide.intro.map((p) => (
-          <p key={p}>{p}</p>
-        ))}
+        <div className="prose">
+          {guide.intro.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
 
-        {guide.sections.map((section) => (
-          <section key={section.heading}>
-            <h2>{section.heading}</h2>
-            {section.body.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
-            {section.sourceIds && renderSources(section.sourceIds)}
-          </section>
-        ))}
+          {guide.sections.map((section) => (
+            <section key={section.heading}>
+              <h2>{section.heading}</h2>
+              {section.body.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+              {section.sourceIds && renderSources(section.sourceIds)}
+            </section>
+          ))}
 
-        <p className="guide-meta">
-          Prepared by {SITE_NAME}. Traditional perspectives are not predictions
-          or religious rulings.
-        </p>
+          <p className="guide-meta">
+            Prepared by {SITE_NAME}. Traditional perspectives are not predictions
+            or religious rulings.
+          </p>
+        </div>
       </div>
     </article>
   );
