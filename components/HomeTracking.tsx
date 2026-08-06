@@ -10,14 +10,6 @@ import { track } from "@/lib/events";
  * cannot be passed to client components from it, so all clickable elements
  * that emit analytics live here.
  */
-export function PrivacyLink({ href, label }: { href: string; label: string }) {
-  return (
-    <Link href={href} onClick={() => track("home_privacy_clicked")}>
-      {label} →
-    </Link>
-  );
-}
-
 export function MyDreamsCta({
   ctaHref,
   ctaLabel,
@@ -30,7 +22,7 @@ export function MyDreamsCta({
   secondaryLabel: string;
 }) {
   return (
-    <div className="save-control__cta cta-group">
+    <div className="save-control__cta">
       <Link
         href={ctaHref}
         className="btn"
@@ -40,7 +32,7 @@ export function MyDreamsCta({
       </Link>
       <Link
         href={secondaryHref}
-        className="link-subtle"
+        className="link-subtle save-control__privacy"
         onClick={() => track("home_privacy_clicked")}
       >
         {secondaryLabel}
@@ -96,26 +88,7 @@ export function GuideCardLink({
   );
 }
 
-export function QuoteSourceLink({
-  href,
-  label
-}: {
-  href: string;
-  label: string;
-}) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => track("home_quote_source_clicked")}
-    >
-      {label} →
-    </a>
-  );
-}
-
-/** External "View source" link under the three dream types section. */
+/** External "Source" link under the three dream types section. */
 export function DreamTypeSourceLink({
   href,
   label

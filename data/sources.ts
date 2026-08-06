@@ -95,7 +95,7 @@ export const SOURCES: Record<string, SourceRecord> = {
     collection: "Sahih al-Bukhari",
     title: "A true good dream is from Allah, a bad dream is from Satan",
     reference: "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6984",
-    url: "https://sunnah.com/bukhari/6984",
+    url: "https://sunnah.com/bukhari:6984",
     status: "verified",
     supports:
       "The hadith states that a true good dream is from Allah and a bad dream is from Satan, distinguishing two kinds of dream experience without assigning fixed meanings to symbols."
@@ -106,7 +106,7 @@ export const SOURCES: Record<string, SourceRecord> = {
     collection: "Sahih al-Bukhari",
     title: "Good dreams: thank Allah and share; bad dreams: seek refuge and stay quiet",
     reference: "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6985",
-    url: "https://sunnah.com/bukhari/6985",
+    url: "https://sunnah.com/bukhari:6985",
     status: "verified",
     supports:
       "The hadith gives the traditional response to a good dream (thank Allah and tell others about it) and to a bad dream (seek refuge in Allah from its evil and do not mention it to anyone)."
@@ -117,7 +117,7 @@ export const SOURCES: Record<string, SourceRecord> = {
     collection: "Sahih al-Bukhari",
     title: "A good dream that comes true is from Allah, a bad dream is from Satan",
     reference: "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6986",
-    url: "https://sunnah.com/bukhari/6986",
+    url: "https://sunnah.com/bukhari:6986",
     status: "verified",
     supports:
       "The hadith teaches that a bad dream will not harm the one who seeks refuge in Allah from Satan, and includes the etiquette of spitting lightly to the left."
@@ -129,7 +129,7 @@ export const SOURCES: Record<string, SourceRecord> = {
     title: "Etiquette for a disliked dream",
     reference:
       "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 7044",
-    url: "https://sunnah.com/bukhari/7044",
+    url: "https://sunnah.com/bukhari:7044",
     status: "verified",
     supports:
       "The hadith teaches that a disliked dream should be met by seeking refuge in Allah from its evil and from the evil of Satan, spitting lightly to the left three times, and not telling anyone about it."
@@ -141,7 +141,7 @@ export const SOURCES: Record<string, SourceRecord> = {
     title: "A bad dream should not be told to anybody",
     reference:
       "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 7045",
-    url: "https://sunnah.com/bukhari/7045",
+    url: "https://sunnah.com/bukhari:7045",
     status: "verified",
     supports:
       "The hadith repeats the guidance that a bad dream comes from Satan, the dreamer should seek refuge in Allah from it, and should not tell it to anybody, for it will not harm him."
@@ -153,7 +153,7 @@ export const SOURCES: Record<string, SourceRecord> = {
     title: "Al-Mubashshirat: true good dreams remain as glad tidings",
     reference:
       "Sahih al-Bukhari, Book of Dreams (Kitab at-Ta’bir), hadith 6990",
-    url: "https://sunnah.com/bukhari/6990",
+    url: "https://sunnah.com/bukhari:6990",
     status: "verified",
     supports:
       "The hadith describes the true good dream (ru'ya saliha) as al-Mubashshirat — glad tidings — and as what remains of prophecy. It supports the place of good dreams in the tradition, not the meaning of any particular symbol."
@@ -164,7 +164,7 @@ export const SOURCES: Record<string, SourceRecord> = {
     collection: "Sahih Muslim",
     title: "Dreams are of three types",
     reference: "Sahih Muslim, Book of Dreams (Kitab al-Ru’ya), hadith 2263a",
-    url: "https://sunnah.com/muslim/2263a",
+    url: "https://sunnah.com/muslim:2263a",
     status: "verified",
     supports:
       "The hadith explicitly describes three types of dreams: a good dream which is good tidings from Allah, an evil dream which causes pain and is from the satan, and a dream which is a suggestion of one's own mind. It also teaches that a disliked dream should not be related to people and one may pray instead."

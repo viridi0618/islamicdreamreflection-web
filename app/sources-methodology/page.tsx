@@ -109,7 +109,7 @@ export default function SourcesMethodologyPage() {
                     <>
                       {" · "}
                       <a href={s.url} target="_blank" rel="noopener noreferrer">
-                        view source
+                        Read original →
                       </a>
                     </>
                   )}

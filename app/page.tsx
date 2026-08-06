@@ -7,12 +7,10 @@ import { dreamUrl, SITE_NAME, SITE_URL } from "@/lib/site";
 import { dreamCardSummary } from "@/lib/dream-summaries";
 import { SOURCES, resolvePublicSources } from "@/data/sources";
 import {
-  PrivacyLink,
   MyDreamsCta,
   MethodologyLink,
   DreamTypesLink,
   GuideCardLink,
-  QuoteSourceLink,
   DreamTypeSourceLink,
   HomeFaq
 } from "@/components/HomeTracking";
@@ -78,13 +76,6 @@ export default function HomePage() {
 
           <div className="hero__ritual">
             <RitualFlow entryPoint="home" compactHeader />
-            <p className="hero-privacy">
-              {HERO_COPY.privacyNote}{" "}
-              <PrivacyLink
-                href={HERO_COPY.privacyHref}
-                label={HERO_COPY.privacyLinkLabel}
-              />
-            </p>
           </div>
         </div>
       </section>
@@ -177,7 +168,7 @@ export default function HomePage() {
                     {s.url && (
                       <DreamTypeSourceLink
                         href={s.url}
-                        label="View source"
+                        label="Source →"
                       />
                     )}
                   </span>
@@ -276,13 +267,7 @@ export default function HomePage() {
                   {HOME_QUOTE.translation}
                 </p>
                 <p className="quote-block__attribution">
-                  {HOME_QUOTE.attributionNote} · {quoteSource.reference}{" "}
-                  {quoteSource.url && (
-                    <QuoteSourceLink
-                      href={quoteSource.url}
-                      label={HOME_QUOTE.sourceLabel}
-                    />
-                  )}
+                  {HOME_QUOTE.attributionNote} · {quoteSource.reference}
                 </p>
                 <p className="quote-block__supports">
                   <b>{HOME_QUOTE.supportsLabel}:</b> {quoteSource.supports}

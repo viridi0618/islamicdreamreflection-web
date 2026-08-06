@@ -84,7 +84,7 @@ export default function RootLayout({
               </nav>
               <div className="site-footer__brand">
                 <span className="site-footer__brand-name">{SITE_NAME}</span>
-                <p>
+                <p className="footer-legal">
                   Islamic Dream Reflection offers private, source-transparent
                   reflection through Islamic traditions and personal context.
                   It does not provide predictions, fatwas, or knowledge of the

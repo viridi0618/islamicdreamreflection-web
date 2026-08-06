@@ -20,11 +20,7 @@ export const HERO_COPY = {
   h1Top: "Islamic Dream Interpretation",
   h1Em: "with Personal Reflection",
   lead:
-    "Describe what you remember and explore its symbols, emotions, and personal context through carefully separated Islamic traditions and personal reflection.",
-  privacyNote:
-    "Your dream is sent for analysis only when you choose Begin Reflection. It is not automatically published.",
-  privacyLinkLabel: "How privacy works",
-  privacyHref: "/privacy"
+    "Describe what you remember and explore its symbols, emotions, and personal context through carefully separated Islamic traditions and personal reflection."
 };
 
 /** Save & control section. */
@@ -47,7 +43,7 @@ export const SAVE_CONTROL = {
   ],
   ctaLabel: "View My Dreams",
   ctaHref: "/my-dreams",
-  secondaryLabel: "Read the privacy policy",
+  secondaryLabel: "Privacy policy",
   secondaryHref: "/privacy"
 };
 
@@ -80,7 +76,7 @@ export const ISLAMIC_APPROACH = {
  * Three types of dreams section.
  *
  * sourceIds reference the unified registry (data/sources.ts). The homepage
- * renders the resolved sources ("Based on … · View source") so the three
+ * renders the resolved sources ("Based on … · Source →") so the three
  * categories are visibly grounded in Sahih Muslim 2263a rather than
  * presented as the site's own invention.
  */
@@ -123,7 +119,6 @@ export const HOME_QUOTE = {
   translation:
     "If anyone of you sees a dream that he likes, then it is from Allah: let him thank Allah for it and narrate it to others. And if he sees a dream that he dislikes, then it is from Satan: let him seek refuge in Allah from its evil and not mention it to anyone, for it will not harm him.",
   attributionNote: "Narrated by Abu Sa’id al-Khudri",
-  sourceLabel: "View source",
   supportsLabel: "What this supports"
 };
 

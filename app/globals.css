@@ -3081,9 +3081,11 @@ a:hover {
   color: var(--green-950);
 }
 
-.site-footer__brand p {
+/* Legal / disclaimer text: small, muted, below the nav groups */
+.footer-legal {
   color: var(--ink-faint);
   font-size: 13.5px;
+  font-weight: 400;
   line-height: 1.6;
   margin: 10px 0 0;
 }
@@ -3845,15 +3847,6 @@ a:hover {
   font-weight: 700;
 }
 
-/* Hero privacy microcopy below the form */
-.hero-privacy {
-  margin: 16px auto 0;
-  max-width: 560px;
-  color: var(--ink-faint);
-  font-size: 13.5px;
-}
-
-.hero-privacy a,
 .link-subtle {
   color: var(--green-700);
   font-weight: 600;
@@ -3861,7 +3854,6 @@ a:hover {
   border-bottom: 1px solid var(--green-700);
 }
 
-.hero-privacy a:hover,
 .link-subtle:hover {
   color: var(--green-900);
 }
@@ -3901,12 +3893,22 @@ a:hover {
 
 .save-control__cta {
   margin-top: 26px;
-  text-align: center;
   display: flex;
-  gap: 18px;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.save-control__cta .btn {
+  margin-inline: auto;
+}
+
+/* Privacy policy link is a quiet secondary action, not a competing CTA. */
+.save-control__privacy {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink-faint);
+  border-bottom-color: var(--line-strong);
 }
 
 /**

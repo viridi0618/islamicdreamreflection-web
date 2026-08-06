@@ -41,7 +41,6 @@ export type EventName =
   | "home_dream_type_clicked"
   | "home_dream_type_source_clicked"
   | "home_guide_clicked"
-  | "home_quote_source_clicked"
   | "home_my_dreams_clicked"
   | "home_faq_expanded";
 

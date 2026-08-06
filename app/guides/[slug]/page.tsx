@@ -38,7 +38,7 @@ function renderSources(sourceIds: string[]) {
             <>
               {" · "}
               <a href={s.url} target="_blank" rel="noopener noreferrer">
-                view source
+                Read original narration →
               </a>
             </>
           )}
