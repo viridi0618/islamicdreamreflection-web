@@ -37,7 +37,7 @@ export function MyDreamsCta({
         onClick={() => track("home_my_dreams_clicked")}
       >
         {ctaLabel} →
-      </Link>{" "}
+      </Link>
       <Link
         href={secondaryHref}
         className="link-subtle"

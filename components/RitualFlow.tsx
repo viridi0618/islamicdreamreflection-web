@@ -274,16 +274,18 @@ export function RitualFlow({
             </div>
           )}
 
-          <StepNav
-            primaryLabel="Begin Reflection"
-            onPrimary={() => {
-              if (dreamText.trim()) {
-                track("dream_submitted");
-                void analyzeDream();
-              }
-            }}
-            disabled={dreamText.trim().length === 0}
-          />
+          <div className="ritual-submit">
+            <StepNav
+              primaryLabel="Begin Reflection"
+              onPrimary={() => {
+                if (dreamText.trim()) {
+                  track("dream_submitted");
+                  void analyzeDream();
+                }
+              }}
+              disabled={dreamText.trim().length === 0}
+            />
+          </div>
         </form>
       </div>
     );
