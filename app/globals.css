@@ -3109,6 +3109,18 @@ a:hover {
   margin: 10px 0 0;
 }
 
+/* Findly.tools featured badge */
+.site-footer__badge {
+  display: inline-block;
+  margin-top: 14px;
+  line-height: 0;
+}
+
+.site-footer__badge img {
+  display: block;
+  height: auto;
+}
+
 @media (max-width: 720px) {
   .site-footer__grid {
     grid-template-columns: 1fr;

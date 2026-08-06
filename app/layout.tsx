@@ -88,6 +88,22 @@ export default function RootLayout({
                   It does not provide predictions, fatwas, or knowledge of the
                   unseen.
                 </p>
+                <a
+                  href="https://findly.tools/islamicdreamreflection?utm_source=islamicdreamreflection"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="site-footer__badge"
+                >
+                  {/* Third-party SVG badge: keep plain <img> (fixed size, no
+                      next/image optimization, avoids dangerouslyAllowSVG). */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://findly.tools/badges/findly-tools-badge-light.svg"
+                    alt="Featured on Findly.tools"
+                    width="175"
+                    height="55"
+                  />
+                </a>
               </div>
             </div>
           </div>
