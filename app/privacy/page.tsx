@@ -11,12 +11,13 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <article className="shell section">
-      <div className="section__head">
-        <h1>Privacy Policy</h1>
-        <span className="rule" />
-      </div>
+      <div className="reading-container">
+        <div className="section__head">
+          <h1>Privacy Policy</h1>
+          <span className="rule" />
+        </div>
 
-      <div className="prose">
+        <div className="prose">
         <p>Last updated: August 5, 2026</p>
 
         <h2>What we collect</h2>
@@ -60,6 +61,7 @@ export default function PrivacyPage() {
           </a>
           .
         </p>
+        </div>
       </div>
     </article>
   );

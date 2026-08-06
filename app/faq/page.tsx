@@ -25,25 +25,27 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="section__head">
-        <h1>Frequently Asked Questions</h1>
-        <span className="rule" />
+      <div className="reading-container">
+        <div className="section__head">
+          <h1>Frequently Asked Questions</h1>
+          <span className="rule" />
+        </div>
+
+        <p className="faq-intro">
+          Learn how Islamic Dream Reflection works, how traditional perspectives
+          are presented, and what happens to your dream information.
+        </p>
+
+        <nav className="faq-anchors" aria-label="FAQ categories">
+          {FAQ_CATEGORIES.map((cat) => (
+            <Link key={cat.id} href={`#${cat.id}`}>
+              {cat.title}
+            </Link>
+          ))}
+        </nav>
+
+        <FaqList />
       </div>
-
-      <p className="faq-intro">
-        Learn how Islamic Dream Reflection works, how traditional perspectives
-        are presented, and what happens to your dream information.
-      </p>
-
-      <nav className="faq-anchors" aria-label="FAQ categories">
-        {FAQ_CATEGORIES.map((cat) => (
-          <Link key={cat.id} href={`#${cat.id}`}>
-            {cat.title}
-          </Link>
-        ))}
-      </nav>
-
-      <FaqList />
     </article>
   );
 }

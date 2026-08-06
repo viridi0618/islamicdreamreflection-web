@@ -11,12 +11,13 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <article className="shell section">
-      <div className="section__head">
-        <h1>Terms of Use</h1>
-        <span className="rule" />
-      </div>
+      <div className="reading-container">
+        <div className="section__head">
+          <h1>Terms of Use</h1>
+          <span className="rule" />
+        </div>
 
-      <div className="prose">
+        <div className="prose">
         <p>Last updated: August 5, 2026</p>
 
         <h2>Educational use only</h2>
@@ -58,6 +59,7 @@ export default function TermsPage() {
           </a>
           .
         </p>
+        </div>
       </div>
     </article>
   );

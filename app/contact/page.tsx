@@ -12,12 +12,13 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <article className="shell section">
-      <div className="section__head">
-        <h1>Contact</h1>
-        <span className="rule" />
-      </div>
+      <div className="reading-container">
+        <div className="section__head">
+          <h1>Contact</h1>
+          <span className="rule" />
+        </div>
 
-      <div className="prose">
+        <div className="prose">
         <p>
           We welcome feedback, questions, and correction requests. Because the
           site presents historical interpretations, accuracy matters to us —
@@ -51,6 +52,7 @@ export default function ContactPage() {
           We review every message as part of our editorial process, but cannot
           guarantee a personal reply to each one.
         </p>
+        </div>
       </div>
     </article>
   );
