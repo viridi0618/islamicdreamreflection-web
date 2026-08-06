@@ -40,15 +40,11 @@ export default function RootLayout({
               <span>{SITE_NAME}</span>
             </Link>
             <nav className="site-nav" aria-label="Main">
-              <Link href="/" className="site-nav__home">
-                Home
-              </Link>
-              <Link href="/dreams">Explore Dreams</Link>
               <Link href="/guides">Dream Guides</Link>
-              <Link href="/faq">FAQ</Link>
               <Link href="/my-dreams">My Dreams</Link>
+              <Link href="/faq">FAQ</Link>
               <Link href="/#reflection" className="site-nav__cta">
-                Start a Reflection
+                Start <span className="site-nav__cta-full">a Reflection</span>
               </Link>
             </nav>
           </div>

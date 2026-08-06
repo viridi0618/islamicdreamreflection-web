@@ -153,8 +153,8 @@ a:hover {
     display: none;
   }
 
-  .site-nav__home,
-  .site-nav__cta {
+  /* Keep the CTA visible on mobile; shorten it to "Start". */
+  .site-nav__cta-full {
     display: none;
   }
 
@@ -181,6 +181,10 @@ a:hover {
   font-weight: 600;
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-nav__cta-full {
+  white-space: nowrap;
 }
 
 .site-nav__cta:hover {
