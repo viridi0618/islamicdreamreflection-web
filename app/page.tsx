@@ -27,23 +27,23 @@ import {
 } from "@/lib/home";
 
 export const metadata: Metadata = {
-  title: "Islamic Dream Interpretation & Reflection",
+  title: "Islamic Dream Interpretation — Reflect Through Islamic Traditions",
   description:
-    "Explore your dream through Islamic traditions, personal context, and source-transparent reflection. Begin without an account and save only if useful.",
+    "Explore Islamic dream interpretation through traditional sources and personal reflection. Learn about dream symbols, Islamic perspectives, and reflect on your own dreams.",
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "Islamic Dream Interpretation & Reflection",
+    title: "Islamic Dream Interpretation — Reflect Through Islamic Traditions",
     description:
-      "Explore your dream through Islamic traditions, personal context, and source-transparent reflection. Begin without an account and save only if useful.",
+      "Explore Islamic dream interpretation through traditional sources and personal reflection. Learn about dream symbols, Islamic perspectives, and reflect on your own dreams.",
     url: SITE_URL,
     siteName: SITE_NAME,
     type: "website"
   },
   twitter: {
     card: "summary",
-    title: "Islamic Dream Interpretation & Reflection",
+    title: "Islamic Dream Interpretation — Reflect Through Islamic Traditions",
     description:
-      "Explore your dream through Islamic traditions, personal context, and source-transparent reflection. Begin without an account and save only if useful."
+      "Explore Islamic dream interpretation through traditional sources and personal reflection. Learn about dream symbols, Islamic perspectives, and reflect on your own dreams."
   }
 };
 
