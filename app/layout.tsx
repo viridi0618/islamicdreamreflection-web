@@ -3,6 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { organizationSchema, webSiteSchema } from "@/lib/schema";
+import Analytics from "@/components/analytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -26,6 +27,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <Analytics />
+      </head>
       <body>
         <script
           type="application/ld+json"
