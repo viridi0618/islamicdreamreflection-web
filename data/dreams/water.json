@@ -38,5 +38,251 @@
   "status": "needs verification",
   "review_status": "draft",
   "last_reviewed": null,
-  "review_notes": ""
+  "review_notes": "",
+  "article": {
+    "quickAnswer": "Water appears in dreams more than almost any other element, and in the Islamic tradition it is not given one fixed meaning. The hadith describe dreams as falling into categories — from Allah, from Satan, and from the self — and only some dreams carry the weight of meaning. In the Qur'an, water is associated with life, purity, and mercy, and this shapes how water dreams are often received. A water dream may be explored as an image of emotion, purification, provision, or change — depending on whether the water was clear or dirty, calm or flooding, and whether you drank, swam, or drowned. A water dream does not prove that you will receive wealth or provision, that harm is coming, or that a specific event will occur. The meaning is found through the state of the water, your action in the dream, and your own circumstances.",
+    "introduction": [
+      "Water is one of the most frequent dream elements, and its meaning shifts with every detail: clear or dirty, calm or flooding, drinkable or not. The same water that refreshes one dreamer drowns another.",
+      "This guide separates three things clearly: what the Qur'an and the Islamic tradition actually say about water and about dreams, later interpretive traditions, and the personal reflection that only you can add from your own life."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "What state was the water in?",
+        "body": "Clear, muddy, still, moving, calm, or flooding — each state carries a different feeling and a different possible reflection. The state matters more than the symbol alone."
+      },
+      {
+        "title": "What were you doing with the water?",
+        "body": "Drinking, swimming, drowning, being washed, or simply seeing water each carry a different meaning. Your action is the heart of the dream."
+      },
+      {
+        "title": "Where was the water?",
+        "body": "A river, a sea, a glass, a rainstorm, or a flood inside the house each places the water in a different part of your life."
+      },
+      {
+        "title": "How did you feel in the dream and after waking?",
+        "body": "Refreshed, afraid, calm, or overwhelmed — the feeling you carried into the day is part of the context."
+      },
+      {
+        "title": "Is there emotion or change in your life right now?",
+        "body": "Water is often explored as an image of emotion and of the flow of life. Many water dreams come during periods of strong feeling, transition, or uncertainty."
+      }
+    ],
+    "themes": [
+      {
+        "id": "life-and-purity-in-the-quran",
+        "title": "Water in the Qur'an: life, purity, and mercy",
+        "summary": "The Qur'an speaks of water as a source of life, a means of purification, and a sign of mercy.",
+        "body": [
+          "The Qur'an describes water as the origin of all living things and as a sign of Allah's mercy: 'We made from water every living thing' (Qur'an 21:30), and it speaks of rain sent down to give life to the earth.",
+          "This shapes how water dreams are often received — with associations of life, purity, and provision — while the tradition still reads each dream through its own details."
+        ],
+        "evidenceType": "quran",
+        "sourceIds": ["quran-anbiya-21-30"]
+      },
+      {
+        "id": "emotion-and-the-flow-of-life",
+        "title": "Emotion and the flow of life",
+        "summary": "In personal reflection, water is often explored as an image of emotion and of what is moving through your life.",
+        "body": [
+          "Calm water may picture peace; moving water may picture change; flooding water may picture emotion or pressure that feels overwhelming.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "what-the-tradition-says",
+        "title": "What the Islamic tradition teaches about dreams",
+        "body": [
+          "The hadith describe dreams as coming from three sources: a good dream from Allah, a disturbing dream from Satan, and a dream from the self. A water dream is not automatically any one of these.",
+          "The tradition is careful not to turn dreams into certainties or forecasts of wealth or harm."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": ["muslim-2263a"]
+      },
+      {
+        "id": "provision-and-abundance",
+        "title": "Provision and abundance",
+        "summary": "In some interpretive traditions, water — especially clean, plentiful water — is associated with provision and ease.",
+        "body": [
+          "Some classical interpretive traditions associate plentiful, clean water with provision and ease, and drinking clean water with refreshment and wellbeing.",
+          "These are presented as traditional associations to consider, not as guaranteed meanings — the tradition is careful not to promise wealth or fortune from a dream."
+        ],
+        "evidenceType": "editorial-reflection"
+      }
+    ],
+    "contextQuestions": [
+      "What state was the water in, and what did that state feel like?",
+      "What is moving through your life right now — calm, change, or something overwhelming?",
+      "What would it mean to be refreshed, washed, or carried by the water in your dream?",
+      "If the dream were a picture of your emotions, what would it be showing?"
+    ],
+    "scenarios": [
+      {
+        "id": "clear-water",
+        "title": "Clear water",
+        "summary": "Clear water is most often received as a positive image, associated with purity and clarity.",
+        "body": [
+          "Clear, calm water is usually received positively. In reflection, it may picture clarity, peace, or a period of purification in your life — things feeling clean and visible again.",
+          "This is a traditional association to consider, not a guarantee of good fortune."
+        ],
+        "positiveReading": "Clear water may reflect a period of clarity, peace, or emotional refreshment.",
+        "cautionaryReading": "Even clear water asks how you related to it — calm appreciation and uneasy watching are different dreams.",
+        "doesNotProve": [
+          "That wealth or provision is guaranteed",
+          "That every clear-water dream carries the same meaning"
+        ],
+        "relatedGuide": {
+          "href": "/guides/clear-water-dream-islam",
+          "label": "Clear Water Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "dirty-water",
+        "title": "Dirty or muddy water",
+        "summary": "Dirty water carries a heavier feeling, often explored through confusion or contamination.",
+        "body": [
+          "Dirty or muddy water in a dream often feels heavier. In reflection, it may picture confusion, something feeling contaminated, or a situation you cannot see clearly.",
+          "It is read through what feels murky or unclear in your life — not as a verdict about your character."
+        ],
+        "positiveReading": "Recognising the water as dirty may be the first step of naming what feels unclear or contaminated in your life.",
+        "cautionaryReading": "Muddy water may point to a situation that feels clouded and may need clarity or honesty.",
+        "doesNotProve": [
+          "That you are morally compromised",
+          "That harm or scandal is coming"
+        ],
+        "relatedGuide": {
+          "href": "/guides/dirty-water-dream-islam",
+          "label": "Dirty Water Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "flood",
+        "title": "Flood",
+        "summary": "A flood is the most overwhelming water scenario, usually explored through pressure or emotion that feels beyond control.",
+        "body": [
+          "A flood in a dream is intense, and it is usually explored through pressure, emotion, or change that feels beyond control — something rising that you cannot stop.",
+          "The tradition is careful not to treat it as a forecast of disaster. It is an image of being overwhelmed."
+        ],
+        "positiveReading": "Surviving or reaching higher ground may reflect resilience — the capacity to keep your head above what overwhelms you.",
+        "cautionaryReading": "A flood may point to real pressure in your life that needs to be named and, where possible, managed.",
+        "doesNotProve": [
+          "That a disaster is coming",
+          "That your life is about to be swept away"
+        ],
+        "relatedGuide": {
+          "href": "/guides/flood-dream-islam",
+          "label": "Flood Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "drinking-water",
+        "title": "Drinking water",
+        "summary": "Drinking water is often associated with refreshment, provision, and inner need.",
+        "body": [
+          "Drinking water in a dream often carries a feeling of need being met. In reflection, it may picture a thirst being satisfied — for rest, for understanding, for comfort, or for something you have been lacking.",
+          "The tradition is careful not to promise specific provision; the thirst and its satisfaction are read through the dreamer's life."
+        ],
+        "positiveReading": "Drinking clean water may reflect a need being met, or the beginning of refreshment and restoration.",
+        "cautionaryReading": "If you could not drink, or the water was undrinkable, the dream may picture a need that is still unmet.",
+        "doesNotProve": [
+          "That a specific provision is guaranteed",
+          "That wealth or health is promised"
+        ],
+        "relatedGuide": {
+          "href": "/guides/drinking-water-dream-islam",
+          "label": "Drinking Water Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "drowning",
+        "title": "Drowning",
+        "summary": "Drowning is the most frightening water scenario, explored through feeling submerged or overwhelmed.",
+        "body": [
+          "Drowning in a dream is frightening, and it is usually explored through feeling submerged — by pressure, grief, responsibility, or emotion that feels as if it is closing over you.",
+          "The tradition's response to a disturbing dream applies: calm, seeking refuge in Allah, and not treating it as a forecast."
+        ],
+        "positiveReading": "Being rescued, or finding a way to the surface, may reflect the beginnings of relief and support.",
+        "cautionaryReading": "Drowning may point to real overwhelm in your life that deserves support — from people you trust or a professional if needed.",
+        "doesNotProve": [
+          "That you will be harmed or that death is near",
+          "That a specific disaster is coming"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That you will receive wealth or provision. A water dream is not a forecast of finances.",
+      "That harm or disaster is coming. A flood is not a prediction of a real flood.",
+      "That your health is failing. Drowning in a dream is not a medical sign.",
+      "That the dream is a promise of good fortune. Water associations are read through context, not as guarantees.",
+      "That the dream is necessarily a premonition. The Qur'an and hadith describe dreams of different types, and only some carry the weight of meaning."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Name the state of the water",
+        "body": "Clear, dirty, calm, or flooding — naming the state of the water often names the feeling of your life right now."
+      },
+      {
+        "title": "Name what is moving through your life",
+        "body": "Water often pictures emotion and change. What is calm, what is flowing, and what feels overwhelming?"
+      },
+      {
+        "title": "Do not read it as a forecast",
+        "body": "A water dream is not a promise of wealth or a prediction of disaster. The tradition is careful about turning dreams into certainties."
+      },
+      {
+        "title": "Follow the etiquette for a disturbing dream",
+        "body": "If the dream frightened you, the tradition teaches to seek refuge in Allah from its evil and not to dwell on it.",
+        "sourceIds": ["bukhari-6986", "bukhari-7044"]
+      },
+      {
+        "title": "Reach out if you feel overwhelmed",
+        "body": "If drowning or flood dreams keep returning, they may reflect real pressure. Talking with someone you trust, or a professional if needed, is a reasonable and healthy step."
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "If you are unsure whether this dream should be interpreted at all, read The Three Types of Dreams in Islam.",
+        "reason": "Helps the reader decide how much weight to give a dream."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the dream disturbed you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides the traditional etiquette for a disturbing dream."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "To understand how sources are selected and reviewed, read Sources and Methodology.",
+        "reason": "Explains the source hierarchy used on this page."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/clear-water-dream-islam",
+        "anchor": "If the water was clear, explore Clear Water Dream Meaning in Islam.",
+        "reason": "Routes readers with a clarity-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/dirty-water-dream-islam",
+        "anchor": "If the water was dirty or muddy, explore Dirty Water Dream Meaning in Islam.",
+        "reason": "Routes readers with a dirtiness-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/flood-dream-islam",
+        "anchor": "If you dreamt of a flood, explore Flood Dream Meaning in Islam.",
+        "reason": "Routes readers with a flood-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/drinking-water-dream-islam",
+        "anchor": "If you drank water in the dream, explore Drinking Water Dream Meaning in Islam.",
+        "reason": "Routes readers with a drinking-specific search intent to the long-tail article."
+      }
+    ]
+  }
 }

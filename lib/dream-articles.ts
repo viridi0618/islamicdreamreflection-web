@@ -1120,6 +1120,1434 @@ export const DREAM_ARTICLES: Record<string, DreamArticle> = {
     ],
     hubSymbol: { href: "/dreams/dead-person-dream-islam", label: "Dead Person Dream Meaning in Islam" },
     hubEntityId: "dead-person"
+  },
+
+  /* ================================================================
+   * Teeth Cluster (Phase 7 — Core Dream Symbols Migration)
+   * ============================================================== */
+
+  "teeth-falling-out-dream-islam": {
+    slug: "teeth-falling-out-dream-islam",
+    keyword: "teeth falling out dream meaning islam",
+    searchIntent:
+      "The searcher's teeth fell out in a dream and they want to know what it means from an Islamic perspective, and whether popular claims like death or money are true.",
+    title: "Teeth Falling Out Dream Meaning in Islam",
+    description:
+      "Teeth falling out is one of the most searched dreams. Explore what the Islamic tradition teaches, what the dream may reflect, and what it does not prove. Not predictions.",
+    quickAnswer:
+      "Teeth falling out is among the most common dream reports, and in the Islamic tradition it is not given one fixed meaning. In personal reflection, it is most often explored as an image of loss or change: something in your life that is ending, being taken away, or slipping beyond your control — a role, a relationship, a sense of confidence, or a fear of ageing. Popular claims that a falling tooth means someone will die or that money is coming are not supported by the tradition. The hadith describe dreams as coming from Allah, from Satan, or from the self, and the tradition is careful not to turn ordinary dreams into forecasts. The meaning is found through the details of the dream and the dreamer's own circumstances.",
+    introduction: [
+      "Teeth falling out is one of the most commonly searched dreams, and it is often vivid enough to stay with a person all day. Because it is so common, it has collected many popular claims — and the Islamic tradition is more careful than that.",
+      "This article looks at what the dream may reflect, what the tradition teaches, and what popular claims should be set aside."
+    ],
+    islamicPerspective: [
+      {
+        title: "The tradition does not assign fixed meanings",
+        body: [
+          "The hadith describe dreams as coming from three sources: a good dream from Allah, a disturbing dream from Satan, and a dream from the self — one's own thoughts and experiences. A teeth dream is not automatically any one of these.",
+          "The tradition reads dreams through context and is careful not to turn ordinary dreams into certainties."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "Popular claims are not supported",
+        body: [
+          "Popular culture often says a tooth falling out means a death in the family or a windfall of money. The Islamic tradition does not support treating dreams as fixed forecasts of death, wealth, or harm.",
+          "If such a claim disturbs you, the traditional response to a disturbing dream is calm and seeking refuge in Allah, not searching for an omen."
+        ],
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "An image of loss or change",
+        body: [
+          "In personal reflection, teeth falling out is most often explored as a picture of loss or change — something ending, being taken away, or slipping beyond your control.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "Anxiety about appearance and confidence",
+        body: [
+          "Teeth shape the smile and speech, so losing them in a dream may picture worry about how you appear to others — a presentation, a first impression, or a fear of being judged."
+        ]
+      },
+      {
+        title: "A worry your mind is processing",
+        body: [
+          "During stressful periods, the mind can picture worry as something being pulled away. A falling tooth may simply be a vivid image of a worry you are carrying."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "all-teeth-fell-out",
+        title: "All teeth fell out",
+        body: [
+          "Losing all your teeth at once feels total. In reflection, it may picture a fear of losing everything at once — control, identity, or a whole way of life — rather than one specific thing."
+        ]
+      },
+      {
+        id: "one-tooth-fell-out",
+        title: "One tooth fell out",
+        body: [
+          "A single tooth may point to one specific loss or worry — one relationship, one task, one part of your life that feels threatened."
+        ]
+      },
+      {
+        id: "teeth-fell-and-regrew",
+        title: "Teeth fell out, then grew back",
+        body: [
+          "If the teeth grew back, the dream may carry a hopeful note: loss followed by renewal, or a change that ends in growth."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What in your life feels like it is being lost, changed, or pulled away right now?",
+      "Was the dream about one tooth or many — and does that match one worry or many?",
+      "Is there anxiety about how you appear or are judged that the dream might be picturing?",
+      "If the dream were a picture of a worry, what would it be naming?"
+    ],
+    whatItDoesNotProve: [
+      "That a specific person will die. Popular claims about teeth dreams and death are not supported by the tradition.",
+      "That you will lose money or wealth.",
+      "That your health is failing.",
+      "That the dream is a forecast of harm or disaster."
+    ],
+    faq: [
+      {
+        question: "Does teeth falling out in a dream mean someone will die in Islam?",
+        answer:
+          "No. The popular claim that a falling tooth means a death is not supported by the Islamic tradition. The hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are not treated as fixed forecasts of death."
+      },
+      {
+        question: "Does a tooth falling out in a dream mean money is coming?",
+        answer:
+          "Popular culture sometimes links teeth dreams to money, but the tradition does not support treating dreams as forecasts of wealth. A falling tooth is most often explored through loss, change, and the dreamer's own circumstances."
+      },
+      {
+        question: "What should I do after dreaming of teeth falling out?",
+        answer:
+          "Write the dream down and note which teeth were involved and how you felt. Name what feels like it is being lost or changed in your life. If the dream frightened you, the traditional response is seeking refuge in Allah and not dwelling on it."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/broken-teeth-dream-islam", label: "Broken Teeth Dream Meaning in Islam" },
+      { href: "/guides/losing-front-teeth-dream-islam", label: "Losing Front Teeth Dream Meaning in Islam" },
+      { href: "/guides/bleeding-teeth-dream-islam", label: "Bleeding Teeth Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+      { href: "/dreams/dead-person-dream-islam", label: "Dead Person Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+    hubEntityId: "teeth"
+  },
+
+  "broken-teeth-dream-islam": {
+    slug: "broken-teeth-dream-islam",
+    keyword: "broken teeth dream meaning islam",
+    searchIntent:
+      "The searcher's teeth broke or cracked in a dream and they want to know what it means from an Islamic perspective.",
+    title: "Broken Teeth Dream Meaning in Islam",
+    description:
+      "A broken tooth in a dream feels like damage rather than loss. Explore what it may reflect, what the tradition teaches, and what it does not prove. Not predictions.",
+    quickAnswer:
+      "A broken or cracked tooth in a dream feels like damage rather than loss — something has been harmed or weakened, not just taken away. In personal reflection, it may picture a relationship, a reputation, a plan, or your own sense of strength that feels damaged or compromised. The Islamic tradition does not assign one fixed meaning to broken teeth: the hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are read through the dreamer's circumstances. A broken tooth does not prove that a specific person has been harmed, that your health is failing, or that harm is coming. The dream is best read through what felt damaged and how you responded to it.",
+    introduction: [
+      "A broken tooth in a dream feels different from one that falls out — it is damage, not loss. It can leave a feeling of something being weakened that should have been strong.",
+      "This article looks at what a broken tooth may reflect, what the tradition teaches, and what the dream does not prove."
+    ],
+    islamicPerspective: [
+      {
+        title: "Dreams are read through context",
+        body: [
+          "The hadith describe dreams as coming from three sources: a good dream from Allah, a disturbing dream from Satan, and a dream from the self. A broken tooth is not automatically any one of these.",
+          "The tradition is careful not to turn dreams into certainties, and a break in a dream is read through the dreamer's own circumstances."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "No claim of real damage",
+        body: [
+          "A broken tooth in a dream does not prove that something in your real life is damaged, that a person has been harmed, or that your health is failing.",
+          "It is an image to reflect on, not a report of an actual event."
+        ],
+        sourceIds: ["bukhari-6986"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "Something feels weakened",
+        body: [
+          "In personal reflection, a broken tooth may picture something in your life that feels weakened or compromised — a relationship under strain, a reputation you worry about, a plan that cracked, or your own sense of strength.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "Damage you are carrying",
+        body: [
+          "The dream may name a hurt or setback you are still carrying — something that broke and has not fully been repaired or accepted."
+        ]
+      },
+      {
+        title: "Resilience after the break",
+        body: [
+          "If you repaired the tooth, carried on, or accepted the break in the dream, it may reflect your capacity to continue with what has been damaged — and that is a strength, not a verdict."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "tooth-cracked",
+        title: "A tooth cracked",
+        body: [
+          "A crack may picture something that is not fully broken but is weakened — a strain that has not yet given way. It may be worth naming what is under strain before it breaks."
+        ]
+      },
+      {
+        id: "tooth-chipped",
+        title: "A tooth chipped",
+        body: [
+          "A small chip may reflect a small but noticeable damage — a remark, a setback, or a flaw you feel is showing. It may matter less than it feels."
+        ]
+      },
+      {
+        id: "tooth-shattered",
+        title: "A tooth shattered",
+        body: [
+          "A shattered tooth carries the strongest sense of damage. In reflection, it may picture something that felt completely broken — a trust, a plan, or a sense of safety — that is still being picked up."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What in your life feels weakened, cracked, or under strain right now?",
+      "Was there a recent setback or hurt that the break might be picturing?",
+      "How did you respond to the break in the dream — repair, ignore, or carry on?",
+      "What would it mean to accept something that has been damaged and keep going?"
+    ],
+    whatItDoesNotProve: [
+      "That a specific person has been harmed or damaged.",
+      "That your health is failing.",
+      "That a plan or relationship is actually destroyed.",
+      "That harm or disaster is coming."
+    ],
+    faq: [
+      {
+        question: "What does a broken tooth in a dream mean in Islam?",
+        answer:
+          "In personal reflection, a broken tooth is most often explored as an image of damage or weakness — a relationship, reputation, plan, or sense of strength that feels compromised. The tradition reads dreams through context and does not assign one fixed meaning."
+      },
+      {
+        question: "Does a broken tooth in a dream mean bad health?",
+        answer:
+          "No. A broken tooth in a dream is not a medical sign and does not prove that your health is failing. It is an image to reflect on through your own circumstances."
+      },
+      {
+        question: "What should I do after a broken teeth dream?",
+        answer:
+          "Name what feels weakened or under strain in your life. If the dream pointed to a real relationship or plan, consider whether it needs honest attention. If it frightened you, the traditional response is seeking refuge in Allah and not dwelling on it."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/teeth-falling-out-dream-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+      { href: "/guides/losing-front-teeth-dream-islam", label: "Losing Front Teeth Dream Meaning in Islam" },
+      { href: "/guides/bleeding-teeth-dream-islam", label: "Bleeding Teeth Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+      { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+    hubEntityId: "teeth"
+  },
+
+  "losing-front-teeth-dream-islam": {
+    slug: "losing-front-teeth-dream-islam",
+    keyword: "losing front teeth in dream islam",
+    searchIntent:
+      "The searcher lost their front teeth in a dream and wants to know what it means from an Islamic perspective, especially about appearance and confidence.",
+    title: "Losing Front Teeth Dream Meaning in Islam",
+    description:
+      "Front teeth are the most visible, so losing them in a dream often carries a feeling of exposure. Explore what it may reflect and what it does not prove. Not predictions.",
+    quickAnswer:
+      "Front teeth are the ones people see when you smile and speak, so losing them in a dream often carries a strong feeling of exposure. In personal reflection, it may picture a fear of being seen, judged, or embarrassed — a presentation, a new situation, or an area where you feel less confident than you would like. The Islamic tradition does not assign one fixed meaning: the hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are read through the dreamer's circumstances. Losing front teeth does not prove that you will be publicly humiliated, that your reputation is actually damaged, or that harm is coming. The dream is most often a picture of anxiety about how you appear to others, and the honest reflection is about that anxiety, not about a verdict.",
+    introduction: [
+      "Front teeth are the most visible part of a smile, so losing them in a dream can feel intensely public — even if no one else saw it.",
+      "This article looks at what losing front teeth may reflect, what the tradition teaches, and what the dream does not prove."
+    ],
+    islamicPerspective: [
+      {
+        title: "Dreams are read through the dreamer",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. A dream of losing front teeth is read through the dreamer's own circumstances, not through one fixed symbol meaning.",
+          "The tradition is careful not to turn dreams into forecasts about reputation or events."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "No forecast of humiliation",
+        body: [
+          "Losing front teeth in a dream does not prove that you will be embarrassed, judged, or publicly exposed in waking life.",
+          "It is an image of anxiety to reflect on, not a prediction."
+        ],
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "A fear of being seen",
+        body: [
+          "In personal reflection, losing front teeth often pictures a fear of being seen — of a flaw showing, a mistake being noticed, or a moment when all eyes are on you.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "Confidence under pressure",
+        body: [
+          "The dream may come before a moment that matters to you — a speech, an interview, a first meeting — when confidence feels thin."
+        ]
+      },
+      {
+        title: "Exposure you are dreading",
+        body: [
+          "If the dream felt like everyone could see the gap, it may picture a situation where you feel exposed — a truth coming out, a vulnerability showing, or a role you feel unprepared for."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "both-front-teeth",
+        title: "Both front teeth fell out",
+        body: [
+          "Losing the two most visible teeth may picture a fear at its strongest — a moment where you feel completely exposed and unable to hide."
+        ]
+      },
+      {
+        id: "one-front-tooth",
+        title: "One front tooth fell out",
+        body: [
+          "A single front tooth may point to one specific worry about how you are seen — one situation, one person, one moment that matters."
+        ]
+      },
+      {
+        id: "front-teeth-in-mouth",
+        title: "Front teeth crumbled in your mouth",
+        body: [
+          "If the teeth crumbled rather than fell, the dream may picture something that felt solid breaking down under pressure — confidence, a plan, or a sense of readiness."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "Is there a situation coming where you feel seen, judged, or exposed?",
+      "What would it feel like to be seen with a flaw showing — and is that fear bigger than the reality?",
+      "Where in your life does confidence feel thinnest right now?",
+      "If the dream were picturing a fear of exposure, what would it be naming?"
+    ],
+    whatItDoesNotProve: [
+      "That you will be publicly humiliated or embarrassed.",
+      "That your reputation is actually damaged.",
+      "That people are judging you more than usual.",
+      "That harm or disaster is coming."
+    ],
+    faq: [
+      {
+        question: "What does losing front teeth in a dream mean in Islam?",
+        answer:
+          "Front teeth are the most visible, so losing them in a dream is most often explored as a picture of anxiety about appearance and exposure — a fear of being seen, judged, or embarrassed. The tradition reads dreams through context and does not assign one fixed meaning."
+      },
+      {
+        question: "Does losing front teeth mean I will be embarrassed in public?",
+        answer:
+          "No. The dream is not a forecast of humiliation. It is most often a picture of anxiety you are carrying about how you appear to others, and the honest reflection is about that anxiety."
+      },
+      {
+        question: "What should I do after dreaming of losing front teeth?",
+        answer:
+          "Name the situation where you feel seen or judged. Prepare for it if it is real and coming, and notice whether the fear is bigger than the reality. If the dream frightened you, the traditional response is seeking refuge in Allah and not dwelling on it."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/teeth-falling-out-dream-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+      { href: "/guides/broken-teeth-dream-islam", label: "Broken Teeth Dream Meaning in Islam" },
+      { href: "/guides/bleeding-teeth-dream-islam", label: "Bleeding Teeth Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+      { href: "/dreams/dead-person-dream-islam", label: "Dead Person Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+    hubEntityId: "teeth"
+  },
+
+  "bleeding-teeth-dream-islam": {
+    slug: "bleeding-teeth-dream-islam",
+    keyword: "teeth falling out with blood dream islam",
+    searchIntent:
+      "The searcher's teeth fell out with blood in a dream and wants to know what it means from an Islamic perspective.",
+    title: "Bleeding Teeth Dream Meaning in Islam",
+    description:
+      "Teeth falling out with blood feels more serious and painful. Explore what it may reflect, what the tradition teaches, and what it does not prove. Not predictions.",
+    quickAnswer:
+      "Blood with a falling tooth makes the dream feel more serious and more painful, and it often points to a loss that cost you — emotionally, physically, or in effort. In personal reflection, a bleeding tooth may picture a hurt that is still open, a loss that felt wounding rather than merely disappearing, or something that drained you. The Islamic tradition does not assign one fixed meaning: the hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are read through the dreamer's circumstances. Bleeding teeth do not prove that you are seriously ill, that a real injury is coming, or that harm is on its way. The dream is best read through what the pain is connected to in your waking life.",
+    introduction: [
+      "A tooth falling out is vivid enough — with blood, it can feel like an injury rather than a loss. It often stays with a person all day.",
+      "This article looks at what a bleeding tooth may reflect, what the tradition teaches, and what the dream does not prove."
+    ],
+    islamicPerspective: [
+      {
+        title: "Dreams are read through the dreamer",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. A bleeding tooth is not automatically any one of these; it is read through the dreamer's own circumstances.",
+          "The tradition is careful not to turn dreams into forecasts of illness or injury."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "No claim of real injury",
+        body: [
+          "Blood in a dream does not prove that your health is failing or that a real injury is coming.",
+          "It is an image of pain and cost to reflect on, not a medical sign."
+        ],
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "A loss that cost you",
+        body: [
+          "In personal reflection, a bleeding tooth may picture a loss that cost you — emotionally, physically, or in effort. It was not a clean goodbye; it took something from you.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "A hurt still open",
+        body: [
+          "Blood suggests the wound is recent or still open. The dream may be naming a hurt that has not fully healed and may need care or honesty."
+        ]
+      },
+      {
+        title: "The beginning of healing",
+        body: [
+          "If the bleeding stopped, or someone helped you, the dream may carry the beginning of healing — the hurt being tended rather than ignored."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "bleeding-stopped",
+        title: "The bleeding stopped",
+        body: [
+          "If the bleeding stopped or you were helped, the dream may reflect the beginning of healing after a painful loss — the wound being tended."
+        ]
+      },
+      {
+        id: "bleeding-continued",
+        title: "The bleeding would not stop",
+        body: [
+          "If the bleeding continued, the dream may picture a hurt that feels unstoppable — something draining you that has not been tended."
+        ]
+      },
+      {
+        id: "blood-in-mouth",
+        title: "Your mouth filled with blood",
+        body: [
+          "A mouth full of blood may picture a loss or hurt that feels overwhelming — too much at once, or something you cannot swallow or speak past."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What loss or hurt in your life has cost you something recently?",
+      "Is there a wound that is still open and may need care or honesty?",
+      "What has been draining you — energy, trust, or effort?",
+      "If the dream were picturing a hurt being tended, who or what would tend it?"
+    ],
+    whatItDoesNotProve: [
+      "That you are seriously ill.",
+      "That a real injury or harm is coming to you or someone else.",
+      "That a specific person is bleeding or suffering because of the dream.",
+      "That the dream is a forecast of disaster."
+    ],
+    faq: [
+      {
+        question: "What does a bleeding tooth in a dream mean in Islam?",
+        answer:
+          "Blood with a falling tooth is most often explored as an image of a loss that cost you, or a hurt that is still open. The tradition reads dreams through context and does not treat blood in a dream as a medical sign or a forecast of injury."
+      },
+      {
+        question: "Does blood in a teeth dream mean someone will get hurt?",
+        answer:
+          "No. Blood in a dream is not a prediction of injury to you or anyone else. It is an image of pain and cost to reflect on through your own circumstances."
+      },
+      {
+        question: "What should I do after a bleeding teeth dream?",
+        answer:
+          "Name the loss or hurt that cost you. If the dream points to a wound that is still open — a relationship, a grief, a stress — consider what honest care it needs. If it frightened you, the traditional response is seeking refuge in Allah and not dwelling on it."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/teeth-falling-out-dream-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+      { href: "/guides/broken-teeth-dream-islam", label: "Broken Teeth Dream Meaning in Islam" },
+      { href: "/guides/losing-front-teeth-dream-islam", label: "Losing Front Teeth Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+      { href: "/dreams/dead-person-dream-islam", label: "Dead Person Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" },
+    hubEntityId: "teeth"
+  },
+
+  /* ================================================================
+   * Water Cluster (Phase 7 — Core Dream Symbols Migration)
+   * ============================================================== */
+
+  "clear-water-dream-islam": {
+    slug: "clear-water-dream-islam",
+    keyword: "clear water dream meaning islam",
+    searchIntent:
+      "The searcher dreamt of clear or clean water and wants to know what it means from an Islamic perspective.",
+    title: "Clear Water Dream Meaning in Islam",
+    description:
+      "Clear water in a dream is usually received positively, associated with purity and clarity. Explore what it may reflect and what it does not prove. Not predictions.",
+    quickAnswer:
+      "Clear, clean water in a dream is usually received positively. In the Qur'an, water is described as the origin of every living thing and as a sign of life and mercy, and this shapes how clear water is often read: as an image of purity, clarity, peace, or emotional refreshment. In the Islamic tradition, dreams are read through context — the hadith describe dreams as coming from Allah, from Satan, or from the self — and a clear-water dream is not a guarantee of wealth or good fortune. It may picture a period of clarity in your life, a sense of things being clean and visible again, or a refreshment you have been needing. The meaning is found through what you did with the water and how it felt.",
+    introduction: [
+      "Clear water is one of the most positive images a water dream can hold. It is often remembered as calm and refreshing, and it carries the Qur'anic associations of life and purity.",
+      "This article looks at what clear water may reflect, what the tradition teaches, and what the dream does not prove."
+    ],
+    islamicPerspective: [
+      {
+        title: "Water as a sign of life and mercy",
+        body: [
+          "The Qur'an states that Allah created every living thing from water (Qur'an 21:30) and speaks of rain sent down to give life to the earth. Water is therefore carried into the tradition with associations of life, purity, and mercy.",
+          "This shapes how clear water dreams are received — gently and positively — while each dream is still read through its own details."
+        ],
+        sourceIds: ["quran-anbiya-21-30"]
+      },
+      {
+        title: "Dreams are read through context",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. A clear-water dream is not automatically a message; it is read through the dreamer's circumstances.",
+          "The tradition is careful not to turn a pleasant dream into a promise of fortune."
+        ],
+        sourceIds: ["muslim-2263a"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "Clarity and peace",
+        body: [
+          "In personal reflection, clear water often pictures clarity and peace — a period when things feel visible and settled, or the hope of such a period.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "Emotional refreshment",
+        body: [
+          "Clear water may picture refreshment — a need for rest, restoration, or emotional cleansing that is beginning to be met."
+        ]
+      },
+      {
+        title: "Purification",
+        body: [
+          "In the tradition, water is tied to purification (wudu, ghusl). A clear-water dream may carry a gentle sense of being washed clean of something heavy."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "clear-still-water",
+        title: "Clear, still water",
+        body: [
+          "Clear and still water may picture a settled season — calm, quiet, and clear. If it felt restful, the dream may be inviting you to receive the calm."
+        ]
+      },
+      {
+        id: "clear-flowing-water",
+        title: "Clear, flowing water",
+        body: [
+          "Clear water that flows may picture clarity in motion — things moving clearly and in order, or a change that feels healthy rather than disruptive."
+        ]
+      },
+      {
+        id: "clear-water-you-drank",
+        title: "Drinking clear water",
+        body: [
+          "Drinking clear water carries the strongest sense of refreshment. It may picture a need being met — for rest, understanding, or comfort."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What in your life feels clear, settled, or newly visible?",
+      "What refreshment have you been needing — rest, understanding, or emotional space?",
+      "If the dream were a picture of peace, what would it be inviting you to receive?",
+      "Was the water something you entered, drank, or simply saw — and what does that action say?"
+    ],
+    whatItDoesNotProve: [
+      "That wealth or provision is guaranteed. Clear water is not a promise of fortune.",
+      "That a specific blessing or outcome will occur.",
+      "That every clear-water dream carries the same meaning.",
+      "That the dream is a sign of purity in a moral sense."
+    ],
+    faq: [
+      {
+        question: "Is clear water in a dream good in Islam?",
+        answer:
+          "Clear, clean water is usually received positively. The Qur'an describes water as the origin of every living thing, so clear water carries associations of life, purity, and clarity. But the tradition reads dreams through context and does not treat it as a guarantee of good fortune."
+      },
+      {
+        question: "What does drinking clear water in a dream mean?",
+        answer:
+          "Drinking clear water often pictures a need being met — for rest, understanding, or comfort. It is read through the dreamer's circumstances rather than as a promise of wealth or health."
+      },
+      {
+        question: "What should I do after a clear water dream?",
+        answer:
+          "If the dream felt restful, you may receive it gently and notice what in your life feels clear or newly settled. If any part of it unsettled you, reflect on what the water and your action with it might be picturing."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/dirty-water-dream-islam", label: "Dirty Water Dream Meaning in Islam" },
+      { href: "/guides/drinking-water-dream-islam", label: "Drinking Water Dream Meaning in Islam" },
+      { href: "/guides/flood-dream-islam", label: "Flood Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" },
+      { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" },
+    hubEntityId: "water"
+  },
+
+  "dirty-water-dream-islam": {
+    slug: "dirty-water-dream-islam",
+    keyword: "dirty water dream meaning islam",
+    searchIntent:
+      "The searcher dreamt of dirty or muddy water and wants to know what it means from an Islamic perspective.",
+    title: "Dirty Water Dream Meaning in Islam",
+    description:
+      "Dirty or muddy water in a dream carries a heavier feeling, often explored through confusion. Explore what it may reflect and what it does not prove. Not predictions.",
+    quickAnswer:
+      "Dirty or muddy water in a dream often feels heavier than clear water, and it is most often explored as an image of confusion, contamination, or a situation you cannot see clearly. In personal reflection, it may picture something in your life that feels clouded, unclear, or compromised — a relationship, a decision, or a period of uncertainty. The Islamic tradition does not treat dirty water as a verdict on your character: the hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are read through the dreamer's circumstances. Dirty water does not prove that you are morally compromised, that scandal or harm is coming, or that something is cursed. It is an invitation to name what feels murky in your life and seek clarity.",
+    introduction: [
+      "Dirty or muddy water in a dream can leave a lingering unease. Unlike clear water, it feels heavy — and that heaviness is the meaning to explore.",
+      "This article looks at what dirty water may reflect, what the tradition teaches, and what the dream does not prove."
+    ],
+    islamicPerspective: [
+      {
+        title: "Dreams are read through the dreamer",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. Dirty water is not treated as a fixed omen; it is read through the dreamer's own circumstances.",
+          "The tradition is careful not to use dreams to accuse a person's character."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "No verdict on character",
+        body: [
+          "Dirty water in a dream does not prove that you are morally compromised, that something about you is contaminated, or that harm or scandal is coming.",
+          "It is an image of something feeling unclear — not a judgement."
+        ],
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "Confusion and unclear situations",
+        body: [
+          "In personal reflection, muddy water often pictures confusion — a situation you cannot see clearly, a decision without enough information, or a relationship where motives are unclear.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "Something feeling contaminated",
+        body: [
+          "If the water felt dirty rather than just unclear, the dream may picture something that feels compromised or contaminated — a trust that was broken, a situation that feels wrong, or an environment that drains you."
+        ]
+      },
+      {
+        title: "The first step of naming it",
+        body: [
+          "Recognising the water as dirty is itself a step — it is naming that something feels off. The dream may be the beginning of seeking clarity."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "muddy-water",
+        title: "Muddy or cloudy water",
+        body: [
+          "Cloudy water may picture a situation you cannot see through clearly — something is there, but its shape is unclear."
+        ]
+      },
+      {
+        id: "dirty-water-drinking",
+        title: "Trying to drink dirty water",
+        body: [
+          "If you tried to drink dirty water, the dream may picture taking something in that feels wrong or unhealthy — a situation, a relationship, or a habit you are unsure about."
+        ]
+      },
+      {
+        id: "dirty-water-wading",
+        title: "Wading through dirty water",
+        body: [
+          "Wading through dirty water may picture moving through a difficult or unclear period — making progress, but through murky conditions."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What in your life feels unclear, clouded, or hard to see through right now?",
+      "Is there a situation that feels compromised, contaminated, or simply wrong?",
+      "What information or honesty would make the water clearer?",
+      "If the dream were naming something murky in your life, what would it be?"
+    ],
+    whatItDoesNotProve: [
+      "That you are morally compromised or contaminated.",
+      "That scandal or harm is coming to you.",
+      "That something in your life is cursed or under spiritual attack.",
+      "That a specific person is deceiving you."
+    ],
+    faq: [
+      {
+        question: "What does dirty water in a dream mean in Islam?",
+        answer:
+          "Dirty or muddy water is most often explored as an image of confusion or something feeling unclear or compromised in your life. The tradition reads dreams through context and does not treat it as a judgement on your character."
+      },
+      {
+        question: "Does dirty water in a dream mean something bad will happen?",
+        answer:
+          "No. Dirty water is not a forecast of harm or scandal. It is an image of something feeling murky in your life, and the honest reflection is about seeking clarity in that situation."
+      },
+      {
+        question: "What should I do after a dirty water dream?",
+        answer:
+          "Name what feels unclear or compromised in your life. Consider what information or honesty would make it clearer. If the dream frightened you, the traditional response is seeking refuge in Allah and not dwelling on it."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/clear-water-dream-islam", label: "Clear Water Dream Meaning in Islam" },
+      { href: "/guides/flood-dream-islam", label: "Flood Dream Meaning in Islam" },
+      { href: "/guides/drinking-water-dream-islam", label: "Drinking Water Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" },
+      { href: "/dreams/dead-person-dream-islam", label: "Dead Person Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" },
+    hubEntityId: "water"
+  },
+
+  "flood-dream-islam": {
+    slug: "flood-dream-islam",
+    keyword: "flood dream meaning islam",
+    searchIntent:
+      "The searcher dreamt of a flood and wants to know what it means from an Islamic perspective, and whether it predicts disaster.",
+    title: "Flood Dream Meaning in Islam",
+    description:
+      "A flood in a dream is intense and often explored through pressure or emotion that feels beyond control. Explore what it may reflect and what it does not prove. Not predictions.",
+    quickAnswer:
+      "A flood in a dream is intense, and it is most often explored as an image of pressure, emotion, or change that feels beyond control — something rising that you cannot stop. In personal reflection, it may picture stress at work, a difficult change, grief, or a responsibility that feels overwhelming. The Islamic tradition is careful here: the hadith describe dreams as coming from Allah, from Satan, or from the self, and a flood is not treated as a forecast of a real disaster. A flood dream does not prove that your life is about to be swept away, that harm is coming, or that a specific catastrophe is near. It is an image of being overwhelmed, and the honest reflection is about what is rising in your life and where you can find higher ground.",
+    introduction: [
+      "A flood in a dream is one of the most overwhelming water experiences — water everywhere, rising, beyond control. It often leaves a person shaken.",
+      "This article looks at what a flood may reflect, what the tradition teaches, and why it is not a forecast of disaster."
+    ],
+    islamicPerspective: [
+      {
+        title: "A disturbing dream is not a forecast",
+        body: [
+          "The hadith describe a disturbing dream as something to seek refuge in Allah from, not to read as a fixed sign of harm. A flood is an intense dream, and the tradition's first response is calm and protection.",
+          "The tradition is explicit that bad dreams are not used to predict events."
+        ],
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
+      },
+      {
+        title: "Dreams are read through the dreamer",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. A flood dream is most often read as a picture of the self — of feeling overwhelmed by what is in your own life.",
+          "It is an image to reflect on, not a warning about the weather or fate."
+        ],
+        sourceIds: ["muslim-2263a"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "Feeling overwhelmed",
+        body: [
+          "In personal reflection, a flood most often pictures overwhelm — pressure, grief, responsibility, or change rising faster than you can manage.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "Emotion that feels beyond control",
+        body: [
+          "Water is often explored as an image of emotion. A flood may picture feelings that feel too big to hold — anger, grief, fear, or uncertainty."
+        ]
+      },
+      {
+        title: "Change arriving all at once",
+        body: [
+          "A flood may picture a change that arrived suddenly and all at once — a job ending, a move, a loss — leaving you feeling carried rather than in control."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "flood-survived",
+        title: "Survived the flood",
+        body: [
+          "Surviving a flood, or reaching higher ground, may reflect resilience — the capacity to keep your head above what overwhelms you."
+        ]
+      },
+      {
+        id: "flood-carried-you",
+        title: "The flood carried you away",
+        body: [
+          "If the flood carried you, the dream may picture a feeling of being swept along by events — not in control of the current. Naming what is carrying you is the first step."
+        ]
+      },
+      {
+        id: "flood-rescued",
+        title: "Someone rescued you from the flood",
+        body: [
+          "Being rescued may picture the support that exists around you — people who would help if you reached out. It may also be an invitation to reach out."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What in your life feels like it is rising beyond your control right now?",
+      "What pressure, grief, or change arrived faster than you could manage?",
+      "Where is your higher ground — what calms you, supports you, or gives you perspective?",
+      "Who could help you if you asked?"
+    ],
+    whatItDoesNotProve: [
+      "That a real flood or disaster is coming.",
+      "That your life is about to be swept away.",
+      "That you have failed or lost control permanently.",
+      "That the dream is a prophecy of harm."
+    ],
+    faq: [
+      {
+        question: "Does a flood dream mean disaster in Islam?",
+        answer:
+          "No. The Islamic tradition is explicit that dreams are not used to predict events. A flood in a dream is an image of feeling overwhelmed — pressure, emotion, or change beyond control — not a forecast of a real disaster."
+      },
+      {
+        question: "What should I do after a flood dream?",
+        answer:
+          "Name what feels like it is rising beyond your control, and where your higher ground is — what calms or supports you. If the dream frightened you, the traditional response is seeking refuge in Allah and not dwelling on it. If overwhelm is real, talking with someone you trust is a healthy step."
+      },
+      {
+        question: "Can a flood dream be a good sign?",
+        answer:
+          "Surviving a flood, or reaching higher ground, can reflect resilience. Some readings see cleansing in moving water. But the tradition reads dreams through context and does not promise fortune from a flood."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/clear-water-dream-islam", label: "Clear Water Dream Meaning in Islam" },
+      { href: "/guides/dirty-water-dream-islam", label: "Dirty Water Dream Meaning in Islam" },
+      { href: "/guides/drinking-water-dream-islam", label: "Drinking Water Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" },
+      { href: "/dreams/teeth-falling-out-islam", label: "Teeth Falling Out Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" },
+    hubEntityId: "water"
+  },
+
+  "drinking-water-dream-islam": {
+    slug: "drinking-water-dream-islam",
+    keyword: "drinking water in dream islam",
+    searchIntent:
+      "The searcher drank water in a dream and wants to know what it means from an Islamic perspective.",
+    title: "Drinking Water Dream Meaning in Islam",
+    description:
+      "Drinking water in a dream often carries a feeling of need being met. Explore what it may reflect, what the tradition teaches, and what it does not prove. Not predictions.",
+    quickAnswer:
+      "Drinking water in a dream often carries a feeling of need being met. In personal reflection, it may picture a thirst being satisfied — for rest, for understanding, for comfort, or for something you have been lacking. In the Qur'an, water is described as the origin of every living thing and as a sign of life and mercy, which gives drinking water a gentle, nourishing association in the tradition. The hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are read through the dreamer's circumstances. Drinking water does not prove that a specific provision is guaranteed or that wealth or health is promised. The thirst, the water, and its satisfaction are read through your own life.",
+    introduction: [
+      "Drinking water in a dream is one of the most direct and satisfying water experiences — a need met, a thirst answered. It often leaves a feeling of refreshment.",
+      "This article looks at what drinking water may reflect, what the tradition teaches, and what the dream does not prove."
+    ],
+    islamicPerspective: [
+      {
+        title: "Water as life and mercy",
+        body: [
+          "The Qur'an states that Allah created every living thing from water (Qur'an 21:30), and water is carried through the tradition with associations of life, purity, and mercy.",
+          "Drinking water in a dream therefore sits in a gentle, nourishing frame — while each dream is still read through its own details."
+        ],
+        sourceIds: ["quran-anbiya-21-30"]
+      },
+      {
+        title: "No promise of specific provision",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. Drinking water is read through the dreamer's circumstances, not as a guaranteed promise of wealth, health, or a specific outcome.",
+          "The tradition is careful not to turn dreams into forecasts."
+        ],
+        sourceIds: ["muslim-2263a"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "A need being met",
+        body: [
+          "In personal reflection, drinking water often pictures a need being met — rest after exhaustion, understanding after confusion, or comfort after grief.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "A thirst you have been carrying",
+        body: [
+          "The dream may name a thirst you have been carrying — for connection, for peace, for meaning, or simply for a pause. The water in the dream is the picture of that thirst being answered."
+        ]
+      },
+      {
+        title: "Refreshment and restoration",
+        body: [
+          "Drinking clean water may picture the beginning of restoration — of energy, clarity, or spirit returning after a dry period."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "drank-clean-water",
+        title: "Drank clean, cool water",
+        body: [
+          "Clean, cool water that satisfied you may picture a genuine refreshment — a need met, a thirst answered, a season of restoration beginning."
+        ]
+      },
+      {
+        id: "could-not-drink",
+        title: "Could not drink the water",
+        body: [
+          "If you could not reach the water, or could not swallow, the dream may picture a need that is still unmet — something you are reaching for that has not yet come."
+        ]
+      },
+      {
+        id: "drank-dirty-water",
+        title: "Drank dirty water",
+        body: [
+          "Drinking dirty water may picture taking something in that feels wrong or unhealthy — a situation, a habit, or a relationship you are unsure about."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What have you been thirsty for — rest, understanding, comfort, or connection?",
+      "Is there a need in your life that is being met, or one that is still waiting?",
+      "If the water were a picture of something you are reaching for, what would it be?",
+      "What would refresh you most right now?"
+    ],
+    whatItDoesNotProve: [
+      "That a specific provision, wealth, or health is guaranteed.",
+      "That every drinking-water dream carries the same meaning.",
+      "That the dream is a promise of a particular blessing.",
+      "That the dream is a sign about the unseen."
+    ],
+    faq: [
+      {
+        question: "What does drinking water in a dream mean in Islam?",
+        answer:
+          "Drinking water in a dream often pictures a need being met — for rest, understanding, comfort, or something you have been lacking. The Qur'an describes water as a sign of life and mercy, which gives the dream a gentle, nourishing frame. It is not a promise of wealth or health."
+      },
+      {
+        question: "Is drinking water in a dream a good sign?",
+        answer:
+          "Drinking clean, satisfying water is usually received positively — it may picture refreshment and a need being met. But the tradition reads dreams through context and does not treat it as a guarantee of fortune."
+      },
+      {
+        question: "What should I do after a drinking water dream?",
+        answer:
+          "Notice what you have been thirsty for — rest, understanding, comfort, or connection — and consider whether that need is being met. If the dream was pleasant, you may receive it gently as a picture of refreshment."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/clear-water-dream-islam", label: "Clear Water Dream Meaning in Islam" },
+      { href: "/guides/dirty-water-dream-islam", label: "Dirty Water Dream Meaning in Islam" },
+      { href: "/guides/flood-dream-islam", label: "Flood Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" },
+      { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" },
+    hubEntityId: "water"
+  },
+
+  /* ================================================================
+   * Pregnancy Cluster (Phase 7 — Core Dream Symbols Migration)
+   * ============================================================== */
+
+  "being-pregnant-in-dream-islam": {
+    slug: "being-pregnant-in-dream-islam",
+    keyword: "being pregnant in dream islam",
+    searchIntent:
+      "The searcher dreamt that they themselves were pregnant and wants to know what it means from an Islamic perspective, and whether it predicts pregnancy.",
+    title: "Being Pregnant in a Dream in Islam",
+    description:
+      "Dreaming that you are pregnant is most often read symbolically. Explore what it may reflect and why it does not predict pregnancy. Not predictions.",
+    quickAnswer:
+      "Dreaming that you are pregnant — whether or not pregnancy is possible, expected, or desired — is most often read as symbolic reflection rather than as a sign about actual pregnancy. In personal reflection, being pregnant in a dream may picture something new growing in your life that you are carrying and not yet ready to bring into the world: a project, an idea, a relationship, a responsibility, or a new phase of yourself. The Islamic tradition reads dreams through context: the hadith describe dreams as coming from Allah, from Satan, or from the self, and the tradition does not use dreams to predict real events. Being pregnant in a dream does not prove that you are pregnant, that you will become pregnant, or that parenthood is being promised — for anyone, regardless of gender or circumstance. The meaning is found through what is developing in your own life.",
+    introduction: [
+      "A dream in which you are pregnant can be surprising, joyful, or unsettling — and the feeling depends heavily on your real circumstances. It is worth saying clearly: the dream is not a prediction of pregnancy.",
+      "This article looks at what being pregnant in a dream may reflect symbolically, what the tradition teaches, and why the dream should not be read as a sign about parenthood."
+    ],
+    islamicPerspective: [
+      {
+        title: "Dreams are read through the dreamer",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self — one's own thoughts, wishes, and experiences. A pregnancy dream is most often read through the dreamer's own life.",
+          "The tradition is careful not to turn dreams into predictions of real events."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "Not a prediction of pregnancy",
+        body: [
+          "The Islamic tradition does not support using dreams to predict pregnancy, the gender of a child, or parenthood.",
+          "If pregnancy is a real hope or worry, the honest response is to attend to your actual circumstances — not to read the dream as a verdict."
+        ],
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "Something new growing in you",
+        body: [
+          "In personal reflection, being pregnant may picture something new developing in your life that is not yet visible or ready — a project, an idea, a relationship, or a new phase of yourself.",
+          "This reading is a reflective tool, not a claim about pregnancy."
+        ]
+      },
+      {
+        title: "Carrying something not yet ready",
+        body: [
+          "If the dream felt heavy, it may picture a responsibility or change you feel you are carrying before it is ready to come into the open."
+        ]
+      },
+      {
+        title: "Creation and anticipation",
+        body: [
+          "Pregnancy is the clearest image of creation. The dream may reflect something creative and alive in you that is still growing toward its time."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "pregnant-and-happy",
+        title: "Pregnant and happy",
+        body: [
+          "If the dream felt joyful, it may reflect something positive growing in your life — or a genuine hope you are carrying. Either way, it is read symbolically, not as a prediction."
+        ]
+      },
+      {
+        id: "pregnant-and-anxious",
+        title: "Pregnant and anxious",
+        body: [
+          "If the dream felt anxious, it may picture a responsibility or change you feel you are carrying that is not yet ready — a burden in the shape of a pregnancy."
+        ]
+      },
+      {
+        id: "pregnant-and-surprised",
+        title: "Pregnant and surprised",
+        body: [
+          "Surprise in the dream may reflect something developing in your life that you did not plan or expect — a change arriving without your choosing."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What new thing is developing in your life that you are carrying and not yet ready to bring into the world?",
+      "How did the dream feel — joyful, anxious, or surprising — and what does that feeling tell you?",
+      "If the dream were not about a baby at all, what would it be about?",
+      "Is there a responsibility or change you feel you are carrying before its time?"
+    ],
+    whatItDoesNotProve: [
+      "That you are pregnant or will become pregnant.",
+      "The gender of any child.",
+      "That parenthood is being promised to you.",
+      "That a specific event in your life is coming."
+    ],
+    faq: [
+      {
+        question: "Does dreaming you are pregnant mean you are pregnant in Islam?",
+        answer:
+          "No. A pregnancy dream is most often read symbolically — as a picture of something new developing in your life — not as a sign of actual pregnancy. The tradition reads dreams through context and does not use them to predict real events."
+      },
+      {
+        question: "What if I am not expecting a child — why did I dream I was pregnant?",
+        answer:
+          "Pregnancy in a dream often pictures growth in any area of life: a project, an idea, a relationship, or a new phase of yourself. It is an image of creation and anticipation, not a claim about parenthood."
+      },
+      {
+        question: "Does a pregnancy dream tell the gender of a baby?",
+        answer:
+          "No. The tradition does not support using dreams to determine the gender of a child. A pregnancy dream is symbolic reflection, not a sign about a real or future child."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/pregnancy-belly-dream-islam", label: "Pregnant Belly Dream Meaning in Islam" },
+      { href: "/guides/pregnancy-test-dream-islam", label: "Pregnancy Test Dream Meaning in Islam" },
+      { href: "/guides/pregnant-woman-dream-islam", label: "Pregnant Woman Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" },
+      { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" },
+    hubEntityId: "pregnancy"
+  },
+
+  "pregnant-woman-dream-islam": {
+    slug: "pregnant-woman-dream-islam",
+    keyword: "pregnant woman dream meaning islam",
+    searchIntent:
+      "The searcher saw a pregnant woman in a dream and wants to know what it means from an Islamic perspective.",
+    title: "Pregnant Woman Dream Meaning in Islam",
+    description:
+      "Seeing a pregnant woman in a dream is often explored through what she represents to you. Explore what it may reflect and what it does not prove. Not predictions.",
+    quickAnswer:
+      "Seeing a pregnant woman in a dream — known or unknown — is most often explored through what she represents to you. In personal reflection, she may picture growth and new beginning: a project taking shape, a relationship developing, or something new starting in your life or in your circle. If she was someone you know, the dream may be read through your relationship to her and to the idea of new life. The Islamic tradition reads dreams through context: the hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are not used to predict real events. Seeing a pregnant woman does not prove that the woman in your life is actually pregnant, that a birth is coming, or that a specific event will occur.",
+    introduction: [
+      "A pregnant woman in a dream can carry a gentle, hopeful feeling — or a complicated one, depending on who she is and what she means to you.",
+      "This article looks at what seeing a pregnant woman may reflect, what the tradition teaches, and what the dream does not prove."
+    ],
+    islamicPerspective: [
+      {
+        title: "Dreams are read through the dreamer",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. A pregnant woman in a dream is read through the dreamer's own circumstances and relationships.",
+          "The tradition is careful not to use dreams to predict births or real events."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "No prediction about a real person",
+        body: [
+          "Seeing a pregnant woman in a dream does not prove that she is actually pregnant or that a birth is coming.",
+          "It is an image to reflect on through your own life, not a sign about someone else's."
+        ],
+        sourceIds: ["bukhari-6986"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "Growth and new beginning",
+        body: [
+          "In personal reflection, a pregnant woman may picture growth and new beginning — something taking shape in your life or in your circle.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "Someone in your life",
+        body: [
+          "If the woman was someone you know, the dream may be read through your relationship to her — care, concern, admiration, or a hope you carry about her life."
+        ]
+      },
+      {
+        title: "What new life means to you",
+        body: [
+          "The dream may be exploring the idea of new life itself — what beginnings, hope, or responsibility mean to you at this time."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "woman-you-know",
+        title: "A pregnant woman you know",
+        body: [
+          "If you recognised her, reflect on your relationship to her and to the idea of her having a child. The dream is read through that connection, not as a sign about her."
+        ]
+      },
+      {
+        id: "unknown-woman",
+        title: "An unfamiliar pregnant woman",
+        body: [
+          "An unknown woman may picture new beginning as an idea rather than a person — growth, hope, or a fresh start appearing in your life."
+        ]
+      },
+      {
+        id: "woman-happy",
+        title: "A pregnant woman, happy",
+        body: [
+          "If she appeared happy, the dream may carry a hopeful tone — new beginnings received with joy, whether in your life or in your outlook."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "Who was the pregnant woman, and what does she mean to you?",
+      "What new beginning is taking shape in your life or in your circle?",
+      "What does the idea of new life — growth, hope, responsibility — stir in you right now?",
+      "If the dream were not about pregnancy at all, what would it be picturing?"
+    ],
+    whatItDoesNotProve: [
+      "That the woman in your life is actually pregnant.",
+      "That a birth is coming to you or to someone you know.",
+      "That a specific relationship is changing in a particular way.",
+      "That the dream is a sign about the unseen."
+    ],
+    faq: [
+      {
+        question: "What does seeing a pregnant woman in a dream mean in Islam?",
+        answer:
+          "Seeing a pregnant woman is most often explored through what she represents to you — growth, new beginning, or a person in your life. The tradition reads dreams through context and does not use them to predict births."
+      },
+      {
+        question: "If I dream of a specific pregnant woman, does it mean she is pregnant?",
+        answer:
+          "No. A dream is not a sign about another person's real life. If the woman is someone you know, the dream is best read through your relationship to her and what she means to you."
+      },
+      {
+        question: "Is seeing a pregnant woman in a dream a good sign?",
+        answer:
+          "It often carries a hopeful, gentle tone — pregnancy is a natural image of growth and new beginning. But the tradition reads dreams through context and does not promise fortune or specific events."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/being-pregnant-in-dream-islam", label: "Being Pregnant in a Dream in Islam" },
+      { href: "/guides/pregnancy-belly-dream-islam", label: "Pregnant Belly Dream Meaning in Islam" },
+      { href: "/guides/pregnancy-test-dream-islam", label: "Pregnancy Test Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" },
+      { href: "/dreams/dead-person-dream-islam", label: "Dead Person Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" },
+    hubEntityId: "pregnancy"
+  },
+
+  "pregnancy-belly-dream-islam": {
+    slug: "pregnancy-belly-dream-islam",
+    keyword: "pregnant belly dream meaning islam",
+    searchIntent:
+      "The searcher saw a pregnant belly in a dream and wants to know what it means from an Islamic perspective.",
+    title: "Pregnant Belly Dream Meaning in Islam",
+    description:
+      "A pregnant belly in a dream often pictures something growing and becoming more visible. Explore what it may reflect and what it does not prove. Not predictions.",
+    quickAnswer:
+      "A pregnant belly in a dream often pictures something that is growing and becoming more visible in your life — a project moving toward its due time, a truth becoming obvious, or a change that can no longer be hidden. The belly makes growth public, and the dream may be about that visibility. The Islamic tradition reads dreams through context: the hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are not used to predict real events. A pregnant belly does not prove that a real pregnancy is indicated or that an event is about to be revealed. It is an image of something you are carrying that is nearing its time to be seen.",
+    introduction: [
+      "A pregnant belly in a dream is pregnancy made visible — growth that can no longer be hidden. It may belong to you or to someone else, and the feeling of the dream matters.",
+      "This article looks at what a pregnant belly may reflect, what the tradition teaches, and what the dream does not prove."
+    ],
+    islamicPerspective: [
+      {
+        title: "Dreams are read through the dreamer",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. A pregnant belly is read through the dreamer's own circumstances, not through one fixed symbol meaning.",
+          "The tradition is careful not to use dreams to predict real events."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "Not a sign of a real pregnancy",
+        body: [
+          "A pregnant belly in a dream does not prove that a real pregnancy is indicated, for you or anyone else.",
+          "It is an image of growth becoming visible, not a report of an actual event."
+        ],
+        sourceIds: ["bukhari-6986"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "Growth becoming visible",
+        body: [
+          "In personal reflection, a pregnant belly may picture something growing in your life that is nearing the point of being seen — a project, a truth, or a change.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "Something nearing its time",
+        body: [
+          "The belly is growth near its end — something you have been carrying is approaching the moment it comes into the open."
+        ]
+      },
+      {
+        title: "A responsibility that feels heavy",
+        body: [
+          "If the belly felt burdensome, the dream may picture a growing responsibility that feels heavy — something you are carrying that has become harder to hide."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "your-own-belly",
+        title: "Your own pregnant belly",
+        body: [
+          "A belly of your own may picture something you personally are carrying toward its time — a project, a decision, or a truth within you that is close to being seen."
+        ]
+      },
+      {
+        id: "belly-of-another",
+        title: "Another person's belly",
+        body: [
+          "If the belly belonged to someone else, the dream may picture growth you are watching from outside — something developing in your circle or in a person close to you."
+        ]
+      },
+      {
+        id: "belly-visible-in-public",
+        title: "A belly visible in public",
+        body: [
+          "If the belly was noticed by others, the dream may be about exposure — something you have been carrying becoming visible to others whether you are ready or not."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What in your life is growing and becoming more visible, whether you are ready or not?",
+      "What are you carrying that is nearing its time to be seen?",
+      "If the belly felt heavy, what responsibility is weighing on you?",
+      "What would it mean to let something you are carrying come into the open?"
+    ],
+    whatItDoesNotProve: [
+      "That a real pregnancy is indicated.",
+      "That an event or truth is about to be revealed in reality.",
+      "That a specific outcome will occur.",
+      "That the dream is a sign about the unseen."
+    ],
+    faq: [
+      {
+        question: "What does a pregnant belly in a dream mean in Islam?",
+        answer:
+          "A pregnant belly often pictures something growing and becoming more visible in your life — a project nearing its time, a truth becoming obvious, or a change that can no longer be hidden. It is not a sign of a real pregnancy."
+      },
+      {
+        question: "Does a pregnant belly dream mean I will have a baby?",
+        answer:
+          "No. The tradition does not use dreams to predict pregnancy or parenthood. The belly is an image of growth becoming visible, read through the dreamer's own life."
+      },
+      {
+        question: "What should I do after a pregnant belly dream?",
+        answer:
+          "Ask what in your life is growing and nearing the point of being seen. If something is ready to come into the open, consider what honest step it needs. If the dream felt heavy, name the responsibility weighing on you."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/being-pregnant-in-dream-islam", label: "Being Pregnant in a Dream in Islam" },
+      { href: "/guides/pregnancy-test-dream-islam", label: "Pregnancy Test Dream Meaning in Islam" },
+      { href: "/guides/pregnant-woman-dream-islam", label: "Pregnant Woman Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" },
+      { href: "/dreams/water-dream-islam", label: "Water Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" },
+    hubEntityId: "pregnancy"
+  },
+
+  "pregnancy-test-dream-islam": {
+    slug: "pregnancy-test-dream-islam",
+    keyword: "pregnancy test dream meaning islam",
+    searchIntent:
+      "The searcher dreamt of a pregnancy test and wants to know what it means from an Islamic perspective, and whether it predicts the result.",
+    title: "Pregnancy Test Dream Meaning in Islam",
+    description:
+      "A pregnancy test in a dream most often pictures waiting for a result — in any area of life. Explore what it may reflect and what it does not prove. Not predictions.",
+    quickAnswer:
+      "A pregnancy test in a dream is most often about waiting for a result — a test, an interview, medical news, or a decision whose outcome you cannot control. The dream pictures the moment of not yet knowing, and the feeling of that moment is the meaning to explore. In personal reflection, it may name a hope or an anxiety you are carrying about an outcome in your life. The Islamic tradition reads dreams through context: the hadith describe dreams as coming from Allah, from Satan, or from the self, and dreams are not used to predict real events. A pregnancy test in a dream does not prove what the real result is or will be, and it does not indicate whether pregnancy is happening or not happening. It is a picture of waiting.",
+    introduction: [
+      "A pregnancy test in a dream is rarely about the test itself — it is about the moment of not yet knowing. That moment, and the feeling in it, is the real content of the dream.",
+      "This article looks at what a pregnancy test dream may reflect, what the tradition teaches, and why it does not predict any real result."
+    ],
+    islamicPerspective: [
+      {
+        title: "Dreams are read through the dreamer",
+        body: [
+          "The hadith describe dreams as coming from Allah, from Satan, or from the self. A pregnancy test is read through the dreamer's own circumstances — what they are waiting to find out.",
+          "The tradition is careful not to use dreams to predict real events or results."
+        ],
+        sourceIds: ["muslim-2263a"]
+      },
+      {
+        title: "No prediction of results",
+        body: [
+          "A pregnancy test in a dream does not prove what the real result is or will be.",
+          "It is an image of waiting and uncertainty, not a report about an actual test."
+        ],
+        sourceIds: ["bukhari-6986", "bukhari-7044"]
+      }
+    ],
+    interpretations: [
+      {
+        title: "Waiting for a result",
+        body: [
+          "In personal reflection, a pregnancy test may picture any result you are waiting for — news, a decision, an answer. The dream is about the waiting itself.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ]
+      },
+      {
+        title: "A hope you are carrying",
+        body: [
+          "If the dream felt hopeful, it may be naming a hope you are carrying about an outcome — and the hope is worth holding gently, whatever the result."
+        ]
+      },
+      {
+        title: "An anxiety you are carrying",
+        body: [
+          "If the dream felt tense, it may picture real anxiety about an outcome you are waiting for — and naming that anxiety is part of the honest reflection."
+        ]
+      }
+    ],
+    scenarios: [
+      {
+        id: "test-positive",
+        title: "The test showed positive",
+        body: [
+          "A positive result in a dream does not predict a real result. It may picture a hope you are carrying, or the weight of an outcome you are bracing for."
+        ]
+      },
+      {
+        id: "test-negative",
+        title: "The test showed negative",
+        body: [
+          "A negative result in a dream does not predict a real result either. It may picture a fear or a relief you are carrying about an outcome."
+        ]
+      },
+      {
+        id: "test-unclear",
+        title: "The result was unclear",
+        body: [
+          "An unclear result may be the most honest picture of all — the moment of not yet knowing, with the answer still out of reach."
+        ]
+      }
+    ],
+    reflectionQuestions: [
+      "What result in your life are you waiting for right now — news, a decision, an answer?",
+      "Is the waiting about pregnancy, or about something else wearing its shape?",
+      "What hope or anxiety are you carrying about the outcome?",
+      "How would you hold yourself gently while you wait?"
+    ],
+    whatItDoesNotProve: [
+      "What a real pregnancy test result is or will be.",
+      "That pregnancy is happening or not happening.",
+      "That a specific outcome will occur in any area of your life.",
+      "That the dream is a sign about the unseen."
+    ],
+    faq: [
+      {
+        question: "Does a pregnancy test dream predict the result in Islam?",
+        answer:
+          "No. The tradition does not use dreams to predict real events or results. A pregnancy test in a dream is most often a picture of waiting — of not yet knowing — and is read through what you are waiting to find out in your life."
+      },
+      {
+        question: "What if I dreamt the test was positive?",
+        answer:
+          "A positive result in a dream does not predict a real result. It may picture a hope you are carrying, or the weight of an outcome you are bracing for. The honest reading is about the hope or anxiety, not the result."
+      },
+      {
+        question: "Why do I keep dreaming of pregnancy tests?",
+        answer:
+          "Repeating test dreams often accompany real waiting — for news, a decision, or an answer that matters to you. If the waiting is about something real, attending to it directly, and seeking support if it is heavy, is the healthy step."
+      }
+    ],
+    relatedArticles: [
+      { href: "/guides/being-pregnant-in-dream-islam", label: "Being Pregnant in a Dream in Islam" },
+      { href: "/guides/pregnancy-belly-dream-islam", label: "Pregnant Belly Dream Meaning in Islam" },
+      { href: "/guides/pregnant-woman-dream-islam", label: "Pregnant Woman Dream Meaning in Islam" }
+    ],
+    relatedSymbols: [
+      { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" },
+      { href: "/dreams/dead-person-dream-islam", label: "Dead Person Dream Meaning in Islam" }
+    ],
+    hubSymbol: { href: "/dreams/pregnancy-dream-islam", label: "Pregnancy Dream Meaning in Islam" },
+    hubEntityId: "pregnancy"
   }
 };
 

@@ -85,6 +85,16 @@ export const SOURCES: Record<string, SourceRecord> = {
     supports:
       "Ibrahim tells his son of a dream in which he saw himself sacrificing him; his son responds with patience and submission. The passage presents a dream as a serious command experienced by a prophet, fulfilled through both of them submitting. It concerns a prophetic vision, not ordinary dream symbolism."
   },
+  "quran-anbiya-21-30": {
+    id: "quran-anbiya-21-30",
+    type: "quran",
+    title: "Surah Al-Anbiya",
+    reference: "Qur’an 21:30",
+    url: "https://quran.com/21/30",
+    status: "verified",
+    supports:
+      "The verse states that Allah created every living thing from water. It is the Qur'anic basis for water as a sign of life and mercy — an association that shapes how water is received in the tradition. It does not assign fixed meanings to water dreams."
+  },
 
   /* ----------------------------------------------------------------
    * Hadith — Sahih al-Bukhari / Sahih Muslim, checked against sunnah.com.

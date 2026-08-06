@@ -37,5 +37,251 @@
   "status": "needs verification",
   "review_status": "draft",
   "last_reviewed": null,
-  "review_notes": ""
+  "review_notes": "",
+  "article": {
+    "quickAnswer": "Teeth dreams are among the most searched dream topics, and in the Islamic tradition they are not given one fixed meaning. The hadith describe dreams as falling into categories — from Allah, from Satan, and from the self — and only some dreams carry the weight of meaning. A dream of teeth falling out may be explored as an image of change, loss, anxiety about appearance, or something your mind is working through. It does not prove that a specific person will die, that you will lose money, or that harm is coming. The tradition reads dreams with care, and the meaning is found through the details of the dream and the dreamer's own circumstances.",
+    "introduction": [
+      "Teeth falling out is one of the most common dream reports, and it is often intensely vivid. Because it is so common, it has collected many popular claims — and the Islamic tradition is more careful than that.",
+      "This guide separates three things clearly: what the Islamic tradition actually says about dreams in general, later interpretive traditions that mention teeth, and the personal reflection that only you can add from your own life."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Did the teeth fall out, break, or bleed?",
+        "body": "Losing teeth, having them break, or seeing blood each carry a different feeling and a different possible reflection. The action matters more than the symbol alone."
+      },
+      {
+        "title": "Which teeth were involved?",
+        "body": "Front teeth, back teeth, upper or lower teeth each feel different. The dream's location of the loss is part of its context."
+      },
+      {
+        "title": "How did you feel in the dream and after waking?",
+        "body": "Fear, embarrassment, relief, or indifference each change how the dream is best understood. The feeling you carried into the day is part of the meaning."
+      },
+      {
+        "title": "Had you recently been thinking about your teeth?",
+        "body": "Dental visits, toothaches, or conversations about teeth can surface in dreams. When a tooth appears without emotion, it may simply be a replay of daily experience."
+      },
+      {
+        "title": "Is there a change or loss in your life right now?",
+        "body": "Many teeth dreams come during transitions — a move, a job change, a relationship ending, or a season of worry. The dream may reflect something being 'lost' or 'pulled away' in your life."
+      }
+    ],
+    "themes": [
+      {
+        "id": "change-and-loss",
+        "title": "Change and loss",
+        "summary": "Losing something — or the fear of losing something — is the most common thread in teeth dreams.",
+        "body": [
+          "In personal reflection, teeth falling out is often explored as an image of loss or change: something in your life that is ending, being taken away, or slipping beyond your control.",
+          "The value of this reading is practical — it can help you name what feels like it is being lost, and what you are afraid of losing."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "anxiety-and-appearance",
+        "title": "Anxiety and appearance",
+        "summary": "Teeth are tied to how we look and speak, so teeth dreams often accompany worry about image or self-presentation.",
+        "body": [
+          "Teeth shape our smile and our speech, so a dream of losing them can picture anxiety about how you appear to others — a presentation, a first impression, or a fear of being judged.",
+          "This reading is a reflective tool, not a fixed Islamic meaning."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "what-the-tradition-says",
+        "title": "What the Islamic tradition teaches about dreams",
+        "body": [
+          "The hadith describe dreams as coming from three sources: a good dream from Allah, a disturbing dream from Satan, and a dream from the self — one's own thoughts and experiences. A teeth dream is not automatically any one of these.",
+          "The tradition is careful not to turn dreams into certainties, and it warns against using dreams to predict death, wealth, or harm."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": ["muslim-2263a"]
+      },
+      {
+        "id": "caution-about-popular-claims",
+        "title": "Caution about popular claims",
+        "summary": "Popular culture assigns teeth dreams many fixed meanings — a death in the family, a windfall — but the tradition does not support such claims.",
+        "body": [
+          "Popular claims often say a tooth falling out means someone will die or that money is coming. The Islamic tradition does not support treating dreams as fixed forecasts, and it is careful about assigning such heavy meanings to common dreams.",
+          "If a popular claim disturbs you, the traditional response to a disturbing dream — seeking refuge in Allah and not dwelling on it — applies."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": ["bukhari-6986", "bukhari-7044"]
+      }
+    ],
+    "contextQuestions": [
+      "Which part of the dream stayed with you most — the tooth, the blood, or the feeling?",
+      "What in your life feels like it is being lost, changed, or pulled away right now?",
+      "Is there anxiety about how you appear, speak, or are judged that the dream might be picturing?",
+      "What would the dream be saying if it were simply a picture of how you have been feeling lately?"
+    ],
+    "scenarios": [
+      {
+        "id": "teeth-falling-out",
+        "title": "Teeth falling out",
+        "summary": "The most common teeth dream, usually explored through loss and change.",
+        "body": [
+          "Teeth falling out is the most common teeth dream. In personal reflection, it may picture something being lost or slipping away — a role, a relationship, a sense of control, or a fear of ageing and change.",
+          "The Islamic tradition does not assign it one fixed meaning such as 'a death is coming'. It is read through the dreamer's own circumstances."
+        ],
+        "positiveReading": "If the dream ended with relief or acceptance, it may reflect letting go of something that no longer serves you.",
+        "cautionaryReading": "If the dream felt frightening, it may reflect a real worry about loss or change that deserves honest attention.",
+        "doesNotProve": [
+          "That someone will die",
+          "That you will lose money or status"
+        ],
+        "relatedGuide": {
+          "href": "/guides/teeth-falling-out-dream-islam",
+          "label": "Teeth Falling Out Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "broken-teeth",
+        "title": "Broken teeth",
+        "summary": "A broken tooth carries a different feeling from one that falls out — damage rather than loss.",
+        "body": [
+          "A broken or cracked tooth in a dream feels like damage rather than loss. In reflection, it may picture something that has been harmed or weakened — a relationship, a reputation, a plan, or your own sense of strength.",
+          "The dream is read through what felt damaged and how you responded to it."
+        ],
+        "positiveReading": "If you repaired or accepted the break, the dream may reflect resilience — the ability to carry on with what has been damaged.",
+        "cautionaryReading": "A break may point to something in your life that feels weakened or compromised and may need attention.",
+        "doesNotProve": [
+          "That a specific person has been harmed",
+          "That your health is failing"
+        ],
+        "relatedGuide": {
+          "href": "/guides/broken-teeth-dream-islam",
+          "label": "Broken Teeth Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "losing-front-teeth",
+        "title": "Losing front teeth",
+        "summary": "Front teeth are the most visible, so losing them is often tied to appearance and confidence.",
+        "body": [
+          "Front teeth are the ones people see when you smile and speak, so losing them in a dream often carries a feeling of exposure. In reflection, it may picture a fear of being seen, judged, or embarrassed.",
+          "The dream may be naming an area where you feel less confident or more visible than you would like."
+        ],
+        "positiveReading": "Facing the loss of front teeth in the dream may reflect confronting a fear of exposure with courage.",
+        "cautionaryReading": "The dream may point to real anxiety about how you are perceived — at work, in family, or in a new situation.",
+        "doesNotProve": [
+          "That you will be publicly humiliated",
+          "That your reputation is actually damaged"
+        ],
+        "relatedGuide": {
+          "href": "/guides/losing-front-teeth-dream-islam",
+          "label": "Losing Front Teeth Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "bleeding-teeth",
+        "title": "Teeth falling out with blood",
+        "summary": "Blood intensifies the dream and often points to something painful or costly.",
+        "body": [
+          "Blood with a falling tooth makes the dream feel more serious and more painful. In reflection, it may picture a loss that cost you — emotionally, physically, or in effort — or something that felt wounding rather than merely disappearing.",
+          "The dream is read through what the pain is connected to in your waking life."
+        ],
+        "positiveReading": "If the bleeding stopped or you were helped, the dream may reflect the beginning of healing after a painful loss.",
+        "cautionaryReading": "Bleeding may point to a hurt that is still open and may need care or honesty to heal.",
+        "doesNotProve": [
+          "That you are seriously ill",
+          "That a real injury is coming"
+        ],
+        "relatedGuide": {
+          "href": "/guides/bleeding-teeth-dream-islam",
+          "label": "Bleeding Teeth Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "new-teeth",
+        "title": "New teeth growing",
+        "summary": "New teeth in a dream are often explored as renewal or a new phase.",
+        "body": [
+          "If new teeth grew in place of the lost ones, the dream may carry a hopeful note. In reflection, it may picture renewal — a new phase, a fresh start, or strength growing after a loss.",
+          "This reading is a reflective tool; it does not promise good fortune."
+        ],
+        "positiveReading": "New teeth may reflect growth, renewal, and the capacity to rebuild after change.",
+        "cautionaryReading": "Even renewal takes time — the dream does not erase the loss it follows.",
+        "doesNotProve": [
+          "That wealth or good luck is guaranteed",
+          "That every new tooth is a promise"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That a specific person will die. Popular claims about teeth dreams and death are not supported by the tradition.",
+      "That you will lose money or wealth. A dream is not a forecast of finances.",
+      "That your health is failing. Teeth dreams are common and are not treated as medical signs.",
+      "That harm or disaster is coming. The tradition is explicit that bad dreams are not used to predict events.",
+      "That the dream is necessarily a premonition. The Qur'an and hadith describe dreams of different types, and only some carry the weight of meaning."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Write the dream down while it is fresh",
+        "body": "Note which teeth were involved, what happened, and how you felt. The details you record today are the context you can reflect on calmly tomorrow."
+      },
+      {
+        "title": "Name what feels like it is being lost",
+        "body": "A teeth dream often pictures a change or loss in waking life. Naming it — a role, a relationship, a worry — is the first step of honest reflection."
+      },
+      {
+        "title": "Do not attach a popular omen to it",
+        "body": "If a popular claim says the dream means death or money, set it aside. The tradition does not support fixed forecasts from common dreams."
+      },
+      {
+        "title": "Follow the etiquette for a disturbing dream",
+        "body": "If the dream frightened you, the tradition teaches to seek refuge in Allah from its evil and not to dwell on it.",
+        "sourceIds": ["bukhari-6986", "bukhari-7044"]
+      },
+      {
+        "title": "Reach out if anxiety is heavy",
+        "body": "If teeth dreams keep returning with strong fear or embarrassment, they may reflect stress or worry. Talking with someone you trust, or a professional if needed, is a reasonable and healthy step."
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "If you are unsure whether this dream should be interpreted at all, read The Three Types of Dreams in Islam.",
+        "reason": "Helps the reader decide how much weight to give a dream."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the dream disturbed you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides the traditional etiquette for a disturbing dream."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "To understand how sources are selected and reviewed, read Sources and Methodology.",
+        "reason": "Explains the source hierarchy used on this page."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/teeth-falling-out-dream-islam",
+        "anchor": "If your teeth fell out, explore Teeth Falling Out Dream Meaning in Islam.",
+        "reason": "Routes readers with a falling-out search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/broken-teeth-dream-islam",
+        "anchor": "If your teeth broke, explore Broken Teeth Dream Meaning in Islam.",
+        "reason": "Routes readers with a break-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/losing-front-teeth-dream-islam",
+        "anchor": "If you lost front teeth, explore Losing Front Teeth Dream Meaning in Islam.",
+        "reason": "Routes readers with a front-teeth search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/bleeding-teeth-dream-islam",
+        "anchor": "If your teeth fell out with blood, explore Bleeding Teeth Dream Meaning in Islam.",
+        "reason": "Routes readers with a blood-specific search intent to the long-tail article."
+      }
+    ]
+  }
 }

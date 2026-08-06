@@ -36,5 +36,251 @@
   "status": "needs verification",
   "review_status": "draft",
   "last_reviewed": null,
-  "review_notes": ""
+  "review_notes": "",
+  "article": {
+    "quickAnswer": "Pregnancy dreams are most often explored as symbolic reflection rather than as signs about actual pregnancy. In personal reflection, pregnancy may picture something new developing in your life — a project, an idea, a relationship, a responsibility, or a part of yourself that is growing and not yet born. In the Islamic tradition, dreams are read through context: the hadith describe dreams as coming from Allah, from Satan, and from the self, and only some dreams carry the weight of meaning. A pregnancy dream does not predict an actual pregnancy, does not reveal the gender of a child, and is not a promise of parenthood. It is an image of creation, anticipation, and growth — and the meaning is found through your own circumstances and feelings.",
+    "introduction": [
+      "A pregnancy dream can be joyful, confusing, or unsettling — especially for someone who is not expecting or hoping for a child. It is worth saying clearly at the start: a pregnancy dream is not a prediction of pregnancy.",
+      "This guide explores pregnancy in a dream as symbolic reflection — something new being created in your life — and separates that from any claim about actual pregnancy, gender, or the unseen."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Who was pregnant in the dream?",
+        "body": "You, someone you know, or an unfamiliar woman each carry a different feeling. Who is carrying the child is part of the context."
+      },
+      {
+        "title": "How did the dream feel?",
+        "body": "Joyful, anxious, surprising, or neutral — the feeling is the most honest part of the dream and the best guide to its meaning."
+      },
+      {
+        "title": "What is developing in your life right now?",
+        "body": "A project, a relationship, a move, a new responsibility, or a decision that is 'growing' inside your life may be what the dream is picturing."
+      },
+      {
+        "title": "Is pregnancy already on your mind?",
+        "body": "If you are trying to conceive, expecting, or worried about pregnancy, the dream may simply be a replay of what is already on your mind."
+      },
+      {
+        "title": "What would the dream mean if it were not about a baby at all?",
+        "body": "This question often unlocks the dream. If the dream were about something new growing in your life, what would it be?"
+      }
+    ],
+    "themes": [
+      {
+        "id": "creation-and-growth",
+        "title": "Creation and growth",
+        "summary": "Pregnancy is the clearest image of something new being created — a natural symbol for growth in any area of life.",
+        "body": [
+          "In personal reflection, pregnancy is an image of creation and growth: something new is developing inside you and your life, not yet visible, not yet born. This may be a project, an idea, a relationship, or a new phase of yourself.",
+          "This reading is a reflective tool, not a claim about actual pregnancy."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "anticipation-and-waiting",
+        "title": "Anticipation and waiting",
+        "summary": "Pregnancy dreams often accompany a season of waiting — for a result, a decision, or something to come to term.",
+        "body": [
+          "Pregnancy involves waiting, and a pregnancy dream may picture a season of waiting in your life — for news, for a decision, for something you have started to come to fruition.",
+          "The dream may be naming the anticipation itself."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "what-the-tradition-says",
+        "title": "What the Islamic tradition teaches about dreams",
+        "body": [
+          "The hadith describe dreams as coming from three sources: a good dream from Allah, a disturbing dream from Satan, and a dream from the self — one's own thoughts and experiences. A pregnancy dream is not automatically any one of these.",
+          "The tradition is careful not to turn dreams into certainties, and it does not use dreams to predict real events such as pregnancy or the gender of a child."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": ["muslim-2263a"]
+      },
+      {
+        "id": "not-a-prediction",
+        "title": "Pregnancy dreams are not predictions",
+        "summary": "A pregnancy dream does not predict a real pregnancy, a child's gender, or parenthood.",
+        "body": [
+          "Popular culture sometimes reads pregnancy dreams as signs of an actual pregnancy to come, or as hints about gender. The Islamic tradition does not support using dreams to predict such events.",
+          "If a pregnancy dream has left you worried or hopeful about an actual pregnancy, the honest response is to reflect on your own circumstances — not to read the dream as a verdict."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": ["bukhari-6986", "bukhari-7044"]
+      }
+    ],
+    "contextQuestions": [
+      "Who was pregnant, and how did you feel about it in the dream?",
+      "What new thing is developing in your life right now — a project, a relationship, a responsibility, a decision?",
+      "What are you waiting for that has not yet come to term?",
+      "If the dream were not about a baby at all, what would it be about?"
+    ],
+    "scenarios": [
+      {
+        "id": "being-pregnant",
+        "title": "Being pregnant yourself",
+        "summary": "Dreaming that you are pregnant is the most common form, and it is usually read symbolically.",
+        "body": [
+          "Dreaming that you are pregnant — whether or not pregnancy is possible or desired — is most often read as symbolic reflection: something new is growing in your life, carried by you, not yet born.",
+          "This is not a prediction of pregnancy, for anyone, regardless of gender or circumstance."
+        ],
+        "positiveReading": "The dream may reflect something creative and alive in you — a project or a phase of your life that is growing.",
+        "cautionaryReading": "If the dream felt anxious, it may picture a responsibility or change you feel you are carrying that is not yet ready.",
+        "doesNotProve": [
+          "That you are pregnant or will become pregnant",
+          "That parenthood is being promised"
+        ],
+        "relatedGuide": {
+          "href": "/guides/being-pregnant-in-dream-islam",
+          "label": "Being Pregnant in a Dream in Islam"
+        }
+      },
+      {
+        "id": "pregnant-woman",
+        "title": "Seeing a pregnant woman",
+        "summary": "Seeing someone else pregnant in a dream is often explored through what that person represents to you.",
+        "body": [
+          "If you saw a pregnant woman in the dream — known or unknown — the dream may be explored through what she represents: a person in your life who is expecting, or an image of growth and new beginning that is external to you.",
+          "The meaning is read through your relationship to the woman and to the idea of new life."
+        ],
+        "positiveReading": "The image may reflect something new beginning in your circle or in your own outlook.",
+        "cautionaryReading": "If the woman was a specific person, reflect on what her pregnancy — real or imagined — means to you, without turning the dream into a sign.",
+        "doesNotProve": [
+          "That the woman in your life is actually pregnant",
+          "That a birth is coming"
+        ],
+        "relatedGuide": {
+          "href": "/guides/pregnant-woman-dream-islam",
+          "label": "Pregnant Woman Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "pregnancy-belly",
+        "title": "A pregnant belly",
+        "summary": "A visible pregnant belly often pictures something growing and becoming more visible.",
+        "body": [
+          "A pregnant belly in a dream may picture something that is growing and becoming more visible in your life — a project moving toward its due time, a truth becoming obvious, or a change that can no longer be hidden.",
+          "The belly makes the growth public, and the dream may be about that visibility."
+        ],
+        "positiveReading": "The belly may reflect something you are carrying that is nearing its time — a project or phase about to come into the open.",
+        "cautionaryReading": "If the belly felt burdensome, the dream may picture a growing responsibility that feels heavy.",
+        "doesNotProve": [
+          "That a real pregnancy is indicated",
+          "That an event is about to be revealed"
+        ],
+        "relatedGuide": {
+          "href": "/guides/pregnancy-belly-dream-islam",
+          "label": "Pregnant Belly Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "pregnancy-test",
+        "title": "A pregnancy test",
+        "summary": "A pregnancy test in a dream often pictures waiting for a result — in any area of life.",
+        "body": [
+          "A pregnancy test in a dream is most often about waiting for a result — a test, an interview, medical news, or a decision whose outcome you cannot control. The dream pictures the moment of not yet knowing.",
+          "It is read through what you are waiting to find out in your own life."
+        ],
+        "positiveReading": "The dream may be naming a hope you are carrying about an outcome in your life.",
+        "cautionaryReading": "If the dream felt tense, it may picture real anxiety about an outcome you are waiting for.",
+        "doesNotProve": [
+          "That the test result in real life is indicated",
+          "That pregnancy is happening or not happening"
+        ],
+        "relatedGuide": {
+          "href": "/guides/pregnancy-test-dream-islam",
+          "label": "Pregnancy Test Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "giving-birth",
+        "title": "Giving birth",
+        "summary": "Giving birth in a dream is the completion of the pregnancy image — something coming into the world.",
+        "body": [
+          "Giving birth in a dream may picture the completion of something — a project finishing, a decision finally made, a truth coming out, or a long effort arriving at its result.",
+          "It is not a prediction of a real birth."
+        ],
+        "positiveReading": "The dream may reflect something you have carried finally coming into being.",
+        "cautionaryReading": "If the birth was difficult, the dream may picture a completion that cost you — and the effort it took is part of the meaning.",
+        "doesNotProve": [
+          "That a child will be born",
+          "That a specific outcome is guaranteed"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That you are pregnant or will become pregnant. A pregnancy dream is not a prediction.",
+      "The gender of any child. Dreams are not used to determine gender.",
+      "That parenthood is being promised to you.",
+      "That someone in your life is pregnant.",
+      "That the dream is a sign about the unseen. The tradition is careful not to use dreams to predict real events."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Read the dream symbolically first",
+        "body": "Before reading the dream as a sign about pregnancy, ask what is developing in your life — a project, a relationship, a responsibility, a decision."
+      },
+      {
+        "title": "Separate the dream from real circumstances",
+        "body": "If pregnancy is a real hope or worry, the honest response is to attend to your actual circumstances — not to read the dream as a verdict."
+      },
+      {
+        "title": "Do not use dreams to predict gender or outcomes",
+        "body": "The tradition does not support using dreams to determine the gender of a child or to predict real events."
+      },
+      {
+        "title": "Follow the etiquette for a disturbing dream",
+        "body": "If the dream frightened you, the tradition teaches to seek refuge in Allah from its evil and not to dwell on it.",
+        "sourceIds": ["bukhari-6986", "bukhari-7044"]
+      },
+      {
+        "title": "For real questions, seek real answers",
+        "body": "For questions about actual pregnancy, health, or family, seek the appropriate real-world support — medical, trusted family, or a qualified scholar for religious questions."
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "If you are unsure whether this dream should be interpreted at all, read The Three Types of Dreams in Islam.",
+        "reason": "Helps the reader decide how much weight to give a dream."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the dream disturbed you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides the traditional etiquette for a disturbing dream."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "To understand how sources are selected and reviewed, read Sources and Methodology.",
+        "reason": "Explains the source hierarchy used on this page."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/being-pregnant-in-dream-islam",
+        "anchor": "If you were pregnant in the dream, explore Being Pregnant in a Dream in Islam.",
+        "reason": "Routes readers with a self-pregnancy search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/pregnant-woman-dream-islam",
+        "anchor": "If you saw a pregnant woman, explore Pregnant Woman Dream Meaning in Islam.",
+        "reason": "Routes readers with a third-party pregnancy search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/pregnancy-belly-dream-islam",
+        "anchor": "If you saw a pregnant belly, explore Pregnant Belly Dream Meaning in Islam.",
+        "reason": "Routes readers with a belly-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/pregnancy-test-dream-islam",
+        "anchor": "If you dreamt of a pregnancy test, explore Pregnancy Test Dream Meaning in Islam.",
+        "reason": "Routes readers with a test-specific search intent to the long-tail article."
+      }
+    ]
+  }
 }
