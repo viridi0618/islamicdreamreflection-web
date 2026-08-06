@@ -310,6 +310,21 @@ a:hover {
   font-size: 14.5px;
 }
 
+.section__link {
+  margin-top: 20px;
+}
+
+.section__link a {
+  color: var(--green-700);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--green-700);
+}
+
+.section__link a:hover {
+  color: var(--green-900);
+}
+
 /* ---------- Dream cards (home) ---------- */
 
 .dream-grid {

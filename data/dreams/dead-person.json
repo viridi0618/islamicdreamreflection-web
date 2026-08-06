@@ -37,5 +37,264 @@
   "status": "needs verification",
   "review_status": "draft",
   "last_reviewed": null,
-  "review_notes": ""
+  "review_notes": "",
+  "article": {
+    "quickAnswer": "Dreams of the deceased are among the most emotionally significant dreams a person can have, and they are often searched for more than any other dream. In the Islamic tradition, dreams are not treated as one fixed sign: the hadith describe dreams as falling into categories — from Allah, from Satan, and from the self — and only some dreams carry the weight of meaning. A dream of someone who has passed away may be explored as an expression of grief, memory, love, or something your mind is still working through. It does not prove that the deceased is delivering a message, that they are at peace or in distress, or that death or harm is coming. The tradition reads dreams with care and is gentle with the feelings such dreams bring.",
+    "introduction": [
+      "A dream of someone who has died can bring comfort, longing, or confusion, and it often stays with a person for a long time. These dreams carry real emotional weight, so they deserve a careful and gentle reading.",
+      "This guide separates three things clearly: what the Islamic tradition actually says about dreams in general, the careful limits on claiming that the deceased 'spoke' through a dream, and the personal reflection that only you can add from your own life and your relationship with that person."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Was this your first dream of them, or a repeated one?",
+        "body": "A single dream after a loss and a dream that returns many times deserve different weight. A repeating dream may point to grief your mind is still working through, rather than to a hidden message."
+      },
+      {
+        "title": "How did you feel in the dream and after waking?",
+        "body": "Comfort, fear, relief, or sadness each change how the dream is best understood. The feeling you carried into the day is part of the context."
+      },
+      {
+        "title": "What did the deceased do or say, if anything?",
+        "body": "A silent presence, a conversation, or an action each carry a different feeling. The details matter more than the bare fact of seeing the person."
+      },
+      {
+        "title": "Had you been thinking about them recently?",
+        "body": "Anniversaries, grief, a conversation, or a place you visited can surface in dreams. When the person appears without a strong feeling, the dream may simply be a replay of memory and love."
+      },
+      {
+        "title": "Is there unfinished emotion in your life right now?",
+        "body": "Loss and regret can be held for years. A dream of the deceased may accompany a period when you are finally ready to process something."
+      }
+    ],
+    "themes": [
+      {
+        "id": "grief-and-memory",
+        "title": "Grief and memory",
+        "summary": "A dream of the deceased often appears during grief, anniversaries, or a period of remembering.",
+        "body": [
+          "In personal reflection, dreaming of someone who has passed away is most often a picture of grief, memory, and love — the mind's way of keeping the person close while it continues to heal.",
+          "The dream does not need to mean something beyond that to be meaningful. It can simply be a visit from your own heart."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "the-tradition-on-dreams",
+        "title": "What the tradition teaches about dreams",
+        "body": [
+          "The hadith describe dreams as coming from three sources: a good dream from Allah, a disturbing dream from Satan, and a dream from the self — one's own thoughts and experiences. A dream of the deceased is not automatically any one of these.",
+          "The tradition is careful not to turn dreams into certainties. A dream is not treated as proof of the unseen or as a forecast."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": ["muslim-2263a"]
+      },
+      {
+        "id": "limits-on-claims",
+        "title": "The careful limits on claiming a message",
+        "body": [
+          "People sometimes worry that the deceased is 'trying to tell them something'. In the Islamic tradition, no dream — however vivid — is treated as certain evidence that a deceased person is delivering a message or revealing their own state.",
+          "If a dream disturbs you, the traditional response is to seek refuge in Allah from its evil and not to dwell on it, rather than to search for a hidden verdict."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": ["bukhari-6986", "bukhari-7044"]
+      },
+      {
+        "id": "unresolved-emotion",
+        "title": "Unresolved emotion",
+        "summary": "Loss, regret, or a conversation that never happened can surface in a dream of the deceased.",
+        "body": [
+          "If there is something you never said, an apology you never made, or a grief you have not fully carried, the dream may be your mind picturing that unfinished emotion.",
+          "This reading is a reflective tool, not a fixed Islamic meaning. It can help you name what needs care."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "comfort-and-peace",
+        "title": "Comfort and peace",
+        "summary": "Many people experience a dream of the deceased as a source of comfort rather than fear.",
+        "body": [
+          "If the dream felt peaceful — the person looked at ease, or you woke with calm — it may be received as a comfort. Many traditions speak gently of such dreams without turning them into claims about the unseen.",
+          "You may take comfort from the dream without needing to prove what it means."
+        ],
+        "evidenceType": "editorial-reflection"
+      }
+    ],
+    "contextQuestions": [
+      "What did the dream feel like — comfort, fear, longing, or something else?",
+      "Is there a grief, a memory, or an anniversary that was already close to the surface?",
+      "If the person spoke or acted, what did they do, and how did it change how you felt?",
+      "What would the dream be saying if it were simply a picture of how you have been feeling about this loss?"
+    ],
+    "scenarios": [
+      {
+        "id": "talking-to-dead-person",
+        "title": "Talking to the deceased",
+        "summary": "A conversation with someone who has passed away is often intensely meaningful, but its meaning is not a fixed verdict.",
+        "body": [
+          "Talking with the deceased in a dream is a common and emotionally powerful experience. In personal reflection, it may picture something you wish you had said, a question that never got an answer, or a reassurance you are seeking.",
+          "The Islamic tradition does not treat such a conversation as certain proof that the deceased is communicating from beyond. It is read with care, through the dreamer's own circumstances."
+        ],
+        "positiveReading": "If the conversation felt kind or settling, it may reflect the beginnings of acceptance and inner peace.",
+        "cautionaryReading": "If the conversation left you unsettled, it may reflect an unresolved feeling about the loss that deserves honest attention.",
+        "doesNotProve": [
+          "That the deceased is literally communicating with you",
+          "That their state in the afterlife is being revealed"
+        ],
+        "relatedGuide": {
+          "href": "/guides/dead-person-talking-in-dream-islam",
+          "label": "Talking to a Dead Person in a Dream"
+        }
+      },
+      {
+        "id": "dead-person-alive-again",
+        "title": "The deceased alive again",
+        "summary": "Seeing someone who has died alive in a dream is often read through longing and the desire to have them back.",
+        "body": [
+          "Seeing the deceased alive and well in a dream is a very common experience, and it usually carries longing. In reflection, it may picture the wish that the loss had not happened, or a part of that person still living in your memory and values.",
+          "It is not treated in the tradition as a sign that death itself is undone or that something hidden is at work."
+        ],
+        "positiveReading": "Seeing them alive may reflect the ways their life continues in your memory, your values, and the stories you carry.",
+        "cautionaryReading": "If the dream intensified grief, it may be your mind returning to the loss while it continues to heal.",
+        "doesNotProve": [
+          "That the person is literally alive",
+          "That a miracle or supernatural event is occurring"
+        ],
+        "relatedGuide": {
+          "href": "/guides/dead-person-alive-again-dream-islam",
+          "label": "Seeing a Dead Person Alive in a Dream"
+        }
+      },
+      {
+        "id": "dead-person-smiling",
+        "title": "The deceased smiling",
+        "summary": "A smiling deceased person often brings comfort, and is usually received gently.",
+        "body": [
+          "A smile from the deceased is often experienced as reassurance. In reflection, it may picture the good you remember, a sense of being forgiven or at peace, or your own wish for their peace.",
+          "The tradition is gentle here: a comforting dream may be received with gratitude without being turned into a claim about the person's state."
+        ],
+        "positiveReading": "A smile may be received as a reflection of love, good memory, and the hope of peace.",
+        "cautionaryReading": "Do not treat the smile as proof about the afterlife — the dream is a comfort to you, not a verdict about them.",
+        "doesNotProve": [
+          "That the deceased's eternal state is known",
+          "That a specific outcome will occur"
+        ],
+        "relatedGuide": {
+          "href": "/guides/dead-person-smiling-in-dream-islam",
+          "label": "A Dead Person Smiling in a Dream"
+        }
+      },
+      {
+        "id": "dead-person-giving",
+        "title": "The deceased giving you something",
+        "summary": "Receiving something from the deceased is often read through memory, inheritance, and what the person left behind.",
+        "body": [
+          "If the deceased gave you something in the dream — an object, food, words, or a gift — it may picture what they left behind in your life: a value, a lesson, a responsibility, or a memory.",
+          "It is not treated in the tradition as proof of a material inheritance or a command from beyond."
+        ],
+        "positiveReading": "A gift may reflect the good the person left in you — wisdom, care, or a way of living you carry forward.",
+        "cautionaryReading": "If the gift felt like a burden or a demand, it may reflect a responsibility you are still processing.",
+        "doesNotProve": [
+          "That the deceased is commanding you from beyond",
+          "That a material inheritance is being promised"
+        ],
+        "relatedGuide": {
+          "href": "/guides/dead-person-giving-something-dream-islam",
+          "label": "A Dead Person Giving You Something in a Dream"
+        }
+      },
+      {
+        "id": "deceased-parent",
+        "title": "A deceased parent",
+        "summary": "Dreams of a deceased mother or father are especially common and carry a particular weight.",
+        "body": [
+          "Dreaming of a deceased parent often carries the most emotion. It may picture guidance you miss, a lesson they taught, or care you are now giving to others in their place.",
+          "In the tradition, supplication (dua) for parents who have passed is a recognised act of love — and a dream of them may simply accompany your remembering of them."
+        ],
+        "positiveReading": "A dream of a parent may reflect the continuing influence of their care and guidance in your life.",
+        "cautionaryReading": "If it brought grief, it may be a season of missing them — and the dream is part of that process, not a sign.",
+        "doesNotProve": [
+          "That your parent is in need or in distress",
+          "That a specific event is coming"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That the deceased is delivering a literal message from beyond. The tradition is careful not to treat dreams as certain evidence of the unseen.",
+      "That the person's state in the afterlife is being revealed. A dream is a comfort or a reflection for the dreamer, not a verdict about the deceased.",
+      "That death or harm is coming to you or someone else. A dream of the deceased is not a forecast.",
+      "That you are being asked to do something from beyond. No dream overrides your own judgement or religious obligations.",
+      "That the dream is necessarily a premonition. The Qur'an and hadith describe dreams of different types, and only some carry the weight of meaning."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Let the feeling be what it is",
+        "body": "Whether the dream brought comfort or grief, the feeling is real and deserves space. There is no requirement to 'explain' it immediately."
+      },
+      {
+        "title": "For a deceased parent, make dua",
+        "body": "Supplication for parents who have passed is a recognised act of love and mercy in the tradition. If you dreamt of a parent, it may be a gentle invitation to remember them in dua."
+      },
+      {
+        "title": "Do not search for a hidden verdict",
+        "body": "A dream of the deceased is not a report on their state or a forecast about yours. Resist the urge to turn it into a conclusion."
+      },
+      {
+        "title": "Follow the etiquette for a disturbing dream",
+        "body": "If the dream frightened you, the tradition teaches to seek refuge in Allah from its evil and not to dwell on it.",
+        "sourceIds": ["bukhari-6986", "bukhari-7044"]
+      },
+      {
+        "title": "Reach out if grief is heavy",
+        "body": "If a dream of the deceased brings grief that is affecting your sleep or daily life, talking with someone you trust, or a professional if needed, is a reasonable and healthy step."
+      },
+      {
+        "title": "For religious questions, ask a qualified scholar",
+        "body": "Questions about the unseen, the afterlife, or religious obligations are beyond the scope of this website and are best brought to a qualified scholar."
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "If you are unsure whether this dream should be interpreted at all, read The Three Types of Dreams in Islam.",
+        "reason": "Helps the reader decide how much weight to give a dream."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the dream disturbed you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides the traditional etiquette for a disturbing dream."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "To understand how sources are selected and reviewed, read Sources and Methodology.",
+        "reason": "Explains the source hierarchy used on this page."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/dead-person-talking-in-dream-islam",
+        "anchor": "If you talked with the deceased, explore Talking to a Dead Person in a Dream.",
+        "reason": "Routes readers with a conversation-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/dead-person-smiling-in-dream-islam",
+        "anchor": "If the deceased was smiling, explore A Dead Person Smiling in a Dream.",
+        "reason": "Routes readers with an appearance-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/dead-person-alive-again-dream-islam",
+        "anchor": "If the deceased appeared alive again, explore Seeing a Dead Person Alive in a Dream.",
+        "reason": "Routes readers with a resurrection-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/dead-person-giving-something-dream-islam",
+        "anchor": "If the deceased gave you something, explore A Dead Person Giving You Something in a Dream.",
+        "reason": "Routes readers with a gift-specific search intent to the long-tail article."
+      }
+    ]
+  }
 }
