@@ -30,7 +30,7 @@ export function MyDreamsCta({
   secondaryLabel: string;
 }) {
   return (
-    <p className="save-control__cta">
+    <div className="save-control__cta cta-group">
       <Link
         href={ctaHref}
         className="btn"
@@ -45,7 +45,7 @@ export function MyDreamsCta({
       >
         {secondaryLabel}
       </Link>
-    </p>
+    </div>
   );
 }
 

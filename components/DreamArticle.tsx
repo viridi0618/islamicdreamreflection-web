@@ -80,7 +80,7 @@ export function DreamArticle({
         </div>
         <p
           className="page-meta"
-          style={{ marginTop: 14, fontSize: 13, color: "var(--ink-faint)" }}
+          style={{ marginTop: 14, fontSize: 13, color: "var(--ink-faint)", textAlign: "center", maxWidth: 760, marginInline: "auto" }}
         >
           Prepared by <Link href="/about#methodology">Islamic Dream Reflection</Link> ·{" "}
           Updated: {LAST_UPDATED} · {readingMinutes(entity)} min read
