@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { allGuides, loadGuide } from "@/lib/guides";
+import { loadDreamArticle, allDreamArticles } from "@/lib/dream-articles";
+import { DreamArticlePage } from "@/components/DreamArticlePage";
 import { resolvePublicSources } from "@/data/sources";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return allGuides().map((g) => ({ slug: g.slug }));
+  return [
+    ...allGuides().map((g) => ({ slug: g.slug })),
+    ...allDreamArticles().map((a) => ({ slug: a.slug }))
+  ];
 }
 
 export async function generateMetadata({
@@ -16,6 +21,15 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const article = loadDreamArticle(slug);
+  if (article) {
+    return {
+      title: `${article.title} — Islamic Dream Reflection`,
+      description: article.description,
+      alternates: { canonical: `${SITE_URL}/guides/${slug}` },
+      robots: { index: true, follow: true }
+    };
+  }
   const guide = loadGuide(slug);
   if (!guide) return {};
   return {
@@ -54,6 +68,12 @@ export default async function GuidePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+
+  // Long-tail dream article (Dream Content Architecture Upgrade).
+  const article = loadDreamArticle(slug);
+  if (article) return <DreamArticlePage article={article} />;
+
+  // Foundation guide (Phase D).
   const guide = loadGuide(slug);
   if (!guide) notFound();
 

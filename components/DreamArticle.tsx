@@ -247,6 +247,9 @@ export function DreamArticle({
               )}
             </div>
           ))}
+          {linksByPlacement("scenarios").map((l) => (
+            <InlineLink key={l.href} href={l.href} anchor={l.anchor} />
+          ))}
         </div>
       </section>
 

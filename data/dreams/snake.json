@@ -282,6 +282,36 @@
         "href": "/guides/dreams-in-the-quran",
         "anchor": "To see how the Qur'an records dreams and interpretation, read Dreams in the Qur'an: Yusuf, Ibrahim, and Meaningful Visions.",
         "reason": "Provides the Qur'anic background for dreams and interpretation."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/snake-bite-dream-islam",
+        "anchor": "If the snake bit you, explore Snake Bite Dream Meaning in Islam.",
+        "reason": "Routes readers with a bite-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/black-snake-dream-islam",
+        "anchor": "If the snake was black, explore Black Snake Dream Meaning in Islam.",
+        "reason": "Routes readers with a colour-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/killing-snake-dream-islam",
+        "anchor": "If you killed the snake, explore Killing a Snake in a Dream in Islam.",
+        "reason": "Routes readers with an action-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/snake-in-house-dream-islam",
+        "anchor": "If the snake was inside your home, explore Snake in the House Dream Meaning in Islam.",
+        "reason": "Routes readers with a location-specific search intent to the long-tail article."
+      },
+      {
+        "placement": "scenarios",
+        "href": "/guides/green-snake-dream-islam",
+        "anchor": "If the snake was green, explore Green Snake Dream Meaning in Islam.",
+        "reason": "Routes readers with a colour-specific search intent to the long-tail article."
       }
     ]
   }

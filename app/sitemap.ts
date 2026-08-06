@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { allGuides } from "@/lib/guides";
+import { allDreamArticles } from "@/lib/dream-articles";
 import { SITE_URL } from "@/lib/site";
 
 /**
@@ -14,12 +15,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/dreams/water-dream-islam`, lastModified: new Date() },
     { url: `${SITE_URL}/dreams/pregnancy-dream-islam`, lastModified: new Date() }
   ];
-  const guides = allGuides().map((g) => ({
-    url: `${SITE_URL}/guides/${g.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6
-  }));
+  const guides = [
+    ...allGuides().map((g) => ({
+      url: `${SITE_URL}/guides/${g.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6
+    })),
+    ...allDreamArticles().map((a) => ({
+      url: `${SITE_URL}/guides/${a.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6
+    }))
+  ];
   return [
     { url: SITE_URL, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/interpreter`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
