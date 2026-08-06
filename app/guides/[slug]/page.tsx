@@ -4,7 +4,12 @@ import { allGuides, loadGuide } from "@/lib/guides";
 import { loadDreamArticle, allDreamArticles } from "@/lib/dream-articles";
 import { DreamArticlePage } from "@/components/DreamArticlePage";
 import { resolvePublicSources } from "@/data/sources";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import {
+  dreamArticleSchema,
+  dreamArticleBreadcrumbSchema,
+  faqSchema
+} from "@/lib/schema";
+import { LAST_UPDATED, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -71,7 +76,28 @@ export default async function GuidePage({
 
   // Long-tail dream article (Dream Content Architecture Upgrade).
   const article = loadDreamArticle(slug);
-  if (article) return <DreamArticlePage article={article} />;
+  if (article) {
+    const jsonLd = [
+      dreamArticleSchema({
+        title: article.title,
+        slug,
+        article,
+        datePublished: LAST_UPDATED,
+        dateModified: LAST_UPDATED
+      }),
+      dreamArticleBreadcrumbSchema({ title: article.title, slug }),
+      faqSchema(article.faq)
+    ];
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <DreamArticlePage article={article} />
+      </>
+    );
+  }
 
   // Foundation guide (Phase D).
   const guide = loadGuide(slug);

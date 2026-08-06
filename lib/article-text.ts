@@ -12,6 +12,7 @@
  * render them.
  */
 import type { DreamEntity } from "@/lib/data";
+import type { DreamArticle } from "@/lib/dream-articles";
 
 export function extractVisibleArticleText(entity: DreamEntity): string {
   const parts: string[] = [];
@@ -48,6 +49,28 @@ export function extractVisibleArticleText(entity: DreamEntity): string {
 
 export function visibleWordCount(entity: DreamEntity): number {
   return extractVisibleArticleText(entity).split(/\s+/).filter(Boolean).length;
+}
+
+/** Visible text for a long-tail DreamArticle (Dream Content Architecture). */
+export function extractDreamArticleText(article: DreamArticle): string {
+  const parts: string[] = [];
+  parts.push(article.quickAnswer);
+  parts.push(...article.introduction);
+  article.islamicPerspective.forEach((b) => parts.push(b.title, ...b.body));
+  article.interpretations.forEach((b) => parts.push(b.title, ...b.body));
+  article.scenarios.forEach((s) => parts.push(s.title, ...s.body));
+  parts.push(...article.reflectionQuestions);
+  parts.push(...article.whatItDoesNotProve);
+  article.faq.forEach((f) => parts.push(f.question, f.answer));
+  article.relatedArticles.forEach((r) => parts.push(r.label));
+  article.relatedSymbols.forEach((r) => parts.push(r.label));
+  parts.push(article.hubSymbol.label);
+  return parts.filter(Boolean).join(" ");
+}
+
+/** Word count for a long-tail DreamArticle. */
+export function dreamArticleWordCount(article: DreamArticle): number {
+  return extractDreamArticleText(article).split(/\s+/).filter(Boolean).length;
 }
 
 /** Reading time in minutes at ~200 wpm, minimum 1. */

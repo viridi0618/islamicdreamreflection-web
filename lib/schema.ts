@@ -3,8 +3,9 @@
  * repository data only; unverified content is never asserted in schema.
  */
 import type { DreamEntity } from "./data";
+import type { DreamArticle } from "./dream-articles";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "./site";
-import { visibleWordCount } from "./article-text";
+import { visibleWordCount, dreamArticleWordCount } from "./article-text";
 
 export function organizationSchema(): Record<string, unknown> {
   return {
@@ -80,6 +81,67 @@ export function breadcrumbSchema(params: {
         position: 2,
         name: params.title,
         item: `${SITE_URL}/dreams/${params.slug}`
+      }
+    ]
+  };
+}
+
+/** Article schema for a long-tail DreamArticle page (/guides/<slug>). */
+export function dreamArticleSchema(params: {
+  title: string;
+  slug: string;
+  article: DreamArticle;
+  datePublished: string;
+  dateModified: string;
+}): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: params.title,
+    description: params.article.description,
+    url: `${SITE_URL}/guides/${params.slug}`,
+    datePublished: params.datePublished,
+    dateModified: params.dateModified,
+    mainEntityOfPage: `${SITE_URL}/guides/${params.slug}`,
+    about: params.article.keyword,
+    articleSection: "dream interpretation",
+    keywords: params.article.keyword,
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: `${SITE_URL}/about`
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL
+    },
+    wordCount: dreamArticleWordCount(params.article),
+    inLanguage: "en"
+  };
+}
+
+/** Breadcrumb schema for a long-tail DreamArticle page (/guides/<slug>). */
+export function dreamArticleBreadcrumbSchema(params: {
+  title: string;
+  slug: string;
+  hubTitle?: string;
+}): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: params.title,
+        item: `${SITE_URL}/guides/${params.slug}`
       }
     ]
   };
