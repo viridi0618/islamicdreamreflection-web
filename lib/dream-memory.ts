@@ -187,40 +187,87 @@ export function getMemory(id: string): DreamMemory | null {
 }
 
 /* ------------------------------------------------------------------ */
-/* Analysis limit (P0-6): sharing no longer grants extra reflections.  */
-/* Every anonymous user gets 1 free reflection.                        */
+/* Daily reflection limit: anonymous devices get 2 free reflections    */
+/* per LOCAL calendar day. The old permanent per-device counter        */
+/* (dream_used_count) is deliberately ignored and removed on first use */
+/* so legacy users are never locked by undated usage data.             */
 /* ------------------------------------------------------------------ */
 
-const USED_KEY = "dream_used_count";
+const DAILY_USAGE_KEY = "dream_reflection_daily_usage_v1";
+const DAILY_FREE_REFLECTIONS = 2;
+/** Legacy key from the old permanent 1-per-device limit — never read. */
+const LEGACY_USED_KEY = "dream_used_count";
 
-function readInt(key: string): number {
-  if (!canUseStorage()) return 0;
-  const v = Number(window.localStorage.getItem(key));
-  return Number.isFinite(v) && v > 0 ? Math.floor(v) : 0;
+interface DailyUsage {
+  date: string;
+  count: number;
 }
 
-function writeInt(key: string, value: number): void {
-  if (!canUseStorage()) return;
+/** Browser-local calendar date as YYYY-MM-DD (never UTC). */
+export function localDateKey(now: Date = new Date()): string {
+  const yyyy = now.getFullYear();
+  const mm = String(now.getMonth() + 1).padStart(2, "0");
+  const dd = String(now.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+/** Reads today's usage record. Any missing/corrupt/invalid data fails open to 0. */
+function readDailyUsage(): DailyUsage | null {
+  if (!canUseStorage()) return null;
   try {
-    window.localStorage.setItem(key, String(value));
+    const raw = window.localStorage.getItem(DAILY_USAGE_KEY);
+    if (!raw) return null;
+    const parsed: unknown = JSON.parse(raw);
+    if (typeof parsed !== "object" || parsed === null) return null;
+    const { date, count } = parsed as { date?: unknown; count?: unknown };
+    if (typeof date !== "string" || date.length === 0) return null;
+    const n = Number(count);
+    if (!Number.isFinite(n) || n < 0) return null;
+    return { date, count: Math.floor(n) };
   } catch {
-    /* ignore */
+    return null; // corrupted JSON must never lock a device.
   }
 }
 
-/** Free reflections available: 1 baseline (sharing no longer adds more). */
-export function availableReflections(): number {
-  return 1;
+/** Usage count for the current local calendar day (0 when none/other day). */
+function todayUsageCount(): number {
+  const usage = readDailyUsage();
+  if (!usage) return 0;
+  return usage.date === localDateKey() ? usage.count : 0;
 }
 
+/** Free reflections per device per local calendar day. */
+export function availableReflections(): number {
+  return DAILY_FREE_REFLECTIONS;
+}
+
+/** Reflections already used today (local calendar day). */
 export function consumedReflections(): number {
-  return readInt(USED_KEY);
+  return todayUsageCount();
 }
 
 export function canAnalyzeNow(): boolean {
-  return consumedReflections() < availableReflections();
+  return todayUsageCount() < DAILY_FREE_REFLECTIONS;
 }
 
+/**
+ * Called ONLY after a successful analysis. Records the use for the current
+ * local day; resets the record when the stored date is not today. Also
+ * removes the legacy permanent counter so it can never lock a device again.
+ */
 export function recordAnalysisUsed(): void {
-  writeInt(USED_KEY, consumedReflections() + 1);
+  if (!canUseStorage()) return;
+  try {
+    window.localStorage.removeItem(LEGACY_USED_KEY);
+    const today = localDateKey();
+    const usage = readDailyUsage();
+    const count = usage && usage.date === today ? usage.count : 0;
+    const next = Math.min(count + 1, DAILY_FREE_REFLECTIONS);
+    window.localStorage.setItem(
+      DAILY_USAGE_KEY,
+      JSON.stringify({ date: today, count: next } satisfies DailyUsage)
+    );
+  } catch {
+    /* ignore */
+  }
 }
