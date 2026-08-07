@@ -123,7 +123,7 @@ export function RitualFlow({
     const text = dreamText.trim();
     if (!text) return;
 
-    // Soft reflection limit: 1 free reflection per device (Phase 5 P2).
+    // Soft reflection limit: 2 free reflections per device per local day.
     if (!canAnalyzeNow()) {
       setLimitHit(true);
       return;
@@ -269,8 +269,8 @@ export function RitualFlow({
 
           {limitHit && (
             <div className="chat__error" role="alert">
-              You have used your free reflection for this device. Save your dream
-              to keep the journey going, and check back soon.
+              You have used both free reflections for today on this device. You
+              can begin another free reflection tomorrow.
             </div>
           )}
 

@@ -29,12 +29,12 @@ import {
 export const metadata: Metadata = {
   title: "Islamic Dream Interpretation — Personal Reflection",
   description:
-    "Explore Islamic dream interpretation through traditional sources and personal reflection. Discover dream symbols, Islamic perspectives, and reflect on your dreams privately — no account required.",
+    "Explore Islamic dream interpretation through traditional sources, dream symbols, Islamic perspectives, and personal reflection — no account required.",
   alternates: { canonical: SITE_URL },
   openGraph: {
     title: "Islamic Dream Interpretation — Personal Reflection",
     description:
-      "Explore Islamic dream interpretation through traditional sources and personal reflection. Discover dream symbols, Islamic perspectives, and reflect on your dreams privately — no account required.",
+      "Explore Islamic dream interpretation through traditional sources, dream symbols, Islamic perspectives, and personal reflection — no account required.",
     url: SITE_URL,
     siteName: SITE_NAME,
     type: "website"
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Islamic Dream Interpretation — Personal Reflection",
     description:
-      "Explore Islamic dream interpretation through traditional sources and personal reflection. Discover dream symbols, Islamic perspectives, and reflect on your dreams privately — no account required."
+      "Explore Islamic dream interpretation through traditional sources, dream symbols, Islamic perspectives, and personal reflection — no account required."
   }
 };
 
