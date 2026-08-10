@@ -85,7 +85,7 @@ export function DreamArticle({
             style={{ marginTop: 14, fontSize: 13, color: "var(--ink-faint)", textAlign: "center" }}
           >
             Prepared by <Link href="/about#methodology">Islamic Dream Reflection</Link> ·{" "}
-            Updated: {LAST_UPDATED} · {readingMinutes(entity)} min read
+            Updated: {entity.last_reviewed ?? LAST_UPDATED} · {readingMinutes(entity)} min read
           </p>
         </div>
       </section>

@@ -16,12 +16,12 @@ export function buildFaqs(entity: DreamEntity): Array<{ question: string; answer
     {
       question: "Are dreams predictions of the future in Islam?",
       answer:
-        "In the Islamic tradition, dreams are generally not treated as fixed predictions. Interpretations recorded by scholars describe possible meanings within context. This page presents traditional interpretations, not predictions."
+        "In Islamic sources, dreams are not all treated the same way, and a dream should not automatically be treated as a fixed prediction. This page separates verified religious guidance from personal reflection."
     },
     {
       question: "What should I do after a disturbing dream?",
       answer:
-        "Common advice in the tradition includes seeking refuge in Allah from a disturbing dream, avoiding dwelling on it, and consulting a trustworthy scholar for serious recurring dreams."
+        "For a disliked dream, verified Hadith guidance includes seeking refuge in Allah, spitting lightly to the left, and not relating the dream to others. If recurring dreams are affecting your sleep or wellbeing, seek appropriate support without treating the dream as a prediction."
     }
   ];
 }

@@ -73,9 +73,16 @@ export default async function DreamPage({
   const entity = loadDreamEntity(page.entityId);
   const pages = loadEnabledPages();
   const faqs = buildFaqs(entity);
+  const pageDate = entity.last_reviewed ?? LAST_UPDATED;
 
   const jsonLd = [
-    articleSchema({ title: page.title, slug, entity, datePublished: LAST_UPDATED, dateModified: LAST_UPDATED }),
+    articleSchema({
+      title: page.title,
+      slug,
+      entity,
+      datePublished: pageDate,
+      dateModified: pageDate
+    }),
     breadcrumbSchema({ title: page.title, slug }),
     faqSchema(faqs)
   ];
