@@ -45,6 +45,12 @@ export async function generateMetadata({
       entity.interpretation.general?.[0] ?? page.title,
       "Traditional perspectives, not predictions."
     ].join(" ");
+  const socialImage = {
+    url: `${SITE_URL}/images/og/dreams/${slug}.png`,
+    width: 1200,
+    height: 630,
+    alt: page.title
+  };
 
   return {
     title: page.title,
@@ -55,7 +61,14 @@ export async function generateMetadata({
       description,
       url: `${SITE_URL}/dreams/${slug}`,
       siteName: SITE_NAME,
-      type: "article"
+      type: "article",
+      images: [socialImage]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.title,
+      description,
+      images: [socialImage.url]
     },
     robots: { index: true, follow: true }
   };
