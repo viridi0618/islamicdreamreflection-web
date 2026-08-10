@@ -11,20 +11,20 @@
     {
       "name": "Ibn Sirin tradition",
       "tradition": "Ibn Sirin tradition",
-      "reference": "pending verification",
+      "reference": "Later compiled dream manual traditionally attributed to Ibn Sirin",
       "status": "pending",
-      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+      "notes": "Attribution is disputed and the surviving text is a later compilation; not surfaced publicly until a precise edition is checked."
     }
   ],
   "traditional_notes": [
-    "Fire carries strong dual symbolism (light versus destruction) across dream traditions. Specific Islamic meanings require verification of cited sources.",
-    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+    "Fire is a powerful dream image because it can warm, illuminate, burn, spread, or destroy depending on its condition.",
+    "This page does not present a fixed religious ruling for fire dreams. It separates verified dream guidance from personal reflection on context and emotion."
   ],
   "interpretation": {
     "positive": [],
     "negative": [],
     "general": [
-      "Fire carries strong dual symbolism (light versus destruction) across dream traditions. Specific Islamic meanings require verification of cited sources."
+      "A fire dream has no single fixed Islamic interpretation. The state of the fire, the place it appeared, and the emotion of the dreamer are more important than the symbol by itself."
     ]
   },
   "related": [
@@ -33,8 +33,246 @@
     "small fire",
     "fire in kitchen"
   ],
-  "status": "needs verification",
-  "review_status": "draft",
-  "last_reviewed": null,
-  "review_notes": ""
+  "status": "published",
+  "review_status": "reviewed",
+  "last_reviewed": "2026-08-10",
+  "review_notes": "Batch 1 public hub drafted as editorial reflection with Hadith citations limited to dream etiquette.",
+  "article": {
+    "quickAnswer": "A fire dream has no single fixed Islamic interpretation. Fire may be controlled, useful, warming, bright, frightening, spreading, or destructive, and each version creates a different reflection. In this guide, fire is explored through context, emotion, location, and what the fire was doing, not as a prediction. A frightening fire dream is not proof that a disaster, punishment, magic, or unseen harm is near. If the dream disturbed you, Islamic guidance focuses first on seeking refuge in Allah and not treating the dream as a forecast.",
+    "introduction": [
+      "Fire is one of the strongest images a person can see in a dream. It can be a small flame on a stove, a lamp giving light, a wildfire, a burning house, or heat that never touches you. Because the same image can feel helpful in one dream and terrifying in another, the first question is not simply what fire is, but how the fire behaved.",
+      "This page keeps three layers separate: verified Islamic guidance about dreams, later dream interpretation traditions that require careful sourcing, and personal reflection. The reflections below can help you think about pressure, emotion, fear, change, and focus, but they are not fatwas and they do not assign a guaranteed religious meaning to seeing fire in a dream."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Was the fire controlled or spreading?",
+        "body": "A candle, stove, or small campfire feels different from flames that spread through a room. Controlled fire may invite reflection on focus, energy, warmth, or ordinary responsibility, while spreading fire may mirror pressure or loss of control."
+      },
+      {
+        "title": "Where did the fire appear?",
+        "body": "A fire in a kitchen, bedroom, street, workplace, or unknown place changes the emotional field of the dream. The location may point toward the part of life that felt intense or exposed."
+      },
+      {
+        "title": "Were you harmed, safe, or watching from far away?",
+        "body": "Being burned, escaping unharmed, putting out flames, or simply watching fire from a distance are very different experiences. Your position in relation to the fire matters."
+      },
+      {
+        "title": "What emotion stayed after waking?",
+        "body": "Fear, urgency, awe, relief, curiosity, or calmness can shape the reflection more than the symbol itself. A frightening fire dream should be handled with calm Islamic etiquette, not panic."
+      },
+      {
+        "title": "Was fire part of your recent day?",
+        "body": "Cooking, candles, heaters, news of fires, films, alarms, or hot weather can all appear in dreams. Recent exposure may explain why fire became the dream's image."
+      },
+      {
+        "title": "Did the dream leave you with a practical concern?",
+        "body": "Sometimes a dream draws attention to ordinary care: checking a stove, reducing stress, talking about conflict, or resting. Practical reflection is different from treating the dream as a supernatural message."
+      }
+    ],
+    "themes": [
+      {
+        "id": "intensity-and-strong-emotion",
+        "title": "Intensity and strong emotion",
+        "summary": "Fire may be explored as an image of emotions that feel bright, urgent, or difficult to contain.",
+        "body": [
+          "In personal reflection, fire can prompt questions about anger, passion, anxiety, desire, grief, or urgency. The point is not that fire equals one emotion, but that the dream may have chosen an image that feels hot and immediate.",
+          "Consider whether something in waking life has been taking up more emotional heat than you can comfortably hold. A careful reading asks what needs cooling, expression, patience, or a more measured response."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "danger-pressure-or-loss-of-control",
+        "title": "Danger, pressure, or loss of control",
+        "summary": "Destructive fire may mirror a situation that feels unsafe, fast-moving, or beyond your control.",
+        "body": [
+          "When fire spreads, blocks an exit, or threatens people in the dream, it may reflect waking pressure rather than a prediction. The dream can become a picture of urgency: something feels too close, too quick, or too large to ignore.",
+          "This reflection should lead toward grounded questions. Who or what feels overwhelming? Where do you need help, a boundary, or a slower pace? The dream does not identify a hidden cause by itself."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "warmth-energy-or-focus",
+        "title": "Warmth, energy, or focus",
+        "summary": "A small or useful fire may invite reflection on energy, attention, and what you are trying to nurture.",
+        "body": [
+          "Not every fire dream is frightening. A small controlled flame can be associated with cooking, warmth, light, and care. In reflection, this may point toward work that needs steady attention rather than fear.",
+          "Ask whether the fire felt helpful, ordinary, or comforting. A flame that gives light without harm can encourage reflection on focus, worship routines, family care, or a responsibility that needs consistency."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "change-and-something-being-consumed",
+        "title": "Change and something being consumed",
+        "summary": "Fire changes whatever it touches, so the dream may invite reflection on endings, release, or irreversible change.",
+        "body": [
+          "Fire can consume paper, wood, clothing, rooms, or old objects. In a dream, that image may mirror a sense that something is ending, being used up, or becoming impossible to return to in the same form.",
+          "This is not a fixed Islamic symbol reading. It is a personal question: what in your life feels burned through, finished, transformed, or in need of repair?"
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "stress-related-imagery",
+        "title": "Stress-related imagery",
+        "summary": "Fire dreams may appear during periods of pressure, disrupted sleep, or repeated worry.",
+        "body": [
+          "Many vivid dreams use dramatic images when the mind is tired or stressed. Fire can become the dream's way of showing urgency, danger, or emotional overload without pointing to a literal event.",
+          "If fire dreams cluster around conflict, deadlines, family pressure, illness, or sleeplessness, it may be wise to care for the stress itself: reduce stimulation before sleep, ask for support, and give the body room to settle."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "when-the-dream-is-frightening",
+        "title": "When the dream is frightening",
+        "summary": "Islamic guidance for disturbing dreams emphasizes seeking refuge in Allah and not dwelling on the dream as a prediction.",
+        "body": [
+          "When a fire dream frightens you, the strongest religious guidance here concerns the dream experience itself, not a fire-specific symbol meaning. The tradition teaches a calm response to disliked dreams: seek refuge in Allah from their evil and do not spread or dwell on them as forecasts.",
+          "This protects the dreamer from panic. A frightening image can be handled spiritually without turning it into certainty about punishment, disaster, magic, or the unseen."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": [
+          "bukhari-6985",
+          "bukhari-7044"
+        ]
+      }
+    ],
+    "contextQuestions": [
+      "Was the fire helping, warming, lighting, burning, or spreading?",
+      "Where was the fire, and what part of your life does that place remind you of?",
+      "Did you feel fear, awe, urgency, calm, guilt, anger, or relief in the dream?",
+      "What would the dream suggest if the fire were an image of emotional pressure rather than a prediction?"
+    ],
+    "scenarios": [
+      {
+        "id": "house-on-fire",
+        "title": "House on fire",
+        "summary": "A house fire dream brings the image of fire into family, privacy, safety, and daily life.",
+        "body": [
+          "A house on fire can feel deeply alarming because the home often represents safety, family, and what is private. In reflection, this dream may point to pressure within the household, fear of losing stability, or a conflict that feels hard to contain.",
+          "Notice whether people escaped, whether you tried to help, and which part of the house burned. The dream does not prove that a real fire or family disaster is near."
+        ],
+        "positiveReading": "If you protected others or escaped safely, the dream may reflect resilience and the desire to preserve what matters.",
+        "cautionaryReading": "If the dream felt chaotic, consider whether a domestic stress needs calm attention before it spreads emotionally.",
+        "doesNotProve": [
+          "That your home is in spiritual danger",
+          "That a real fire is coming"
+        ]
+      },
+      {
+        "id": "being-burned-by-fire",
+        "title": "Being burned by fire",
+        "summary": "Being burned is often the most personal version of a fire dream because the danger touches the body.",
+        "body": [
+          "If the fire burned you, the dream may reflect feeling exposed, criticized, exhausted, ashamed, or hurt. The body in the dream can make emotional pressure feel immediate.",
+          "A careful reflection asks where you feel wounded or overextended. It should not be used to claim that Allah is punishing you or that Hell is being shown to you."
+        ],
+        "positiveReading": "If you were treated, healed, or survived, the dream may mirror recovery and the need for care.",
+        "cautionaryReading": "The dream may invite you to address a situation that feels too painful to ignore.",
+        "doesNotProve": [
+          "That Allah is punishing you",
+          "That the dream reveals your final state"
+        ]
+      },
+      {
+        "id": "small-controlled-fire",
+        "title": "A small controlled fire",
+        "summary": "A small controlled flame may feel useful rather than threatening.",
+        "body": [
+          "A candle, stove flame, lamp, or contained fire may be explored as an image of focus, warmth, care, worship routines, or ordinary work. Its meaning depends on whether the dream felt calm, useful, tense, or unsafe.",
+          "If the flame stayed controlled, the reflection may be less about danger and more about what needs steady attention."
+        ],
+        "positiveReading": "A controlled flame may reflect useful energy, clarity, or a responsibility being handled with care.",
+        "cautionaryReading": "Even a small fire needs attention, so the dream may remind you not to neglect what is active in your life.",
+        "doesNotProve": [
+          "That the dream guarantees blessing",
+          "That the flame carries one fixed religious meaning"
+        ]
+      },
+      {
+        "id": "putting-out-a-fire",
+        "title": "Putting out a fire",
+        "summary": "Putting out flames may reflect intervention, repair, restraint, or a wish to calm a tense situation.",
+        "body": [
+          "If you put out a fire, the dream may mirror your effort to reduce conflict, contain anger, protect someone, or solve a practical problem. The feeling after the fire went out matters: relief, exhaustion, regret, or calm each points in a different direction.",
+          "This scenario can be a useful prompt to ask where your waking life needs de-escalation or wise action."
+        ],
+        "positiveReading": "The dream may reflect your ability to respond instead of panic.",
+        "cautionaryReading": "If the fire kept returning, it may suggest a stressor that needs deeper support rather than a quick fix.",
+        "doesNotProve": [
+          "That you have defeated an unseen harm",
+          "That conflict is fully resolved in waking life"
+        ]
+      },
+      {
+        "id": "fire-without-being-harmed",
+        "title": "Fire without being harmed",
+        "summary": "Seeing fire without harm can feel strange, awe-filled, or calm depending on the dream.",
+        "body": [
+          "If fire was present but did not harm you, the dream may invite reflection on intensity you can witness without being consumed by it. Perhaps something feels powerful, but not necessarily destructive.",
+          "The key is not to force a conclusion. Ask whether the dream felt protective, distant, miraculous, ordinary, or unsettling, then reflect from that emotional context."
+        ],
+        "positiveReading": "The dream may reflect steadiness in the middle of pressure.",
+        "cautionaryReading": "Do not ignore real-life safety or emotional warning signs simply because the dream ended without harm.",
+        "doesNotProve": [
+          "That you are spiritually immune from harm",
+          "That no practical caution is needed"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That Allah is punishing you. A fire dream is not evidence of divine punishment, and this page does not use dreams to make claims about a person's standing with Allah.",
+      "That Hell is being shown to you. Fire imagery can be frightening, but ordinary dreams should not be turned into certainty about the unseen.",
+      "That a real fire or disaster is near. A frightening dream is not a forecast, and practical safety should be handled through ordinary care.",
+      "That magic or jinn are involved. Fire in a dream is not proof of sihr, jinn, or unseen harm.",
+      "That you must make a religious decision based on the dream. For religious obligations or rulings, ask a qualified scholar."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Record the details calmly",
+        "body": "Write what the fire did, where it was, whether anyone was harmed, and what emotion stayed with you. Details are more useful than forcing an instant interpretation."
+      },
+      {
+        "title": "Use the traditional etiquette if it frightened you",
+        "body": "If the dream frightened you, the traditional response includes seeking refuge in Allah from its evil and not dwelling on it as a prediction.",
+        "sourceIds": [
+          "bukhari-6985",
+          "bukhari-7044"
+        ]
+      },
+      {
+        "title": "Check practical concerns without panic",
+        "body": "If the dream reminds you to check a stove, alarm, candle, or heater, do that as ordinary prudence. Practical care does not require treating the dream as a message."
+      },
+      {
+        "title": "Reflect on emotional heat",
+        "body": "Ask what feels intense, urgent, heated, or hard to contain in waking life. A conversation, workload, or worry may need cooling and wise attention."
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "To understand why some dreams may come from the self, read The Three Types of Dreams in Islam.",
+        "reason": "Supports careful weighting of vivid dream content."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the fire dream frightened you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides verified etiquette for disturbing dreams."
+      },
+      {
+        "placement": "themes",
+        "href": "/dreams/water-dream-islam",
+        "anchor": "If the dream involved flames and water together, compare this with Water Dream Meaning in Islam.",
+        "reason": "Connects a related nature symbol already published."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "Read Sources and Methodology to see how religious sources are separated from reflection.",
+        "reason": "Explains source boundaries for symbol pages."
+      }
+    ]
+  }
 }

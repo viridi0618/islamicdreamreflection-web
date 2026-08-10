@@ -6,12 +6,12 @@ export function buildFaqs(entity: DreamEntity): Array<{ question: string; answer
     {
       question: `Is ${symbol} in a dream good or bad in Islam?`,
       answer:
-        "Traditional scholars have recorded both positive and negative readings for this symbol depending on the context of the dream. Interpretations vary by personal circumstances and tradition."
+        "A dream is not judged good or bad from the symbol alone. This page treats the symbol through context, emotion, and careful reflection, while keeping religious guidance separate from fixed predictions."
     },
     {
-      question: `What do classical scholars say about ${symbol} dreams?`,
+      question: `Does ${symbol} in a dream have one fixed Islamic interpretation?`,
       answer:
-        `Classical references for "${entity.name}" are listed on this page. They represent historical perspectives from Islamic dream interpretation traditions.`
+        `This page does not present one fixed Islamic interpretation for "${entity.name}". When a verified source is used, it is cited for what it directly supports; otherwise the discussion is framed as personal reflection.`
     },
     {
       question: "Are dreams predictions of the future in Islam?",

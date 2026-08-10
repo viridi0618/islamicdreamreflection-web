@@ -11,20 +11,20 @@
     {
       "name": "Ibn Sirin tradition",
       "tradition": "Ibn Sirin tradition",
-      "reference": "pending verification",
+      "reference": "Later compiled dream manual traditionally attributed to Ibn Sirin",
       "status": "pending",
-      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+      "notes": "Attribution is disputed and the surviving text is a later compilation; not surfaced publicly until a precise edition is checked."
     }
   ],
   "traditional_notes": [
-    "Cats appear frequently in dreams; associations range from companionship to stealth. Specific Islamic readings require verification of cited sources.",
-    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+    "Cat dreams should be read through behavior, setting, and emotion rather than through one fixed symbolic claim.",
+    "This page avoids unsupported claims about cats, black cats, theft, magic, jinn, or bad luck."
   ],
   "interpretation": {
     "positive": [],
     "negative": [],
     "general": [
-      "Cats appear frequently in dreams; associations range from companionship to stealth. Specific Islamic readings require verification of cited sources."
+      "A cat dream has no single fixed Islamic interpretation. It may invite reflection on companionship, boundaries, care, caution, unexpected behavior, or recent daily experience."
     ]
   },
   "related": [
@@ -33,8 +33,243 @@
     "kitten",
     "cat in house"
   ],
-  "status": "needs verification",
-  "review_status": "draft",
-  "last_reviewed": null,
-  "review_notes": ""
+  "status": "published",
+  "review_status": "reviewed",
+  "last_reviewed": "2026-08-10",
+  "review_notes": "Batch 1 public hub drafted as editorial reflection; no cat-specific religious attribution is made.",
+  "article": {
+    "quickAnswer": "A cat dream does not have one fixed Islamic interpretation, and a black cat dream does not prove bad luck, magic, jinn, or supernatural harm. The safest approach is to reflect on the cat's behavior, the place it appeared, and your emotion in the dream. A friendly cat may prompt reflection on companionship or comfort, while an aggressive cat may mirror unease, boundaries, or a situation that feels unpredictable. These are personal reflection themes, not fixed religious meanings or predictions.",
+    "introduction": [
+      "Cat dreams can feel comforting, strange, playful, watchful, or unsettling. One person may dream of a cat resting quietly in the house; another may dream of being scratched, followed, or watched by a black cat. The behavior of the cat matters more than the animal by itself.",
+      "This guide deliberately avoids unsupported claims such as cat dreams proving theft, betrayal, magic, jinn, or bad luck. It separates verified Islamic guidance about dreams from careful personal reflection on companionship, independence, boundaries, care, caution, and recent daily experience."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Was the cat friendly, neutral, or aggressive?",
+        "body": "A relaxed cat sitting nearby feels different from a cat that scratches, bites, hides, or attacks. Behavior should lead the reflection."
+      },
+      {
+        "title": "Where did the cat appear?",
+        "body": "A cat inside your home, in a street, near food, at work, or in an unfamiliar place changes the dream's emotional setting."
+      },
+      {
+        "title": "How did you feel toward the cat?",
+        "body": "Affection, fear, irritation, curiosity, disgust, or protectiveness can each point toward a different area of reflection."
+      },
+      {
+        "title": "Was the cat known to you?",
+        "body": "A pet, a stray, a kitten, or an unknown cat may connect to different feelings: attachment, uncertainty, care, or caution."
+      },
+      {
+        "title": "Did color shape the mood?",
+        "body": "Color may change the emotional tone of a dream, but color alone should not be used to claim a fixed meaning. This is especially important with black cat dreams."
+      },
+      {
+        "title": "Have cats appeared in your daily life recently?",
+        "body": "Pets, neighborhood cats, videos, allergies, conversations, or childhood memories can all surface in dreams without requiring a deeper interpretation."
+      }
+    ],
+    "themes": [
+      {
+        "id": "companionship",
+        "title": "Companionship",
+        "summary": "A friendly cat may invite reflection on comfort, affection, and quiet companionship.",
+        "body": [
+          "If the cat was calm, affectionate, or familiar, the dream may reflect comfort, attachment, or the wish for gentle companionship. Cats often sit close without demanding the same kind of attention as other animals, and that quality may shape the dream's feeling.",
+          "Ask whether you are receiving or seeking a quieter form of support in waking life. The dream may simply help you notice a need for calm connection."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "independence-and-boundaries",
+        "title": "Independence and boundaries",
+        "summary": "A cat dream may prompt reflection on closeness, distance, privacy, and personal boundaries.",
+        "body": [
+          "Cats can appear close and distant in the same dream. In reflection, this may mirror a relationship where you want affection but also space, or where another person is hard to read.",
+          "This is not a claim that the cat identifies someone. It is an invitation to ask where boundaries are healthy, unclear, or being crossed."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "care-and-attention",
+        "title": "Care and attention",
+        "summary": "Feeding, protecting, or caring for a cat may point toward a responsibility that is small but real.",
+        "body": [
+          "If you fed a cat, rescued a kitten, or worried about a cat's safety, the dream may invite reflection on everyday care. Small responsibilities can still reveal tenderness, patience, or fatigue.",
+          "Consider whether someone or something in your life needs a lighter, more consistent form of attention rather than dramatic intervention."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "caution-or-unease",
+        "title": "Caution or unease",
+        "summary": "An uneasy cat dream may reflect caution without proving betrayal, theft, or hidden harm.",
+        "body": [
+          "If the cat stared, followed you, hissed, or made you uncomfortable, the dream may mirror caution or uncertainty. But unease inside a dream is not evidence against a real person.",
+          "A careful response is to ask what feels unclear or uncomfortable in waking life, then address that concern directly and fairly rather than turning the dream into an accusation."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "unexpected-behavior",
+        "title": "Unexpected behavior",
+        "summary": "A cat acting strangely may reflect surprise, unpredictability, or a situation that feels hard to control.",
+        "body": [
+          "A cat that suddenly attacks, speaks, disappears, multiplies, or acts unlike a normal cat may reflect the dream's emotional tension. Unusual behavior often points to how strange or unpredictable a situation feels.",
+          "The useful question is what surprised you in the dream and whether something in life has felt similarly hard to predict."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "recent-daily-experiences",
+        "title": "Recent daily experiences",
+        "summary": "Cat dreams can also be shaped by ordinary exposure, memory, or routine.",
+        "body": [
+          "If you live with a cat, saw a cat recently, watched videos, heard a story, or had an allergy or fear triggered, the dream may be connected to daily life.",
+          "Not every vivid animal dream needs symbolic weight. Sometimes the most honest interpretation is that your mind reused a familiar image."
+        ],
+        "evidenceType": "editorial-reflection"
+      }
+    ],
+    "contextQuestions": [
+      "Was the cat friendly, aggressive, injured, playful, hidden, or simply present?",
+      "Did you feel comfort, fear, suspicion, affection, irritation, or protectiveness?",
+      "Was the cat inside a private space such as your home, bedroom, or kitchen?",
+      "Could the dream be connected to a recent encounter, pet, memory, video, or conversation about cats?"
+    ],
+    "scenarios": [
+      {
+        "id": "friendly-cat",
+        "title": "Friendly cat",
+        "summary": "A friendly cat may create a gentle dream tone connected to comfort or quiet companionship.",
+        "body": [
+          "If the cat rubbed against you, sat beside you, followed you peacefully, or accepted your care, reflect on companionship and emotional comfort. The dream may point toward a relationship or routine that feels soft and steady.",
+          "It may also simply reflect affection for cats or recent time with a pet. Keep the reflection modest and connected to real context."
+        ],
+        "positiveReading": "The dream may reflect tenderness, calm company, or the need for a quieter kind of support.",
+        "cautionaryReading": "Do not assume the cat represents a specific person without real-life evidence.",
+        "doesNotProve": [
+          "That a person has been identified by the dream",
+          "That the dream promises good fortune"
+        ]
+      },
+      {
+        "id": "aggressive-or-scratching-cat",
+        "title": "Aggressive or scratching cat",
+        "summary": "An aggressive cat may mirror discomfort, boundary tension, or a small conflict that feels sharper than expected.",
+        "body": [
+          "A scratching or biting cat can make the dream feel personal because the animal is close enough to hurt you. In reflection, this may point toward irritation, crossed boundaries, or a situation where something small has become emotionally sharp.",
+          "This does not prove betrayal or theft. If the dream raises concern about a relationship, address the concern through real conversation and evidence."
+        ],
+        "positiveReading": "The dream may help you notice a boundary that needs clearer expression.",
+        "cautionaryReading": "Avoid turning dream discomfort into accusation.",
+        "doesNotProve": [
+          "That someone is stealing from you",
+          "That someone intends betrayal"
+        ]
+      },
+      {
+        "id": "black-cat",
+        "title": "Black cat",
+        "summary": "A black cat dream does not prove bad luck, magic, jinn, or supernatural harm.",
+        "body": [
+          "Black cat dreams are often shaped by cultural fear, superstition, or stories people have heard. This page does not treat a black cat as proof of bad luck, magic, jinn, or unseen harm.",
+          "Reflect instead on the dream's actual mood. Was the cat calm, friendly, aggressive, injured, hidden, or simply present? Color may shape atmosphere, but it does not settle the interpretation."
+        ],
+        "positiveReading": "If the black cat was calm or friendly, the dream may help you question fear-based assumptions.",
+        "cautionaryReading": "If the dream frightened you, use Islamic etiquette for a disturbing dream instead of following superstition.",
+        "doesNotProve": [
+          "That magic is present",
+          "That jinn are present",
+          "That bad luck is approaching"
+        ]
+      },
+      {
+        "id": "kitten",
+        "title": "Kitten",
+        "summary": "A kitten may bring themes of care, softness, vulnerability, or small responsibility.",
+        "body": [
+          "A kitten in a dream may feel tender, fragile, playful, or needy. In reflection, it may point toward something small that needs attention: a new habit, a younger person, a delicate relationship, or a vulnerable emotion.",
+          "The kitten's condition matters. A healthy kitten, lost kitten, hungry kitten, or playful kitten each creates a different reflection."
+        ],
+        "positiveReading": "The dream may reflect gentleness, care, or the beginning of a small responsibility.",
+        "cautionaryReading": "If the kitten seemed neglected, ask what in your life has quietly needed attention.",
+        "doesNotProve": [
+          "That a specific event is guaranteed",
+          "That a child or pet is in danger"
+        ]
+      },
+      {
+        "id": "cat-inside-the-house",
+        "title": "Cat inside the house",
+        "summary": "A cat inside the house brings the dream into the space of privacy, family, and daily routine.",
+        "body": [
+          "A cat in your house may connect to comfort if it felt welcome, or to unease if it felt intrusive. Notice whether it was in the kitchen, bedroom, doorway, or hidden space.",
+          "The dream does not prove that someone is entering your life secretly or taking something from you. It may simply invite reflection on privacy, boundaries, and what feels welcome or unwelcome in your personal space."
+        ],
+        "positiveReading": "If the cat felt welcome, the dream may reflect domestic comfort or companionship.",
+        "cautionaryReading": "If it felt intrusive, reflect on boundaries in your private life.",
+        "doesNotProve": [
+          "That your home is spiritually unsafe",
+          "That theft or betrayal is being revealed"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That someone is stealing from you. A cat dream is not evidence against a real person.",
+      "That someone is going to betray you. Dream imagery should not be used to accuse people.",
+      "That a black cat indicates magic. This page does not treat black cat dreams as proof of sihr.",
+      "That jinn are present. Cat dreams, including black cat dreams, are not evidence of the unseen.",
+      "That bad luck is approaching. Islamic reflection should not be built on superstition."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Describe the cat's behavior",
+        "body": "Write whether the cat was friendly, aggressive, hidden, injured, playful, or simply nearby. Behavior matters more than the animal alone."
+      },
+      {
+        "title": "Separate caution from accusation",
+        "body": "If the dream made you uneasy, ask what felt uncertain in waking life. Do not accuse a person of theft, betrayal, magic, or hidden harm based on the dream."
+      },
+      {
+        "title": "Consider recent exposure",
+        "body": "Pets, street cats, videos, stories, allergies, or childhood memories can shape dream content. Ordinary exposure may be enough to explain the image."
+      },
+      {
+        "title": "Use Islamic etiquette if it disturbed you",
+        "body": "If the cat dream frightened you, seek refuge in Allah and avoid treating the dream as a prediction.",
+        "sourceIds": [
+          "bukhari-6985",
+          "bukhari-7044"
+        ]
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/dreams/dog-dream-islam",
+        "anchor": "For another animal symbol shaped strongly by behavior and emotion, read Dog Dream Meaning in Islam.",
+        "reason": "Connects related animal hub without creating scenario pages."
+      },
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "To decide how much weight to give this dream, read The Three Types of Dreams in Islam.",
+        "reason": "Supports careful dream weighting."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the cat dream upset you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides verified etiquette for disturbing dreams."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "Read Sources and Methodology to see why this page avoids unsupported claims about black cats.",
+        "reason": "Explains source boundaries for superstition-prone content."
+      }
+    ]
+  }
 }
