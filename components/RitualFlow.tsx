@@ -29,10 +29,10 @@ const STEP_INDEX: Array<{ id: Step; label: string }> = [
 ];
 
 const PROCESSING_MESSAGES = [
-  "Preparing your reflection",
-  "Reading your dream details",
-  "Connecting symbols and context",
-  "Writing your reflection"
+  "Reading your dream",
+  "Noticing important symbols",
+  "Considering context and emotion",
+  "Preparing your reflection"
 ];
 
 export interface RitualFlowProps {
@@ -322,14 +322,7 @@ export function RitualFlow({
           <span className="processing-moon__orbit" />
         </div>
         <h2>Your reflection is being prepared</h2>
-        <div
-          className="processing-progress"
-          aria-label={`Reflection progress ${loadingProgress}%`}
-          aria-valuemin={0}
-          aria-valuemax={100}
-          aria-valuenow={loadingProgress}
-          role="progressbar"
-        >
+        <div className="processing-progress" aria-hidden="true">
           <span
             className="processing-progress__bar"
             style={{ width: `${loadingProgress}%` }}
@@ -340,7 +333,16 @@ export function RitualFlow({
         </p>
         <ul className="processing-list">
           {PROCESSING_MESSAGES.map((msg, i) => (
-            <li key={msg} className={visibleMsg >= i ? "processing-list__item--visible" : ""}>
+            <li
+              key={msg}
+              className={
+                visibleMsg > i
+                  ? "processing-list__item--done"
+                  : visibleMsg === i
+                    ? "processing-list__item--active"
+                    : ""
+              }
+            >
               {msg}
             </li>
           ))}

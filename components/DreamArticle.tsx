@@ -90,7 +90,7 @@ export function DreamArticle({
               Updated: {entity.last_reviewed ?? LAST_UPDATED} · {readingMinutes(entity)} min read
             </p>
           </div>
-          <SymbolArtwork entity={entity} priority className="article-hero__art" />
+          <SymbolArtwork entity={entity} priority variant="hero" className="article-hero__art" />
         </div>
       </section>
 

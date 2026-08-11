@@ -9,16 +9,18 @@ function artworkAlt(entity: DreamEntity): string {
 export function SymbolArtwork({
   entity,
   priority = false,
-  className = ""
+  className = "",
+  variant = "card"
 }: {
   entity: DreamEntity;
   priority?: boolean;
   className?: string;
+  variant?: "card" | "hero" | "compact";
 }) {
   if (!entity.image) return null;
 
   return (
-    <div className={`symbol-art${className ? ` ${className}` : ""}`}>
+    <div className={`symbol-art symbol-art--${variant}${className ? ` ${className}` : ""}`}>
       <Image
         src={entity.image}
         alt={artworkAlt(entity)}
