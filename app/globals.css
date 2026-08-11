@@ -558,6 +558,11 @@ a:hover {
   text-decoration: none;
 }
 
+.crumbs__item {
+  display: inline-flex;
+  gap: 6px;
+}
+
 .article-hero h1 {
   font-size: clamp(32px, 4.8vw, 50px);
   margin: 0 auto 20px;
@@ -3816,6 +3821,13 @@ a:hover {
   color: var(--green-950);
 }
 
+.article-grid__item .article-grid__title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: var(--green-950);
+}
+
 .article-grid__item p {
   color: var(--ink-soft);
   font-size: 14.5px;
@@ -3841,6 +3853,14 @@ a:hover {
 .theme-block__head h3 {
   font-size: 19px;
   margin: 0;
+  color: var(--green-950);
+}
+
+.theme-block .theme-block__title,
+.scenario-block .scenario-block__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px;
   color: var(--green-950);
 }
 
