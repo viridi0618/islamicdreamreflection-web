@@ -79,6 +79,12 @@ export function breadcrumbSchema(params: {
       {
         "@type": "ListItem",
         position: 2,
+        name: "Dream Guides",
+        item: `${SITE_URL}/guides`
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
         name: params.title,
         item: `${SITE_URL}/dreams/${params.slug}`
       }
@@ -140,6 +146,12 @@ export function dreamArticleBreadcrumbSchema(params: {
       {
         "@type": "ListItem",
         position: 2,
+        name: "Dream Guides",
+        item: `${SITE_URL}/guides`
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
         name: params.title,
         item: `${SITE_URL}/guides/${params.slug}`
       }

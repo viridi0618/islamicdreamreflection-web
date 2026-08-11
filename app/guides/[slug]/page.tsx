@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { allGuides, loadGuide } from "@/lib/guides";
 import { loadDreamArticle, allDreamArticles } from "@/lib/dream-articles";
 import { DreamArticlePage } from "@/components/DreamArticlePage";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { resolvePublicSources } from "@/data/sources";
 import {
   dreamArticleSchema,
@@ -106,6 +107,7 @@ export default async function GuidePage({
   return (
     <article className="shell section">
       <div className="reading-container">
+        <Breadcrumbs title={guide.title} />
         <div className="section__head">
           <h1>{guide.title}</h1>
           <span className="rule" />

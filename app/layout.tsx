@@ -29,7 +29,6 @@ const PUBLIC_FLOATING_ACTION_PATHS = [
   "/",
   "/about",
   "/contact",
-  "/dreams",
   "/faq",
   "/guides",
   "/interpreter",
@@ -81,7 +80,6 @@ export default function RootLayout({
               <nav className="site-footer__group" aria-label="Explore">
                 <h3>Explore</h3>
                 <Link href="/">Home</Link>
-                <Link href="/dreams">Explore Dreams</Link>
                 <Link href="/guides">Dream Guides</Link>
                 <Link href="/faq">FAQ</Link>
                 <Link href="/my-dreams">My Dreams</Link>

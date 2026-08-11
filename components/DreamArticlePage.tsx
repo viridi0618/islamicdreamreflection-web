@@ -6,24 +6,12 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { AiEntryBanner } from "@/components/AiEntryBanner";
 import { DreamReflectionCta } from "@/components/DreamReflectionCta";
 
-/**
- * Long-tail dream article template (Dream Content Architecture Upgrade).
- *
- * Renders a single search-intent page in reading-path order:
- * H1 → Quick Answer → Introduction → Islamic Perspective → Possible Meanings
- * → Common Scenarios → Reflection Questions → What This Dream Does Not Prove
- * → Sources → FAQ → Related Articles + Hub → Try Reflection.
- *
- * Uses the same container system and content classes as the symbol hub
- * (DreamArticle.tsx) so the reading axis stays consistent across the site.
- */
 export function DreamArticlePage({ article }: { article: DreamArticle }) {
   const sourceIds = collectArticleSourceIds(article);
   const sources = resolvePublicSources(sourceIds);
 
   return (
     <article className="shell">
-      {/* Hero */}
       <section className="article-hero">
         <div className="reading-container">
           <Breadcrumbs title={article.title} />
@@ -32,7 +20,6 @@ export function DreamArticlePage({ article }: { article: DreamArticle }) {
         </div>
       </section>
 
-      {/* Quick Answer */}
       <section className="section">
         <div className="reading-container">
           <div className="quick-answer">
@@ -41,45 +28,20 @@ export function DreamArticlePage({ article }: { article: DreamArticle }) {
         </div>
       </section>
 
-      {/* Introduction */}
-      <section className="section">
+      <section className="section" id="what-this-dream-may-reflect">
         <div className="reading-container">
+          <div className="section__head">
+            <h2>What This Dream May Reflect</h2>
+            <span className="rule" />
+          </div>
           <div className="prose">
             {article.introduction.map((p) => (
               <p key={p}>{p}</p>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Islamic Perspective */}
-      <section className="section" id="islamic-perspective">
-        <div className="reading-container">
-          <div className="section__head">
-            <h2>Islamic Perspective</h2>
-            <span className="rule" />
-          </div>
-          {article.islamicPerspective.map((block) => (
-            <div key={block.title} className="theme-block">
-              <h3>{block.title}</h3>
-              {block.body.map((p) => (
-                <p key={p}>{p}</p>
-              ))}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Possible Meanings */}
-      <section className="section" id="possible-meanings">
-        <div className="reading-container">
-          <div className="section__head">
-            <h2>Possible Meanings</h2>
-            <span className="rule" />
-          </div>
           {article.interpretations.map((item) => (
             <div key={item.title} className="theme-block">
-              <h3>{item.title}</h3>
+              <p className="theme-block__title">{item.title}</p>
               {item.body.map((p) => (
                 <p key={p}>{p}</p>
               ))}
@@ -88,48 +50,20 @@ export function DreamArticlePage({ article }: { article: DreamArticle }) {
         </div>
       </section>
 
-      {/* Common Scenarios */}
-      {article.scenarios.length > 0 && (
-        <section className="section" id="scenarios">
-          <div className="reading-container">
-            <div className="section__head">
-              <h2>Common Scenarios</h2>
-              <span className="rule" />
+      <section className="section" id="islamic-perspective">
+        <div className="reading-container">
+          <div className="section__head">
+            <h2>Islamic Perspective</h2>
+            <span className="rule" />
+          </div>
+          {article.islamicPerspective.map((block) => (
+            <div key={block.title} className="theme-block">
+              <p className="theme-block__title">{block.title}</p>
+              {block.body.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
             </div>
-            {article.scenarios.map((scenario) => (
-              <div key={scenario.id} className="scenario-block">
-                <h3>{scenario.title}</h3>
-                {scenario.body.map((p) => (
-                  <p key={p}>{p}</p>
-                ))}
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Reflection Questions */}
-      <section className="section" id="reflection-questions">
-        <div className="reading-container">
-          <div className="section__head">
-            <h2>Questions for Reflection</h2>
-            <span className="rule" />
-          </div>
-          <ul className="context-questions">
-            {article.reflectionQuestions.map((q) => (
-              <li key={q}>{q}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* What This Does Not Prove */}
-      <section className="section" id="does-not-prove">
-        <div className="reading-container">
-          <div className="section__head">
-            <h2>What This Dream Does Not Prove</h2>
-            <span className="rule" />
-          </div>
+          ))}
           <ul className="not-prove-list">
             {article.whatItDoesNotProve.map((item) => (
               <li key={item}>{item}</li>
@@ -138,7 +72,29 @@ export function DreamArticlePage({ article }: { article: DreamArticle }) {
         </div>
       </section>
 
-      {/* Sources */}
+      <section className="section" id="your-context-matters">
+        <div className="reading-container">
+          <div className="section__head">
+            <h2>Your Context Matters</h2>
+            <span className="rule" />
+          </div>
+          {article.scenarios.length > 0 &&
+            article.scenarios.map((scenario) => (
+              <div key={scenario.id} className="scenario-block">
+                <p className="scenario-block__title">{scenario.title}</p>
+                {scenario.body.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </div>
+            ))}
+          <ul className="context-questions">
+            {article.reflectionQuestions.map((q) => (
+              <li key={q}>{q}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {sources.length > 0 && (
         <section className="section" id="sources">
           <div className="reading-container">
@@ -154,9 +110,9 @@ export function DreamArticlePage({ article }: { article: DreamArticle }) {
                     {s.reference}
                     {s.url && (
                       <>
-                        {" · "}
+                        {" | "}
                         <a href={s.url} target="_blank" rel="noopener noreferrer">
-                          Read original →
+                          Read original &rarr;
                         </a>
                       </>
                     )}
@@ -171,7 +127,6 @@ export function DreamArticlePage({ article }: { article: DreamArticle }) {
         </section>
       )}
 
-      {/* FAQ */}
       <section className="section" id="faq">
         <div className="reading-container">
           <div className="section__head">
@@ -189,7 +144,6 @@ export function DreamArticlePage({ article }: { article: DreamArticle }) {
         </div>
       </section>
 
-      {/* Related Articles + Hub */}
       <section className="section" id="related">
         <div className="wide-container">
           <div className="section__head">
@@ -220,7 +174,6 @@ export function DreamArticlePage({ article }: { article: DreamArticle }) {
         </div>
       </section>
 
-      {/* Try Reflection */}
       <section className="section">
         <div className="wide-container">
           <DreamReflectionCta entityId={article.hubEntityId} />
