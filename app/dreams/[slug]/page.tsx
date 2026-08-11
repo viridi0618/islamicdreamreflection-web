@@ -7,6 +7,7 @@ import { ClassicalReferences } from "@/components/ClassicalReferences";
 import { DreamArticle } from "@/components/DreamArticle";
 import { DreamReflectionCta } from "@/components/DreamReflectionCta";
 import { FaqSection, buildFaqs } from "@/components/FaqSection";
+import { FloatingContentActions } from "@/components/FloatingContentActions";
 import { ReflectionQuestions } from "@/components/ReflectionQuestions";
 import { RelatedDreams } from "@/components/RelatedDreams";
 import { Scenarios } from "@/components/Scenarios";
@@ -87,6 +88,11 @@ export default async function DreamPage({
   const pages = loadEnabledPages();
   const faqs = buildFaqs(entity);
   const pageDate = entity.last_reviewed ?? LAST_UPDATED;
+  const shareText =
+    page.metaDescription ??
+    entity.article?.quickAnswer ??
+    entity.interpretation.general?.[0] ??
+    page.title;
 
   const jsonLd = [
     articleSchema({
@@ -109,6 +115,13 @@ export default async function DreamPage({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <FloatingContentActions
+          contentType="dream"
+          slug={slug}
+          title={page.title}
+          text={shareText}
+          href={`/dreams/${slug}`}
+        />
         <DreamArticle entity={entity} pageTitle={page.title} slug={slug} pages={pages} />
       </>
     );
@@ -119,6 +132,13 @@ export default async function DreamPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <FloatingContentActions
+        contentType="dream"
+        slug={slug}
+        title={page.title}
+        text={shareText}
+        href={`/dreams/${slug}`}
       />
 
       <article className="shell">
