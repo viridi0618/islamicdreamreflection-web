@@ -59,16 +59,11 @@ function writeStore(store: ContentActionStore): void {
   }
 }
 
-export function getContentActionState(
-  pathname: string
-): ContentActionState {
+export function getContentActionState(pathname: string): ContentActionState {
   return readStore()[keyFor(pathname)] ?? { saved: false, shareCount: 0 };
 }
 
-export function setContentSaved(
-  pathname: string,
-  saved: boolean
-): ContentActionState {
+export function setContentSaved(pathname: string, saved: boolean): ContentActionState {
   const store = readStore();
   const key = keyFor(pathname);
   const next = { ...(store[key] ?? { saved: false, shareCount: 0 }), saved };

@@ -4555,14 +4555,17 @@ a:hover {
   position: absolute;
   right: 0;
   bottom: calc(100% + 9px);
-  min-width: max-content;
-  padding: 6px 10px;
+  display: grid;
+  gap: 2px;
+  width: max-content;
+  max-width: min(280px, calc(100vw - 32px));
+  padding: 9px 12px;
   border: 1px solid rgba(184, 146, 63, 0.18);
-  border-radius: 999px;
+  border-radius: 12px;
   background: rgba(255, 252, 244, 0.96);
   color: var(--green-950);
   font-size: 12px;
-  font-weight: 700;
+  line-height: 1.35;
   box-shadow: 0 12px 28px -22px rgba(27, 45, 37, 0.55);
   opacity: 0;
   transform: translateY(4px);
@@ -4570,6 +4573,16 @@ a:hover {
     opacity 0.18s ease,
     transform 0.18s ease;
   pointer-events: none;
+}
+
+.floating-actions__status strong {
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.floating-actions__status span {
+  color: var(--muted);
+  font-weight: 600;
 }
 
 .floating-actions__status:not(:empty) {

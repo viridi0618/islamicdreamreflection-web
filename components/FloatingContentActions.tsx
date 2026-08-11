@@ -144,18 +144,21 @@ export function FloatingContentActions({
     }
   }
 
-  const feedbackText =
+  const feedbackContent =
     feedback === "saved"
-      ? "Saved"
+      ? {
+          title: "You saved this page",
+          body: "Saved in this browser. Your Bookmarks page is coming soon."
+        }
       : feedback === "removed"
-        ? "Removed"
+        ? { title: "Bookmark removed" }
         : feedback === "copied"
-          ? "Copied"
+          ? { title: "Copied" }
           : feedback === "shared"
-            ? "Shared"
+            ? { title: "Shared" }
             : feedback === "copy-error"
-              ? "Unable to copy"
-              : "";
+              ? { title: "Unable to copy" }
+              : null;
 
   if (!shouldShow) return null;
 
@@ -170,7 +173,7 @@ export function FloatingContentActions({
       >
         <BookmarkIcon saved={saved} />
         <span className="floating-actions__tooltip" role="tooltip">
-          {saved ? "Saved" : "Bookmark"}
+          {saved ? "Remove bookmark" : "Bookmark"}
         </span>
       </button>
 
@@ -190,7 +193,12 @@ export function FloatingContentActions({
       </div>
 
       <span className="floating-actions__status" aria-live="polite">
-        {feedbackText}
+        {feedbackContent && (
+          <>
+            <strong>{feedbackContent.title}</strong>
+            {feedbackContent.body && <span>{feedbackContent.body}</span>}
+          </>
+        )}
       </span>
     </aside>
   );
