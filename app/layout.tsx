@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { ENABLED_PAGES, SITE_NAME, SITE_URL } from "@/lib/site";
 import { organizationSchema, webSiteSchema } from "@/lib/schema";
+import { allDreamArticles } from "@/lib/dream-articles";
+import { allGuides } from "@/lib/guides";
 import Analytics from "@/components/analytics";
+import { FloatingContentActions } from "@/components/FloatingContentActions";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -21,6 +24,23 @@ export const metadata: Metadata = {
 };
 
 const jsonLd = [organizationSchema(), webSiteSchema()];
+
+const PUBLIC_FLOATING_ACTION_PATHS = [
+  "/",
+  "/about",
+  "/contact",
+  "/dreams",
+  "/faq",
+  "/guides",
+  "/interpreter",
+  "/my-dreams",
+  "/privacy",
+  "/sources-methodology",
+  "/terms",
+  ...ENABLED_PAGES.map((page) => `/dreams/${page.slug}`),
+  ...allGuides().map((guide) => `/guides/${guide.slug}`),
+  ...allDreamArticles().map((article) => `/guides/${article.slug}`)
+];
 
 export default function RootLayout({
   children
@@ -54,6 +74,7 @@ export default function RootLayout({
           </div>
         </header>
         <main>{children}</main>
+        <FloatingContentActions publicPaths={PUBLIC_FLOATING_ACTION_PATHS} />
         <footer className="site-footer">
           <div className="shell">
             <div className="site-footer__grid">
