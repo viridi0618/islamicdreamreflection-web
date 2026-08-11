@@ -47,12 +47,6 @@ function ShareIcon() {
   );
 }
 
-function formatShareCount(count: number): string {
-  if (count < 1000) return String(count);
-  if (count < 10_000) return `${(count / 1000).toFixed(1).replace(/\.0$/, "")}K`;
-  return `${Math.floor(count / 1000)}K+`;
-}
-
 async function copyUrl(url: string): Promise<void> {
   if (navigator.clipboard?.writeText) {
     await navigator.clipboard.writeText(url);
@@ -79,7 +73,6 @@ export function FloatingContentActions({
   href
 }: FloatingContentActionsProps) {
   const [saved, setSaved] = useState(false);
-  const [shareCount, setShareCount] = useState(0);
   const [feedback, setFeedback] = useState<Feedback>(null);
   const [isSharing, setIsSharing] = useState(false);
 
@@ -93,7 +86,6 @@ export function FloatingContentActions({
   useEffect(() => {
     const state = getContentActionState(contentType, slug);
     setSaved(state.saved);
-    setShareCount(state.shareCount);
   }, [contentType, slug]);
 
   useEffect(() => {
@@ -110,8 +102,7 @@ export function FloatingContentActions({
   }
 
   function recordShare() {
-    const result = recordContentShareAction(contentType, slug);
-    setShareCount(result.state.shareCount);
+    recordContentShareAction(contentType, slug);
   }
 
   async function handleShare() {
@@ -191,11 +182,6 @@ export function FloatingContentActions({
             Share
           </span>
         </button>
-        {shareCount > 0 && (
-          <span className="floating-actions__count" aria-label={`${shareCount} share actions`}>
-            {formatShareCount(shareCount)}
-          </span>
-        )}
       </div>
 
       <span className="floating-actions__status" aria-live="polite">
