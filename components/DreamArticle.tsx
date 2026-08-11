@@ -200,8 +200,8 @@ export function DreamArticle({
           <div className="reading-container">
             <p className="context-questions__intro">
               These questions are not an interpretation. They are an invitation
-              to notice the details that made the dream yours, before reading any
-              symbolic reading below.
+              to notice the details, emotions, and circumstances that made the
+              dream yours.
             </p>
             <ul className="context-questions">
               {article.contextQuestions.map((q) => (
