@@ -3,7 +3,7 @@
   "name": "Dog Dream",
   "category": "animals",
   "volumeClass": "medium",
-  "image": null,
+  "image": "/images/dreams/symbols/dog.webp",
   "keywords": [
     "dog dream meaning islam"
   ],
@@ -11,20 +11,20 @@
     {
       "name": "Ibn Sirin tradition",
       "tradition": "Ibn Sirin tradition",
-      "reference": "pending verification",
+      "reference": "Later compiled dream manual traditionally attributed to Ibn Sirin",
       "status": "pending",
-      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+      "notes": "Attribution is disputed and the surviving text is a later compilation; not surfaced publicly until a precise edition is checked."
     }
   ],
   "traditional_notes": [
-    "Dogs carry strong cultural and legal connotations in Islamic tradition; dream readings are context-sensitive. Specific meanings require verification of cited sources.",
-    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+    "Dog dreams should be approached through behavior, emotion, and context rather than legal or cultural assumptions about dogs.",
+    "This page does not turn Islamic legal discussions about dogs into fixed dream interpretations."
   ],
   "interpretation": {
     "positive": [],
     "negative": [],
     "general": [
-      "Dogs carry strong cultural and legal connotations in Islamic tradition; dream readings are context-sensitive. Specific meanings require verification of cited sources."
+      "A dog dream has no single fixed Islamic interpretation. It may invite reflection on fear, loyalty, protection, boundaries, noise, conflict, care, or recent experience with animals."
     ]
   },
   "related": [
@@ -33,8 +33,258 @@
     "barking dog",
     "puppy"
   ],
-  "status": "needs verification",
-  "review_status": "draft",
-  "last_reviewed": null,
-  "review_notes": ""
+  "status": "published",
+  "review_status": "reviewed",
+  "last_reviewed": "2026-08-10",
+  "review_notes": "Batch 1 public hub drafted as editorial reflection; no dog-specific religious attribution is made.",
+  "article": {
+    "quickAnswer": "A dog dream has no single fixed Islamic interpretation. It should not be read by taking legal or cultural discussions about dogs and turning them into dream meanings. Instead, reflect on the dog's behavior, your emotion, and the setting: was it friendly, barking, chasing, biting, guarding, black, or a puppy? A black dog in a dream is not evidence of jinn, magic, possession, or unseen harm. A frightening dog dream should be handled with Islamic etiquette for disturbing dreams, not with fear-based conclusions.",
+    "introduction": [
+      "Dog dreams can be emotionally intense because dogs may appear as companions, guards, noisy threats, chasers, or animals that bite. Some dreamers feel comfort around dogs; others feel fear because of past experiences, cultural associations, or safety concerns. That emotional context matters.",
+      "This guide does not convert Islamic legal discussion about dogs into dream interpretation. Dream reflection and fiqh are not the same subject. The reflections below focus on behavior, emotion, boundaries, protection, conflict, care, and recent animal experiences, while verified Hadith sources are used only for general dream guidance."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Was the dog friendly, protective, noisy, or threatening?",
+        "body": "A friendly dog and a dog chasing you are different dreams. Start with behavior before assigning weight to the symbol."
+      },
+      {
+        "title": "Did you feel fear, comfort, loyalty, pressure, or irritation?",
+        "body": "Your emotion may be the clearest guide. Fear can point toward perceived threat; comfort may point toward companionship or protection."
+      },
+      {
+        "title": "Where did the dog appear?",
+        "body": "A dog at home, in the street, at a doorway, in a workplace, or near your family changes the context of the dream."
+      },
+      {
+        "title": "Was the dog known to you?",
+        "body": "A pet, neighbor's dog, stray dog, guard dog, or unknown dog can each connect to different memories and concerns."
+      },
+      {
+        "title": "Was the dog acting alone or with people?",
+        "body": "A dog beside a person, guarding a place, blocking a path, or running in a group can shift the reflection toward relationships, boundaries, or pressure."
+      },
+      {
+        "title": "Have dogs been part of your recent life?",
+        "body": "A real encounter, barking outside, a bite fear, a video, or a conversation about dogs may be enough to shape dream content."
+      }
+    ],
+    "themes": [
+      {
+        "id": "fear-or-perceived-threat",
+        "title": "Fear or perceived threat",
+        "summary": "A threatening dog may mirror a situation that feels unsafe, loud, or difficult to face.",
+        "body": [
+          "If the dog chased, growled, blocked your path, or made you afraid, the dream may reflect perceived threat. The threat may be a person, pressure, deadline, conflict, memory, or fear that feels close.",
+          "This is not proof that someone is an enemy or that an attack is near. The dream can be used as a prompt to identify what feels threatening and what practical support or boundary may be needed."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "companionship-and-loyalty",
+        "title": "Companionship and loyalty",
+        "summary": "A friendly dog may prompt reflection on loyalty, steady support, or trusted companionship.",
+        "body": [
+          "If the dog was friendly, calm, or familiar, the dream may connect to companionship, loyalty, or the desire for dependable support. A dream can carry a feeling of being accompanied without making a claim about a specific person.",
+          "Ask whether you felt protected, less alone, or comforted. That emotion may be the point of reflection."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "protection-and-boundaries",
+        "title": "Protection and boundaries",
+        "summary": "A guarding dog may invite reflection on what you protect and what feels allowed to enter your space.",
+        "body": [
+          "A dog at a gate, door, yard, or path may bring up questions of boundaries. Was it protecting you, blocking you, guarding someone else, or keeping you away from a place?",
+          "In reflection, this may point toward limits in family, work, friendship, privacy, or emotional life. It does not automatically identify a religious or unseen cause."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "noise-pressure-or-conflict",
+        "title": "Noise, pressure, or conflict",
+        "summary": "A barking dog may reflect pressure, interruption, warning, irritation, or social conflict.",
+        "body": [
+          "Barking can feel like noise that demands attention. A barking dog dream may mirror a stressful voice, argument, demand, fear, or warning feeling in waking life.",
+          "The question is what the noise did to you. Did it alert you, overwhelm you, annoy you, or make you run? That response can guide practical reflection."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "care-and-responsibility",
+        "title": "Care and responsibility",
+        "summary": "Feeding, rescuing, or caring for a dog may point toward everyday responsibility and mercy.",
+        "body": [
+          "If you cared for a dog or puppy, the dream may invite reflection on responsibility, mercy, and how you respond to need. The animal's condition matters: hungry, injured, playful, lost, or calm.",
+          "This reading stays at the level of personal reflection. It does not make a religious claim about your purity, status, or obligations."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "recent-experience-with-animals",
+        "title": "Recent experience with animals",
+        "summary": "Dog dreams may be shaped by ordinary encounters, memories, fears, or media.",
+        "body": [
+          "A dog barking outside, a recent walk, fear from a past bite, a pet, a video, or a conversation can all enter dreams. Sometimes the simplest explanation is recent exposure.",
+          "Before searching for symbolic readings, ask what your mind may have carried into sleep. That keeps reflection grounded."
+        ],
+        "evidenceType": "editorial-reflection"
+      }
+    ],
+    "contextQuestions": [
+      "Was the dog friendly, barking, chasing, biting, guarding, black, or a puppy?",
+      "Did you feel protected, afraid, annoyed, loyal, responsible, or trapped?",
+      "Where was the dog, and did it block, follow, guard, or approach you?",
+      "Could the dream be connected to a recent animal encounter, memory, fear, or conversation?"
+    ],
+    "scenarios": [
+      {
+        "id": "friendly-dog",
+        "title": "Friendly dog",
+        "summary": "A friendly dog may create a dream tone of support, loyalty, or comfort.",
+        "body": [
+          "If the dog was calm, affectionate, or walking beside you, reflect on companionship and trust. The dream may connect to a person, routine, or memory that feels steady, but it does not identify that connection by itself.",
+          "Notice whether the dog protected you, followed you, played, or simply stayed nearby. Those details shape the reflection."
+        ],
+        "positiveReading": "The dream may reflect comfort, loyalty, or the wish for steady support.",
+        "cautionaryReading": "Avoid assuming the dog represents a specific person without real context.",
+        "doesNotProve": [
+          "That a particular person has been identified",
+          "That the dream guarantees loyalty from someone"
+        ]
+      },
+      {
+        "id": "barking-dog",
+        "title": "Barking dog",
+        "summary": "A barking dog may reflect noise, pressure, alertness, or conflict.",
+        "body": [
+          "Barking can feel like warning, interruption, or threat. In reflection, the dream may point toward a situation that feels loud, demanding, or hard to ignore.",
+          "Ask whether the barking protected you, scared you, annoyed you, or called your attention to something. The emotional effect matters."
+        ],
+        "positiveReading": "The dream may help you notice something that needs attention before it becomes overwhelming.",
+        "cautionaryReading": "If the dream felt stressful, consider whether a conflict or repeated demand needs a calmer boundary.",
+        "doesNotProve": [
+          "That someone is attacking you",
+          "That a warning from the unseen has been decoded"
+        ]
+      },
+      {
+        "id": "dog-chasing-you",
+        "title": "Dog chasing you",
+        "summary": "Being chased by a dog may mirror avoidance, fear, or pressure that feels close behind you.",
+        "body": [
+          "A chasing dog often creates urgency. In reflection, it may point toward a responsibility, memory, person, conflict, or fear you feel unable to face.",
+          "The dream does not prove that a real attack is near. It can still be useful if it helps you ask what you are avoiding and what support you need."
+        ],
+        "positiveReading": "Escaping, finding safety, or turning around may reflect courage and practical problem-solving.",
+        "cautionaryReading": "Repeated chase dreams may signal stress that needs direct care.",
+        "doesNotProve": [
+          "That danger is approaching",
+          "That someone has been named as an enemy"
+        ]
+      },
+      {
+        "id": "dog-bite",
+        "title": "Dog bite",
+        "summary": "A dog bite dream may feel like a personal wound, boundary violation, or sudden shock.",
+        "body": [
+          "If a dog bit you, reflect on where you feel hurt, criticized, pressured, or surprised. The bite may mirror an emotional wound, but it should not become evidence against a real person.",
+          "Details matter: where the bite was, whether you recovered, who helped, and whether the dog was known or unknown."
+        ],
+        "positiveReading": "If you received care after the bite, the dream may reflect healing and support.",
+        "cautionaryReading": "The dream may invite you to address a real boundary concern through calm action.",
+        "doesNotProve": [
+          "That an attack is near",
+          "That a person is your enemy"
+        ]
+      },
+      {
+        "id": "black-dog",
+        "title": "Black dog",
+        "summary": "A black dog in a dream is not evidence of jinn, magic, possession, or unseen harm.",
+        "body": [
+          "Black dog dreams can become frightening because people may attach fear-based religious or cultural ideas to the image. This page does not treat a black dog dream as proof of jinn, magic, possession, or unseen harm.",
+          "Reflect on behavior rather than color alone. Was the dog calm, protective, aggressive, wounded, silent, or barking? That context matters more than a fear-based label."
+        ],
+        "positiveReading": "If the black dog was calm or protective, the dream may challenge assumptions created by fear.",
+        "cautionaryReading": "If it frightened you, follow Islamic etiquette for a disturbing dream and avoid spiraling into unseen claims.",
+        "doesNotProve": [
+          "That jinn are present",
+          "That sihr is present",
+          "That possession or unseen harm is involved"
+        ]
+      },
+      {
+        "id": "puppy",
+        "title": "Puppy",
+        "summary": "A puppy may bring themes of care, play, dependency, or small responsibility.",
+        "body": [
+          "A puppy in a dream may feel playful, needy, fragile, or innocent. In reflection, it may point toward a new responsibility, a desire for affection, or something small that needs patient care.",
+          "As with baby or kitten dreams, the condition of the animal matters: playful, lost, hungry, injured, or protected."
+        ],
+        "positiveReading": "The dream may reflect warmth, care, or a lighter form of responsibility.",
+        "cautionaryReading": "If the puppy was neglected or lost, consider what small responsibility has been easy to overlook.",
+        "doesNotProve": [
+          "That a real animal is in danger",
+          "That the dream carries a fixed religious ruling"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That someone is your enemy. A dog dream is not evidence for accusing a real person.",
+      "That an attack is near. Dream fear should not be converted into a prediction.",
+      "That jinn or sihr are present. A black dog dream is not proof of jinn, magic, possession, or unseen harm.",
+      "That the dream changes a person's religious purity or status. Dream images do not create fiqh rulings.",
+      "That legal discussions about dogs automatically become dream interpretations."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Write the behavior first",
+        "body": "Record whether the dog barked, chased, bit, guarded, played, followed, or stayed calm. Behavior is the center of this reflection."
+      },
+      {
+        "title": "Do not turn fear into accusation",
+        "body": "If the dream scared you, avoid naming a real person as an enemy or claiming unseen harm based on the dream."
+      },
+      {
+        "title": "Consider recent exposure and memory",
+        "body": "A real dog encounter, barking at night, a past bite, a pet memory, or a video can shape dream imagery without deeper symbolic weight."
+      },
+      {
+        "title": "Use Islamic etiquette if the dream was frightening",
+        "body": "If the dog dream frightened you, the traditional response includes seeking refuge in Allah from its evil and not dwelling on it as a prediction.",
+        "sourceIds": [
+          "bukhari-6985",
+          "bukhari-7044"
+        ]
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/dreams/cat-dream-islam",
+        "anchor": "For another animal symbol where behavior matters more than superstition, read Cat Dream Meaning in Islam.",
+        "reason": "Connects related animal hub without creating scenario pages."
+      },
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "To understand why recent thoughts and fears may shape dreams, read The Three Types of Dreams in Islam.",
+        "reason": "Supports grounded reflection about dream sources."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the dog dream frightened you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides verified etiquette for disturbing dreams."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "Read Sources and Methodology to see why this page does not turn dog-related fiqh into dream interpretation.",
+        "reason": "Explains source boundaries for dog dream content."
+      }
+    ]
+  }
 }

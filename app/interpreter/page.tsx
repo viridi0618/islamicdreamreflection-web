@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { RitualFlow } from "@/components/RitualFlow";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { ENABLED_PAGES, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Islamic Dream Interpreter — AI Dream Meaning Analysis",
@@ -32,7 +32,7 @@ export default async function InterpreterPage({
 
   // Only pass through a known symbol; the client validates it against
   // the enabled pages before auto-running.
-  const knownSymbols = ["snake", "dead-person", "teeth", "water", "pregnancy"];
+  const knownSymbols = ENABLED_PAGES.map((page) => page.entityId);
   const initialSymbol = symbol && knownSymbols.includes(symbol) ? symbol : undefined;
 
   const jsonLd = {

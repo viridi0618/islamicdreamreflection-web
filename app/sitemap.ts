@@ -1,20 +1,17 @@
 import type { MetadataRoute } from "next";
 import { allGuides } from "@/lib/guides";
 import { allDreamArticles } from "@/lib/dream-articles";
-import { SITE_URL } from "@/lib/site";
+import { ENABLED_PAGES, SITE_URL } from "@/lib/site";
 
 /**
  * Sitemap for Search Console submission. NEXT_PUBLIC_SITE_URL must be set at
  * build time to the real domain (see lib/site.ts).
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const dreams = [
-    { url: `${SITE_URL}/dreams/snake-dream-islam`, lastModified: new Date() },
-    { url: `${SITE_URL}/dreams/dead-person-dream-islam`, lastModified: new Date() },
-    { url: `${SITE_URL}/dreams/teeth-falling-out-islam`, lastModified: new Date() },
-    { url: `${SITE_URL}/dreams/water-dream-islam`, lastModified: new Date() },
-    { url: `${SITE_URL}/dreams/pregnancy-dream-islam`, lastModified: new Date() }
-  ];
+  const dreams = ENABLED_PAGES.map((page) => ({
+    url: `${SITE_URL}/dreams/${page.slug}`,
+    lastModified: new Date()
+  }));
   const guides = [
     ...allGuides().map((g) => ({
       url: `${SITE_URL}/guides/${g.slug}`,

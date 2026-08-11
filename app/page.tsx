@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { loadEnabledPages } from "@/lib/data";
 import { RitualFlow } from "@/components/RitualFlow";
+import { SymbolArtwork } from "@/components/SymbolArtwork";
 import { HOME_FAQ_PREVIEW } from "@/lib/faq";
 import { dreamUrl, SITE_NAME, SITE_URL } from "@/lib/site";
 import { dreamCardSummary } from "@/lib/dream-summaries";
@@ -233,6 +234,7 @@ export default function HomePage() {
                     style={{ animationDelay: `${i * 70}ms` }}
                   >
                     <GuideCardLink href={dreamUrl(page.slug)}>
+                      <SymbolArtwork entity={entity} className="dream-card__art" />
                       <div className="dream-card__top">
                         <span className="dream-card__cat">{entity.category}</span>
                       </div>

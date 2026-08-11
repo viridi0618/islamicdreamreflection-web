@@ -4,6 +4,7 @@ import { loadEnabledPages } from "@/lib/data";
 import { dreamCardSummary } from "@/lib/dream-summaries";
 import { dreamUrl, SITE_NAME, SITE_URL } from "@/lib/site";
 import { DreamReflectionCta } from "@/components/DreamReflectionCta";
+import { SymbolArtwork } from "@/components/SymbolArtwork";
 
 export const metadata: Metadata = {
   title: "Explore Islamic Dream Meanings",
@@ -52,6 +53,7 @@ export default async function DreamsPage() {
                 style={{ animationDelay: `${i * 70}ms` }}
               >
                 <Link href={dreamUrl(page.slug)}>
+                  <SymbolArtwork entity={entity} className="dream-card__art" />
                   <div className="dream-card__top">
                     <span className="dream-card__cat">{entity.category}</span>
                   </div>

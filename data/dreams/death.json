@@ -3,7 +3,7 @@
   "name": "Death Dream",
   "category": "events",
   "volumeClass": "high",
-  "image": null,
+  "image": "/images/dreams/symbols/death.webp",
   "keywords": [
     "death dream meaning islam",
     "dream of death in islam"
@@ -12,20 +12,20 @@
     {
       "name": "Ibn Sirin tradition",
       "tradition": "Ibn Sirin tradition",
-      "reference": "pending verification",
+      "reference": "Later compiled dream manual traditionally attributed to Ibn Sirin",
       "status": "pending",
-      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+      "notes": "Attribution is disputed and the surviving text is a later compilation; not surfaced publicly until a precise edition is checked."
     }
   ],
   "traditional_notes": [
-    "Death in dreams is frequently symbolic of endings, transformation or fear of loss rather than literal events. Specific Islamic meanings require verification of cited sources.",
-    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+    "Death dreams need careful handling because they often create fear, grief, or urgency after waking.",
+    "This page addresses dreams where death occurs inside the dream, not dreams about a person who had already passed away before the dream."
   ],
   "interpretation": {
     "positive": [],
     "negative": [],
     "general": [
-      "Death in dreams is frequently symbolic of endings, transformation or fear of loss rather than literal events. Specific Islamic meanings require verification of cited sources."
+      "A death dream is not evidence that an actual death is coming. It may be explored through fear of loss, endings, transition, grief, stress, and uncertainty."
     ]
   },
   "related": [
@@ -34,8 +34,250 @@
     "death of relative",
     "funeral"
   ],
-  "status": "needs verification",
-  "review_status": "draft",
-  "last_reviewed": null,
-  "review_notes": ""
+  "status": "published",
+  "review_status": "reviewed",
+  "last_reviewed": "2026-08-10",
+  "review_notes": "Batch 1 public hub drafted as editorial reflection with Hadith citations limited to disturbing-dream guidance.",
+  "article": {
+    "quickAnswer": "A death dream is not evidence that an actual death is coming. This page is about dreaming that you die, someone living dies, or death occurs within the dream. If the person was already deceased before the dream, use the Dead Person Dream guide instead. A death dream may be explored through fear of loss, endings, transition, grief, stress, and uncertainty, but those reflections are not fixed classical interpretations. If the dream disturbed you, Islamic guidance points first to seeking refuge in Allah and not treating a disliked dream as a prediction.",
+    "introduction": [
+      "This guide is different from the Dead Person Dream guide. A dead-person dream is about seeing or interacting with someone who had already passed away before the dream. A death dream, as discussed here, is about death appearing inside the dream itself: your own death, the death of someone currently living, a funeral, or a scene where death is announced or feared.",
+      "Because death touches faith, grief, and family fear so deeply, this topic needs especially careful language. This page does not claim that a death dream reveals a date, announces punishment, or predicts a real event. It offers a structured way to reflect on the emotion and context of the dream while keeping verified Islamic dream guidance separate from personal reflection."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Who died in the dream?",
+        "body": "Your own death, the death of a parent, spouse, child, friend, stranger, or public figure each carries a different emotional weight. Begin with the relationship before thinking about symbolism."
+      },
+      {
+        "title": "Was the person alive before the dream?",
+        "body": "If the person had already passed away before you slept, this page is not the best fit. Use the Dead Person Dream guide for dreams about someone already deceased."
+      },
+      {
+        "title": "What feeling was strongest?",
+        "body": "Fear, grief, relief, shock, guilt, calm, or confusion may reveal more than the death scene itself. The feeling can show what your heart was processing."
+      },
+      {
+        "title": "Was death final, reversed, or uncertain?",
+        "body": "Some dreams show death and then return, waking, rescue, or a person alive again. That pattern may invite reflection on endings that are not simple or permanent in your emotional life."
+      },
+      {
+        "title": "Have you recently faced loss or change?",
+        "body": "Illness, family news, a funeral, a major life change, or fear about someone you love can shape dream content. Recent experience matters."
+      },
+      {
+        "title": "Did the dream create panic after waking?",
+        "body": "If the dream left you frightened, begin with the traditional etiquette for a disturbing dream rather than searching for a frightening interpretation."
+      }
+    ],
+    "themes": [
+      {
+        "id": "fear-of-loss",
+        "title": "Fear of loss",
+        "summary": "A death dream may mirror anxiety about losing a person, role, relationship, or source of safety.",
+        "body": [
+          "When someone living dies in a dream, the most direct reflection may be fear of loss. This does not identify the future; it may reveal how much the person, relationship, or responsibility matters to you.",
+          "Ask whether the dream touched an existing worry: a parent's health, a strained marriage, distance from a friend, or fear that life is changing faster than you can hold."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "endings-and-transition",
+        "title": "Endings and transition",
+        "summary": "Death imagery may be explored as a picture of an ending, separation, or transition already felt in waking life.",
+        "body": [
+          "Many people have death dreams during major transitions: leaving a job, moving, graduating, ending a relationship, becoming a parent, or facing a new stage of responsibility. The dream may give emotional form to an ending that is already present.",
+          "This is a reflective lens, not a fixed religious interpretation. It asks what is closing, what is changing, and what needs to be grieved or accepted."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "change-in-identity-or-responsibility",
+        "title": "Change in identity or responsibility",
+        "summary": "Dreaming of death may point toward a shift in how you see yourself or what life is asking from you.",
+        "body": [
+          "A dream of your own death can feel terrifying, but in reflection it may sometimes sit near identity change: an old role ending, a new responsibility beginning, or a version of yourself you are leaving behind.",
+          "The question is practical and gentle: what part of your life no longer feels the same, and what responsibility has become real enough to unsettle your sleep?"
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "grief-and-emotional-processing",
+        "title": "Grief and emotional processing",
+        "summary": "Death dreams may arise when grief, old losses, or unspoken sadness are being processed.",
+        "body": [
+          "A dream does not need to be prophetic to be emotionally meaningful. If you have recently attended a funeral, remembered a loss, or carried sadness quietly, death imagery may be part of how your mind and heart process that weight.",
+          "Reflection can include dua, talking with someone trustworthy, and allowing grief to be named without turning the dream into an omen."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "stress-and-uncertainty",
+        "title": "Stress and uncertainty",
+        "summary": "Death dreams can appear when life feels uncertain, unsafe, or emotionally overloaded.",
+        "body": [
+          "During intense stress, the mind may use extreme images to represent vulnerability. Death in a dream may reflect the size of the stress rather than a message about an event.",
+          "If repeated death dreams come with poor sleep, panic, or constant worry, it may help to care for the stress directly through rest, support, and professional help if needed."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "islamic-guidance-for-disturbing-dreams",
+        "title": "Islamic guidance for disturbing dreams",
+        "summary": "The religious guidance most directly supported here concerns what to do after a disliked dream.",
+        "body": [
+          "For ordinary believers, the verified Hadith guidance does not give a death-symbol dictionary. It teaches how to respond when a dream is disliked or frightening: seek refuge in Allah, avoid spreading it, and do not dwell on it as a harmful forecast.",
+          "That guidance matters because death dreams can quickly become panic. The tradition gives the dreamer a way to return to Allah and calm rather than spiraling into certainty."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": [
+          "bukhari-6985",
+          "bukhari-7044"
+        ]
+      }
+    ],
+    "contextQuestions": [
+      "Was the person in the dream already deceased before you slept, or did death occur inside the dream?",
+      "What relationship, responsibility, or fear did the death scene touch most strongly?",
+      "Did the dream feel like grief, warning, transition, guilt, relief, or confusion?",
+      "What in your waking life currently feels like an ending, separation, or major change?"
+    ],
+    "scenarios": [
+      {
+        "id": "dreaming-of-your-own-death",
+        "title": "Dreaming of your own death",
+        "summary": "A dream of your own death can feel shocking, but it is not evidence of an actual death approaching.",
+        "body": [
+          "Dreaming of your own death may bring fear, helplessness, or strange calm. In reflection, it may point toward identity change, exhaustion, a wish to escape pressure, or awareness of mortality.",
+          "The dream should not be treated as a revealed date or a verdict about your future. If it frightened you, begin with calm spiritual etiquette and then ask what emotional burden the dream may have pictured."
+        ],
+        "positiveReading": "If the dream included peace, return, or relief, it may invite reflection on surrender, renewal, or releasing an old burden.",
+        "cautionaryReading": "If the dream left panic behind, care for your nervous system and avoid searching for terrifying interpretations.",
+        "doesNotProve": [
+          "That your lifespan has been revealed",
+          "That a real death is near"
+        ]
+      },
+      {
+        "id": "someone-living-dies",
+        "title": "Dreaming that someone living dies",
+        "summary": "This scenario often reflects fear, attachment, grief, or anxiety about the relationship.",
+        "body": [
+          "If someone alive dies in the dream, the emotion may be more important than the scene. You may be worried about their health, afraid of distance, carrying guilt, or processing a change in the relationship.",
+          "Do not treat the dream as information about that person's future. If concern remains, make dua for them, check in kindly if appropriate, and return to ordinary care."
+        ],
+        "positiveReading": "The dream may remind you to value the person and strengthen the relationship in waking life.",
+        "cautionaryReading": "Avoid alarming the person with the dream if doing so would burden them without benefit.",
+        "doesNotProve": [
+          "That the person is in danger",
+          "That the dream should be shared as a warning"
+        ]
+      },
+      {
+        "id": "repeated-death-dreams",
+        "title": "Repeated death dreams",
+        "summary": "Repetition may point to unresolved stress, grief, or fear that keeps returning.",
+        "body": [
+          "A repeated death dream can feel more serious simply because it returns. Still, repetition does not turn the dream into proof. It may show that the same worry, transition, or grief has not been fully processed.",
+          "Track what is happening around the nights these dreams appear: conversations, news, health worries, family tension, or exhaustion. Patterns in waking life may explain the pattern in sleep."
+        ],
+        "positiveReading": "The repetition may help you notice a real emotional need that deserves attention.",
+        "cautionaryReading": "If repeated dreams disrupt sleep or daily functioning, seek support from someone trustworthy or a professional.",
+        "doesNotProve": [
+          "That the dream is a prophecy",
+          "That the same event is approaching"
+        ]
+      },
+      {
+        "id": "death-followed-by-returning",
+        "title": "Death followed by returning or being alive again",
+        "summary": "A death-and-return pattern may invite reflection on renewal, second chances, or unfinished change.",
+        "body": [
+          "Some dreams show death, then a return to life, awakening inside the dream, rescue, or a person alive again. This can soften the image and shift the reflection toward transition rather than finality.",
+          "Ask what in your life feels like it ended but still has a path forward. The dream may mirror the complexity of change rather than a literal event."
+        ],
+        "positiveReading": "The return may reflect hope, repair, repentance, or a renewed way of approaching life.",
+        "cautionaryReading": "If the dream felt confusing, take time before drawing conclusions from it.",
+        "doesNotProve": [
+          "That a supernatural message has been decoded",
+          "That ordinary responsibilities can be ignored"
+        ]
+      },
+      {
+        "id": "funeral-connected-to-the-dream",
+        "title": "A funeral connected to the dream",
+        "summary": "A funeral scene may bring public grief, community, farewell, or unresolved sadness into the dream.",
+        "body": [
+          "A funeral in a death dream may reflect communal grief, fear of separation, respect for someone, or your own thoughts about mortality and accountability. Notice who attended, whether you were grieving, and whether the scene felt solemn or chaotic.",
+          "If the funeral was for someone already deceased before the dream, the Dead Person Dream guide may be more relevant. If death occurred inside the dream, use this page to reflect on the emotions and context."
+        ],
+        "positiveReading": "The dream may prompt dua, gratitude, reconciliation, or a softer awareness of what matters.",
+        "cautionaryReading": "Avoid turning a funeral image into a claim about anyone's future or spiritual state.",
+        "doesNotProve": [
+          "That a date has been disclosed",
+          "That Allah is announcing punishment"
+        ],
+        "relatedGuide": {
+          "href": "/dreams/dead-person-dream-islam",
+          "label": "If the person was already deceased, use the Dead Person Dream guide"
+        }
+      }
+    ],
+    "doesNotProve": [
+      "That you or another person is facing an actual death soon. A dream is not evidence that a real death is approaching.",
+      "That a death date has been revealed. Ordinary dreams should not be used to claim hidden knowledge of the unseen.",
+      "That Allah is announcing punishment. This page does not use dreams to judge a person's standing with Allah.",
+      "That the dream is a prophecy or omen. The safest approach is reflection, dua, and the traditional etiquette for disliked dreams.",
+      "That you must make a major life decision from the dream alone. Serious decisions need knowledge, consultation, prayer, and practical judgment."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Begin with calm, not panic",
+        "body": "A death dream can shake the heart. Breathe, make dua, and remind yourself that the dream is not evidence of an actual death approaching."
+      },
+      {
+        "title": "Follow the etiquette for a disliked dream",
+        "body": "If the dream frightened you, the traditional response includes seeking refuge in Allah from its evil and not dwelling on it as a prediction.",
+        "sourceIds": [
+          "bukhari-6985",
+          "bukhari-7044"
+        ]
+      },
+      {
+        "title": "Check whether grief or fear needs care",
+        "body": "If the dream touched a real loss, illness, family worry, or unresolved sadness, consider speaking with someone trustworthy instead of carrying it alone."
+      },
+      {
+        "title": "Use the right guide for the right dream",
+        "body": "If the person was already deceased before the dream, reflect through the Dead Person Dream guide. If death occurred inside the dream, stay with the context and emotion described here."
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/dreams/dead-person-dream-islam",
+        "anchor": "If the person was already deceased before the dream, use the Dead Person Dream guide instead.",
+        "reason": "Prevents cannibalization with the existing deceased-person hub."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the death dream disturbed you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides verified etiquette for frightening dreams."
+      },
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "To understand why not every vivid dream carries the same weight, read The Three Types of Dreams in Islam.",
+        "reason": "Supports careful weighting of dream experiences."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "Read Sources and Methodology to see how source claims are limited on this site.",
+        "reason": "Explains why death dreams are not treated as predictions."
+      }
+    ]
+  }
 }

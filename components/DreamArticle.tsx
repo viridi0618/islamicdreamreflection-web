@@ -10,6 +10,7 @@ import { AiEntryBanner } from "@/components/AiEntryBanner";
 import { DreamReflectionCta } from "@/components/DreamReflectionCta";
 import { FaqSection } from "@/components/FaqSection";
 import { RelatedDreams } from "@/components/RelatedDreams";
+import { SymbolArtwork } from "@/components/SymbolArtwork";
 
 const EVIDENCE_LABEL: Record<EvidenceType, string> = {
   quran: "Qur'an",
@@ -69,24 +70,27 @@ export function DreamArticle({
     <article className="shell">
       {/* Hero: centered title, reading-width content */}
       <section className="article-hero">
-        <div className="reading-container">
-          <Breadcrumbs title={pageTitle} />
-          <h1>{pageTitle}</h1>
-          <AiEntryBanner entityId={entity.id} />
-          <div className="quick-answer" style={{ marginTop: 18 }}>
-            <p>{article.quickAnswer}</p>
-            <span className="disclaimer">
-              Traditional perspectives vary by context and are not predictions
-              or religious rulings.
-            </span>
+        <div className="wide-container article-hero__layout">
+          <div className="article-hero__copy">
+            <Breadcrumbs title={pageTitle} />
+            <h1>{pageTitle}</h1>
+            <AiEntryBanner entityId={entity.id} />
+            <div className="quick-answer" style={{ marginTop: 18 }}>
+              <p>{article.quickAnswer}</p>
+              <span className="disclaimer">
+                Traditional perspectives vary by context and are not predictions
+                or religious rulings.
+              </span>
+            </div>
+            <p
+              className="page-meta"
+              style={{ marginTop: 14, fontSize: 13, color: "var(--ink-faint)" }}
+            >
+              Prepared by <Link href="/about#methodology">Islamic Dream Reflection</Link> ·{" "}
+              Updated: {entity.last_reviewed ?? LAST_UPDATED} · {readingMinutes(entity)} min read
+            </p>
           </div>
-          <p
-            className="page-meta"
-            style={{ marginTop: 14, fontSize: 13, color: "var(--ink-faint)", textAlign: "center" }}
-          >
-            Prepared by <Link href="/about#methodology">Islamic Dream Reflection</Link> ·{" "}
-            Updated: {LAST_UPDATED} · {readingMinutes(entity)} min read
-          </p>
+          <SymbolArtwork entity={entity} priority variant="hero" className="article-hero__art" />
         </div>
       </section>
 

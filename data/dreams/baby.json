@@ -3,7 +3,7 @@
   "name": "Baby Dream",
   "category": "family",
   "volumeClass": "medium",
-  "image": null,
+  "image": "/images/dreams/symbols/baby.webp",
   "keywords": [
     "baby dream meaning islam"
   ],
@@ -11,20 +11,20 @@
     {
       "name": "Ibn Sirin tradition",
       "tradition": "Ibn Sirin tradition",
-      "reference": "pending verification",
+      "reference": "Later compiled dream manual traditionally attributed to Ibn Sirin",
       "status": "pending",
-      "notes": "Documented as a classical tradition; the specific passage is still being organized and cross-checked by editors. Traditional interpretations may explore this symbol depending on context."
+      "notes": "Attribution is disputed and the surviving text is a later compilation; not surfaced publicly until a precise edition is checked."
     }
   ],
   "traditional_notes": [
-    "Babies frequently symbolize new projects, innocence or care-taking responsibilities in dreams. Specific Islamic meanings require verification of cited sources.",
-    "This symbol is referenced in classical Islamic dream interpretation traditions. Specific meanings may depend on the dream's context, the dreamer's circumstances, and the details of the dream itself. Traditional interpretations may explore this symbol differently."
+    "Baby dreams often carry strong feelings of care, vulnerability, hope, anxiety, or responsibility.",
+    "This page treats baby dreams as context-based reflection and does not present pregnancy or childbirth as an automatic prediction."
   ],
   "interpretation": {
     "positive": [],
     "negative": [],
     "general": [
-      "Babies frequently symbolize new projects, innocence or care-taking responsibilities in dreams. Specific Islamic meanings require verification of cited sources."
+      "A baby dream does not automatically predict pregnancy. It may invite reflection on care, responsibility, vulnerability, family hopes, or something new that needs attention."
     ]
   },
   "related": [
@@ -33,8 +33,252 @@
     "newborn baby",
     "baby laughing"
   ],
-  "status": "needs verification",
-  "review_status": "draft",
-  "last_reviewed": null,
-  "review_notes": ""
+  "status": "published",
+  "review_status": "reviewed",
+  "last_reviewed": "2026-08-10",
+  "review_notes": "Batch 1 public hub drafted as editorial reflection with Muslim 2263a used only for the general dream-types principle.",
+  "article": {
+    "quickAnswer": "A baby dream does not automatically predict pregnancy. In Islamic dream reflection, the safer approach is to look at context, emotion, and daily life before drawing conclusions. A baby in a dream may prompt reflection on care, responsibility, vulnerability, dependence, family hopes, anxiety, or something new that needs attention. These are personal reflection themes, not fixed Islamic meanings. If the dream was connected to pregnancy itself, compare it with the Pregnancy Dream guide, but keep the distinction clear: baby dream and pregnancy dream are not the same thing.",
+    "introduction": [
+      "Baby dreams can feel tender, joyful, stressful, confusing, or even frightening. The same image may appear as holding a peaceful newborn, hearing a baby cry, searching for a baby, caring for a child, or seeing a baby laugh. Because babies are associated with dependence and care, these dreams often touch the dreamer's sense of responsibility.",
+      "This guide does not say that seeing a baby in a dream is a guaranteed announcement of pregnancy or childbirth. It separates verified Islamic guidance about dream types from personal reflection about family, vulnerability, beginnings, and daily thoughts."
+    ],
+    "beforeInterpreting": [
+      {
+        "title": "Was the baby yours, someone else's, or unknown?",
+        "body": "A baby you recognized may connect to family feelings, while an unknown baby may feel more like a new responsibility or vulnerable part of life. Relationship matters."
+      },
+      {
+        "title": "What was the baby doing?",
+        "body": "A sleeping, crying, smiling, hungry, lost, or healthy baby changes the reflection. The baby's condition often matters more than the symbol alone."
+      },
+      {
+        "title": "How did you respond in the dream?",
+        "body": "Holding, feeding, protecting, ignoring, searching, or feeling unable to care for the baby each suggests a different emotional pattern."
+      },
+      {
+        "title": "Are family hopes or worries active right now?",
+        "body": "Marriage, fertility questions, parenting, caring for siblings, nieces, nephews, or parents can all shape baby imagery in dreams."
+      },
+      {
+        "title": "Is something new asking for care?",
+        "body": "A new project, habit, responsibility, relationship, or stage of life can feel like something young and dependent. The dream may help you notice what needs nurturing."
+      },
+      {
+        "title": "Did you recently think about babies or parenting?",
+        "body": "Conversations, social media, family gatherings, pregnancy news, or daily caregiving can appear in dreams. Some dreams are connected to what the mind has recently carried."
+      }
+    ],
+    "themes": [
+      {
+        "id": "care-and-responsibility",
+        "title": "Care and responsibility",
+        "summary": "A baby dream may invite reflection on what you feel responsible to protect, nurture, or carry.",
+        "body": [
+          "Babies require attention, patience, and protection. In reflection, a baby dream may point toward a responsibility that feels delicate or important: family care, a new duty, emotional repair, or something that depends on your consistency.",
+          "Ask whether the dream left you feeling capable, overwhelmed, tender, or afraid. Those emotions may reveal how you are experiencing responsibility in waking life."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "vulnerability",
+        "title": "Vulnerability",
+        "summary": "A baby may mirror something vulnerable in your life, your relationships, or your own inner state.",
+        "body": [
+          "A baby cannot protect itself, so the dream may bring attention to vulnerability. This could be someone you care for, a fragile relationship, a hope you do not want mocked, or a part of yourself that needs gentleness.",
+          "This reflection is not a fixed religious claim. It is a way to ask what needs mercy, patience, or protection rather than harshness."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "new-responsibility-or-beginning",
+        "title": "A new responsibility or beginning",
+        "summary": "A baby dream may be explored as an image of something new, small, and not yet fully formed.",
+        "body": [
+          "New beginnings often feel hopeful and demanding at the same time. A baby dream may mirror a project, study path, marriage stage, spiritual routine, or personal change that is still young and needs steady care.",
+          "The useful question is not whether the dream guarantees a future event, but what new responsibility is asking for your attention now."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "family-hopes-or-anxieties",
+        "title": "Family hopes or anxieties",
+        "summary": "Baby dreams may touch hopes, fears, or pressure around family life.",
+        "body": [
+          "For some dreamers, a baby dream sits near questions about marriage, pregnancy, children, parenting, or family expectations. For others, it may connect to siblings, nieces, nephews, or memories of being cared for.",
+          "Because family topics can be emotionally loaded, avoid rushing to an interpretation. Reflect on whether the dream felt like hope, pressure, fear, longing, or responsibility."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "need-for-attention",
+        "title": "Need for attention",
+        "summary": "A crying, hungry, or unattended baby may point toward something that has been neglected.",
+        "body": [
+          "If the baby needed help, the dream may invite reflection on an area of life that has been asking for attention: health, prayer routines, family communication, a delayed task, or emotional rest.",
+          "The goal is not guilt. A baby image can be a gentle reminder that some responsibilities need small, repeated care rather than dramatic action."
+        ],
+        "evidenceType": "editorial-reflection"
+      },
+      {
+        "id": "dreams-shaped-by-daily-thoughts",
+        "title": "Dreams shaped by daily thoughts",
+        "summary": "Islamic teaching recognizes that some dreams can come from what the mind carries.",
+        "body": [
+          "If you recently held a baby, saw pregnancy news, cared for a child, discussed parenting, or worried about family, the dream may be connected to what your mind carried into sleep.",
+          "The Hadith about dreams being of different types includes dreams connected to one's own mind. That supports caution: not every vivid baby dream should be treated as a message about the future."
+        ],
+        "evidenceType": "hadith",
+        "sourceIds": [
+          "muslim-2263a"
+        ]
+      }
+    ],
+    "contextQuestions": [
+      "Was the baby peaceful, crying, laughing, hungry, lost, or in need of protection?",
+      "Did you feel tenderness, anxiety, joy, pressure, guilt, or confusion?",
+      "What new responsibility or vulnerable situation in your life needs care right now?",
+      "Could the dream be connected to recent conversations, family news, or daily caregiving?"
+    ],
+    "scenarios": [
+      {
+        "id": "holding-a-baby",
+        "title": "Holding a baby",
+        "summary": "Holding a baby often places care and responsibility directly in your hands.",
+        "body": [
+          "If you were holding a baby, reflect on whether the dream felt peaceful, heavy, awkward, joyful, or frightening. The act of holding may mirror a responsibility you are trying to carry carefully.",
+          "The baby does not have to represent an actual child. It may point toward something delicate in your life that needs patience and protection."
+        ],
+        "positiveReading": "The dream may reflect tenderness, readiness to care, or the ability to hold a new responsibility.",
+        "cautionaryReading": "If you felt overwhelmed, the dream may invite you to ask for support rather than carrying everything alone.",
+        "doesNotProve": [
+          "That pregnancy is being announced",
+          "That the baby represents one fixed thing"
+        ]
+      },
+      {
+        "id": "crying-baby",
+        "title": "A crying baby",
+        "summary": "A crying baby may draw attention to a need, worry, or responsibility that feels urgent.",
+        "body": [
+          "A crying baby can create stress in the dream because the sound asks for a response. In reflection, this may mirror a responsibility, relationship, or personal need that you have been trying to soothe.",
+          "Ask whether you could comfort the baby, whether help was available, and what the crying made you feel. The dream may be less about prediction and more about attention."
+        ],
+        "positiveReading": "If the baby calmed, the dream may reflect your capacity to respond with care.",
+        "cautionaryReading": "If the crying continued, consider what need in waking life remains unaddressed.",
+        "doesNotProve": [
+          "That something bad is guaranteed",
+          "That you have failed as a caregiver"
+        ]
+      },
+      {
+        "id": "smiling-or-laughing-baby",
+        "title": "A smiling or laughing baby",
+        "summary": "A joyful baby may reflect tenderness, hope, or relief around something new.",
+        "body": [
+          "A smiling or laughing baby can leave a soft feeling after waking. In reflection, it may connect to hope, affection, family joy, or confidence that a new responsibility can be approached with warmth.",
+          "Keep the reading modest. A happy baby dream can be encouraging without becoming a guaranteed sign of a future event."
+        ],
+        "positiveReading": "The dream may reflect joy, affection, or comfort with a new beginning.",
+        "cautionaryReading": "Do not pressure the dream to promise a specific outcome.",
+        "doesNotProve": [
+          "That a child is guaranteed",
+          "That a particular hope has been confirmed"
+        ]
+      },
+      {
+        "id": "newborn-baby",
+        "title": "A newborn baby",
+        "summary": "A newborn may emphasize something very new, fragile, and still developing.",
+        "body": [
+          "A newborn in a dream may invite reflection on beginnings that require protection: a new marriage stage, work project, spiritual routine, study plan, or family role. Newborn imagery often carries both hope and responsibility.",
+          "If the dream was connected to pregnancy concerns, compare it with the Pregnancy Dream guide, but avoid assuming that every newborn image predicts pregnancy."
+        ],
+        "positiveReading": "The dream may reflect the beauty of starting something with care.",
+        "cautionaryReading": "New beginnings need support, time, and realistic expectations.",
+        "doesNotProve": [
+          "That childbirth is being announced",
+          "That the dream must be read literally"
+        ],
+        "relatedGuide": {
+          "href": "/dreams/pregnancy-dream-islam",
+          "label": "Compare with Pregnancy Dream Meaning in Islam"
+        }
+      },
+      {
+        "id": "losing-or-searching-for-a-baby",
+        "title": "Losing or searching for a baby",
+        "summary": "This scenario can feel frightening, so it should be handled gently and without panic.",
+        "body": [
+          "Searching for a baby or fearing that a baby is lost may reflect anxiety about responsibility, protection, or not being able to care for everything perfectly. It can also appear when life feels scattered or demanding.",
+          "Use gentle language with yourself after this dream. It does not prove that harm is near. It may simply show how much you care and how much support you need."
+        ],
+        "positiveReading": "The search may reflect love, concern, and the desire to protect what matters.",
+        "cautionaryReading": "If the dream left you distressed, ground yourself before interpreting and speak with someone supportive if the worry lingers.",
+        "doesNotProve": [
+          "That a child is in danger",
+          "That you are being given a divine instruction"
+        ]
+      }
+    ],
+    "doesNotProve": [
+      "That you are pregnant or soon to be pregnant. A baby dream and a pregnancy dream are not the same thing.",
+      "That a child is guaranteed. Dreams should not be used as proof of a future birth.",
+      "That something good or bad is guaranteed. The dream may be meaningful without functioning as a promise or warning.",
+      "That the dream is a divine instruction. Religious decisions need knowledge, consultation, and sound judgment.",
+      "That your worth as a parent, spouse, or family member has been judged by the dream."
+    ],
+    "actionsAfterDream": [
+      {
+        "title": "Write down the baby's condition",
+        "body": "Note whether the baby was peaceful, crying, laughing, hungry, lost, healthy, or unknown. These details help keep reflection grounded."
+      },
+      {
+        "title": "Consider what your mind carried into sleep",
+        "body": "If the dream followed family news, pregnancy conversations, caregiving, or social media about children, it may be connected to daily thoughts.",
+        "sourceIds": [
+          "muslim-2263a"
+        ]
+      },
+      {
+        "title": "Name the responsibility without fear",
+        "body": "Ask what needs care in your life right now. It may be a relationship, project, routine, family duty, or vulnerable hope."
+      },
+      {
+        "title": "Use Islamic etiquette if the dream was distressing",
+        "body": "If the dream frightened you, seek refuge in Allah and avoid treating it as a prediction.",
+        "sourceIds": [
+          "bukhari-6985",
+          "bukhari-7044"
+        ]
+      }
+    ],
+    "classicalNotes": [],
+    "contextualLinks": [
+      {
+        "placement": "themes",
+        "href": "/dreams/pregnancy-dream-islam",
+        "anchor": "If the dream centered on being pregnant rather than seeing a baby, read Pregnancy Dream Meaning in Islam.",
+        "reason": "Clarifies that baby dream and pregnancy dream are separate intents."
+      },
+      {
+        "placement": "themes",
+        "href": "/guides/three-types-of-dreams-in-islam",
+        "anchor": "For the Islamic framework behind dreams from the self, read The Three Types of Dreams in Islam.",
+        "reason": "Supports caution about dreams shaped by daily thoughts."
+      },
+      {
+        "placement": "actions",
+        "href": "/guides/what-to-do-after-a-bad-dream",
+        "anchor": "If the baby dream frightened you, read What to Do After a Bad Dream in Islam.",
+        "reason": "Provides verified etiquette for disturbing dreams."
+      },
+      {
+        "placement": "sources",
+        "href": "/sources-methodology",
+        "anchor": "Read Sources and Methodology to understand how this page separates sources from reflection.",
+        "reason": "Explains source boundaries for family-symbol pages."
+      }
+    ]
+  }
 }

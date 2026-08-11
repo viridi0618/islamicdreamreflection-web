@@ -29,10 +29,10 @@ const STEP_INDEX: Array<{ id: Step; label: string }> = [
 ];
 
 const PROCESSING_MESSAGES = [
-  "🌙 Reflecting on your dream…",
-  "🔎 Exploring symbols…",
-  "📖 Reviewing traditional perspectives…",
-  "✨ Preparing your reflection…"
+  "Reading your dream",
+  "Noticing important symbols",
+  "Considering context and emotion",
+  "Preparing your reflection"
 ];
 
 export interface RitualFlowProps {
@@ -59,7 +59,9 @@ export function RitualFlow({
   const [error, setError] = useState<string | null>(null);
   const [limitHit, setLimitHit] = useState(false);
   const [visibleMsg, setVisibleMsg] = useState(0);
+  const [loadingProgress, setLoadingProgress] = useState(0);
   const resultRef = useRef<HTMLDivElement>(null);
+  const requestInFlight = useRef(false);
   const titleTracked = useRef(false);
 
   // Funnel start.
@@ -74,14 +76,25 @@ export function RitualFlow({
     }
   }, [initialSymbol]);
 
-  // Processing animation: reveal messages one by one.
+  // Processing animation: reveal messages and simulate progress while the request runs.
   useEffect(() => {
     if (step !== "processing") return;
     setVisibleMsg(0);
-    const timer = setInterval(() => {
+    setLoadingProgress(8);
+    const messageTimer = setInterval(() => {
       setVisibleMsg((v) => Math.min(v + 1, PROCESSING_MESSAGES.length - 1));
     }, 700);
-    return () => clearInterval(timer);
+    const progressTimer = setInterval(() => {
+      setLoadingProgress((value) => {
+        if (value >= 94) return value;
+        const next = value + Math.max(1, Math.round((96 - value) * 0.08));
+        return Math.min(next, 94);
+      });
+    }, 260);
+    return () => {
+      clearInterval(messageTimer);
+      clearInterval(progressTimer);
+    };
   }, [step]);
 
   // Scroll the result into view + funnel events.
@@ -120,6 +133,7 @@ export function RitualFlow({
   }
 
   async function analyzeDream() {
+    if (requestInFlight.current) return;
     const text = dreamText.trim();
     if (!text) return;
 
@@ -133,6 +147,7 @@ export function RitualFlow({
     setResult(null);
     setLimitHit(false);
     track("reflection_started");
+    requestInFlight.current = true;
     setStep("processing");
 
     const startedAt = Date.now();
@@ -153,14 +168,19 @@ export function RitualFlow({
       const elapsed = Date.now() - startedAt;
       const wait = Math.max(0, 2800 - elapsed);
       setTimeout(() => {
-        setResult(data);
-        setStep("result");
+        setLoadingProgress(100);
+        setTimeout(() => {
+          setResult(data);
+          setStep("result");
+          requestInFlight.current = false;
+        }, 350);
       }, wait);
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Something went wrong";
       setTimeout(() => {
         setError(msg);
         setStep("dream");
+        requestInFlight.current = false;
       }, 1200);
     }
   }
@@ -302,9 +322,27 @@ export function RitualFlow({
           <span className="processing-moon__orbit" />
         </div>
         <h2>Your reflection is being prepared</h2>
+        <div className="processing-progress" aria-hidden="true">
+          <span
+            className="processing-progress__bar"
+            style={{ width: `${loadingProgress}%` }}
+          />
+        </div>
+        <p className="processing-progress__meta">
+          {PROCESSING_MESSAGES[visibleMsg]}
+        </p>
         <ul className="processing-list">
           {PROCESSING_MESSAGES.map((msg, i) => (
-            <li key={msg} className={visibleMsg >= i ? "processing-list__item--visible" : ""}>
+            <li
+              key={msg}
+              className={
+                visibleMsg > i
+                  ? "processing-list__item--done"
+                  : visibleMsg === i
+                    ? "processing-list__item--active"
+                    : ""
+              }
+            >
               {msg}
             </li>
           ))}

@@ -19,7 +19,7 @@ export const SITE_DESCRIPTION =
 export const LAST_UPDATED = "2026-08-05";
 
 /**
- * The 5 validation pages for Phase 2. Each entry maps a knowledge-base
+ * The validation pages for Phase 2. Each entry maps a knowledge-base
  * entity to its public URL slug and H1 title. When validation succeeds this
  * list grows to more entities — the rendering pipeline is entity-driven and
  * needs no other changes.
@@ -67,6 +67,41 @@ export const ENABLED_PAGES: PageConfig[] = [
     title: "Pregnancy Dream Meaning in Islam",
     metaDescription:
       "Pregnancy dreams often symbolize creation, anticipation or a developing stage of life. Explore meanings through classical dream traditions. Not predictions."
+  },
+  {
+    entityId: "fire",
+    slug: "fire-dream-islam",
+    title: "Fire Dream Meaning in Islam",
+    metaDescription:
+      "Explore fire dream meaning in Islam through context, emotion, and careful reflection. Consider possible meanings without treating the dream as a prediction."
+  },
+  {
+    entityId: "death",
+    slug: "death-dream-islam",
+    title: "Death Dream Meaning in Islam",
+    metaDescription:
+      "Explore death dream meaning in Islam through context, emotion, and careful reflection. A death dream is not proof that a real death or disaster will occur."
+  },
+  {
+    entityId: "baby",
+    slug: "baby-dream-islam",
+    title: "Baby Dream Meaning in Islam",
+    metaDescription:
+      "Explore baby dream meaning in Islam through context, emotion, and personal reflection, including themes of care, responsibility, and new beginnings."
+  },
+  {
+    entityId: "cat",
+    slug: "cat-dream-islam",
+    title: "Cat Dream Meaning in Islam",
+    metaDescription:
+      "Explore cat dream meaning in Islam through context, behavior, and emotion. Reflect on companionship, boundaries, and caution without fixed predictions."
+  },
+  {
+    entityId: "dog",
+    slug: "dog-dream-islam",
+    title: "Dog Dream Meaning in Islam",
+    metaDescription:
+      "Explore dog dream meaning in Islam through context, behavior, and emotion. Reflect on fear, loyalty, boundaries, and daily experience without predictions."
   }
 ];
 

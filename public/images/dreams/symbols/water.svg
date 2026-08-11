@@ -1,0 +1,26 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper-water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset="0.58" stop-color="#fbf5e8"/>
+      <stop offset="1" stop-color="#efe2c9"/>
+    </linearGradient>
+    <radialGradient id="warm-water" cx="78%" cy="18%" r="58%">
+      <stop offset="0" stop-color="#d7b967" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#d7b967" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-water" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0d3b2e" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1200" rx="66" fill="url(#paper-water)"/>
+  <rect width="1200" height="1200" rx="66" fill="url(#warm-water)"/>
+  <path d="M92 104c0-34 28-62 62-62h892c34 0 62 28 62 62v892c0 34-28 62-62 62H154c-34 0-62-28-62-62z" fill="none" stroke="#d7ccb0" stroke-width="5"/>
+  <path d="M190 700C320 650 450 640 600 674s292 34 410-32" fill="none" stroke="#1d5a48" stroke-opacity="0.13" stroke-width="4"/><path d="M220 780C390 730 520 735 650 758s252 17 344-40" fill="none" stroke="#bf9134" stroke-opacity="0.15" stroke-width="4"/>
+  <g filter="url(#soft-water)">
+    <path d="M252 618c98-86 194-86 292 0s194 86 292 0" fill="none" stroke="#0d3b2e" stroke-width="36" stroke-linecap="round"/>
+    <path d="M252 732c98-86 194-86 292 0s194 86 292 0" fill="none" stroke="#1d5a48" stroke-width="30" stroke-linecap="round"/>
+    <path d="M365 500c86-78 172-78 258 0s172 78 258 0" fill="none" stroke="#bf9134" stroke-width="18" stroke-linecap="round"/>
+    <path d="M600 300c78 104 130 198 130 284 0 84-56 150-130 150s-130-66-130-150c0-86 52-180 130-284z" fill="#d6ded2" fill-opacity="0.72" stroke="#0d3b2e" stroke-width="24"/>
+  </g>
+</svg>

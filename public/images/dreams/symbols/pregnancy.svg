@@ -1,0 +1,26 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper-pregnancy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset="0.58" stop-color="#fbf5e8"/>
+      <stop offset="1" stop-color="#efe2c9"/>
+    </linearGradient>
+    <radialGradient id="warm-pregnancy" cx="78%" cy="18%" r="58%">
+      <stop offset="0" stop-color="#d7b967" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#d7b967" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-pregnancy" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0d3b2e" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1200" rx="66" fill="url(#paper-pregnancy)"/>
+  <rect width="1200" height="1200" rx="66" fill="url(#warm-pregnancy)"/>
+  <path d="M92 104c0-34 28-62 62-62h892c34 0 62 28 62 62v892c0 34-28 62-62 62H154c-34 0-62-28-62-62z" fill="none" stroke="#d7ccb0" stroke-width="5"/>
+  <path d="M300 980V500C300 325 435 210 600 210S900 325 900 500v480" fill="none" stroke="#1d5a48" stroke-opacity="0.13" stroke-width="4"/><path d="M382 980V520c0-125 94-214 218-214s218 89 218 214v460" fill="none" stroke="#bf9134" stroke-opacity="0.14" stroke-width="3"/>
+  <g filter="url(#soft-pregnancy)">
+    <path d="M600 315c145 92 230 230 230 370 0 132-93 228-230 228s-230-96-230-228c0-140 85-278 230-370z" fill="#fff7e4" stroke="#0d3b2e" stroke-width="30"/>
+    <path d="M600 478c76 50 122 122 122 196 0 70-49 120-122 120s-122-50-122-120c0-74 46-146 122-196z" fill="#d6ded2" stroke="#1d5a48" stroke-width="18"/>
+    <path d="M472 382c78-56 178-56 256 0" fill="none" stroke="#bf9134" stroke-width="18" stroke-linecap="round"/>
+    <path d="M540 670c34 28 86 28 120 0" fill="none" stroke="#bf9134" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

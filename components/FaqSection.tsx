@@ -6,22 +6,22 @@ export function buildFaqs(entity: DreamEntity): Array<{ question: string; answer
     {
       question: `Is ${symbol} in a dream good or bad in Islam?`,
       answer:
-        "Traditional scholars have recorded both positive and negative readings for this symbol depending on the context of the dream. Interpretations vary by personal circumstances and tradition."
+        "A dream is not judged good or bad from the symbol alone. This page treats the symbol through context, emotion, and careful reflection, while keeping religious guidance separate from fixed predictions."
     },
     {
-      question: `What do classical scholars say about ${symbol} dreams?`,
+      question: `Does ${symbol} in a dream have one fixed Islamic interpretation?`,
       answer:
-        `Classical references for "${entity.name}" are listed on this page. They represent historical perspectives from Islamic dream interpretation traditions.`
+        `This page does not present one fixed Islamic interpretation for "${entity.name}". When a verified source is used, it is cited for what it directly supports; otherwise the discussion is framed as personal reflection.`
     },
     {
       question: "Are dreams predictions of the future in Islam?",
       answer:
-        "In the Islamic tradition, dreams are generally not treated as fixed predictions. Interpretations recorded by scholars describe possible meanings within context. This page presents traditional interpretations, not predictions."
+        "In Islamic sources, dreams are not all treated the same way, and a dream should not automatically be treated as a fixed prediction. This page separates verified religious guidance from personal reflection."
     },
     {
       question: "What should I do after a disturbing dream?",
       answer:
-        "Common advice in the tradition includes seeking refuge in Allah from a disturbing dream, avoiding dwelling on it, and consulting a trustworthy scholar for serious recurring dreams."
+        "For a disliked dream, verified Hadith guidance includes seeking refuge in Allah, spitting lightly to the left, and not relating the dream to others. If recurring dreams are affecting your sleep or wellbeing, seek appropriate support without treating the dream as a prediction."
     }
   ];
 }

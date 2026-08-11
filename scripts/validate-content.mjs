@@ -69,6 +69,11 @@ const KNOWN_ROUTES = new Set([
   "/dreams/teeth-falling-out-islam",
   "/dreams/water-dream-islam",
   "/dreams/pregnancy-dream-islam",
+  "/dreams/fire-dream-islam",
+  "/dreams/death-dream-islam",
+  "/dreams/baby-dream-islam",
+  "/dreams/cat-dream-islam",
+  "/dreams/dog-dream-islam",
   "/my-dreams"
 ]);
 
@@ -81,8 +86,22 @@ const ENABLED_ENTITY_IDS = new Set([
   "dead-person",
   "teeth",
   "water",
-  "pregnancy"
+  "pregnancy",
+  "fire",
+  "death",
+  "baby",
+  "cat",
+  "dog"
 ]);
+
+const GUIDES_TS = fs.readFileSync(path.join(ROOT, "lib", "guides.ts"), "utf8");
+const DREAM_ARTICLES_TS = fs.readFileSync(path.join(ROOT, "lib", "dream-articles.ts"), "utf8");
+const guideEntries = [...GUIDES_TS.matchAll(/slug:\s*"([^"]+)"/g)].map((x) => x[1]);
+const dreamArticleEntries = [...DREAM_ARTICLES_TS.matchAll(/slug:\s*"([^"]+)"/g)].map((x) => x[1]);
+
+for (const slug of [...guideEntries, ...dreamArticleEntries]) {
+  KNOWN_ROUTES.add(`/guides/${slug}`);
+}
 
 /* ------------------------------------------------------------------ */
 const errors = [];
@@ -273,8 +292,6 @@ for (const file of files) {
 /* ------------------------------------------------------------------ */
 /* Guides: validate sourceIds and internal links in lib/guides.ts      */
 /* ------------------------------------------------------------------ */
-const GUIDES_TS = fs.readFileSync(path.join(ROOT, "lib", "guides.ts"), "utf8");
-const guideEntries = [...GUIDES_TS.matchAll(/slug:\s*"([^"]+)"/g)].map((x) => x[1]);
 const guideSourceIds = [...GUIDES_TS.matchAll(/sourceIds:\s*\[([^\]]*)\]/g)]
   .flatMap((x) => [...x[1].matchAll(/"([^"]+)"/g)].map((y) => y[1]));
 
