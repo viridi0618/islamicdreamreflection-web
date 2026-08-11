@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { allGuides, loadGuide } from "@/lib/guides";
 import { loadDreamArticle, allDreamArticles } from "@/lib/dream-articles";
 import { DreamArticlePage } from "@/components/DreamArticlePage";
+import { FloatingContentActions } from "@/components/FloatingContentActions";
 import { resolvePublicSources } from "@/data/sources";
 import {
   dreamArticleSchema,
@@ -94,6 +95,13 @@ export default async function GuidePage({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <FloatingContentActions
+          contentType="guide"
+          slug={slug}
+          title={article.title}
+          text={article.description}
+          href={`/guides/${slug}`}
+        />
         <DreamArticlePage article={article} />
       </>
     );
@@ -104,34 +112,43 @@ export default async function GuidePage({
   if (!guide) notFound();
 
   return (
-    <article className="shell section">
-      <div className="reading-container">
-        <div className="section__head">
-          <h1>{guide.title}</h1>
-          <span className="rule" />
+    <>
+      <FloatingContentActions
+        contentType="guide"
+        slug={slug}
+        title={guide.title}
+        text={guide.description}
+        href={`/guides/${slug}`}
+      />
+      <article className="shell section">
+        <div className="reading-container">
+          <div className="section__head">
+            <h1>{guide.title}</h1>
+            <span className="rule" />
+          </div>
+
+          <div className="prose">
+            {guide.intro.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+
+            {guide.sections.map((section) => (
+              <section key={section.heading}>
+                <h2>{section.heading}</h2>
+                {section.body.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+                {section.sourceIds && renderSources(section.sourceIds)}
+              </section>
+            ))}
+
+            <p className="guide-meta">
+              Prepared by {SITE_NAME}. Traditional perspectives are not predictions
+              or religious rulings.
+            </p>
+          </div>
         </div>
-
-        <div className="prose">
-          {guide.intro.map((p) => (
-            <p key={p}>{p}</p>
-          ))}
-
-          {guide.sections.map((section) => (
-            <section key={section.heading}>
-              <h2>{section.heading}</h2>
-              {section.body.map((p) => (
-                <p key={p}>{p}</p>
-              ))}
-              {section.sourceIds && renderSources(section.sourceIds)}
-            </section>
-          ))}
-
-          <p className="guide-meta">
-            Prepared by {SITE_NAME}. Traditional perspectives are not predictions
-            or religious rulings.
-          </p>
-        </div>
-      </div>
-    </article>
+      </article>
+    </>
   );
 }
