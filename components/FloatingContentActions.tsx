@@ -1,19 +1,15 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { usePathname } from "next/navigation";
 import {
   getContentActionState,
   recordContentShareAction,
-  setContentSaved,
-  type ContentActionType
+  setContentSaved
 } from "@/lib/content-actions";
 
 interface FloatingContentActionsProps {
-  contentType: ContentActionType;
-  slug: string;
-  title: string;
-  text?: string;
-  href: string;
+  publicPaths: string[];
 }
 
 type Feedback = "saved" | "removed" | "copied" | "shared" | "copy-error" | null;
@@ -66,27 +62,29 @@ async function copyUrl(url: string): Promise<void> {
 }
 
 export function FloatingContentActions({
-  contentType,
-  slug,
-  title,
-  text,
-  href
+  publicPaths
 }: FloatingContentActionsProps) {
+  const pathname = usePathname();
   const [saved, setSaved] = useState(false);
   const [feedback, setFeedback] = useState<Feedback>(null);
   const [isSharing, setIsSharing] = useState(false);
 
-  const contentLabel = contentType === "dream" ? "dream" : "guide";
+  const normalizedPathname = useMemo(() => {
+    if (!pathname) return null;
+    if (pathname === "/") return "/";
+    return pathname.replace(/\/$/, "");
+  }, [pathname]);
 
-  const shareUrl = useMemo(() => {
-    if (typeof window === "undefined") return href;
-    return new URL(href, window.location.origin).toString();
-  }, [href]);
+  const shouldShow = useMemo(
+    () => Boolean(normalizedPathname && publicPaths.includes(normalizedPathname)),
+    [normalizedPathname, publicPaths]
+  );
 
   useEffect(() => {
-    const state = getContentActionState(contentType, slug);
+    if (!normalizedPathname || !shouldShow) return;
+    const state = getContentActionState(normalizedPathname);
     setSaved(state.saved);
-  }, [contentType, slug]);
+  }, [normalizedPathname, shouldShow]);
 
   useEffect(() => {
     if (!feedback) return;
@@ -95,23 +93,28 @@ export function FloatingContentActions({
   }, [feedback]);
 
   function toggleSaved() {
+    if (!normalizedPathname) return;
     const nextSaved = !saved;
-    const state = setContentSaved(contentType, slug, nextSaved);
+    const state = setContentSaved(normalizedPathname, nextSaved);
     setSaved(state.saved);
     setFeedback(nextSaved ? "saved" : "removed");
   }
 
   function recordShare() {
-    recordContentShareAction(contentType, slug);
+    if (!normalizedPathname) return;
+    recordContentShareAction(normalizedPathname);
   }
 
   async function handleShare() {
     if (isSharing) return;
     setIsSharing(true);
+    const title = document.title || "Islamic Dream Reflection";
+    const text =
+      document.querySelector<HTMLMetaElement>('meta[name="description"]')?.content ?? title;
     const shareData = {
       title,
-      text: text ?? title,
-      url: shareUrl
+      text,
+      url: window.location.href
     };
 
     try {
@@ -122,7 +125,7 @@ export function FloatingContentActions({
         return;
       }
 
-      await copyUrl(shareUrl);
+      await copyUrl(shareData.url);
       recordShare();
       setFeedback("copied");
     } catch (error) {
@@ -130,7 +133,7 @@ export function FloatingContentActions({
       if (name === "AbortError") return;
 
       try {
-        await copyUrl(shareUrl);
+        await copyUrl(shareData.url);
         recordShare();
         setFeedback("copied");
       } catch {
@@ -154,18 +157,20 @@ export function FloatingContentActions({
               ? "Unable to copy"
               : "";
 
+  if (!shouldShow) return null;
+
   return (
-    <aside className="floating-actions" aria-label={`${title} actions`}>
+    <aside className="floating-actions" aria-label="Page actions">
       <button
         type="button"
         className={`floating-actions__button${saved ? " floating-actions__button--saved" : ""}`}
         onClick={toggleSaved}
         aria-pressed={saved}
-        aria-label={`${saved ? "Unsave" : "Save"} this ${contentLabel}`}
+        aria-label={saved ? "Remove bookmark" : "Bookmark this page"}
       >
         <BookmarkIcon saved={saved} />
         <span className="floating-actions__tooltip" role="tooltip">
-          {saved ? "Saved" : "Save"}
+          {saved ? "Saved" : "Bookmark"}
         </span>
       </button>
 
@@ -175,7 +180,7 @@ export function FloatingContentActions({
           className="floating-actions__button"
           onClick={handleShare}
           disabled={isSharing}
-          aria-label={`Share this ${contentLabel}`}
+          aria-label="Share this page"
         >
           <ShareIcon />
           <span className="floating-actions__tooltip" role="tooltip">

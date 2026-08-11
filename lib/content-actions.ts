@@ -1,7 +1,5 @@
 "use client";
 
-export type ContentActionType = "dream" | "guide";
-
 export interface ContentActionState {
   saved: boolean;
   shareCount: number;
@@ -17,8 +15,8 @@ function canUseStorage(): boolean {
   return typeof window !== "undefined" && typeof window.localStorage !== "undefined";
 }
 
-function keyFor(contentType: ContentActionType, slug: string): string {
-  return `${contentType}:${slug}`;
+function keyFor(pathname: string): string {
+  return `page:${pathname}`;
 }
 
 function normalizeState(raw: Partial<ContentActionState> | null | undefined): ContentActionState {
@@ -62,19 +60,17 @@ function writeStore(store: ContentActionStore): void {
 }
 
 export function getContentActionState(
-  contentType: ContentActionType,
-  slug: string
+  pathname: string
 ): ContentActionState {
-  return readStore()[keyFor(contentType, slug)] ?? { saved: false, shareCount: 0 };
+  return readStore()[keyFor(pathname)] ?? { saved: false, shareCount: 0 };
 }
 
 export function setContentSaved(
-  contentType: ContentActionType,
-  slug: string,
+  pathname: string,
   saved: boolean
 ): ContentActionState {
   const store = readStore();
-  const key = keyFor(contentType, slug);
+  const key = keyFor(pathname);
   const next = { ...(store[key] ?? { saved: false, shareCount: 0 }), saved };
   store[key] = next;
   writeStore(store);
@@ -82,11 +78,10 @@ export function setContentSaved(
 }
 
 export function recordContentShareAction(
-  contentType: ContentActionType,
-  slug: string
+  pathname: string
 ): { counted: boolean; state: ContentActionState } {
   const store = readStore();
-  const key = keyFor(contentType, slug);
+  const key = keyFor(pathname);
   const current = normalizeState(store[key]);
   const now = Date.now();
 
