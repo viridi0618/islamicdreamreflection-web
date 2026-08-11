@@ -4,7 +4,7 @@ import { loadEnabledPages } from "@/lib/data";
 import { RitualFlow } from "@/components/RitualFlow";
 import { SymbolArtwork } from "@/components/SymbolArtwork";
 import { HOME_FAQ_PREVIEW } from "@/lib/faq";
-import { dreamUrl, SITE_NAME, SITE_URL } from "@/lib/site";
+import { dreamUrl, SITE_NAME, SITE_URL, sortDreamPagesByPublishedAt } from "@/lib/site";
 import { dreamCardSummary } from "@/lib/dream-summaries";
 import { SOURCES, resolvePublicSources } from "@/data/sources";
 import {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const pages = loadEnabledPages();
+  const latestDreamPages = sortDreamPagesByPublishedAt(loadEnabledPages()).slice(0, 8);
   const quoteSource = SOURCES[QUOTE_SOURCE_ID];
   const dreamTypeSources = resolvePublicSources(DREAM_TYPES.sourceIds);
 
@@ -220,8 +220,8 @@ export default function HomePage() {
               <span className="rule" />
             </div>
             <p className="section__sub">{DREAM_GUIDES.subtitle}</p>
-            <div className="dream-grid">
-              {pages.map(({ page, entity }, i) => {
+            <div className="dream-grid dream-grid--home">
+              {latestDreamPages.map(({ page, entity }, i) => {
                 const summary =
                   dreamCardSummary(entity.id) ??
                   (entity.traditional_notes?.[1] ??
@@ -248,6 +248,9 @@ export default function HomePage() {
                 );
               })}
             </div>
+            <p className="section__link">
+              <Link href="/guides">View all Dream Guides &rarr;</Link>
+            </p>
           </div>
         </div>
       </section>

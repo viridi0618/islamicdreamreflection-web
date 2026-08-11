@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { loadEnabledPages, categoryLabel } from "@/lib/data";
 import { dreamCardSummary } from "@/lib/dream-summaries";
-import { dreamUrl, SITE_NAME, SITE_URL } from "@/lib/site";
+import { dreamUrl, SITE_NAME, SITE_URL, sortDreamPagesByPublishedAt } from "@/lib/site";
 import { SymbolArtwork } from "@/components/SymbolArtwork";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default async function GuidesPage() {
-  const pages = loadEnabledPages();
+  const pages = sortDreamPagesByPublishedAt(loadEnabledPages());
 
   return (
     <article className="shell section">
