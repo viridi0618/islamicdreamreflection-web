@@ -4126,6 +4126,52 @@ a:hover {
   font-size: 14px;
 }
 
+.foundation-guide__quick-answer {
+  margin: 18px 0 28px;
+}
+
+.foundation-guide__items {
+  display: grid;
+  gap: 16px;
+  margin: 18px 0 24px;
+}
+
+.foundation-guide__item {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+}
+
+.foundation-guide__item h3 {
+  margin-top: 0;
+}
+
+.foundation-guide__related {
+  display: grid;
+  gap: 12px;
+}
+
+.foundation-guide__related-link {
+  display: grid;
+  gap: 4px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--green-900);
+  text-decoration: none;
+}
+
+.foundation-guide__related-link span {
+  font-weight: 700;
+}
+
+.foundation-guide__related-link small {
+  color: var(--ink-faint);
+  font-size: 13px;
+}
+
 @media (max-width: 640px) {
   .article-grid {
     grid-template-columns: 1fr;
@@ -4487,6 +4533,22 @@ a:hover {
   margin: 0;
   padding-top: 14px;
   border-top: 1px solid var(--line);
+}
+
+.quote-block__link {
+  margin: 14px 0 0;
+  font-size: 14.5px;
+}
+
+.quote-block__link a {
+  color: var(--green-700);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--green-700);
+}
+
+.quote-block__link a:hover {
+  color: var(--green-900);
 }
 
 /* Floating content actions */
