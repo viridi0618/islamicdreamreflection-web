@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/site";
-import { publicSources } from "@/data/sources";
+import { publicSources, resolvePublicSources } from "@/data/sources";
 
 export const metadata: Metadata = {
   title: "Islamic Dream Interpretation Methodology — Sources, Context & Limits",
@@ -15,6 +15,14 @@ export default function SourcesMethodologyPage() {
   // Public registry listing; the methodology page itself is never listed as
   // one of its own sources (type "methodology" is excluded).
   const sources = publicSources().filter((s) => s.type !== "methodology");
+  const quranMethodSources = resolvePublicSources([
+    "quran-yusuf-12-4-6",
+    "quran-saffat-37-102-105"
+  ]);
+  const hadithMethodSources = resolvePublicSources([
+    "muslim-2263a",
+    "bukhari-6985"
+  ]);
 
   return (
     <article className="shell section">
@@ -126,6 +134,25 @@ export default function SourcesMethodologyPage() {
                   </Link>{" "}
                   for the fuller discussion.
                 </p>
+                <ul className="guide-sources">
+                  {quranMethodSources.map((source) => (
+                    <li key={source.id}>
+                      {source.reference}
+                      {source.url && (
+                        <>
+                          {" | "}
+                          <a
+                            href={source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Read original
+                          </a>
+                        </>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </article>
 
               <article className="foundation-guide__item">
@@ -137,6 +164,25 @@ export default function SourcesMethodologyPage() {
                   rather than used as decorative authority for unrelated symbolic
                   readings.
                 </p>
+                <ul className="guide-sources">
+                  {hadithMethodSources.map((source) => (
+                    <li key={source.id}>
+                      {source.reference}
+                      {source.url && (
+                        <>
+                          {" | "}
+                          <a
+                            href={source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Read original
+                          </a>
+                        </>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </article>
 
               <article className="foundation-guide__item">
