@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Foundation guide content (Phase D Islamic Foundation layer).
  *
  * Each guide is data-driven and references the unified source registry
@@ -10,61 +10,175 @@
  * states; interpretive paraphrase is avoided in "supports" claims.
  */
 
-export interface GuideSection {
-  heading: string;
+export interface GuideSubsection {
+  title: string;
   body: string[];
   sourceIds?: string[];
+}
+
+export interface GuideSection {
+  heading: string;
+  body?: string[];
+  sourceIds?: string[];
+  items?: GuideSubsection[];
 }
 
 export interface GuideEntry {
   slug: string;
   title: string;
   description: string;
+  metaTitle?: string;
+  quickAnswer?: string;
   intro: string[];
   sections: GuideSection[];
+  faq?: Array<{
+    question: string;
+    answer: string;
+  }>;
+  relatedLinks?: Array<{
+    href: string;
+    label: string;
+    description?: string;
+  }>;
 }
 
 export const GUIDES: Record<string, GuideEntry> = {
   "three-types-of-dreams-in-islam": {
     slug: "three-types-of-dreams-in-islam",
     title: "The Three Types of Dreams in Islam",
+    metaTitle:
+      "Three Types of Dreams in Islam - Meaningful, Disturbing & From the Self",
     description:
-      "Dreams in the Islamic tradition are generally described as coming from Allah, from Satan, or from the self. Learn how to tell them apart and when to interpret.",
+      "Learn the three types of dreams described in Islamic tradition, how to respond to each type, and why not every dream should be forced into interpretation.",
+    quickAnswer:
+      "Hadith describes dreams broadly as including a good or meaningful dream associated with Allah, a disturbing dream from Satan, and a dream connected to one's own thoughts or self. These categories guide how a dream is treated, but a person may not always know with certainty which category a specific dream belongs to.",
     intro: [
-      "The Islamic tradition does not treat every dream as a message. Hadith describe dreams as falling into categories, which helps a person decide whether a dream is worth interpreting at all."
+      "Islamic teaching about dreams is more careful than a simple symbol dictionary. Some dreams may be received as glad tidings, some disturbing dreams should be released rather than pursued, and some dreams may simply reflect what a person has been thinking about.",
+      "These categories help set a safer posture toward interpretation. They do not give a person certainty about every dream, and they do not turn every image seen during sleep into a prediction."
     ],
     sections: [
       {
-        heading: "Dreams from Allah",
-        body: [
-          "Good dreams — those that are truthful, comforting, or carry clear meaning — are described as coming from Allah. In the tradition this is the type of dream a person may share and take encouragement from.",
-          "This does not mean every pleasant dream is a prophecy. It means the dream is a positive experience to receive with gratitude."
-        ],
-        sourceIds: ["muslim-2263a", "bukhari-6984"]
+        heading: "The Three Types of Dreams",
+        items: [
+          {
+            title: "A Good or Meaningful Dream",
+            body: [
+              "A good dream is described in Hadith as being from Allah and as glad tidings. A person may receive such a dream with gratitude and, where appropriate, share it with someone trustworthy.",
+              "This does not mean every pleasant dream is prophecy or that a dream gives certain knowledge of future events. The source supports the place of good dreams in the tradition, not a fixed meaning for every symbol."
+            ],
+            sourceIds: ["muslim-2263a", "bukhari-6984", "bukhari-6990"]
+          },
+          {
+            title: "A Disturbing Dream",
+            body: [
+              "A frightening or disliked dream is treated differently. Hadith guidance turns the dreamer away from panic and toward seeking refuge in Allah, not toward treating the dream as an omen.",
+              "This matters because a disturbing image can feel powerful after waking. Islamic etiquette helps the person avoid dwelling on it or spreading fear through repeated retelling."
+            ],
+            sourceIds: ["muslim-2263a", "bukhari-6985", "bukhari-7044"]
+          },
+          {
+            title: "A Dream Shaped by Daily Thoughts",
+            body: [
+              "Hadith also describes dreams connected to one's own mind. This can include worries, conversations, repeated concerns, hopes, responsibilities, or ordinary experiences that continue into sleep.",
+              "Not every dream in this category needs symbolic interpretation. Sometimes the most accurate response is simply to notice what has been occupying the heart and mind."
+            ],
+            sourceIds: ["muslim-2263a"]
+          }
+        ]
       },
       {
-        heading: "Disturbing dreams from Satan",
-        body: [
-          "Frightening or disturbing dreams are described as coming from Satan. The recommended response is not to interpret them into certainty, but to seek refuge in Allah from their evil.",
-          "The hadith give a practical etiquette: do not let a bad dream control the day, and do not go looking for a fixed meaning in it."
-        ],
-        sourceIds: ["muslim-2263a", "bukhari-6985", "bukhari-7044"]
+        heading: "How Should You Respond to Each Type?",
+        items: [
+          {
+            title: "Good dream",
+            body: [
+              "Receive it with gratitude. If sharing it is appropriate, share it with care rather than turning it into public certainty or forcing predictions from it.",
+              "A good dream can encourage a person without becoming a claim that a specific future event must happen."
+            ],
+            sourceIds: ["bukhari-6985", "bukhari-6990"]
+          },
+          {
+            title: "Disturbing dream",
+            body: [
+              "Seek refuge in Allah from its evil, do not dwell on it, and do not relate it to others as though it must come true. Some narrations also mention spitting lightly to the left as part of the etiquette.",
+              "The point of this guidance is calm and protection, not fear-based interpretation."
+            ],
+            sourceIds: ["bukhari-6985", "bukhari-7044", "bukhari-7045"]
+          },
+          {
+            title: "Daily-thought dream",
+            body: [
+              "Consider whether the dream resembles recent waking experience. It may be connected to stress, conversations, family concerns, work, health worries, or something repeatedly on the mind.",
+              "Often no interpretation is required. Let ordinary dreams remain ordinary when reflection would only create unnecessary anxiety."
+            ],
+            sourceIds: ["muslim-2263a"]
+          }
+        ]
       },
       {
-        heading: "Dreams from the self",
+        heading: "Can You Tell Which Type Your Dream Is?",
         body: [
-          "Many dreams simply reflect the dreamer’s own thoughts, worries, or what they were thinking about during the day. A hadith describes dreams that come from the self as one of the three categories.",
-          "These dreams are best understood as personal reflections rather than as events with hidden meanings."
-        ],
-        sourceIds: ["muslim-2263a"]
+          "A person should be cautious about claiming certainty. The categories guide how dreams are treated, but they are not a quiz or scoring system that can classify every dream with confidence.",
+          "Helpful clues may include the emotional tone of the dream, whether it was clearly disturbing, whether it resembles recent waking thoughts, whether it repeats, and whether reflection would lead to calm understanding or only to fear. None of these clues should be turned into a rigid formula."
+        ]
       },
       {
-        heading: "Why the categories matter",
+        heading: "Should Every Dream Be Interpreted?",
         body: [
-          "The categories matter because they set expectations. Not every dream is a sign, and the tradition is careful not to turn ordinary dreams into certainties.",
-          "When a dream is disturbing, the first response is protection and calm, not interpretation."
-        ],
-        sourceIds: ["muslim-2263a", "bukhari-6986"]
+          "No. Some dreams are received with gratitude, some disturbing dreams are better released, and some dreams are simply connected to daily thought. Islamic guidance does not require a person to extract symbolic meaning from every dream.",
+          "Forcing interpretation can make a normal dream feel heavier than it is. A careful approach asks whether interpretation would actually help the person reflect, repent, feel gratitude, seek protection, or understand their own circumstances more honestly."
+        ]
+      },
+      {
+        heading: "What This Means for Your Own Dream",
+        body: [
+          "Before searching for one fixed meaning, ask what emotion stayed with you after waking, whether you had recently been thinking about similar matters, whether the dream was frightening, and whether you are trying to force certainty from something uncertain.",
+          "If reflection would be useful, begin privately and gently. If the dream was disliked or frightening, the traditional response may be more important than interpretation."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "What are the three types of dreams in Islam?",
+        answer:
+          "Hadith describes dreams broadly as a good dream associated with Allah, a disturbing dream from Satan, and a dream connected to one's own thoughts or self."
+      },
+      {
+        question: "Does every dream have a meaning in Islam?",
+        answer:
+          "No. Some dreams may be meaningful, but some are disturbing dreams to be released and some are connected to daily thoughts or ordinary experience."
+      },
+      {
+        question: "Are bad dreams predictions?",
+        answer:
+          "A bad dream should not automatically be treated as a prediction. Verified Hadith guidance emphasizes seeking refuge in Allah and not dwelling on the dream as an omen."
+      },
+      {
+        question: "Can daily thoughts appear in dreams?",
+        answer:
+          "Yes. Hadith describes one category of dreams as suggestions of one's own mind, which can include recent concerns, conversations, and experiences."
+      },
+      {
+        question: "Should every dream be interpreted?",
+        answer:
+          "No. Interpretation should not be forced, especially when a dream is disturbing or appears closely tied to ordinary daily thought."
+      }
+    ],
+    relatedLinks: [
+      {
+        href: "/guides/dreams-in-the-quran",
+        label: "Dreams in the Qur'an",
+        description: "Read how Qur'anic dream accounts should and should not be generalized."
+      },
+      {
+        href: "/sources-methodology",
+        label: "Sources and Methodology",
+        description: "See how Islamic sources, context, and editorial reflection are separated."
+      },
+      {
+        href: "/guides/what-to-do-after-a-bad-dream",
+        label: "What to Do After a Bad Dream",
+        description: "Review verified Hadith guidance for disliked or frightening dreams."
       }
     ]
   },
@@ -112,52 +226,129 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "dreams-in-the-quran": {
     slug: "dreams-in-the-quran",
-    title: "Dreams in the Qur’an: Yusuf, Ibrahim, and Meaningful Visions",
+    title: "Dreams in the Qur'an: Yusuf, Ibrahim, and Meaningful Visions",
+    metaTitle: "Dreams in the Qur'an - Yusuf, Ibrahim & Meaningful Visions",
     description:
-      "What the Qur’an records about dreams and interpretation, from the story of Yusuf to the vision of Ibrahim.",
+      "Explore Qur'anic dream accounts involving Yusuf and Ibrahim, what they teach about meaningful visions, and what they do not establish for ordinary dream interpretation.",
+    quickAnswer:
+      "The Qur'an records dreams and visions with real significance. These accounts show that dreams can carry meaning and that interpretation can matter, but they do not establish a universal symbol dictionary for every ordinary dream.",
     intro: [
-      "The Qur’an records several dreams and their interpretations, most notably in the story of Yusuf and in the vision of Ibrahim. These passages show that dreams can carry meaning and that interpretation was approached with care."
+      "The Qur'an gives dreams a serious place in sacred history, especially in the story of Yusuf and in the prophetic vision of Ibrahim. These passages are not casual dream anecdotes; they are part of revelation and must be read with care.",
+      "For ordinary dreamers, the lesson is balanced. The Qur'an gives reasons to take dreams seriously without treating every dream as revelation, a command, or a fixed symbolic code."
     ],
     sections: [
       {
-        heading: "The dream of Yusuf",
-        body: [
-          "Yusuf tells his father that he saw eleven stars, the sun and the moon prostrating to him. His father counsels him not to tell his brothers, and says that Allah will choose him and teach him the interpretation of dreams.",
-          "The passage places dreams within a careful, guided process of interpretation."
-        ],
-        sourceIds: ["quran-yusuf-12-4-6"]
+        heading: "Dreams in the Story of Yusuf",
+        items: [
+          {
+            title: "Yusuf's Own Dream",
+            body: [
+              "The Qur'an records Yusuf telling his father that he saw eleven stars, the sun, and the moon prostrating to him. His father counsels him not to tell his brothers and says that Allah will teach him the interpretation of dreams.",
+              "The dream plays a major role in Yusuf's story, but it is not presented as a reusable dictionary where stars, sun, and moon always carry the same meaning in ordinary dreams."
+            ],
+            sourceIds: ["quran-yusuf-12-4-6"]
+          },
+          {
+            title: "The Dreams of the Prisoners",
+            body: [
+              "Two prisoners describe their dreams to Yusuf: one sees himself pressing wine, and the other sees himself carrying bread from which birds eat. Yusuf teaches before interpreting, placing interpretation within faith and responsibility rather than guesswork.",
+              "The passage shows that interpretation can matter, but it does not invite a reader to make confident claims from isolated symbols without context."
+            ],
+            sourceIds: ["quran-yusuf-12-36-41"]
+          },
+          {
+            title: "The King's Dream",
+            body: [
+              "The king sees seven fat cows eaten by seven lean cows, and seven green ears of grain beside dry ones. Yusuf's interpretation connects the dream to years of abundance and hardship, and to practical preparation.",
+              "This account does not mean that cows or grain always mean one fixed thing in modern dreams. The Qur'anic account is contextual, consequential, and interpreted through Yusuf's God-given knowledge."
+            ],
+            sourceIds: ["quran-yusuf-12-43"]
+          }
+        ]
       },
       {
-        heading: "Interpreting for others in prison",
+        heading: "Prophetic Dreams and Visions",
         body: [
-          "Two prisoners ask Yusuf to interpret their dreams — one of pressing wine, one of carrying bread. Yusuf responds by teaching about interpretation before giving the meaning.",
-          "The episode shows interpretation as a serious discipline, not a guessing game."
-        ],
-        sourceIds: ["quran-yusuf-12-36-41"]
-      },
-      {
-        heading: "The king’s dream of the seven cows",
-        body: [
-          "The king dreams of seven fat cows eaten by seven lean ones, and seven green ears of grain beside seven dry ones. The dream is presented as significant, and Yusuf interprets it as a coming period of abundance followed by famine.",
-          "This is a dream with context and consequence — it does not provide a fixed meaning for cows or grain in ordinary dreams."
-        ],
-        sourceIds: ["quran-yusuf-12-43"]
-      },
-      {
-        heading: "The vision of Ibrahim",
-        body: [
-          "Ibrahim tells his son of a dream in which he saw himself sacrificing him, and his son responds with patience and submission. Both submit, and the vision is fulfilled.",
-          "This is a prophetic vision with a clear command, not an example of ordinary dream symbolism — it is recorded to show how a prophet’s dream was honoured."
+          "The vision of Ibrahim is in a special category. The Qur'an records Ibrahim telling his son that he saw himself sacrificing him, and the passage presents the event as a prophetic vision fulfilled through submission to Allah.",
+          "This is not evidence that ordinary people's dreams create religious commands. Prophetic visions belong to the lives of prophets and should not be flattened into general dream symbolism."
         ],
         sourceIds: ["quran-saffat-37-102-105"]
       },
       {
-        heading: "What this means for ordinary dreams",
+        heading: "What Qur'anic Dreams Teach - and What They Do Not",
+        items: [
+          {
+            title: "What they show",
+            body: [
+              "Qur'anic accounts show that some dreams and visions can carry meaning, that interpretation can have importance, that context matters, and that prophetic visions occupy a special category.",
+              "They also show restraint: interpretation is not treated as casual entertainment or as a way to make unsupported claims."
+            ],
+            sourceIds: [
+              "quran-yusuf-12-4-6",
+              "quran-yusuf-12-36-41",
+              "quran-yusuf-12-43",
+              "quran-saffat-37-102-105"
+            ]
+          },
+          {
+            title: "What they do not establish",
+            body: [
+              "They do not establish that every dream carries divine meaning, that every symbol has one fixed interpretation, that ordinary people receive prophetic commands, or that Qur'anic symbols automatically map onto modern dreams.",
+              "They also do not give ordinary dreams certain authority over the future, the unseen, another person's character, or religious obligations."
+            ]
+          }
+        ]
+      },
+      {
+        heading: "What This Means for Your Own Dream",
         body: [
-          "The Qur’anic examples establish that some dreams are meaningful and that interpretation is a careful discipline. They do not turn every symbol in every dream into a fixed dictionary entry.",
-          "Context, honesty about uncertainty, and the guidance of someone who understands the tradition are all part of the approach."
-        ],
-        sourceIds: ["quran-yusuf-12-4-6", "quran-yusuf-12-43"]
+          "The Qur'an gives reasons to take dreams seriously without treating every dream as revelation. A careful person starts with the type of dream, considers context, and distinguishes reflection from certainty.",
+          "If a dream leaves a strong impression, ask what happened in the dream, what emotion remained after waking, whether recent life circumstances may be involved, and whether the dream should be interpreted at all. If the dream was disturbing, verified bad-dream guidance may be more useful than symbolic analysis."
+        ]
+      }
+    ],
+    faq: [
+      {
+        question: "Are dreams mentioned in the Qur'an?",
+        answer:
+          "Yes. The Qur'an records several dreams and visions, especially in the story of Yusuf and in the prophetic vision of Ibrahim."
+      },
+      {
+        question: "Which prophet is most associated with dreams in the Qur'an?",
+        answer:
+          "Yusuf is most closely associated with dream interpretation in the Qur'an, especially through his own dream, the dreams of the prisoners, and the king's dream."
+      },
+      {
+        question: "Does the Qur'an give a dictionary of dream symbols?",
+        answer:
+          "No. Qur'anic dream accounts show that dreams can carry meaning, but they do not create a universal dictionary where every symbol has one fixed meaning."
+      },
+      {
+        question: "Are ordinary dreams the same as prophetic visions?",
+        answer:
+          "No. Prophetic visions occupy a special category and should not be used to claim that ordinary dreams create religious commands."
+      },
+      {
+        question: "Does every dream need interpretation?",
+        answer:
+          "No. The Qur'an shows that some dreams can matter, while Hadith also teaches that some dreams are disturbing or connected to one's own thoughts."
+      }
+    ],
+    relatedLinks: [
+      {
+        href: "/guides/three-types-of-dreams-in-islam",
+        label: "The Three Types of Dreams in Islam",
+        description: "Understand the categories Hadith gives for treating dreams carefully."
+      },
+      {
+        href: "/sources-methodology",
+        label: "Sources and Methodology",
+        description: "See how source-backed guidance is separated from reflection."
+      },
+      {
+        href: "/guides/what-to-do-after-a-bad-dream",
+        label: "What to Do After a Bad Dream",
+        description: "Read verified Hadith etiquette for disliked dreams."
       }
     ]
   }

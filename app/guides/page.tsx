@@ -34,6 +34,26 @@ export default async function GuidesPage() {
           Explore Islamic perspectives on dreams, traditional sources, and
           reflections on common dream experiences.
         </p>
+
+        <nav className="guide-foundations" aria-labelledby="guide-foundations-title">
+          <p id="guide-foundations-title" className="guide-foundations__title">
+            Start with the foundations
+          </p>
+          <div className="guide-foundations__links">
+            <Link href="/guides/three-types-of-dreams-in-islam">
+              The Three Types of Dreams in Islam &rarr;
+            </Link>
+            <Link href="/guides/dreams-in-the-quran">
+              Dreams in the Qur&apos;an &rarr;
+            </Link>
+            <Link href="/guides/what-to-do-after-a-bad-dream">
+              What to Do After a Bad Dream &rarr;
+            </Link>
+            <Link href="/sources-methodology">
+              Our Sources &amp; Methodology &rarr;
+            </Link>
+          </div>
+        </nav>
       </div>
 
       <div className="wide-container">

@@ -277,6 +277,11 @@ export default function HomePage() {
                 <p className="quote-block__supports">
                   <b>{HOME_QUOTE.supportsLabel}:</b> {quoteSource.supports}
                 </p>
+                <p className="quote-block__link">
+                  <Link href="/guides/dreams-in-the-quran">
+                    Read about dreams in the Qur&apos;an &rarr;
+                  </Link>
+                </p>
               </div>
             </div>
           </div>
